@@ -7,19 +7,24 @@ Created on Mon Mar 22 20:27:25 2021
 from download import download_menu, download_data
 from heightmapper import heightmapper
 from os import name, system
-data = {}
-bounds = {}
-heightmap = [[]]
+
+class map_data:
+    def __init__(self):
+        self.data = {}
+        self.bounds = {}
+        self.heightmap = [[]]
+
+map = map_data()
+
 def dlcity()->None:
-    global data
-    global bounds
+    clear()
     place,which = download_menu()
-    data = download_data(place, which)
-    bounds = {
-        'N': data['area']['bbox_north'][0],
-        'S': data['area']['bbox_south'][0],
-        'E': data['area']['bbox_east'][0],
-        'W': data['area']['bbox_west'][0]       
+    map.data = download_data(place, which)
+    map.bounds = {
+        'N': map.data['area']['bbox_north'][0],
+        'S': map.data['area']['bbox_south'][0],
+        'E': map.data['area']['bbox_east'][0],
+        'W': map.data['area']['bbox_west'][0]       
     }
 
 def load()->None:
@@ -29,55 +34,59 @@ def save()->None:
     print('saving...')
 
 def export()->None:
-    global heightmap
-    if bounds != {}:
-        heightmap = heightmapper(bounds)
+    if map.bounds != {}:
+        map.heightmap = heightmapper(map.bounds)
         
 def exit()->None:
     print('exit...')
     
 def clear()->None:
-    if name == 'nt': 
-        _ = system('cls')
-    else: 
-        _ = system('clear')
+    if name == 'nt':
+        system('cls')
+    else:
+        system('clear')
+
+# menu class with labels and function calls for each option
 
 class Menu:
-    label={
-        '1':'Download from Internet',
-        '2':'Load GraphML/OSM XML',
-        '3':'Save GraphML/OSM XML',
-        '4':'Export GeoPackage/ESRI Shapefile/RoR files',
-        '5':'Exit app'
-        }
-    func={
-        '1':dlcity,
-        '2':load,
-        '3':save,
-        '4':export,
-        '5':exit
-        }
-    
-def show_menu(title:str,menu:Menu)->None:
-    print(title)
-    options = menu.keys()
-    options = sorted(options)
-    for entry in options: 
-        print (entry, menu[entry])
-    
-def main_menu()->None:
-    is_saved=False
-    m=Menu
-    clear()
-    while(True):
-        show_menu('Main Menu v0.1',m.label)
-        choice=input("Pick an opt: ")
-        if choice == '3':
-            is_saved=True
-        if choice == '5':
-            # if is_saved==False:
-            #     print("Warning: Project not saved, proceed? y/[n]:")
-            # else:
-            break
-        m.func.get(choice)()
-        
+    label = {}
+    func = {}
+    def __init__(self, title, label, func):
+        self.title = title
+        self.label = label
+        self.func = func
+    def show(self):
+        #clear()
+        print('\n' + '-'*len(self.title))
+        print(self.title)
+        print('-'*len(self.title))
+        for key,value in self.label.items():
+            print(f'{key}. {value}')
+    def run(self):
+        while True:
+            self.show()
+            choice = input('\nChoose an option: ')
+            if choice in self.func:
+                self.func[choice]()
+            else:
+                print('\n' + '*'*len(self.title))
+                print('*'*len(self.title))
+                print(f'{choice} is not a valid option')
+                print('*'*len(self.title))
+                input('\npress enter to continue...')
+
+# main menu object
+mainmenu = Menu('Main Menu', {
+    '1': 'Download City',
+    '2': 'Load',
+    '3': 'Save',
+    '4': 'Export',
+    '5': 'Exit'
+}, {
+    '1': dlcity,
+    '2': load,
+    '3': save,
+    '4': export,
+    '5': exit
+})
+mainmenu.run()

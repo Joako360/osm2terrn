@@ -10,37 +10,33 @@ from networkx import MultiDiGraph
 from osmnx import graph_from_gdfs, graph_to_gdfs, project_graph, project_gdf
 from shapely import affinity
 
-def translate_gdf(gdf:GeoDataFrame, x_0=None, y_0=None)->tuple:
-    d = {}
-    
-    if x_0 == None and y_0 == None:
-        # if offset coordenates are unknoun, must be the area and this function
-        # calculate that offset
-        x_0, y_0 = float(gdf.bounds.minx), float(gdf.bounds.maxy)
-        size_x, size_y = ceil(gdf.bounds.maxx-gdf.bounds.minx),ceil(gdf.bounds.maxy-gdf.bounds.miny)
-        # must be square, so pick the greater
-        world_size = size_x if size_x >= size_y else size_y
-        d = {
-            'x_0': x_0,
-            'y_0': y_0,
-            'size_x': size_x,
-            'size_y': size_y,
-            'world_size': world_size
-        }
+# extract offset, x size, y size, map size and the itself from GeoDataFrame and return dict.
+def data_from_gdf(gdf:GeoDataFrame)->dict:
+    d = {
+        'x_0': float(gdf.bounds.minx),
+        'y_0': float(gdf.bounds.maxy),
+        'x_size': ceil(gdf.bounds.maxx - gdf.bounds.minx),
+        'y_size': ceil(gdf.bounds.maxy - gdf.bounds.miny),
+        'world_size': ceil(gdf.bounds.maxx - gdf.bounds.minx) * ceil(gdf.bounds.maxy - gdf.bounds.miny),
+        'area': gdf
+    }
+    return d
+# translate GeoDataFrame with same CRS and bounds to new coordinates with x_0,y_0 as the new origin
+def translate_gdf(gdf:GeoDataFrame, x_0=None, y_0=None)->GeoDataFrame:
+    if x_0 is None: x_0 = gdf.bounds.minx
+    if y_0 is None: y_0 = gdf.bounds.maxy
+    gdf_trns = gdf.copy()
+    gdf_trns = affinity.translate(gdf,xoff=x_0, yoff=y_0)
+    return gdf_trns
 
-    gdf_trns = gdf  #I make this so gdf_trns is also a DataFreme, otherwise is just a Series
-    gdf_trns['geometry'] = gdf['geometry'].apply(affinity.translate,xoff=-x_0,yoff=-y_0)
-    
-    if d != {}:
-        d['area'] = gdf_trns
-        return d
-    else:
-        return gdf_trns
 
 def translate_graph(G:MultiDiGraph,x_0:float,y_0:float)->MultiDiGraph:  #networks use only
-    nodes, edges = graph_to_gdfs(G)
-    nodes_trns = translate_gdf(nodes,x_0,y_0); edges_trns = translate_gdf(edges,x_0,y_0)
-    G_trns = graph_from_gdfs(nodes_trns,edges_trns)
+    G_trns = G.copy()
+    G_trns.graph['x_0'] = x_0
+    G_trns.graph['y_0'] = y_0
+    for node in G_trns.nodes():
+        G_trns.nodes[node]['x'] -= x_0
+        G_trns.nodes[node]['y'] -= y_0
     return G_trns
 
 def transform_gdf(gdf:GeoDataFrame,x_0=None, y_0=None)->tuple:

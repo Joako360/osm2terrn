@@ -11,7 +11,8 @@ import numpy as np
 import requests
 
 from extras import AIRMAP_ELEVATION_API_KEY
-bounds = {'N': -34.7684781, 'S': -34.8171512, 'E': -58.4051759, 'W': -58.4584664}
+# query the AirMap elevation API for the given boundary box.
+# returns numpy array with elevaton map.
 def heightmapper(bounds:Dict):
     api_key = AIRMAP_ELEVATION_API_KEY
     url = 'https://api.airmap.com/elevation/v1/ele/carpet?'

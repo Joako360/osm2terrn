@@ -7,7 +7,7 @@ Created on Mon Mar 22 21:06:05 2021
 from collections import OrderedDict
 from typing import Dict, Tuple
 from extras import AIRMAP_ELEVATION_API_KEY, colors, custom_tags, map_geometries, networks
-from transform import transform_gdf, transform_graph
+from transform import data_from_gdf, transform_gdf, transform_graph
 from networkx import MultiDiGraph
 import osmnx as ox
 from osmnx._errors import EmptyOverpassResponse
@@ -19,6 +19,8 @@ ox.config(
 ox.__version__
 api_key=AIRMAP_ELEVATION_API_KEY
 #custom_filter='["railway"~"tram|rail"]'
+# download graph from OSM with osmnx parameters: place query, wich option and optional custom filters
+
 
 def download_graph(place_query:str,which=1,cf=None)->MultiDiGraph:
     try:
@@ -45,11 +47,16 @@ def download_graph(place_query:str,which=1,cf=None)->MultiDiGraph:
         G = None
         return G
 
+# Ask for a place, makes a Nominatim query and prints the results in a table
+# Returns a tuple of the place name and the index of the result chosen by the user
+
+
 def download_menu()->Tuple:
+    
     place=input(
         '''Enter the city name, which will also be the file name. 
-A list of results will be displayed.
-Hint: City may be OSM admin_level = 7+: '''
+        A list of results will be displayed.
+        Hint: City may be OSM admin_level = 7+: '''
         ).title()
     if place == '0':
         return None, None
@@ -66,7 +73,7 @@ Hint: City may be OSM admin_level = 7+: '''
         nmntm_res = ox.downloader.nominatim_request(nmntm_req)
     
     print("{:<6}║{:<50}║{:<14}║{:<10}".format('Option','Display name','Type','Class'))
-    print('═'*6+'╬'+'═'*50+'╬'+'═'*14+'╬'+'═'*10)
+    print('═' * 6 + '╬' + '═' * 50 + '╬' + '═' * 14 + '╬' + '═' * 10)
     for idx, result in enumerate(nmntm_res,start=1):
         result_line = "{:<6}║{:<50}║{:<14}║{:<10}".format(str(idx), result['display_name'][:50], result['type'][:14], result['class'][:10])
         if result['type'] == 'administrative' or result['class'] == 'boundary':
@@ -79,11 +86,11 @@ Hint: City may be OSM admin_level = 7+: '''
     return (place, which)
 
 def download_data(place:str, which:int)->Dict:
-    d={}
+    d = {}
     if not which:
         return d
     area = ox.geocode_to_gdf(place, which_result=which)
-    d = transform_gdf(area)
+    d = data_from_gdf(area)
     
     x_0 = d['x_0']
     y_0 = d['y_0']
