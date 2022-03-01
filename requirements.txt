@@ -1,0 +1,13 @@
+# descartes also installs amongst others numpy, matplotlib, pillow
+descartes==1.1.0
+geopandas>=0.10
+matplotlib>=3.4
+networkx>=2.6
+numpy>=1.21
+pandas>=1.3
+psycopg2-binary==2.8.6
+pyproj>=3.2
+scipy==1.5.2
+shapely==1.7.1
+requests>=2.26
+Rtree>=0.9
