@@ -4,7 +4,7 @@ CLI based app, you enter the name of a city, it makes a query through osmnx, pro
 
 # Requirements
 
-- Python 3.8 at least, I use the Anaconda suite and recommend using it if you don't have any version of Python.
+- Python 3
 - osmnx module.
 
 # ToDo
