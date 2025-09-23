@@ -1,0 +1,6 @@
+RomaniaPowerPlant.mesh
+1, 1, 1
+beginmesh
+mesh RomaniaPowerPlantCollision.mesh
+endmesh
+end

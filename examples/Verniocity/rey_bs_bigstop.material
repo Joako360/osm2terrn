@@ -1,0 +1,44 @@
+import * from "managed_mats.material"
+
+material rey_bs_bigstop_mat
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.770000 0.750000 0.750000 1.000000
+			diffuse 0.200000 0.200000 0.200000 1.000000
+		}
+	}
+}
+material rey_bs_bigstop_col
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.200000 0.200000 0.200000 1.000000
+			diffuse 0.100000 0.100000 0.100000 1.000000
+		}
+	}
+}
+material rey_bs_bigstop_platfo: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.600000 0.600000 0.600000 1.000000
+			diffuse 0.200000 0.200000 0.200000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_bs_bigstop_plat.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}

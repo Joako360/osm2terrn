@@ -1,0 +1,180 @@
+material bmpizzasigncoll_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzasigncoll_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmpizzasigncoll_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmpizzasigncoll_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmpizzasigncoll_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmpizzasigncoll_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmpizzasigncoll_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmpizzasigncoll_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmpizzasigncoll_Color_D06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.6 0.0 1.0
+         ambient 0.8 0.6 0.0 1.0
+      }
+   }
+}
+material bmpizzasigncoll_0022_Maroon
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.501960784313725 0.0 0.0 1.0
+         ambient 0.501960784313725 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzasigncoll_Material12
+{
+   technique
+   {
+      pass
+      {
+         300.0, 268.085106382979
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture legopizza.dds
+         }
+      }
+   }
+}
+material bmpizzasigncoll_[Metal_Rough]1
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmpizzasigncoll_Material11
+{
+   technique
+   {
+      pass
+      {
+         155.0, 40.6875
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture pizzapl.dds
+         }
+      }
+   }
+}
+material bmpizzasigncoll_Color_L03
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 0.396078431372549 0.698039215686274 0.0
+         ambient 1.0 0.396078431372549 0.698039215686274 0.0
+      }
+   }
+}
+material bmpizzasigncoll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

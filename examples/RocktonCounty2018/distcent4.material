@@ -1,0 +1,145 @@
+material yellowhazzard-a1
+{
+   technique
+   {
+      pass
+      {
+         78.740157480315, 14.3163922691482
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture yellowhazzard.dds
+         }
+      }
+   }
+}
+material yellow-a1
+{
+   technique
+   {
+      pass
+      {
+         14.1732283464567, 14.1732283464567
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture yellow.dds
+         }
+      }
+   }
+}
+material baydoor-a1
+{
+   technique
+   {
+      pass
+      {
+         104.330708661417, 121.719160104987
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture baydoor.dds
+         }
+      }
+   }
+}
+material Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material Cladding_Stucco_White
+{
+   technique
+   {
+      pass
+      {
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material security-a1
+{
+   technique
+   {
+      pass
+      {
+         12.0393408073062, 14.1732283464567
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture security.dds
+         }
+      }
+   }
+}
+material Roofing_Shingles_GAF_Estates
+{
+   technique
+   {
+      pass
+      {
+         22.0, 16.375
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_GAF_Estates.jpg
+         }
+      }
+   }
+}
+material SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+      }
+   }
+}

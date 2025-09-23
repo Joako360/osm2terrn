@@ -1,0 +1,8 @@
+rey_bs_depot.mesh
+1, 1, 1
+
+beginmesh
+mesh rey_bs_depot.mesh
+endmesh
+
+end

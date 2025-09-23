@@ -1,0 +1,117 @@
+material oppaincoll_Color_001
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+         ambient 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+      }
+   }
+}
+material oppaincoll_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material oppaincoll_Color_A11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.0 0.0 1.0
+         ambient 0.6 0.0 0.0 1.0
+      }
+   }
+}
+material oppaincoll_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material oppaincoll_Translucent_Glass_Safety
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         6.0, 6.0
+         diffuse 1 1 1 0.93
+         texture_unit
+         {
+            texture Translucent_Glass_Saftey.jpg
+         }
+      }
+   }
+}
+material oppaincoll_Concrete_Block_8x8_Gray
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Block_8x8_Gray.jpg
+         }
+      }
+   }
+}
+material oppaincoll_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material oppaincoll_0126_Violet
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+         ambient 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+      }
+   }
+}
+material oppaincoll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.890196078431373 0.882352941176471 0.870588235294118
+         ambient 0.890196078431373 0.882352941176471 0.870588235294118
+      }
+   }
+}

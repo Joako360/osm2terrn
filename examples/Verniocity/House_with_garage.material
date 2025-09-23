@@ -1,0 +1,260 @@
+import * from "managed_mats.material"
+
+material black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material <Beige>1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material <LightGray>
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material 0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material 96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material <Charcoal>
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material Color_I23
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0784313725490196 0.0784313725490196 0.2 1.0
+      }
+   }
+}
+material Roofing_Shingles_Asphalt: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Roofing_Shingles_Asphalt.jpg
+         }
+      }
+   }
+}
+material Roofing_Shingles_GAF_Estates: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         22.0, 16.375
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Roofing_Shingles_GAF_Estates.jpg
+         }
+      }
+   }
+}
+material Garage_door1: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         70.8661417322835, 70.8661417322835
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture 9100.jpg
+         }
+      }
+   }
+}
+material Sketchy_Siding_Straight: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         28.91707333333, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Sketchy_Siding_Straight.jpg
+         }
+      }
+   }
+}
+material Color_001
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+      }
+   }
+}
+material Color_000
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material Material1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.917647058823529 0.894117647058824 1.0
+      }
+   }
+}
+material Cladding_Siding_White: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material Metal_Aluminum_Anodized: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material Color_008
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+      }
+   }
+}
+material Wood_OSB: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         12.0, 9.890625
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Wood_OSB.jpg
+         }
+      }
+   }
+}
+material Invisble1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+      }
+   }
+}

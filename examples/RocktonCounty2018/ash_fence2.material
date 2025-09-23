@@ -1,0 +1,22 @@
+material Material#0.001/SOLID/TEX/ash_fences2.dds
+{
+	transparency_casts_shadows on
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.3 0.3 0.3 1
+			diffuse 0.4 0.4 0.4 1
+			specular 0.0 0.0 0.0 1 10
+			emissive 0.40 0.40 0.40 1
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture ash_fences2.dds
+			}
+		}
+	}
+}

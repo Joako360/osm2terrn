@@ -1,0 +1,6 @@
+bmoffice3.mesh
+1, 1, 1
+beginmesh
+mesh bmoffice3coll.mesh
+endmesh
+end

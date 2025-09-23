@@ -1,0 +1,97 @@
+material bmgrainsilo_Material3
+{
+   technique
+   {
+      pass
+      {
+         45.0, 45.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 67352_787520961307524_394608331378481947_n.jpg
+         }
+      }
+   }
+}
+material bmgrainsilo_Material1
+{
+   technique
+   {
+      pass
+      {
+         45.0, 45.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10414908_787521181307502_7268420964378931633_n.jpg
+         }
+      }
+   }
+}
+material bmgrainsilo_Metal_Steel_Textured
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Steel_Textured.jpg
+         }
+      }
+   }
+}
+material bmgrainsilo_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmgrainsilo_Color_008
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+         ambient 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+      }
+   }
+}
+material bmgrainsilo_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material bmgrainsilo__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

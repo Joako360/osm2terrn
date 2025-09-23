@@ -1,0 +1,229 @@
+material ohareyard_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material ohareyard_DarkGoldenrod
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+         ambient 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+      }
+   }
+}
+material ohareyard_Gray6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material ohareyard_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material ohareyard_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+         ambient 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+      }
+   }
+}
+material ohareyard_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material ohareyard_Redwood
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+         ambient 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+      }
+   }
+}
+material ohareyard_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material ohareyard_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material ohareyard_BuildingsHighRise0100_4_S
+{
+   technique
+   {
+      pass
+      {
+         296.165448109447, 300.866486968327
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture BuildingsHighRise0100_4_S.jpg
+         }
+      }
+   }
+}
+material ohareyard_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material ohareyard_parking
+{
+   technique
+   {
+      pass
+      {
+         2250.47201073309, 3416.68299668722
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture parking.jpg
+         }
+      }
+   }
+}
+material ohareyard_Brick_Rough_Dark
+{
+   technique
+   {
+      pass
+      {
+         36.0, 22.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Rough_Dark.jpg
+         }
+      }
+   }
+}
+material ohareyard_Concrete_Block_8x8_Gray
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Block_8x8_Gray.jpg
+         }
+      }
+   }
+}
+material ohareyard_Metal_Panel
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Panel.jpg
+         }
+      }
+   }
+}
+material ohareyard_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material ohareyard_sign
+{
+   technique
+   {
+      pass
+      {
+         350.838519479018, 167.729648353667
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture sign.jpg
+         }
+      }
+   }
+}
+material ohareyard__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

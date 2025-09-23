@@ -1,0 +1,7 @@
+ash_ailanthus2.mesh
+1, 1, 1
+
+beginlodmesh
+100, ash_ailanthus2_lod1.mesh
+150, ash_ailanthus2_lod2.mesh
+end

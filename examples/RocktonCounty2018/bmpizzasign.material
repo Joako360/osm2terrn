@@ -1,0 +1,166 @@
+material bmpizzasign_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzasign_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmpizzasign_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmpizzasign_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmpizzasign_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmpizzasign_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmpizzasign_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmpizzasign_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmpizzasign_Color_D06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.6 0.0 1.0
+         ambient 0.8 0.6 0.0 1.0
+      }
+   }
+}
+material bmpizzasign_0022_Maroon
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.501960784313725 0.0 0.0 1.0
+         ambient 0.501960784313725 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzasign_Material12
+{
+   technique
+   {
+      pass
+      {
+         300.0, 268.085106382979
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture legopizza.dds
+         }
+      }
+   }
+}
+material bmpizzasign_[Metal_Rough]1
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmpizzasign_Material11
+{
+   technique
+   {
+      pass
+      {
+         155.0, 40.6875
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture pizzapl.dds
+         }
+      }
+   }
+}
+material bmpizzasign__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

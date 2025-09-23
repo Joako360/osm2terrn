@@ -1,0 +1,237 @@
+material a474UID_invisible
+{
+   technique
+   {
+      pass
+      {
+         ambient 0.0 0.0 0.0 0.0
+         diffuse 0.0 0.0 0.0 0.0
+         scene_blend alpha_blend  
+                        depth_write off
+      }
+
+   }
+
+}
+
+
+material invisible
+{
+   technique
+   {
+      pass
+      {
+         ambient 0.0 0.0 0.0 0.0
+         diffuse 0.0 0.0 0.0 0.0
+         scene_blend alpha_blend  
+                        depth_write off
+      }
+
+   }
+
+}
+
+
+material a474UID_top
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.400000 0.400000 0.400000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture cobble1.dds
+			}
+		}
+
+	}
+
+}
+
+
+material a474UID_rails
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.400000 0.400000 0.400000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture railtex.dds
+			}
+		}
+
+	}
+
+}
+
+
+material a474UID_crossing
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.400000 0.400000 0.400000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture a474UID_crossing.dds
+			}
+		}
+
+	}
+
+}
+
+
+material a474UID_switch
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.400000 0.400000 0.400000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture rail1tPnt190r634d.dds
+			}
+		}
+
+	}
+
+}
+
+
+material a474UID_buffer
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.400000 0.400000 0.400000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture rail1tgerbuff.dds
+			}
+		}
+
+	}
+
+}
+
+material RCa474UID_huette
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.400000 0.400000 0.400000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture RCa474UID_huette.dds
+			}
+		}
+
+	}
+
+}
+material RCa474UID_fenster
+{
+	technique
+	{
+		pass
+		{
+      			scene_blend alpha_blend
+			alpha_rejection greater 0
+			depth_write off
+         		texture_unit
+			{
+				texture RCa474UID_fenster.dds
+			}
+		}
+
+	}
+
+}
+
+material RCa474UID_trainspawner
+{
+  technique
+  {
+    pass
+    {
+      	scene_blend alpha_blend
+	alpha_rejection greater 0
+	depth_write off
+     	texture_unit
+      {
+        anim_texture RCa474UID_ts2.png RCa474UID_ts3.png RCa474UID_ts4.png 0.4
+      }
+    }
+  }
+}
+
+material Material.001
+{
+   technique
+   {
+      pass
+      {
+         ambient 0.0 0.0 0.0 0.0
+         diffuse 0.0 0.0 0.0 0.0
+         scene_blend alpha_blend  
+                        depth_write off
+      }
+
+   }
+
+}
+
+material NoMaterial
+{
+   technique
+   {
+      pass
+      {
+         ambient 0.0 0.0 0.0 0.0
+         diffuse 0.0 0.0 0.0 0.0
+         scene_blend alpha_blend  
+                        depth_write off
+      }
+
+   }
+
+}
+
+material catenary
+{
+	technique
+	{
+		pass
+		{
+      			scene_blend alpha_blend
+			alpha_rejection greater 0
+			depth_write offf
+         		texture_unit
+			{
+				texture catenary.dds
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,17 @@
+Heightmap.0.0.raw.size=2049
+Heightmap.0.0.raw.bpp=2
+Heightmap.0.0.flipX=0
+
+WorldSizeX=1024
+WorldSizeZ=1024
+WorldSizeY=64
+PageSize=2049
+ 
+disableCaching=0
+ 
+PageFileFormat=Verniocity_fps-page-0-0.otc
+
+MaxPixelError=8
+LightmapEnabled=0
+SpecularMappingEnabled=1
+NormalMappingEnabled=0

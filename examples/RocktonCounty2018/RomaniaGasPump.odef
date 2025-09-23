@@ -1,0 +1,6 @@
+RomaniaGasPump.mesh
+1, 1, 1
+beginmesh
+mesh RomaniaGasPumpCollision.mesh
+endmesh
+end

@@ -1,0 +1,6 @@
+bmhome6wgaragevar1.mesh
+1, 1, 1
+beginmesh
+mesh bmhome6wgaragecoll.mesh
+endmesh
+end

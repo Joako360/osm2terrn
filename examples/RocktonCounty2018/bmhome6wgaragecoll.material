@@ -1,0 +1,321 @@
+material bmhome6wgaragecoll_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_Color_F25
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.176470588235294 0.2 0.156862745098039 1.0
+         ambient 0.176470588235294 0.2 0.156862745098039 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+      }
+   }
+}
+material bmhome6wgaragecoll_0022_Maroon
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.501960784313725 0.0 0.0 1.0
+         ambient 0.501960784313725 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_0021_DarkRed
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.545098039215686 0.0 0.0 1.0
+         ambient 0.545098039215686 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome6wgaragecoll_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Roofing_Shingles_Multi
+{
+   technique
+   {
+      pass
+      {
+         108.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_Multi.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Material1
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1377601_586940444698911_262222097_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Material2
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10414908_787521181307502_7268420964378931633_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Material3
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1011611_562206133839009_1175229661_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_[Concrete_Aggregate_Smoke]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Material4
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1185070_562204557172500_492168453_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Material5
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1004538_562206170505672_611876040_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragecoll_Color_L03
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 0.396078431372549 0.698039215686274 0.0
+         ambient 1.0 0.396078431372549 0.698039215686274 0.0
+      }
+   }
+}
+material bmhome6wgaragecoll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

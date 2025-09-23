@@ -1,0 +1,8 @@
+distcent4.mesh
+1.0, 1.0, 1.0
+
+beginmesh
+mesh distcent4LOW.mesh
+endmesh
+
+end

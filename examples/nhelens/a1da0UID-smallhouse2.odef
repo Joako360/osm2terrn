@@ -1,0 +1,8 @@
+a1da0UID-smallhouse2.mesh
+1.5, 1.5, 1.5
+
+beginbox
+boxcoords -1.87, 1.7, 0.0, 2.38, -1.23, 1.24
+endbox
+
+end

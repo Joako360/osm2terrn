@@ -1,0 +1,19 @@
+import * from "managed_mats.material"
+
+material a1da0UID-tracks/smallhouse: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+//			ambient 0.500000 0.500000 0.500000 1.000000
+//			diffuse 0.627451 0.627451 0.627451 1.000000
+//			specular 0.000000 0.000000 0.000000 1.000000 12.500000
+//			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture a1da0UID-smallhouse.dds
+			}
+		}
+	}
+}

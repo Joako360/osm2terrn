@@ -1,0 +1,11 @@
+ash_mobilehome4.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_mobilehome4.mesh
+endmesh
+
+beginlodmesh
+100, ash_mobilehome4_lod1.mesh
+
+end

@@ -1,0 +1,19 @@
+# The pagefile format
+PageFileFormat=SmallIsland-page-0-0.otc
+ 
+# The heightmap options
+Heightmap.0.0.raw.size=1025
+Heightmap.0.0.raw.bpp=2
+Heightmap.0.0.flipX=1
+
+WorldSizeX=1000
+WorldSizeZ=1000
+WorldSizeY=300
+ 
+# disableCaching=1 will always enforce regeneration of the terrain, useful if you want to change the terrain config (.otc) and test it. Does not cache the objects on it.
+disableCaching=1
+
+LightmapEnabled=1
+SpecularMappingEnabled=1
+NormalMappingEnabled=1
+#CustomMaterialName=route-alpha

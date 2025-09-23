@@ -1,0 +1,9 @@
+ash_bigtree2.mesh
+1, 1, 1
+
+;beginbox   x,   x1,   y,   y1,   z,   z1
+
+boxcoords -0.80, 0.10, 0.10, 3.00, -0.25, 0.80
+endbox
+
+end

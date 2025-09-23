@@ -1,0 +1,11 @@
+ash_rock5.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_rock5.mesh
+endmesh
+
+beginlodmesh
+100, ash_rock5_lod1.mesh
+150, ash_rock5_lod2.mesh
+end

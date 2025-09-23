@@ -1,0 +1,43 @@
+material Material#0.003/SOLID/TEX/ash_sign_left.dds
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+						
+			
+			
+			texture_unit
+			{
+				texture ash_sign_left.dds
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material Material#0.004/SOLID/TEX/ash_sign_left.dds // lod //
+{
+	transparency_casts_shadows on
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.3 0.3 0.3 1
+			diffuse 0.4 0.4 0.4 1
+			specular 0.0 0.0 0.0 1 10
+			emissive 0.40 0.40 0.40 1
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture ash_sign_left.dds
+			}
+		}
+	}
+}

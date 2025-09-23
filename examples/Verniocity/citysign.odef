@@ -1,0 +1,6 @@
+citysign.mesh
+1,1,1
+beginmesh
+mesh citysign.mesh
+endmesh
+end

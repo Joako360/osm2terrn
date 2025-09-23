@@ -1,0 +1,463 @@
+material bmhome3coll_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome3coll_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmhome3coll_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmhome3coll_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmhome3coll_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmhome3coll_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmhome3coll_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmhome3coll_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmhome3coll_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+      }
+   }
+}
+material bmhome3coll_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material bmhome3coll_Roofing_Slate_Rounded
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Slate_Rounded.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Roofing_Shingles_Variable
+{
+   technique
+   {
+      pass
+      {
+         24.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_Variable.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_windowslats
+{
+   technique
+   {
+      pass
+      {
+         40.0, 40.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Blinds_Cellular_White.jpg
+         }
+      }
+   }
+}
+material bmhome3coll__Blinds_Cellular_White_
+{
+   technique
+   {
+      pass
+      {
+         27.9840839028025, 68.2494571793048
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture _Blinds_Cellular_White_.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Color_F25
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.176470588235294 0.2 0.156862745098039 1.0
+         ambient 0.176470588235294 0.2 0.156862745098039 1.0
+      }
+   }
+}
+material bmhome3coll_Stone_Pavers_Flagstone_Gray
+{
+   technique
+   {
+      pass
+      {
+         72.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Pavers_Flagstone_Gray.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Color_D09
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.717647058823529 0.47843137254902 1.0
+         ambient 0.8 0.717647058823529 0.47843137254902 1.0
+      }
+   }
+}
+material bmhome3coll_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Wood__Floor
+{
+   technique
+   {
+      pass
+      {
+         60.0, 60.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Floor.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Concrete_Form_4x8
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Material1
+{
+   technique
+   {
+      pass
+      {
+         52.0, 114.955056179775
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture door8.dds
+         }
+      }
+   }
+}
+material bmhome3coll_Material2
+{
+   technique
+   {
+      pass
+      {
+         51.7657442748092, 114.9375
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture door9.dds
+         }
+      }
+   }
+}
+material bmhome3coll_Wood_Plywood_Knots
+{
+   technique
+   {
+      pass
+      {
+         66.0, 66.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Plywood_Knots.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Wood_Floor_Parquet
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Floor_Parquet.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_0036_BurlyWood
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.870588235294118 0.72156862745098 0.529411764705882 1.0
+         ambient 0.870588235294118 0.72156862745098 0.529411764705882 1.0
+      }
+   }
+}
+material bmhome3coll_0043_SaddleBrown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.262745098039216 0.129411764705882 0.0352941176470588 1.0
+         ambient 0.262745098039216 0.129411764705882 0.0352941176470588 1.0
+      }
+   }
+}
+material bmhome3coll_[Concrete_Aggregate_Smoke]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Vegetation_Grass1
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Vegetation_Grass1.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Wood_Bamboo_Medium
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Bamboo_Medium.jpg
+         }
+      }
+   }
+}
+material bmhome3coll_Redwood
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+         ambient 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+      }
+   }
+}
+material bmhome3coll_Color_L03
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 0.396078431372549 0.698039215686274 0.0
+         ambient 1.0 0.396078431372549 0.698039215686274 0.0
+      }
+   }
+}
+material bmhome3coll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

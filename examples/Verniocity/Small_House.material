@@ -1,0 +1,309 @@
+import * from "managed_mats.material"
+
+material Small_House_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material Small_House_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material Small_House_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material Small_House_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material Small_House_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material Small_House_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material Small_House_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material Small_House_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material Small_House_Wood_OSB
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.941176470588235 0.764705882352941 0.47843137254902 1.0
+         ambient 0.941176470588235 0.764705882352941 0.47843137254902 1.0
+      }
+   }
+}
+material Small_House_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material Small_House_Brick_Tumbled: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material Small_House_Metal_Corrogated_Shiny: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         39.3700787401575, 39.3700787401575
+         diffuse 1 1 1 0.4
+         texture_unit Diffuse_Map
+         {
+            texture Metal_Corrogated_Shiny.jpg
+         }
+      }
+   }
+}
+material Small_House_Oak2: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         25.3161262621005, 52.7094731405784
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Oak2.jpg
+         }
+      }
+   }
+}
+material Small_House_Color_008
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+         ambient 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+      }
+   }
+}
+material Small_House_[Brick_Tumbled]1: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{ss
+      {
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material Small_House_Translucent_Glass_Blue
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.392156862745098 0.584313725490196 0.929411764705882 0.5
+         ambient 0.392156862745098 0.584313725490196 0.929411764705882 0.5
+      }
+   }
+}
+material Small_House_Bright_Brass: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         12.0, 4.66666666666667
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture DoorHardware_Whitmore.jpg
+         }
+      }
+   }
+}
+material Small_House_Roofing_Tile_Spanish: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         70.0, 45.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Roofing_Tile_Spanish.jpg
+         }
+      }
+   }
+}
+material Small_House_Color_003
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+         ambient 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+      }
+   }
+}
+material Small_House_Roofing_Slate_Tan: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         32.0, 32.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Roofing_Slate_Tan.jpg
+         }
+      }
+   }
+}
+material Small_House_Asphalt_Stamped_Brick: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         8.0, 16.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Asphalt_Stamped_Brick.jpg
+         }
+      }
+   }
+}
+material Small_House_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material Small_House_Color_006
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+         ambient 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+      }
+   }
+}
+material Small_House_Asphalt_New: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}

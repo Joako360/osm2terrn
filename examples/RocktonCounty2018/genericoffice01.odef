@@ -1,0 +1,8 @@
+genericoffice01.mesh
+1, 1, 1
+
+beginmesh
+mesh genericoffice01.mesh
+endmesh
+
+end

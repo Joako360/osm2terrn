@@ -1,0 +1,30 @@
+material Material/TEXFACE/MetalBare0100_1_S.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture MetalBare0100_1_S.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE/BuildingsIndustrial0014_S.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture BuildingsIndustrial0014_S.jpg
+				colour_op modulate
+			}
+		}
+	}
+}

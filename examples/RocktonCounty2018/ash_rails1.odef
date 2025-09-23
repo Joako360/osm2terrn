@@ -1,0 +1,13 @@
+ash_rails1.mesh
+1, 1, 1
+
+beginmesh
+
+mesh ash_rails1C.mesh
+
+endmesh
+
+beginlodmesh
+100, ash_rails1_lod1.mesh
+
+end

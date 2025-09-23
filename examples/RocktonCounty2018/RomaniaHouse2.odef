@@ -1,0 +1,6 @@
+RomaniaHouse2.mesh
+1, 1, 1
+beginmesh
+mesh RomaniaHouse2Collision.mesh
+endmesh
+end

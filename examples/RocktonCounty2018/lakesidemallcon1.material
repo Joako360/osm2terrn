@@ -1,0 +1,1279 @@
+material lakesidemallcon1_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material lakesidemallcon1_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material lakesidemallcon1_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material lakesidemallcon1_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material lakesidemallcon1_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material lakesidemallcon1_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material lakesidemallcon1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material lakesidemallcon1_Material2
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asbmsb.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material1
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asphaltparklotturn.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material3
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asphaltparklot.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Color_D01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.749019607843137 0.0 1.0
+         ambient 1.0 0.749019607843137 0.0 1.0
+      }
+   }
+}
+material lakesidemallcon1_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material lakesidemallcon1_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Color_007
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+         ambient 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+      }
+   }
+}
+material lakesidemallcon1_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material4
+{
+   technique
+   {
+      pass
+      {
+         200.0, 149.666666666667
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture metal-garage-door-texture-ns0hprlmj.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_[Metal_Aluminum_Anodized]1
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_[Metal_Rough]1
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material5
+{
+   technique
+   {
+      pass
+      {
+         70.0, 12.075
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture lru.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material6
+{
+   technique
+   {
+      pass
+      {
+         70.0, 11.4625
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture nostalgiatex.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material7
+{
+   technique
+   {
+      pass
+      {
+         70.0, 17.85
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture mc.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material8
+{
+   technique
+   {
+      pass
+      {
+         40.0, 40.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 2000px-LEGO_logo.svg.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material9
+{
+   technique
+   {
+      pass
+      {
+         50.0, 13.125
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture pizzapl.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material10
+{
+   technique
+   {
+      pass
+      {
+         50.0, 21.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture dillslfm.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material11
+{
+   technique
+   {
+      pass
+      {
+         50.0, 15.5625
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture lft.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material12
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asphaltparklot.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material13
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asphaltparklotturn.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material14
+{
+   technique
+   {
+      pass
+      {
+         120.0, 75.7590361445783
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bbmsbm.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material15
+{
+   technique
+   {
+      pass
+      {
+         120.0, 90.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 999761_572552966137659_931067422_n.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material16
+{
+   technique
+   {
+      pass
+      {
+         64.59375, 90.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1743637_640816979311257_1964790384_n.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Vegetation_Grass1
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Vegetation_Grass1.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material17
+{
+   technique
+   {
+      pass
+      {
+         50.0, 19.5812807881773
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmlsmt.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material18
+{
+   technique
+   {
+      pass
+      {
+         200.0, 99.3333333333333
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture legostoremall.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material19
+{
+   technique
+   {
+      pass
+      {
+         300.0, 100.20618556701
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 31815.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material20
+{
+   technique
+   {
+      pass
+      {
+         500.0, 122.209821428571
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 5386248954cc6.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material21
+{
+   technique
+   {
+      pass
+      {
+         250.0, 155.833333333333
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture tbreg43.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material22
+{
+   technique
+   {
+      pass
+      {
+         70.0, 33.1578947368421
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmnblsm.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material23
+{
+   technique
+   {
+      pass
+      {
+         70.0, 11.5317919075145
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture jthbmlsm.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Metal_Panel
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Panel.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_[Metal_Aluminum_Anodized]2
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material24
+{
+   technique
+   {
+      pass
+      {
+         18.0, 13.5
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture BBmenu.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material25
+{
+   technique
+   {
+      pass
+      {
+         18.0, 9.72972972972973
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmglsms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material26
+{
+   technique
+   {
+      pass
+      {
+         40.0, 11.0967741935484
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture ffbmlsms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material27
+{
+   technique
+   {
+      pass
+      {
+         40.0, 15.4352941176471
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture tmlsmbms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material28
+{
+   technique
+   {
+      pass
+      {
+         40.0, 9.7
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmbvlsms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material29
+{
+   technique
+   {
+      pass
+      {
+         40.0, 13.1354359925789
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmcblsmb.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material30
+{
+   technique
+   {
+      pass
+      {
+         40.0, 11.95
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rorinlsmbms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Color_005
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.447058823529412 0.447058823529412 0.447058823529412 1.0
+         ambient 0.447058823529412 0.447058823529412 0.447058823529412 1.0
+      }
+   }
+}
+material lakesidemallcon1_Material31
+{
+   technique
+   {
+      pass
+      {
+         50.0, 17.0238095238095
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmlsms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material32
+{
+   technique
+   {
+      pass
+      {
+         50.0, 16.8367346938775
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmalsms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Color_G16
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.4 0.0 1.0
+         ambient 0.0 0.4 0.0 1.0
+      }
+   }
+}
+material lakesidemallcon1_Color_D14
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.537254901960784 0.356862745098039 1.0
+         ambient 0.6 0.537254901960784 0.356862745098039 1.0
+      }
+   }
+}
+material lakesidemallcon1_WarmGray8
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.380392156862745 0.333333333333333 0.298039215686275 1.0
+         ambient 0.380392156862745 0.333333333333333 0.298039215686275 1.0
+      }
+   }
+}
+material lakesidemallcon1_0119_RosyBrown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.196078431372549 0.0980392156862745 1.0
+         ambient 0.337254901960784 0.196078431372549 0.0980392156862745 1.0
+      }
+   }
+}
+material lakesidemallcon1_Color_006
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+         ambient 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+      }
+   }
+}
+material lakesidemallcon1_Stone_Marble
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Marble.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material33
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1378135_584851211574501_386670718_n.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material34
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1392056_593075660752056_565520264_n.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material35
+{
+   technique
+   {
+      pass
+      {
+         240.0, 88.9530685920577
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture tbh4e.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material36
+{
+   technique
+   {
+      pass
+      {
+         240.0, 111.340206185567
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10650.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material37
+{
+   technique
+   {
+      pass
+      {
+         50.0, 24.2307692307692
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmarlsms.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Wood_Cherry_Original
+{
+   technique
+   {
+      pass
+      {
+         72.0, 72.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Cherry_Original.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material38
+{
+   technique
+   {
+      pass
+      {
+         20.0, 20.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 993665_562205433839079_895736661_n.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material39
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1146524_562205210505768_1116921238_n.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material40
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1004538_562206170505672_611876040_n.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material41
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asbmsb.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material42
+{
+   technique
+   {
+      pass
+      {
+         40.0, 40.0851063829787
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture lsmf.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material43
+{
+   technique
+   {
+      pass
+      {
+         50.0, 50.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture lsmfmo.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Wood_Floor_Parquet
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Floor_Parquet.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Wood_Floor_Dark
+{
+   technique
+   {
+      pass
+      {
+         120.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Floor_Dark.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Wood__Floor
+{
+   technique
+   {
+      pass
+      {
+         60.0, 60.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Floor.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material44
+{
+   technique
+   {
+      pass
+      {
+         50.0, 15.5625
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture lft.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_0072_DarkSeaGreen
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.56078431372549 0.737254901960784 0.56078431372549 1.0
+         ambient 0.56078431372549 0.737254901960784 0.56078431372549 1.0
+      }
+   }
+}
+material lakesidemallcon1_Dark_Olive
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.384313725490196 0.392156862745098 0.266666666666667 1.0
+         ambient 0.384313725490196 0.392156862745098 0.266666666666667 1.0
+      }
+   }
+}
+material lakesidemallcon1_0059_DarkOliveGreen
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.333333333333333 0.419607843137255 0.184313725490196 1.0
+         ambient 0.333333333333333 0.419607843137255 0.184313725490196 1.0
+      }
+   }
+}
+material lakesidemallcon1_Material45
+{
+   technique
+   {
+      pass
+      {
+         600.0, 92.4162257495591
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture lsmlogo.dds
+         }
+      }
+   }
+}
+material lakesidemallcon1_Color_A12
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.117647058823529 0.117647058823529 1.0
+         ambient 0.6 0.117647058823529 0.117647058823529 1.0
+      }
+   }
+}
+material lakesidemallcon1_Color_A17
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.4 0.0784313725490196 0.0784313725490196 1.0
+         ambient 0.4 0.0784313725490196 0.0784313725490196 1.0
+      }
+   }
+}
+material lakesidemallcon1_Color_C01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.498039215686275 0.0 1.0
+         ambient 1.0 0.498039215686275 0.0 1.0
+      }
+   }
+}
+material lakesidemallcon1_Material46
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         12.0, 12.0
+         diffuse 1 1 1 0.5
+         texture_unit
+         {
+            texture 108789_dirt_texture_13.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Material47
+{
+   technique
+   {
+      pass
+      {
+         50.0, 50.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 108789_dirt_texture_13.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Concrete_Form_4x8
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_[Concrete_Aggregate_Smoke]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Cladding_Stucco_White
+{
+   technique
+   {
+      pass
+      {
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_[Concrete_Aggregate_Smoke]2
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_Concrete_Scored_Jointless
+{
+   technique
+   {
+      pass
+      {
+         26.0, 26.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Scored_Jointless.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_[Cladding_Stucco_White]1
+{
+   technique
+   {
+      pass
+      {
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1_[Metal_Rough]2
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material lakesidemallcon1__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

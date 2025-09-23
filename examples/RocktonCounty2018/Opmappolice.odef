@@ -1,0 +1,6 @@
+Opmappolice.mesh
+1, 1, 1
+beginmesh
+mesh opmappolicecoll.mesh
+endmesh
+end

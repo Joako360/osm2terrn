@@ -1,0 +1,14 @@
+ash_bigtree1.mesh
+1, 1, 1
+
+
+beginlodmesh
+100, ash_bigtree1_lod1.mesh
+150, ash_bigtree1_lod2.mesh
+200, ash_bigtree1_lod3.mesh
+
+beginmesh
+mesh ash_bigtree1C.mesh
+endmesh
+
+end

@@ -1,0 +1,22 @@
+[General]
+Name = Verniocity FPS
+GeometryConfig = Verniocity_fps.otc
+Water=1
+WaterLine=19.2
+AmbientColor = 1, 1, 1
+StartPosition = 509.0 19.7516670227 704.5
+#CaelumConfigFile = verniocity.os
+SandStormCubeMap = tracks/skyboxcol
+Gravity = -9.81
+#TractionMap = Verniocity-landuse.cfg
+CategoryID = 129
+Version = 2
+GUID = 10282f4b-038b-4700-827b-e39d5ea0f5c8
+ 
+[Authors]
+terrain = scania970
+converting = Klink
+
+ 
+[Objects]
+Verniocity_fps.tobj=

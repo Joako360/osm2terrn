@@ -1,0 +1,278 @@
+material ash_bigtree_bark1.001/SOLID/TEX/ash_bigtree_bark1.dds
+{   
+   technique
+   {
+   
+      pass Ambient
+      {
+		vertex_program_ref ETAmbient_VS
+        {
+        }        
+      }	
+           
+      pass Lighting
+      {
+         scene_blend add
+         iteration once_per_light
+         
+         		 
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+	   param_named splatScaleX float 1
+           param_named splatScaleZ float 1
+         }
+         
+		 texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture test1_RGB0.dds
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+         
+        texture_unit
+         {
+         	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture ash_bigtree_bark1_NRM.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+	 texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         } 
+         
+      }
+     
+         // primary splatting technique, requires PS 2.0
+	pass Splatting
+    {
+         scene_blend modulate
+                    
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+         }          
+         
+         vertex_program_ref ET/Programs/VSLodMorph2
+         {
+         }
+
+         fragment_program_ref ET/Programs/PSSplat2
+         {
+           param_named splatScaleX float 1
+           param_named splatScaleZ float 1
+         }
+
+         texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture test1_RGB0.dds
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+
+         // splatting textures
+         texture_unit
+         {
+            	texture none.dds
+         }
+         texture_unit
+         {
+		texture none.dds
+         }
+         texture_unit
+         {
+           	texture ash_bigtree_bark1.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+	 texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+      }    
+      
+      pass
+	  {
+			// colour map
+			scene_blend modulate	
+		     
+		    vertex_program_ref ET/Programs/VSLodMorph3
+			{
+			} 					
+			
+			texture_unit 
+			{			
+				texture ash_bigtree_bark1_light.dds
+			}					
+			      
+		}   
+		        
+      
+   }
+} 
+material ash_bigtree_leaf1.001/SOLID/TEX/ash_bigtree_leaf1.dds
+{
+	transparency_casts_shadows on
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.25 0.25 0.25 1
+			diffuse 1.2 0.5 0.5 1
+			specular 0.05 0.05 0.05 1 10
+			emissive 0.35 0.35 0.35 1
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture ash_bigtree_leaf1.dds
+				tex_address_mode wrap
+
+				colour_op modulate
+
+				wave_xform scroll_x sine 1.0 0.2 1.0 0.02
+			}
+
+		}
+
+	}
+
+}
+material ash_bigtree_bark1.007/SOLID/TEX/ash_bigtree_bark1.dds
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.000000 1.000000 1.000000
+			specular 0.000000 0.000000 0.000000 12.500000
+			texture_unit
+			{
+				texture ash_bigtree_bark1.dds
+			}
+		}
+	}
+}
+material ash_bigtree_leaf1.007/ALPHA/TEX/ash_bigtree_leaf1.dds
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.25 0.25 0.25 1
+			diffuse 1.2 1.0 1.0 1
+			specular 0.05 0.05 0.05 1 10
+			emissive 0.35 0.35 0.35 1
+			alpha_rejection greater_equal 128 
+			scene_blend alpha_blend 
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture ash_bigtree_leaf1.dds
+			}
+		}
+	}
+}
+material ash_bigtree2_leaf1.001/SOLID/TEX/ash_bigtree2_leaf1.dds
+{
+	transparency_casts_shadows on
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.25 0.25 0.25 1
+			diffuse 1.2 0.5 0.5 1
+			specular 0.05 0.05 0.05 1 10
+			emissive 0.35 0.35 0.35 1
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture ash_bigtree2_leaf1.dds
+				tex_address_mode wrap
+
+				colour_op modulate
+
+				wave_xform scroll_x sine 1.0 0.2 1.0 0.02
+			}
+
+		}
+
+	}
+
+}

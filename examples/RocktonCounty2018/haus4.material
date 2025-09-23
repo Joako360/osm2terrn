@@ -1,0 +1,16 @@
+material SOLID/TEX/haus4.png
+{
+	technique
+	{
+		pass
+		{
+
+			texture_unit
+			{
+				texture haus4.dds
+			}
+		}
+
+	}
+
+}

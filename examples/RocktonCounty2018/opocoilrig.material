@@ -1,0 +1,929 @@
+material opocoilrig_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material opocoilrig_DarkGoldenrod
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.00784313725490196 0.0117647058823529 0.0784313725490196 1.0
+         ambient 0.00784313725490196 0.0117647058823529 0.0784313725490196 1.0
+      }
+   }
+}
+material opocoilrig_Gray6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material opocoilrig_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.647058823529412 0.549019607843137 0.396078431372549 1.0
+         ambient 0.647058823529412 0.549019607843137 0.396078431372549 1.0
+      }
+   }
+}
+material opocoilrig_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.0705882352941176 0.0274509803921569 1.0
+         ambient 0.117647058823529 0.0705882352941176 0.0274509803921569 1.0
+      }
+   }
+}
+material opocoilrig_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material opocoilrig_Redwood
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.407843137254902 0.258823529411765 0.23921568627451 1.0
+         ambient 0.407843137254902 0.258823529411765 0.23921568627451 1.0
+      }
+   }
+}
+material opocoilrig_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material opocoilrig_Color_A11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.0 0.0 1.0
+         ambient 0.6 0.0 0.0 1.0
+      }
+   }
+}
+material opocoilrig_Color_B12
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.23921568627451 0.117647058823529 1.0
+         ambient 0.6 0.23921568627451 0.117647058823529 1.0
+      }
+   }
+}
+material opocoilrig_Color_F18
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.27843137254902 0.4 0.156862745098039 1.0
+         ambient 0.27843137254902 0.4 0.156862745098039 1.0
+      }
+   }
+}
+material opocoilrig_Color_I17
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0784313725490196 0.0784313725490196 0.4 1.0
+         ambient 0.0784313725490196 0.0784313725490196 0.4 1.0
+      }
+   }
+}
+material opocoilrig_Color_D08
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.67843137254902 0.317647058823529 1.0
+         ambient 0.8 0.67843137254902 0.317647058823529 1.0
+      }
+   }
+}
+material opocoilrig_Color_E06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.8 0.0 1.0
+         ambient 0.8 0.8 0.0 1.0
+      }
+   }
+}
+material opocoilrig_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Metal_Panel
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Panel.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Metal_Embossed
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Embossed.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Concrete_Block_Retaining_Gray
+{
+   technique
+   {
+      pass
+      {
+         24.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Block_Retaining_Gray.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Brick_Tumbled
+{
+   technique
+   {
+      pass
+      {
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material opocoilrig_Color_A07
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.156862745098039 0.156862745098039 1.0
+         ambient 0.8 0.156862745098039 0.156862745098039 1.0
+      }
+   }
+}
+material opocoilrig_Color_G12
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.6 0.117647058823529 1.0
+         ambient 0.117647058823529 0.6 0.117647058823529 1.0
+      }
+   }
+}
+material opocoilrig_Color_G16
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.4 0.0 1.0
+         ambient 0.0 0.4 0.0 1.0
+      }
+   }
+}
+material opocoilrig_Color_D02
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.8 0.196078431372549 1.0
+         ambient 1.0 0.8 0.196078431372549 1.0
+      }
+   }
+}
+material opocoilrig_Metal_Steel_Textured_White
+{
+   technique
+   {
+      pass
+      {
+         6.0, 6.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Steel_Textured_White.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Concrete_Form_4x8
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Rough]1
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Color_H19
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.23921568627451 0.4 0.4 1.0
+         ambient 0.23921568627451 0.4 0.4 1.0
+      }
+   }
+}
+material opocoilrig_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Roofing_Shingles_Asphalt
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_Asphalt.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Metal_Steel_Textured
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Steel_Textured.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Concrete_Scored_Jointless
+{
+   technique
+   {
+      pass
+      {
+         26.0, 26.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Scored_Jointless.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Fencing_Railing_Metal2
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Fencing_Railing_Metal2.dds
+         }
+      }
+   }
+}
+material opocoilrig_Cladding_Siding_Tan
+{
+   technique
+   {
+      pass
+      {
+         30.0, 30.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_Tan.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Color_001
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+         ambient 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+      }
+   }
+}
+material opocoilrig_Color_007
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+         ambient 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+      }
+   }
+}
+material opocoilrig_Color_003
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+         ambient 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+      }
+   }
+}
+material opocoilrig_[Cladding_Siding_Tan]1
+{
+   technique
+   {
+      pass
+      {
+         30.0, 30.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_Tan.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Cladding_Siding_White]1
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Cladding_Stucco_White
+{
+   technique
+   {
+      pass
+      {
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Concrete_Block_8x8_Gray
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Block_8x8_Gray.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Concrete_Form_4x8]1
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Concrete_Stamped_Ashlar
+{
+   technique
+   {
+      pass
+      {
+         48.0, 38.4
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Stamped_Ashlar.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Concrete_Block_Layers
+{
+   technique
+   {
+      pass
+      {
+         16.0, 10.666667
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Block_Layers.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Asphalt_Stamped_Brick
+{
+   technique
+   {
+      pass
+      {
+         8.0, 16.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_Stamped_Brick.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Concrete_Scored_Jointless]1
+{
+   technique
+   {
+      pass
+      {
+         26.0, 26.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Scored_Jointless.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Color_A02
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.196078431372549 0.196078431372549 1.0
+         ambient 1.0 0.196078431372549 0.196078431372549 1.0
+      }
+   }
+}
+material opocoilrig_Color_A01
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.976470588235294 0.0 0.0 0.7
+         ambient 0.976470588235294 0.0 0.0 0.7
+      }
+   }
+}
+material opocoilrig_Color_005
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.447058823529412 0.447058823529412 0.447058823529412 1.0
+         ambient 0.447058823529412 0.447058823529412 0.447058823529412 1.0
+      }
+   }
+}
+material opocoilrig_[Metal_Aluminum_Anodized]1
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Cladding_Siding_White]2
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Color_A01]1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.0 0.0 1.0
+         ambient 1.0 0.0 0.0 1.0
+      }
+   }
+}
+material opocoilrig_Color_C02
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.6 0.196078431372549 1.0
+         ambient 1.0 0.6 0.196078431372549 1.0
+      }
+   }
+}
+material opocoilrig_Color_E02
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 0.196078431372549 1.0
+         ambient 1.0 1.0 0.196078431372549 1.0
+      }
+   }
+}
+material opocoilrig_Metal_Corrogated_Shiny
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Corrogated_Shiny.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Embossed]1
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Embossed.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Seamed]1
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Embossed]2
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Embossed.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Corrogated_Shiny]1
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Corrogated_Shiny.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Cladding_Stucco_White]1
+{
+   technique
+   {
+      pass
+      {
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Aluminum_Anodized]2
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Aluminum_Anodized]3
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Rough]2
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Embossed]3
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Embossed.jpg
+         }
+      }
+   }
+}
+material opocoilrig_[Metal_Steel_Textured_White]1
+{
+   technique
+   {
+      pass
+      {
+         6.0, 6.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Steel_Textured_White.jpg
+         }
+      }
+   }
+}
+material opocoilrig_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material opocoilrig__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.890196078431373 0.882352941176471 0.870588235294118
+         ambient 0.890196078431373 0.882352941176471 0.870588235294118
+      }
+   }
+}

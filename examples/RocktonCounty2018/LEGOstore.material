@@ -1,0 +1,450 @@
+material LEGOstore_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material LEGOstore_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material LEGOstore_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material LEGOstore_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material LEGOstore_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material LEGOstore_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material LEGOstore_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material LEGOstore_Color_006
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+         ambient 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+      }
+   }
+}
+material LEGOstore_Color_003
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+         ambient 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+      }
+   }
+}
+material LEGOstore_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material LEGOstore_Color_D01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.749019607843137 0.0 1.0
+         ambient 1.0 0.749019607843137 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_009
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_000
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_C01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.498039215686275 0.0 1.0
+         ambient 1.0 0.498039215686275 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_G16
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.4 0.0 1.0
+         ambient 0.0 0.4 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_G06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.8 0.0 1.0
+         ambient 0.0 0.8 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_F01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.498039215686275 1.0 0.0 1.0
+         ambient 0.498039215686275 1.0 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_I17
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0784313725490196 0.0784313725490196 0.4 1.0
+         ambient 0.0784313725490196 0.0784313725490196 0.4 1.0
+      }
+   }
+}
+material LEGOstore_Color_I06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.8 1.0
+         ambient 0.0 0.0 0.8 1.0
+      }
+   }
+}
+material LEGOstore_Color_H03
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.396078431372549 1.0 1.0 1.0
+         ambient 0.396078431372549 1.0 1.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_J13
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.419607843137255 0.23921568627451 0.6 1.0
+         ambient 0.419607843137255 0.23921568627451 0.6 1.0
+      }
+   }
+}
+material LEGOstore_Color_K01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.0 1.0 1.0
+         ambient 1.0 0.0 1.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_L01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.0 0.498039215686275 1.0
+         ambient 1.0 0.0 0.498039215686275 1.0
+      }
+   }
+}
+material LEGOstore_Color_L04
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.6 0.8 1.0
+         ambient 1.0 0.6 0.8 1.0
+      }
+   }
+}
+material LEGOstore_Color_D24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.176470588235294 0.117647058823529 1.0
+         ambient 0.2 0.176470588235294 0.117647058823529 1.0
+      }
+   }
+}
+material LEGOstore_Color_D16
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.4 0.298039215686275 0.0 1.0
+         ambient 0.4 0.298039215686275 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_D11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.447058823529412 0.0 1.0
+         ambient 0.6 0.447058823529412 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_E01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 0.0 1.0
+         ambient 1.0 1.0 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_D13
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.509803921568627 0.23921568627451 1.0
+         ambient 0.6 0.509803921568627 0.23921568627451 1.0
+      }
+   }
+}
+material LEGOstore_Color_C06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.4 0.0 1.0
+         ambient 0.8 0.4 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_B11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.149019607843137 0.0 1.0
+         ambient 0.6 0.149019607843137 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_B01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.247058823529412 0.0 1.0
+         ambient 1.0 0.247058823529412 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_A01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.0 0.0 1.0
+         ambient 1.0 0.0 0.0 1.0
+      }
+   }
+}
+material LEGOstore_Color_L05
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.8 0.898039215686275 1.0
+         ambient 1.0 0.8 0.898039215686275 1.0
+      }
+   }
+}
+material LEGOstore_Color_008
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+         ambient 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+      }
+   }
+}
+material LEGOstore_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material LEGOstore_clearglassb
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material LEGOstore_Material1
+{
+   technique
+   {
+      pass
+      {
+         60.0, 60.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 2000px-LEGO_logo.svg.dds
+         }
+      }
+   }
+}
+material LEGOstore__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

@@ -1,0 +1,17 @@
+import * from "managed_mats.material"
+
+material HouseBase/SOLID/TEX/LJ-GSStoneWall.dds: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			diffuse 1.000000 0.948600 0.866667
+			specular 0.000000 0.000000 0.000000 12.500000
+			texture_unit Diffuse_Map
+			{
+				texture LJ-GSStoneWall.dds
+			}
+		}
+	}
+}

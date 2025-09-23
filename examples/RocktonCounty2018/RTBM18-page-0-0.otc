@@ -1,0 +1,5 @@
+opmaprw.raw
+2
+; worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha
+3000  , opmaptex2.dds , opmaptex2.dds
+6        , traildirt.dds        ,    traildirt.dds        ,    opmaptex2.png, R, 0.8

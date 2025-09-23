@@ -1,0 +1,8 @@
+LJFallenLog01.mesh
+1, 1, 1
+
+beginmesh
+mesh LJFallenLog01C.mesh
+endmesh
+
+end

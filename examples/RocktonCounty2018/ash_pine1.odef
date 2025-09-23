@@ -1,0 +1,7 @@
+ash_pine1.mesh
+1, 1, 1
+
+beginlodmesh
+100, ash_pine1_lod1.mesh
+150, ash_pine1_lod2.mesh
+end

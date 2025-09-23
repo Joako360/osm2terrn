@@ -1,0 +1,39 @@
+import * from "managed_mats.material"
+
+material sign-nhelens2: RoR/Managed_Mats/Base
+{
+	set_texture_alias diffuse_tex sign-nhelens.png
+}
+
+material bigsign_nhelens
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			scene_blend alpha_blend
+			alpha_rejection greater 0
+
+			texture_unit Diffuse_Map
+			{
+				texture bigsign_nhelens.dds
+			}
+		}
+	}
+}
+material bigsign_nhelens_back
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			scene_blend alpha_blend
+			alpha_rejection greater 0
+
+			texture_unit Diffuse_Map
+			{
+				texture bigsign_nhelens_back.dds
+			}
+		}
+	}
+}

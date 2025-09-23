@@ -1,0 +1,6 @@
+railslope_rockton.mesh
+1,1,1
+beginmesh
+mesh railslope_rockton.mesh
+endmesh
+end

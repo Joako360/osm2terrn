@@ -1,0 +1,7 @@
+Verniocity.raw
+2
+; worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha
+1024    , verniocity.dds      ,    verniocity.dds
+6        , verniocity_traildirt.dds       ,    verniocity_traildirt.dds        ,   verniocity_rgb.png, R, 0.6
+
+

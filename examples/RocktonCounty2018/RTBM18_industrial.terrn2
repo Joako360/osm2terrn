@@ -1,0 +1,23 @@
+[General]
+Name = Rockton County Industrial
+GeometryConfig = RTBM18.otc
+Water = 1
+WaterLine = 6.5
+AmbientColor = 0.93, 0.86, 0.76
+StartPosition = 2408.26855469, 53.4333343506, 1232.77404785
+SandStormCubeMap = Sky/ClubTropicana
+#CaelumConfigFile = RTBM.os
+Gravity = -9.81
+CategoryID = 129
+Version = 1
+GUID = aa84143c-d3ff-4d09-8d8a-acb04fadc5ae
+
+ 
+[Authors]
+terrain = Brickman
+Coverting = haselnut116601
+converting2 = Klink
+converting2016 = CuriousMike
+
+[Objects]
+RTBM18.tobj=

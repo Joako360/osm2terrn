@@ -1,0 +1,7 @@
+SmallIsland.raw
+3
+
+; worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha
+4, SmallIsland-Sand-Diffspec.dds , SmallIsland-Sand-Normal.dds , SmallIsland-surface1.png, R , 1
+4, SmallIsland-Grass-Diffspec.dds , SmallIsland-Grass-Normal.dds , SmallIsland-surface1.png, G , 1
+4, SmallIsland-Rock-Diffspec.dds , SmallIsland-Rock-Normal.dds , SmallIsland-surface1.png, B , 1

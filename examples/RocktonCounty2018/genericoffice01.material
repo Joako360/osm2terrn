@@ -1,0 +1,15 @@
+material Material/TEXFACE/windowedwall02.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture windowedwall02.png
+				colour_op modulate
+			}
+		}
+	}
+}

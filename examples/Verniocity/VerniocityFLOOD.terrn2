@@ -1,0 +1,20 @@
+[General]
+Name = Verniocity Flooded
+GeometryConfig = Verniocity.otc
+Water=1
+WaterLine=20.5
+AmbientColor = 1, 1, 1
+StartPosition = 492.0, 19.7516670227, 710.5
+CaelumConfigFile = VerniocityFLOOD.terrn.os
+SandStormCubeMap = tracks/skyboxcol
+Gravity = -9.81
+CategoryID = 129
+Version = 1
+GUID = 9f8d1237-9ff2-4c2b-b5a5-1995a4cd8ecc
+
+[Authors]
+author = scania970
+conversion = Xploder98
+
+[Objects]
+VerniocityFLOOD.tobj=

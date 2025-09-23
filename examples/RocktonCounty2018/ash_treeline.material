@@ -1,0 +1,28 @@
+material Material#0.009/SOLID/TEX/ash_treeline.dds
+{
+	transparency_casts_shadows on
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.25 0.25 0.25 1
+			diffuse 0.4 0.4 0.4 1
+			specular 0.05 0.05 0.05 1 10
+			emissive 0.35 0.35 0.35 1
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture ash_treeline.dds
+				tex_address_mode wrap
+
+				colour_op modulate
+			}
+
+		}
+
+	}
+
+}

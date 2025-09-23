@@ -1,0 +1,10 @@
+Verniocity.raw
+5
+; worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha
+1024    , verniocity.dds   ,    verniocity.dds
+6       , verniocity_traildirt.dds       ,    verniocity_traildirt.dds       ,   verniocity_rgb.png, R, 0.6
+6       , vcroad.dds       ,    vcroad.dds        ,   vcroad.png, A, 0.9
+6       , vcrocks.dds      ,    vcrocks.dds       ,   vcrocks.png, A, 0.9
+6       , vcbiatch.dds     ,    vcbiatch.dds      ,   vcbiatch.png, A, 0.9
+
+

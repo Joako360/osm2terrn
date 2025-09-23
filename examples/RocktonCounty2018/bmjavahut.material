@@ -1,0 +1,214 @@
+material bmjavahut_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmjavahut_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.356862745098039 0.207843137254902 0.105882352941176 1.0
+         ambient 0.356862745098039 0.207843137254902 0.105882352941176 1.0
+      }
+   }
+}
+material bmjavahut_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmjavahut_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmjavahut_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmjavahut_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmjavahut_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmjavahut_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmjavahut_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmjavahut_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material bmjavahut_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmjavahut_Material1
+{
+   technique
+   {
+      pass
+      {
+         50.0, 33.289241622575
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 135180_132601700132790_5765761_o.jpg
+         }
+      }
+   }
+}
+material bmjavahut_Dark_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.305882352941176 0.247058823529412 0.168627450980392 1.0
+         ambient 0.305882352941176 0.247058823529412 0.168627450980392 1.0
+      }
+   }
+}
+material bmjavahut_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.96
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.96
+      }
+   }
+}
+material bmjavahut_Material2
+{
+   technique
+   {
+      pass
+      {
+         140.0, 140.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1384022_593077217418567_1057959324_n.jpg
+         }
+      }
+   }
+}
+material bmjavahut_Material3
+{
+   technique
+   {
+      pass
+      {
+         130.0, 21.4161849710983
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture jthbmlsm.dds
+         }
+      }
+   }
+}
+material bmjavahut__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

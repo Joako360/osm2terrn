@@ -1,0 +1,6 @@
+a1da0uid-nhelens.raw
+3
+; worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha
+3000, a1da0uid-nhelens.dds, blank_NRM.dds
+6, nhelens_terrain_detail2.dds,		blank_NRM.dds,	a1da0uid-nhelens_rgb.png, R, 0.5
+6, nhelens_terrain_detail1.dds, 	blank_NRM.dds,	a1da0uid-nhelens_rgb.png, G, 0.5

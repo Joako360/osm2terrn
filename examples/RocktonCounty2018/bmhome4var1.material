@@ -1,0 +1,405 @@
+material bmhome4var1_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome4var1_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmhome4var1_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmhome4var1_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmhome4var1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmhome4var1_Groundcover_Rock_Crushed_Multi
+{
+   technique
+   {
+      pass
+      {
+         10.0, 10.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Groundcover_Rock_Crushed_Multi.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Vegetation_Juniper2
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Vegetation_Juniper2.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Material1
+{
+   technique
+   {
+      pass
+      {
+         30.0, 22.5
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1270363_572588166134139_1144298172_o.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Material2
+{
+   technique
+   {
+      pass
+      {
+         80.0, 80.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10805561_787518744641079_9080622247017345170_n.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Material3
+{
+   technique
+   {
+      pass
+      {
+         80.0, 80.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10641262_787518891307731_7138126973968081868_n.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_[Concrete_Aggregate_Smoke]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Material4
+{
+   technique
+   {
+      pass
+      {
+         90.0, 90.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10364216_696744293718525_2564673513157492911_n.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Material5
+{
+   technique
+   {
+      pass
+      {
+         60.0, 90.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10805561_787518744641079_9080622247017345170_n.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Material6
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1378041_593076990751923_204168435_n.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Burnt_Umber
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.243137254901961 0.0941176470588235 0.0941176470588235 1.0
+         ambient 0.243137254901961 0.0941176470588235 0.0941176470588235 1.0
+      }
+   }
+}
+material bmhome4var1_Material7
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10450817_787519437974343_4242588598946389579_n.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Material8
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1392056_593075660752056_565520264_n.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Metal_Rusted
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rusted.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material bmhome4var1_Blinds_Cellular_White
+{
+   technique
+   {
+      pass
+      {
+         40.0, 40.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Blinds_Cellular_White.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.85
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.85
+      }
+   }
+}
+material bmhome4var1_Cladding_Siding_Tan
+{
+   technique
+   {
+      pass
+      {
+         30.0, 30.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_Tan.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Roofing_Shingles_Asphalt
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_Asphalt.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_0119_RosyBrown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.737254901960784 0.56078431372549 0.56078431372549 1.0
+         ambient 0.737254901960784 0.56078431372549 0.56078431372549 1.0
+      }
+   }
+}
+material bmhome4var1_WarmGray8
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.380392156862745 0.333333333333333 0.298039215686275 1.0
+         ambient 0.380392156862745 0.333333333333333 0.298039215686275 1.0
+      }
+   }
+}
+material bmhome4var1_Wood_Cherry_Original
+{
+   technique
+   {
+      pass
+      {
+         72.0, 72.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Cherry_Original.jpg
+         }
+      }
+   }
+}
+material bmhome4var1_Color_D04
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.898039215686275 0.6 1.0
+         ambient 1.0 0.898039215686275 0.6 1.0
+      }
+   }
+}
+material bmhome4var1__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

@@ -1,0 +1,32 @@
+import * from "managed_mats.material"
+
+material rey_bs_signblue_sign: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.200000 0.200000 0.200000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_bs_sign_blue.png
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material rey_bs_signblue_post
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.700000 0.700000 0.700000 1.000000
+			diffuse 0.200000 0.200000 0.200000 1.000000
+		}
+	}
+}

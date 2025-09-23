@@ -1,0 +1,6 @@
+limoserv.mesh
+1, 1, 1
+beginmesh
+mesh limoserv.mesh
+endmesh
+end

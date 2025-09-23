@@ -1,0 +1,6 @@
+Oppain.mesh
+1, 1, 1
+beginmesh
+mesh oppaincoll.mesh
+endmesh
+end

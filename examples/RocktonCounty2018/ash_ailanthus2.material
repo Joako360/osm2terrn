@@ -1,0 +1,211 @@
+material ash_ailanthus_barkpng/SOLID/TEX/ash_ailanthus_bark.dds
+{   
+   technique
+   {
+   
+      pass Ambient
+      {
+		vertex_program_ref ETAmbient_VS
+        {
+        }        
+      }	
+           
+      pass Lighting
+      {
+         scene_blend add
+         iteration once_per_light
+         
+         		 
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+	   param_named splatScaleX float 1
+           param_named splatScaleZ float 1
+         }
+         
+		 texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture test1_RGB0.dds
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+         
+        texture_unit
+         {
+         	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture ash_ailanthus_bark_NRM.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+	 texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         } 
+         
+      }
+     
+         // primary splatting technique, requires PS 2.0
+	pass Splatting
+    {
+         scene_blend modulate
+                    
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+         }          
+         
+         vertex_program_ref ET/Programs/VSLodMorph2
+         {
+         }
+
+         fragment_program_ref ET/Programs/PSSplat2
+         {
+           param_named splatScaleX float 1
+           param_named splatScaleZ float 1
+         }
+
+         texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture test1_RGB0.dds
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+
+         // splatting textures
+         texture_unit
+         {
+            	texture none.dds
+         }
+         texture_unit
+         {
+		texture none.dds
+         }
+         texture_unit
+         {
+           	texture ash_ailanthus_bark.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+	 texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+      }    
+      
+      pass
+	  {
+			// colour map
+			scene_blend modulate	
+		     
+		    vertex_program_ref ET/Programs/VSLodMorph3
+			{
+			} 					
+			
+			texture_unit 
+			{			
+				texture ash_ailanthus_bark_lightmap.dds
+			}					
+			      
+		}   
+		        
+      
+   }
+} 
+material ash_ailanthus_branch1/SOLID/TEX/ash_ailanthus2_branch1.dds
+{
+	transparency_casts_shadows on
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.25 0.25 0.25 1
+			diffuse 0.4 0.4 0.4 1
+			specular 0.05 0.05 0.05 1 10
+			emissive 0.35 0.35 0.35 1
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture ash_ailanthus2_branch1.dds
+				tex_address_mode wrap
+
+				colour_op modulate
+
+				wave_xform scroll_x sine 1.0 0.2 1.0 0.02
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,30 @@
+material gelaender/SOLID/TEX/haus7.png
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+ 		        depth_check on
+ 		        depth_write off
+                        alpha_rejection always_fail
+			texture_unit
+			{
+				texture haus7.dds
+			}
+		}
+	}
+}
+material Material/SOLID/TEX/haus7.png
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture haus7.dds
+			}
+		}
+	}
+}

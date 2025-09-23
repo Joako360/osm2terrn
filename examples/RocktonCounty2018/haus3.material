@@ -1,0 +1,14 @@
+material material.65484326eazfavhs64
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture haus3.dds
+			}
+		}
+	}
+}
+

@@ -1,0 +1,9 @@
+a1da0UID-lab.mesh
+1.0, 1.0, 1.0
+
+beginbox
+boxcoords -4.2, 4.1, -0.5, 5.6, -2.5, 2.7
+event editor
+endbox
+
+end

@@ -1,0 +1,6 @@
+lakesidemall.mesh
+1, 1, 1
+beginmesh
+mesh lakesidemallcoll.mesh
+endmesh
+end

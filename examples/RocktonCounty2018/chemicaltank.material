@@ -1,0 +1,15 @@
+material Material.001/TEXFACE/chemicaltank.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture chemicaltank.png
+				colour_op modulate
+			}
+		}
+	}
+}

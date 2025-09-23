@@ -1,0 +1,140 @@
+material opmapsmallschoolcoll_Translucent_Glass_Safety
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         6.0, 6.0
+         diffuse 1 1 1 0.92
+         texture_unit
+         {
+            texture Translucent_Glass_Saftey.jpg
+         }
+      }
+   }
+}
+material opmapsmallschoolcoll_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material opmapsmallschoolcoll_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opmapsmallschoolcoll_Metal_Embossed
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Embossed.jpg
+         }
+      }
+   }
+}
+material opmapsmallschoolcoll_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material opmapsmallschoolcoll_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material opmapsmallschoolcoll_Color_D15
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.568627450980392 0.47843137254902 1.0
+         ambient 0.6 0.568627450980392 0.47843137254902 1.0
+      }
+   }
+}
+material opmapsmallschoolcoll_Brick_Rough_Dark
+{
+   technique
+   {
+      pass
+      {
+         84.0, 51.3333333333333
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Rough_Dark.jpg
+         }
+      }
+   }
+}
+material opmapsmallschoolcoll_0126_Violet
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+         ambient 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+      }
+   }
+}
+material opmapsmallschoolcoll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.890196078431373 0.882352941176471 0.870588235294118
+         ambient 0.890196078431373 0.882352941176471 0.870588235294118
+      }
+   }
+}

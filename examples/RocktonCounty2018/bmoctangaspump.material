@@ -1,0 +1,89 @@
+material bmoctangaspump_Color_001
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+         ambient 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+      }
+   }
+}
+material bmoctangaspump_Color_G17
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0784313725490196 0.4 0.0784313725490196 1.0
+         ambient 0.0784313725490196 0.4 0.0784313725490196 1.0
+      }
+   }
+}
+material bmoctangaspump_Color_A06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.0 0.0 1.0
+         ambient 0.8 0.0 0.0 1.0
+      }
+   }
+}
+material bmoctangaspump_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material bmoctangaspump_Material3
+{
+   technique
+   {
+      pass
+      {
+         40.0, 32.8690807799443
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture bmocgaspumptexture.dds
+         }
+      }
+   }
+}
+material bmoctangaspump_Material1
+{
+   technique
+   {
+      pass
+      {
+         40.0, 28.1
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture ocgaspump.dds
+         }
+      }
+   }
+}
+material bmoctangaspump__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

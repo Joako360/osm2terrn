@@ -1,0 +1,15 @@
+import * from "managed_mats.material"
+
+material 496aUID-huette: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			texture_unit Diffuse_Map
+			{
+				texture 496aUID-huette.dds
+			}
+		}
+	}
+}
