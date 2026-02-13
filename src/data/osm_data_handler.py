@@ -1,183 +1,139 @@
 from collections import OrderedDict
+import logging
 import geopandas as gpd
 import fused 
 import osmnx as ox
 from typing import Dict, Tuple
-from shapely.geometry import box as shp_box, Point as ShpPoint, Polygon as ShpPolygon, MultiPolygon as ShpMultiPolygon
+from shapely.geometry import box as shp_box, Point as ShpPoint
+from utils.bbox import BBox
 from utils.constants import Colors, custom_tags, map_geometries, networks
 from utils.geometry import transform_gdf, transform_graph
-from utils.logger import get_logger, log_error, log_info
-import re
-import requests
+from utils.logger import get_logger, log_error, log_info, log_warning
 import os
 
 logger = get_logger("osm_data_handler")
 
 ox.settings.elevation_url_template = 'https://api.opentopodata.org/v1/test-dataset?locations={locations}' # type: ignore
 ox.settings.log_console = True # type: ignore
+ox.settings.log_file = True # type: ignore
+ox.settings.log_level = logging.ERROR # type: ignore
 ox.settings.useful_tags_way = ox.settings.useful_tags_way + custom_tags # type: ignore
 # Reduce query size to encourage osmnx to split large areas into smaller Overpass queries
 try:
-    ox.settings.max_query_area_size = 25_000_000  # type: ignore
+    ox.settings.max_query_area_size = int(os.getenv('OVERPASS_MAX_QUERY_AREA_SIZE', 2_500_000_000))  # type: ignore
 except Exception:
     pass
 # Tweak request timeout to fail faster on unresponsive endpoints
 try:
-    ox.settings.requests_timeout = int(os.environ.get('OSM2TERRN_REQUESTS_TIMEOUT', '120'))  # type: ignore
+    ox.settings.requests_timeout = int(os.getenv('OVERPASS_REQUESTS_TIMEOUT', 1000))  # type: ignore
 except Exception:
     pass
 # Allow users to override overpass rate limiting (default True = be nice)
 try:
-    _orl = os.environ.get('OSM2TERRN_OVERPASS_RATE_LIMIT')
-    if _orl is not None:
-        ox.settings.overpass_rate_limit = (_orl.strip().lower() in {'1','true','yes'})  # type: ignore
+    ox.settings.overpass_rate_limit = bool(os.getenv('OVERPASS_RATE_LIMIT', True))  # type: ignore
 except Exception:
     pass
 ox.__version__
 # Example: custom_filter='["railway"~"tram|rail"]'
-# Download graph from OSM with osmnx parameters: place query, which option and optional custom filters
 
 
-def _overpass_status_wait_seconds(base_url: str, timeout: float = 5.0) -> float:
-    """
-    Query Overpass /status endpoint and estimate wait time in seconds.
-
-    Returns 0 if slots are available or status cannot be parsed (optimistic).
-    """
-    try:
-        url = base_url.rstrip('/') + '/status'
-        resp = requests.get(url, timeout=timeout)
-        txt = resp.text.lower()
-        # Common patterns
-        if 'slots available now' in txt or 'available now' in txt:
-            return 0.0
-        # in about N seconds
-        m = re.search(r'in about\s+(\d+)\s+seconds', txt)
-        if m:
-            return float(m.group(1))
-        # Slot available after: HH:MM:SS
-        m = re.search(r'slot available after:?\s*(\d{1,2}):(\d{2}):(\d{2})', txt)
-        if m:
-            h, mi, s = map(int, m.groups())
-            return float(h * 3600 + mi * 60 + s)
-        # Slot available after: N seconds
-        m = re.search(r'slot available after:?\s*(\d+)\s*seconds', txt)
-        if m:
-            return float(m.group(1))
-    except Exception:
-        # If status fails, assume it's fine to try
-        return 0.0
-    return 0.0
-
-
-def pick_fast_overpass(threshold_seconds: float = 60.0) -> str:
-    """
-    Choose an Overpass API mirror with the shortest expected wait, set it in osmnx settings,
-    and return the selected base URL. Honors the env var OSM2TERRN_OVERPASS_URL if provided.
-    """
-    import os
-    env_url = os.environ.get('OSM2TERRN_OVERPASS_URL')
-    if env_url:
-        ox.settings.overpass_url = env_url  # type: ignore
-        log_info(logger, f"Using Overpass URL from env: {env_url}")
-        return env_url
-    # Candidate mirrors (order by general reliability)
-    candidates = [
-        'https://overpass-api.de/api',
-        'https://lz4.overpass-api.de/api',
-        'https://overpass.kumi.systems/api',
-        'https://overpass.openstreetmap.fr/api',
-    ]
-    best_url = candidates[0]
-    best_wait = float('inf')
-    for url in candidates:
-        wait = _overpass_status_wait_seconds(url)
-        if wait < best_wait:
-            best_wait = wait
-            best_url = url
-    ox.settings.overpass_url = best_url  # type: ignore
-    if best_wait > threshold_seconds:
-        log_info(logger, f"Selected Overpass mirror {best_url} but estimated wait is {best_wait:.0f}s. You can set OSM2TERRN_OVERPASS_URL to override.")
-    else:
-        log_info(logger, f"Selected Overpass mirror {best_url} (estimated wait {best_wait:.0f}s)")
-    return best_url
-
-
-
-def download_data_from_bbox(bbox: Tuple[float, float, float, float]) -> Dict:
+def download_data_from_bbox(bbox) -> Dict:
     """
     Downloads and processes OSM data using a bounding box only.
     Args:
         bbox (Tuple): (west, south, east, north)
-    Returns:
-        Dict: Processed data (bounds, networks, geometries, etc.)
+    Returns a dict with keys:
+      - bounds (GeoDataFrame EPSG:4326)
+      - bounds_proj (GeoDataFrame in EPSG:3857)
+      - x_0, y_0 (centroid of projected bounds)
+      - one entry per geometry type in map_geometries (or None)
+      - one entry per network in networks (or None)
     """
-    d = {}
-    # Pick a responsive Overpass mirror before any requests
-    try:
-        pick_fast_overpass()
-    except Exception:
-        pass
-    bounds_gdf = gpd.GeoDataFrame(geometry=[shp_box(*bbox)], crs="EPSG:4326")
+    d: Dict = {}
+    # Accept tuple/list or any bbox-like; use BBox helper for parsing/validation
+    bbox_obj = BBox(bbox)
+    # If bbox is projected, osmnx expects geographic coords — try to reproject
+    if getattr(bbox_obj, "is_projected", False):
+        try:
+            bbox_geo = bbox_obj.reproject("EPSG:4326")
+            use_bbox = bbox_geo
+            log_info(logger, "Reprojected bbox to EPSG:4326 for OSM queries.")
+        except Exception as e:
+            log_warning(logger, f"Could not reproject bbox to EPSG:4326: {e} — attempting to use original bbox (may be incorrect).")
+            use_bbox = bbox_obj
+    else:
+        use_bbox = bbox_obj
+
+    # prefer BBox.to_shapely() to keep single parsing point
+    polygon = use_bbox.to_shapely()
+    west, south, east, north = use_bbox.to_tuple()
+    # Find origin point in centroid
+    # If bbox had an explicit CRS, use it; otherwise default to EPSG:4326
+    gdf_crs = bbox_obj.crs if bbox_obj.crs is not None else "EPSG:4326"
+    bounds_gdf = gpd.GeoDataFrame(geometry=[polygon], crs=gdf_crs)
     bounds_proj = bounds_gdf.to_crs(3857)
     centroid_geom = bounds_proj.geometry.centroid.iloc[0]
-    if isinstance(centroid_geom, ShpPoint):
-        x_0, y_0 = centroid_geom.x, centroid_geom.y
-    else:
-        log_error(logger, "Centroid is not a Point geometry. Defaulting to (0, 0).")
+    try:
+        x_0, y_0 = (centroid_geom.x, centroid_geom.y) # type: ignore
+    except Exception:
+        log_error(logger, "Could not compute centroid; defaulting origin to (0,0).")
         x_0, y_0 = 0.0, 0.0
-    d['bounds'] = bounds_gdf
-    d['bounds_proj'] = bounds_proj
+    d['bounds'] = bounds_gdf.to_crs(4326)
     d['x_0'] = x_0
     d['y_0'] = y_0
-    polygon = shp_box(*bbox)
-    # Optional filtering of geometry categories via env var
-    geoms_env = os.environ.get('OSM2TERRN_GEOMETRIES')
-    enabled_geoms = None
-    if geoms_env:
-        enabled_geoms = {s.strip() for s in geoms_env.split(',') if s.strip()}
-        log_info(logger, f"Enabled geometries from env: {sorted(enabled_geoms)}")
+
+    # Download simple geometries (use bbox-based query in lat/lon)
+    # Note: osmnx expects (west, south, east, north)
     for typ, tag in map_geometries.items():
-        if enabled_geoms is not None and typ not in enabled_geoms:
-            continue
         try:
-            gdf = ox.features_from_polygon(polygon, tag)
-            d[typ] = transform_gdf(gdf, x_0, y_0) if gdf is not None and not gdf.empty else None
-        except ValueError:
+            # use bbox query in lat/lon (west, south, east, north)
+            gdf = ox.features_from_bbox(west, south, east, north, tags=tag)  # type: ignore
+            if gdf is None or gdf.empty:
+                d[typ] = None
+            else:
+                d[typ] = transform_gdf(gdf, x_0, y_0)
+        except Exception as exc:
+            log_info(logger, f"Skipped geometry {typ} due to error: {exc}")
             d[typ] = None
-    # Optional filtering of network categories via env var
-    nets_env = os.environ.get('OSM2TERRN_NETWORKS', 'roads')
-    enabled_nets = {s.strip() for s in nets_env.split(',') if s.strip()}
-    log_info(logger, f"Enabled networks: {sorted(enabled_nets)}")
+
+    # Download simple networks (graph_from_bbox expects west, south, east, north)
     for typ, cf in networks.items():
-        if typ not in enabled_nets:
-            continue
         try:
-            # graph_from_bbox expects (north, south, east, west)
-            north, south, east, west = bbox[3], bbox[1], bbox[2], bbox[0]
-            G = ox.graph_from_bbox((north, south, east, west), network_type="drive_service", simplify=False, retain_all=True, custom_filter=cf)
-            d[typ] = transform_graph(G, x_0, y_0) if G is not None and len(G.nodes) > 0 else None
-        except Exception:
+            G = ox.graph_from_bbox(
+                (west, south, east, north),
+                network_type="drive",
+                simplify=False,
+                retain_all=True,
+                custom_filter=cf
+            )
+            if G is None or len(G.nodes) == 0:
+                d[typ] = None
+            else:
+                d[typ] = transform_graph(G, x_0, y_0)
+        except Exception as exc:
+            log_info(logger, f"Skipped network {typ} due to error: {exc}")
             d[typ] = None
+
     return d
 
-# Ask for a place, makes a Nominatim query and prints the results in a table
-# Returns a tuple of the place name and the index of the result chosen by the user
 
-
-
+# Download graph from OSM with osmnx parameters: place query, which option and optional custom filters
 def download_menu() -> tuple[str, tuple[float, float, float, float]] | tuple[None, None]:
     """
     Shows a menu to choose between searching by city name or entering bounding box manually.
     Returns:
-        Tuple of (place name, bounding box) or (None, None) if cancelled.
+     - Option 2: enter bbox manually (validated for ranges).
+     - Option 1: search by place name, show simple list of results, pick one.
+
     """
     print("Select download mode:")
-    print("1. Search by city name")
-    print("2. Enter custom bounding box coordinates")
-    mode = input("Enter option (1 or 2, or 0 to cancel): ").strip()
+    print("1. Search by place name")
+    print("2. Enter custom bounding box")
+    print("0. Cancel")
+    mode = input("Enter option (0/1/2): ").strip()
     if mode == "0":
         return None, None
+
     if mode == "2":
         print("Enter the limits of the custom bounding box.")
         print("Remember:")
@@ -195,19 +151,19 @@ def download_menu() -> tuple[str, tuple[float, float, float, float]] | tuple[Non
                     return val
                 except ValueError:
                     print("Invalid number. Please try again.")
-        west = get_float("West (xmin, min longitude): ", -180, 180)
-        south = get_float("South (ymin, min latitude): ", -90, 90)
-        east = get_float("East (xmax, max longitude): ", -180, 180)
-        north = get_float("North (ymax, max latitude): ", -90, 90)
+        west = get_float("West (xmin, min longitude): ", -180., 180.)
+        south = get_float("South (ymin, min latitude): ", -90., 90.)
+        east = get_float("East (xmax, max longitude): ", -180., 180.)
+        north = get_float("North (ymax, max latitude): ", -90., 90.)
         if west >= east or south >= north:
             print("Invalid bounding box: west must be < east and south < north.")
             return None, None
         bbox = (west, south, east, north)
         return "custom_bbox", bbox
-    # Default: search by city name
-    place = input(
-        'Enter the city name (will be used as file name): ').title()
-    if place == '0':
+
+    # Option 1: simple Nominatim search
+    place = input("Enter the place name: ").strip()
+    if not place:
         return None, None
     nmntm_req = OrderedDict([('q', place), ('format', 'json')])
     nmntm_res = ox._nominatim._nominatim_request(nmntm_req) # type: ignore
@@ -219,11 +175,19 @@ def download_menu() -> tuple[str, tuple[float, float, float, float]] | tuple[Non
         nmntm_req = OrderedDict([('q', place), ('format', 'json')])
         nmntm_res = ox._nominatim._nominatim_request(nmntm_req) # type: ignore
     print("{:<6}║{:<50}║{:<14}║{:<10}".format(
-        'Option', 'Display name', 'Type', 'Class'))
+        'Option', 
+        'Display name', 
+        'Type', 
+        'Class'
+        ))
     print('═' * 6 + '╬' + '═' * 50 + '╬' + '═' * 14 + '╬' + '═' * 10)
     for idx, result in enumerate(nmntm_res, start=1):
         result_line = "{:<6}║{:<50}║{:<14}║{:<10}".format(
-            str(idx), result['display_name'][:50], result['type'][:14], result['class'][:10])
+            str(idx), 
+            result['display_name'][:50], 
+            result['type'][:14], 
+            result['class'][:10]
+            )
         if result['type'] == 'administrative' or result['class'] == 'boundary':
             print(Colors.bg_green + result_line + Colors.reset)
         elif result['osm_type'] != 'relation':
@@ -231,21 +195,25 @@ def download_menu() -> tuple[str, tuple[float, float, float, float]] | tuple[Non
         else:
             print(result_line)
     while True:
+        sel = input(f"Which result? (1-{len(nmntm_res)} or 0 to cancel): ").strip()
+        if sel == "0":
+            return None, None
         try:
-            which = int(input("Which result? (Enter number): "))
-            if 1 <= which <= len(nmntm_res):
-                break
-            print("Invalid option. Please enter a valid number.")
+            si = int(sel)
         except ValueError:
-            print("Invalid input. Please enter a number.")
-    selected = nmntm_res[which-1]
-    bbox = (
-        float(selected['boundingbox'][2]),  # west (min longitude)
-        float(selected['boundingbox'][0]),  # south (min latitude)
-        float(selected['boundingbox'][3]),  # east (max longitude)
-        float(selected['boundingbox'][1])   # north (max latitude)
-    )
-    return place, bbox
+            print("Invalid selection. Enter a number.")
+            continue
+        if not (1 <= si <= len(nmntm_res)):
+            print("Selection out of range. Try again.")
+            continue
+        chosen = nmntm_res[si - 1]  # convert 1-based choice to 0-based index
+        bbox = (
+            float(chosen['boundingbox'][2]),  # west (min lon)
+            float(chosen['boundingbox'][0]),  # south (min lat)
+            float(chosen['boundingbox'][3]),  # east (max lon)
+            float(chosen['boundingbox'][1])   # north (max lat)
+        )
+        return place, bbox
 
 
 def download_builings_from_overture(bbox) -> gpd.GeoDataFrame:

@@ -4,15 +4,14 @@ Constants and configuration for OSM2terrn project.
 This module defines global constants, OSM tags, map geometry categories, network filters,
 and terminal color codes for formatting output.
 """
-
+from typing import Optional
 import os
 
 EARTH_MIN_ELEVATION = -11000  # Minimum elevation on Earth in meters (Mariana Trench)
 EARTH_MAX_ELEVATION = 8850     # Maximum elevation on Earth in meters (Mount Everest)
 
-def get_opentopo_elevation_api_key():
-    import os
-    return os.environ.get('OPENTOPO_ELEVATION_API_KEY', '')
+def get_opentopo_elevation_api_key() -> Optional[str]:
+    return os.getenv('OPENTOPO_ELEVATION_API_KEY', None)
 # List of custom tags added in the osmnx configuration
 custom_tags = [
     'aerialway',
@@ -29,8 +28,8 @@ map_geometries = {
     'buildings': {
         'amenity': 'school',
         'building': True,
-        'sport': 'stadium',
-        'tourism': 'museum',
+        #'sport': 'stadium',
+        #'tourism': 'museum',
     },
     'parks': {
         'landuse': 'grass',
@@ -48,7 +47,7 @@ map_geometries = {
 networks = {
     'roads': None,
     'rails': '["railway"~"tram|rail"]',
-    'rivers': '["waterway"~"river|stream|canal"]',
+    #'rivers': '["waterway"~"river|stream|canal"]',
 }
 
 class Colors:
@@ -104,3 +103,27 @@ class Colors:
     fg_bright_white = "\033[37;1m"
     bg_white = "\033[47m"
     bg_bright_white = "\033[47;1m"
+
+# ============================================================================
+# Terrn2 Terrain Configuration Defaults
+# ============================================================================
+
+# Water configuration
+TERRN2_DEFAULT_WATER_ENABLED = 1
+TERRN2_DEFAULT_WATER_LINE = 0.0
+TERRN2_DEFAULT_WATER_BOTTOM_LINE = -150.0
+
+# Visual and atmospheric settings
+TERRN2_DEFAULT_AMBIENT_COLOR = "1.0, 1.0, 1.0"
+TERRN2_DEFAULT_SANDSTORM_CUBEMAP = "tracks/skyboxcol"
+
+# Spawn configuration
+TERRN2_DEFAULT_START_POSITION = "0.0, 0.0, 0.0"
+TERRN2_DEFAULT_START_ROTATION = 0.0
+
+# Physics
+TERRN2_DEFAULT_GRAVITY = -9.81
+
+# Metadata
+TERRN2_DEFAULT_CATEGORY_ID = 129  # 129 for addon terrains, 5000 for official
+TERRN2_DEFAULT_VERSION = 2

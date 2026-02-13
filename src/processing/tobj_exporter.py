@@ -1,15 +1,41 @@
 import os
-from typing import Dict, List
-from processing.road_network_formatter import Road
-from utils.constants import Colors
+from typing import Dict, List, Optional
+from dataclasses import dataclass
+
+from processing.road_model import Road
+from processing.road_exporters import export_procedural_roads_block
 from utils.logger import get_logger, log_info, log_error, log_warning
 
 logger = get_logger("tobj_exporter")
 
+
+@dataclass
+class TObject:
+    """Represents an object instance in a .tobj file."""
+    x: float
+    y: float
+    z: float
+    yaw: float
+    pitch: float
+    roll: float
+    obj_type: str
+    obj_file: str
+    comment: Optional[str] = None
+
+    def to_tobj_line(self) -> str:
+        """Convert the object to a .tobj line format."""
+        # Coordinates could be formatted with {:.6f} as per repo-wide conventions, but
+        # we keep rotations and precision consistent with examples here.
+        line = f"{self.x:.6f}, {self.y:.6f}, {self.z:.6f}, {self.yaw:.6f}, {self.pitch:.6f}, {self.roll:.6f}, {self.obj_type} {self.obj_file}"
+        if self.comment:
+            line = f"// {self.comment}\n{line}"
+        return line
+
+
 class TobjExporter:
     """
     Handles the export of various processed geographic data into the .tobj file format
-    used by Rigs of Rods.
+    used by Rigs of Rods Terrn2.
     """
 
     def __init__(self, output_dir: str = "./output"):
@@ -20,84 +46,134 @@ class TobjExporter:
             output_dir (str): Directory where .tobj files will be saved.
         """
         self.output_dir = output_dir
-        log_info(logger, f"TobjExporter initialized with output directory: {self.output_dir}")
+        os.makedirs(self.output_dir, exist_ok=True)
+        log_info(logger, f"📦 TobjExporter initialized with output directory: {self.output_dir}")
 
-    def export_to_tobj(self, data: Dict, filename: str = "output.tobj") -> None:
+    def export_to_tobj(
+        self, 
+        roads: Optional[List[Road]] = None,
+        objects: Optional[List[TObject]] = None,
+        collision_tris: Optional[int] = None,
+        filename: str = "output.tobj",
+        include_procedural_roads: bool = True
+    ) -> None:
         """
-        Export processed data (roads, bounds, etc.) to a .tobj file.
+        Export processed data (roads, objects, etc.) to a .tobj file.
+
+        Terrn2 supports and prefers procedural roads for road geometry. When
+        include_procedural_roads is True and roads are provided, a procedural
+        roads section will be emitted.
 
         Args:
-            data (Dict): Dictionary containing processed data. Expected keys: 'roads', 'bounds'.
+            roads (Optional[List[Road]]): List of Road objects for procedural roads.
+            objects (Optional[List[TobjObject]]): List of object instances to place.
+            collision_tris (Optional[int]): Number of collision triangles (optional header).
             filename (str): Name of the .tobj file to create.
+            include_procedural_roads (bool): Whether to include procedural roads block.
         """
-        from processing.road_network_formatter import to_procedural_roads_block  # Import here for modularity
         filepath = os.path.join(self.output_dir, filename)
         try:
-            with open(filepath, 'w') as f:
-                f.write("TOBJ\n")
-                f.write("version 1.0\n")
+            with open(filepath, 'w', encoding='utf-8') as f:
+                # Write collision-tris header if provided
+                if collision_tris is not None:
+                    f.write(f"collision-tris {collision_tris}\n\n")
+                    log_info(logger, f"Added collision-tris header: {collision_tris}")
+
+                # Write object instances section
+                if objects and len(objects) > 0:
+                    f.write("// Object instances\n")
+                    for obj in objects:
+                        f.write(obj.to_tobj_line() + "\n")
+                    f.write("\n")
+                    log_info(logger, f"✅ Exported {len(objects)} object instances")
+
+                # Write procedural roads section using centralized function
+                if include_procedural_roads and roads and len(roads) > 0:
+                    procedural_block = export_procedural_roads_block(roads, per_segment=False)
+                    f.write(procedural_block)
+                    f.write("\n\n")
+                    log_info(logger, f"🛣️  Exported {len(roads)} roads via procedural roads section")
+                elif include_procedural_roads:
+                    log_warning(logger, "No roads data provided for procedural roads section")
+
+                # Ensure file ends with newline
                 f.write("\n")
 
-                # Export bounds (example, adjust as needed for tobj format)
-                if 'bounds' in data and hasattr(data['bounds'], 'empty') and not data['bounds'].empty:
-                    bounds = data['bounds'].total_bounds
-                    f.write(f"bounds {bounds[0]:.6f} {bounds[1]:.6f} {bounds[2]:.6f} {bounds[3]:.6f}\n")
-                    log_info(logger, "Exported bounds to tobj.")
-                else:
-                    log_warning(logger, "No bounds data found for tobj export.")
-
-                # Export roads using the correct formatter
-                if 'roads' in data and isinstance(data['roads'], list):
-                    f.write("\n# Roads\n")
-                    roads_block = to_procedural_roads_block(data['roads'])
-                    f.write(roads_block + "\n")
-                    log_info(logger, f"Exported {len(data['roads'])} roads to tobj.")
-                else:
-                    log_warning(logger, "No roads data found for tobj export.")
-            log_info(logger, f"Successfully exported data to {filepath}")
+            log_info(logger, f"✅ Successfully exported data to {filepath}")
         except Exception as e:
-            log_error(logger, f"Failed to export data to tobj: {e}")
+            log_error(logger, f"❌ Failed to export data to tobj: {e}")
+            raise
 
-    def export_roads(self, roads: List[Road], filepath: str) -> None:
+    def export_roads_only(self, roads: List[Road], filepath: str) -> None:
         """
-        Export a list of Road objects to a .tobj file.
+        Export only roads to a .tobj file (without object instances).
+        Uses the centralized procedural road export function.
 
         Args:
             roads (List[Road]): List of Road objects to export.
-            filepath (str): Path to the .tobj file to create.
+            filepath (str): Full path to the .tobj file to create.
         """
         try:
-            with open(filepath, 'w') as f:
-                f.write("TOBJ\n")
-                f.write("version 1.0\n")
-                f.write("\n# Roads\n")
-                for road in roads:
-                    if hasattr(road, "to_tobj_string"):
-                        f.write(f"road {road.to_tobj_string()}\n")
-                    else:
-                        log_error(logger, "Road object missing 'to_tobj_string' method.")
-            log_info(logger, f"Successfully exported {len(roads)} roads to {filepath}")
+            procedural_block = export_procedural_roads_block(roads, per_segment=False)
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(procedural_block)
+                f.write("\n\n")
+            log_info(logger, f"✅ Successfully exported {len(roads)} roads (procedural) to {filepath}")
         except Exception as e:
-            log_error(logger, f"Failed to export roads to tobj: {e}")
-    
-    def export_buildings(self, buildings: List, filepath: str) -> None:
+            log_error(logger, f"❌ Failed to export roads to tobj: {e}")
+            raise
+
+    def export_objects_only(self, objects: List[TObject], filepath: str, collision_tris: Optional[int] = None) -> None:
         """
-        Export building data to a .tobj file.
+        Export only object instances to a .tobj file (without procedural roads).
 
         Args:
-            buildings (List): List of building geometries or objects to export.
-            filepath (str): Path to the .tobj file to create.
+            objects (List[TobjObject]): List of TobjObject instances to export.
+            filepath (str): Full path to the .tobj file to create.
+            collision_tris (Optional[int]): Number of collision triangles (optional header).
         """
         try:
-            with open(filepath, 'w') as f:
-                f.write("TOBJ\n")
-                f.write("version 1.0\n")
-                f.write("\n# Buildings\n")
-                for building in buildings:
-                    if hasattr(building, "to_tobj_string"):
-                        f.write(f"building {building.to_tobj_string()}\n")
-                    else:
-                        log_error(logger, "Building object missing 'to_tobj_string' method.")
-            log_info(logger, f"Successfully exported {len(buildings)} buildings to {filepath}")
+            with open(filepath, 'w', encoding='utf-8') as f:
+                if collision_tris is not None:
+                    f.write(f"collision-tris {collision_tris}\n\n")
+                
+                for obj in objects:
+                    f.write(obj.to_tobj_line() + "\n")
+                f.write("\n")
+            log_info(logger, f"✅ Successfully exported {len(objects)} objects to {filepath}")
         except Exception as e:
-            log_error(logger, f"Failed to export buildings to tobj: {e}")
+            log_error(logger, f"❌ Failed to export objects to tobj: {e}")
+            raise
+
+    def export_grouped_objects(
+        self,
+        object_groups: Dict[str, List[TObject]],
+        filepath: str,
+        collision_tris: Optional[int] = None
+    ) -> None:
+        """
+        Export object instances grouped by category with section comments.
+
+        Args:
+            object_groups (Dict[str, List[TobjObject]]): Dictionary mapping group names to lists of objects.
+            filepath (str): Full path to the .tobj file to create.
+            collision_tris (Optional[int]): Number of collision triangles (optional header).
+        """
+        try:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                if collision_tris is not None:
+                    f.write(f"collision-tris {collision_tris}\n\n")
+
+                for group_name, objects in object_groups.items():
+                    if objects:
+                        f.write(f"// {group_name}\n")
+                        for obj in objects:
+                            f.write(obj.to_tobj_line() + "\n")
+                        f.write("\n")
+                        log_info(logger, f"Exported {len(objects)} objects in group '{group_name}'")
+
+                f.write("\n")
+            log_info(logger, f"✅ Successfully exported grouped objects to {filepath}")
+        except Exception as e:
+            log_error(logger, f"❌ Failed to export grouped objects to tobj: {e}")
+            raise

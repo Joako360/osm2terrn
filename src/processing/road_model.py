@@ -14,14 +14,16 @@ class Road:
         width (float): Road width in meters.
         border_width (float): Width of the road border in meters. Defaults to 0.0.
         border_height (float): Height of the road border in meters. Defaults to 0.0.
-        kind (str): Road surface type (e.g., "asphalt", "gravel"). Defaults to "asphalt".
+        type (str): Road surface type (e.g., "asphalt", "gravel"). Defaults to "asphalt".
+        name (Optional[str]): OSM street name. Defaults to None.
+        is_bridge (bool): Whether the road is a bridge. Defaults to False.
     """
 
     points_m: List[Point3D]
     width: float
     border_width: float = 0.0
     border_height: float = 0.0
-    kind: str = "asphalt"
+    type: str = "road"
     name: Optional[str] = None
     is_bridge: bool = False
 
@@ -60,6 +62,6 @@ class Road:
             f"width {self.width:.2f} "
             f"border_width {self.border_width:.2f} "
             f"border_height {self.border_height:.2f} "
-            f"type {self.kind} "
+            f"type {self.type} "
             f"points {points_str}"
         )

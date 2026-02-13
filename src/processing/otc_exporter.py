@@ -1,6 +1,6 @@
 import os
-from typing import List, Dict, Optional
-from utils.logger import get_logger, log_info, log_error
+from typing import Any, List, Dict, Optional
+from utils.logger import get_logger, log_info, log_error, log_warning
 
 logger = get_logger("otc_exporter")
 
@@ -14,26 +14,12 @@ def export_otc_config(
     extra_settings: Optional[Dict[str, str]] = None
 ) -> None:
     """
-    Generates a .otc geometry config file for Rigs of Rods terrain.
-
-    Example output:
-    [Terrain]
-    Name = MyTerrain
-    Heightmap = heightmap.png
-    Groundmap = groundmap.png
-    Bounds = -500.00 -500.00 500.00 500.00
-    CellSize = 2.0
-    TextureRepeat = 1.0
-
-    Args:
-        filepath (str): Path to the .otc file to create.
-        terrain_name (str): Name of the terrain.
-        heightmap_file (str): Path to the heightmap image.
-        groundmap_file (str): Path to the ground texture image.
-        bounds (list, optional): [min_x, min_y, max_x, max_y] in meters.
-        extra_settings (dict, optional): Additional config key-value pairs.
+    Deprecated: This function writes a non-OGRE '[Terrain]' style file.
+    Prefer export_global_otc (OGRE global .otc) and export_paged_otc (paged .otc)
+    to comply with Terrn2/OGRE configs.
     """
     try:
+        log_warning(logger, "export_otc_config is deprecated. Use export_global_otc/export_paged_otc for OGRE .otc files.")
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(f"[Terrain]\n")
             f.write(f"Name = {terrain_name}\n")
@@ -59,65 +45,74 @@ def export_global_otc(
     world_size_x: float,
     world_size_z: float,
     world_size_y: float = 300.0,
+    page_size: int = 1025,
     pages_x: int = 0,
     pages_z: int = 0,
-    layer_blend_map_size: int = 2048,
-    min_batch_size: int = 17,
+    # Heightmap options: provide when using RAW. PNG does not need these keys.
+    # Example: {"format": "raw", "size": 1025, "bpp": 2, "flip_x": False, "flip_y": False}
+    heightmap: Optional[Dict[str, Any]] = None,
+    layer_blend_map_size: int = 1024,
+    min_batch_size: int = 33,
     max_batch_size: int = 65,
-    disable_caching: int = 1,
+    disable_caching: bool = True,
     extra_settings: Optional[Dict[str, str]] = None,
 ) -> None:
     """
     Export an OGRE-style global .otc config that references paged .otc files.
 
-    Follows the conventions in .github/instructions/exporters.instructions.md
-    and examples in examples/template_04_png/.
+    Writes:
+    - PagesX/PagesZ
+    - PageFileFormat
+    - WorldSizeX/Z/Y
+    - PageSize
+    - Flat=0
+    - (Optional RAW heightmap keys) Heightmap.0.0.raw.size/bpp/flipX/flipY
+    - LayerBlendMapSize
+    - disableCaching
+    - Batch sizes and sensible rendering defaults
+
+    Parameters:
+        heightmap: If provided with format='raw', writes RAW-specific keys.
+                   For PNG heightmaps, omit or set format='png' (no RAW keys written).
     """
     try:
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write("# the amount of pages in this terrain\n")
-            f.write("# 0, 0 means that you only have one page\n")
-            f.write(f"PagesX={pages_x}\n")
-            f.write(f"PagesZ={pages_z}\n\n")
+            # RAW heightmap keys if requested (must come first)
+            if heightmap:
+                fmt = str(heightmap.get("format", "raw")).lower()
+                if fmt == "raw":
+                    size = int(heightmap.get("size", page_size))
+                    bpp = int(heightmap.get("bpp", 2))
+                    flip_x = 1 if bool(heightmap.get("flip_x", False)) else 0
+                    f.write(f"Heightmap.0.0.raw.size={size}\n")
+                    f.write(f"Heightmap.0.0.raw.bpp={bpp}\n")
+                    f.write(f"Heightmap.0.0.flipX={flip_x}\n")
+                    f.write("\n")
 
-            f.write(f"PageFileFormat={page_file_format}\n\n")
-
-            f.write("# the factor with what the heightmap values get multiplied with\n")
-            f.write(f"WorldSizeY={int(world_size_y)}\n\n")
-
-            f.write("# The world size of the terrain\n")
+            # World (XY) size in meters
             f.write(f"WorldSizeX={int(world_size_x)}\n")
-            f.write(f"WorldSizeZ={int(world_size_z)}\n\n")
+            f.write(f"WorldSizeZ={int(world_size_z)}\n")
+            f.write(f"WorldSizeY={int(world_size_y)}\n")
+            f.write(f"PageSize={int(page_size)}\n")
+            f.write(" \n")  # Space before newline like in example
+            
+            f.write("disableCaching=1\n" if disable_caching else "disableCaching=0\n")
+            f.write(" \n")
+            
+            f.write(f"PageFileFormat={page_file_format}\n")
 
-            f.write(f"LayerBlendMapSize={int(layer_blend_map_size)}\n\n")
-
-            if disable_caching:
-                f.write("disableCaching=1\n\n")
-
-            f.write(f"minBatchSize={int(min_batch_size)}\n")
-            f.write(f"maxBatchSize={int(max_batch_size)}\n\n")
-
-            # Sensible defaults; can be overridden with extra_settings
-            defaults = {
-                "LightmapEnabled": "1",
-                "NormalMappingEnabled": "1",
-                "SpecularMappingEnabled": "1",
-                "ParallaxMappingEnabled": "0",
-                "GlobalColourMapEnabled": "0",
-                "ReceiveDynamicShadowsDepth": "0",
-                "CompositeMapSize": "1024",
-                "CompositeMapDistance": "5000",
-                "SkirtSize": "30",
-                "LightMapSize": "1024",
-                "CastsDynamicShadows": "0",
-                "MaxPixelError": "1",
-                "DebugBlendMaps": "0",
-            }
-            if extra_settings:
-                defaults.update({k: str(v) for k, v in extra_settings.items()})
-            for k, v in defaults.items():
-                f.write(f"{k}={v}\n")
             f.write("\n")
+            
+            # Rendering settings
+            f.write(f"MaxPixelError=1\n")
+            f.write(f"LightmapEnabled=0\n")  # Match example
+            f.write(f"SpecularMappingEnabled=1\n")
+            f.write(f"NormalMappingEnabled=1\n")
+            
+            # Apply extra settings if provided
+            if extra_settings:
+                for k, v in extra_settings.items():
+                    f.write(f"{k}={v}\n")
         log_info(logger, f"Exported global .otc to {filepath}")
     except Exception as e:
         log_error(logger, f"Failed to export global .otc: {e}")
@@ -126,31 +121,72 @@ def export_global_otc(
 def export_paged_otc(
     filepath: str,
     heightmap_png: str,
-    groundmap_png: str,
-    layers: Optional[list[dict]] = None,
+    groundmap_file: Optional[str] = None,
+    layers: Optional[List[Dict[str, object]]] = None,
 ) -> None:
     """
     Export a paged .otc file for textures/blending.
 
     Format:
-    - 1st line: heightmap PNG filename
-    - 2nd line: number of layers
+    - 1st line: heightmap file name (PNG or RAW file name)
+    - 2nd line: number of layers (1-6). Layer #0 is the ground layer (no blendmap)
     - 3rd line: header
-    - Following: layer rows "worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha"
+    - Following: layer rows "worldSize, diffusespecular, normalheight, [blendmap], [blendmapmode], [alpha]"
+
+    Notes:
+    - The ground layer covers entire terrain (no blendmap, only 3 fields).
+    - Preserves the input order of 'layers' after the ground layer.
     """
     try:
-        # Provide two simple layers using stock textures and the generated groundmap as blendmap
+        # Default ground/base layer (covers entire page)
+        base_layer = {
+            "worldSize": 6,                        # tiling scale
+            "diffuse": "terrain_detail.dds",
+            "normal": "blank_NRM.dds",
+        }
+
+        # Provide simple defaults using stock textures if layers not provided
         if layers is None:
-            layers = [
-                {"worldSize": 6, "diffuse": "terrain_detail.dds", "normal": "blank_NRM.dds", "blend": groundmap_png, "blendmode": "R", "alpha": 0.5},
-                {"worldSize": 6, "diffuse": "terrain_grass.dds",  "normal": "blank_NRM.dds", "blend": groundmap_png, "blendmode": "G", "alpha": 0.5},
-            ]
+            layers = []
+            if groundmap_file:
+                gm = os.path.basename(groundmap_file)
+                layers = [
+                    {"worldSize": 6, "diffuse": "terrain_detail.dds", "normal": "blank_NRM.dds", "blend": gm, "blendmode": "R", "alpha": 0.5},
+                    {"worldSize": 6, "diffuse": "terrain_grass.dds",  "normal": "blank_NRM.dds", "blend": gm, "blendmode": "G", "alpha": 0.5},
+                ]
+
+        total_layers = 1 + (len(layers) if layers else 0)
+        if total_layers < 1 or total_layers > 6:
+            log_error(logger, f"Paged .otc layers must be in range 1-6; got {total_layers}.")
+            total_layers = max(1, min(total_layers, 6))
+            # If over, truncate extra layers
+            if layers and (1 + len(layers)) > 6:
+                layers = layers[:5]  # keep ground + first 5
+
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(f"{os.path.basename(heightmap_png)}\n")
-            f.write(f"{len(layers)}\n")
+            f.write(f"{total_layers}\n")
             f.write("; worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha\n")
-            for L in layers:
-                f.write(f"{int(L['worldSize'])}, {L['diffuse']}, {L['normal']}, {os.path.basename(L['blend'])}, {L['blendmode']}, {float(L['alpha'])}\n")
+
+            # Ground/base layer (no blendmap)
+            f.write(f"{int(base_layer['worldSize'])}, {base_layer['diffuse']}, {base_layer['normal']}\n")
+
+            # Additional layers (preserve input order)
+            for L in (layers or []):
+                world_size = int(L.get("worldSize", 6)) #type: ignore
+                diffuse = str(L.get("diffuse", "terrain_detail.dds"))
+                normal = str(L.get("normal", "blank_NRM.dds"))
+                blend = L.get("blend")
+                blendmode = str(L.get("blendmode", "R"))
+                alpha = float(L.get("alpha", 0.5)) #type: ignore
+                if blend is None:
+                    # No blendmap provided -> treat as ground-like layer (rare)
+                    f.write(f"{world_size}, {diffuse}, {normal}\n")
+                else:
+                    f.write(f"{world_size}, {diffuse}, {normal}, {os.path.basename(str(blend))}, {blendmode}, {alpha}\n")
+
+            f.write("\n")  # Ensure final newline
+
         log_info(logger, f"Exported paged .otc to {filepath}")
     except Exception as e:
         log_error(logger, f"Failed to export paged .otc: {e}")

@@ -8,44 +8,45 @@ from PIL import Image
 import scipy.ndimage
 
 from io import BytesIO
-from typing import Dict, Tuple, Optional
+from typing import Any, Dict, Tuple, Optional
 from math import ceil, inf
 from utils.constants import EARTH_MAX_ELEVATION, EARTH_MIN_ELEVATION
 from utils.logger import get_logger, log_info, log_error, log_warning
+from utils.bbox import BBox
 
 logger = get_logger("heightmap_handler")
 
-def fetch_elevation_from_api(bounds: gpd.GeoDataFrame) -> tuple[np.ndarray, float, float]:
+def fetch_elevation_from_api(bounds: Any) -> tuple[np.ndarray, float, float]:
     """
-    Fetches elevation data from the OpenTopography API and returns an elevation matrix along with the minimum and maximum elevations.
+    Fetches elevation data from the OpenTopography API and returns an elevation matrix along with
+    the minimum and maximum elevations.
 
     This function performs an HTTP request to the OpenTopography API using the geographic coordinate parameters
     (north, south, east, west) to obtain an elevation file in GeoTIFF format. The elevation matrix is processed to
-    handle `nodata` values and the minimum and maximum elevation of the requested region is calculated.
+    handle `nodata` values and the minimum and maximum elevation of the requested region is calculated. accepts a bbox-like input (GeoDataFrame, shapely geometry, dict, or sequence).
+    The bbox will be normalized to the canonical format {'west','south','east','north'} before
+    being sent to the API. If the input has a CRS, it is preserved in the normalized bbox but
+    the API expects geographic coordinates (EPSG:4326).
 
     Parameters:
     -----------
-    bounds : gpd.GeoDataFrame
-        A GeoDataFrame with the coordinates of the region of interest, with the following keys:
-        - 'xmin' (float): western boundary coordinate.
-        - 'ymin' (float): South boundary coordinate.
-        - 'xmax' (float): East boundary coordinate.
-        - 'ymax' (float): coordinate of the north boundary.
+    bounds : any
+        A bbox-like object (GeoDataFrame, GeoSeries, shapely geometry, dict or 4-item sequence).
 
-    Return:
+    Returns:
     --------
     elevation : numpy.ndarray
         2D array with elevation data (in meters) for the requested region.
     
-    if api_key and len(api_key) > 6:
-        masked = api_key[:3] + "..." + api_key[-3:]
-    else:
-        masked = "(invalid or missing)"
-    log_info(logger, f"Using OpenTopography API Key: {masked}")
+    max_elev : float
         The maximum elevation in the requested region (in meters).
     
     min_elev : float
         The minimum elevation in the requested region (in meters).
+
+    Raises:
+    -------
+    ValueError: if bbox cannot be normalized or is invalid.    
 
     Exceptions:
     ------------
@@ -57,10 +58,26 @@ def fetch_elevation_from_api(bounds: gpd.GeoDataFrame) -> tuple[np.ndarray, floa
     if api_key and len(api_key) > 6:
         masked = api_key[:3] + "..." + api_key[-3:]
     else:
-        masked = "(invalid or missing)"
+        masked = "(OpenTopography API key invalid or missing)"
     log_info(logger, f"Using OpenTopography API Key: {masked}")
     url = 'https://portal.opentopography.org/API/globaldem'
-    west, south, east, north = bounds.bounds.loc[0].values
+    # ensure we have a BBox instance and that coordinates are geographic (EPSG:4326)
+    try:
+        bbox_obj = bounds if isinstance(bounds, BBox) else BBox(bounds)
+    except Exception as e:
+        log_error(logger, f"Invalid bbox for elevation API: {e}")
+        raise
+
+    # If bbox is projected (meters), try to reproject to EPSG:4326 for the API
+    if getattr(bbox_obj, "is_projected", False):
+        try:
+            bbox_geo = bbox_obj.reproject("EPSG:4326")
+            bbox_obj = bbox_geo
+            log_info(logger, "Reprojected bbox to EPSG:4326 for elevation API.")
+        except Exception as e:
+            log_warning(logger, f"Could not reproject bbox to EPSG:4326: {e} — proceeding with original bbox (may be incorrect for the API).")
+
+    west, south, east, north = bbox_obj.west, bbox_obj.south, bbox_obj.east, bbox_obj.north
     params = {
         'demtype': 'AW3D30',
         'west': west,
@@ -111,7 +128,7 @@ def plot_elevation_map(elevation: np.ndarray, cmap: str = "gray", vmin: float = 
     log_info(logger, "Elevation map displayed.")
 
 def generate_heightmap_n_texture(
-    bounds: gpd.GeoDataFrame,
+    bounds: Any,
     heightmap_path: str = "heightmap.png",
     groundmap_path: str = "groundmap.png",
     cmap_name: str = "gist_earth",
@@ -131,8 +148,12 @@ def generate_heightmap_n_texture(
         output_size (tuple[int, int]): Output image size (width, height).
         smoothing_sigma (float): Sigma for Gaussian smoothing.
     """
-    if bounds is None or bounds.empty:
-        log_warning(logger, "No map data available.")
+    # Normalize bbox early so we work with a canonical format. This handles GeoDataFrame,
+    # shapely geometries, dicts and sequences. Represented with the BBox class.
+    try:
+        bbox_obj = BBox(bounds)
+    except Exception as e:
+        log_warning(logger, f"No valid bbox provided: {e}")
         return
 
     if elevation_data and 'elevation' in elevation_data and 'maxh' in elevation_data and 'minh' in elevation_data:
@@ -143,7 +164,8 @@ def generate_heightmap_n_texture(
         elevation_normalized = np.nan_to_num(elevation_normalized, nan=0.0)
     else:
         try:
-            elevation, maxh, minh = fetch_elevation_from_api(bounds)
+            # pass the BBox instance to the fetch function
+            elevation, maxh, minh = fetch_elevation_from_api(bbox_obj)
             elevation_normalized = ((elevation - minh) / (maxh - minh))
             elevation_normalized = np.nan_to_num(elevation_normalized, nan=0.0)
         except Exception as e:

@@ -4,6 +4,7 @@ from shapely.geometry import LineString
 from typing import Optional, Tuple, Dict, List
 from pyproj import CRS
 from utils.logger import get_logger, log_info, log_warning
+from utils.bbox import BBox
 
 logger = get_logger("osm_loader")
 LineStringWithAttrs = List[Tuple[LineString, Dict]]
@@ -14,7 +15,22 @@ def load_graph(place: Optional[str] = None, bbox: Optional[Tuple[float, float, f
         return ox.graph_from_place(place, network_type=network_type, simplify=True)
     if bbox:
         log_info(logger, f"Loading graph for bbox: {bbox}")
-        north, south, east, west = bbox[3], bbox[1], bbox[2], bbox[0]
+        # accept bbox-like inputs (tuple, list or BBox). Use BBox to parse and validate.
+        try:
+            bbox_obj = BBox(bbox)
+        except Exception as e:
+            log_warning(logger, f"Invalid bbox provided to load_graph: {e}")
+            raise
+        # If projected, reproject to geographic for osmnx
+        if getattr(bbox_obj, "is_projected", False):
+            try:
+                bbox_geo = bbox_obj.reproject("EPSG:4326")
+                bbox_obj = bbox_geo
+                log_info(logger, "Reprojected bbox to EPSG:4326 for osmnx.graph_from_bbox.")
+            except Exception as e:
+                log_warning(logger, f"Could not reproject bbox for osmnx: {e} — proceeding with original bbox (may be incorrect).")
+        # osmnx.graph_from_bbox expects (north, south, east, west)
+        north, south, east, west = bbox_obj.north, bbox_obj.south, bbox_obj.east, bbox_obj.west
         G = ox.graph_from_bbox((north, south, east, west), network_type=network_type, simplify=True, truncate_by_edge=True)
         log_info(logger, "Graph loaded and clipped strictly to bounding box.")
         return G

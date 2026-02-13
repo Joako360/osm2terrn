@@ -6,6 +6,7 @@ from pyproj import Transformer, CRS
 from geopandas import GeoDataFrame
 from typing import Tuple
 from shapely.geometry import box as shp_box
+from utils.bbox import BBox
 
 def utm_crs_from_lonlat(lon: float, lat: float) -> CRS:
     zone = int((lon + 180.0) // 6.0) + 1
@@ -142,7 +143,20 @@ def bbox_size_meters(bounds_wgs84: GeoDataFrame) -> Tuple[float, float]:
     Compute bbox width/height in meters by projecting to the local UTM zone
     determined from the bbox centroid.
     """
-    if bounds_wgs84 is None or bounds_wgs84.empty:
+    # Accept either a GeoDataFrame or a BBox instance for convenience
+    if bounds_wgs84 is None:
+        raise ValueError("Bounds GeoDataFrame or BBox is None")
+    if isinstance(bounds_wgs84, BBox):
+        # If the BBox is already in projected units (meters), we can compute size directly
+        if getattr(bounds_wgs84, "is_projected", False):
+            width = float(bounds_wgs84.east - bounds_wgs84.west)
+            height = float(bounds_wgs84.north - bounds_wgs84.south)
+            return width, height
+        # otherwise create a GeoDataFrame from the BBox; use provided CRS when available
+        crs = bounds_wgs84.crs if bounds_wgs84.crs is not None else "EPSG:4326"
+        gdf = GeoDataFrame(geometry=[bounds_wgs84.to_shapely()], crs=crs)
+        bounds_wgs84 = gdf
+    if bounds_wgs84.empty:
         raise ValueError("Bounds GeoDataFrame is empty")
     # Determine centroid in lon/lat
     b4326 = bounds_wgs84.to_crs(4326)
@@ -192,7 +206,13 @@ def make_square_bounds_centered(bounds_wgs84: GeoDataFrame, side_meters: float) 
     Return a square bounds GeoDataFrame in WGS84 centered on the original bbox centroid,
     with side length = side_meters. Uses UTM projection to build a metric square and reprojects back.
     """
-    if bounds_wgs84 is None or bounds_wgs84.empty:
+    if bounds_wgs84 is None:
+        raise ValueError("Bounds GeoDataFrame or BBox is None")
+    # allow BBox inputs for convenience
+    if isinstance(bounds_wgs84, BBox):
+        crs = bounds_wgs84.crs if bounds_wgs84.crs is not None else "EPSG:4326"
+        bounds_wgs84 = GeoDataFrame(geometry=[bounds_wgs84.to_shapely()], crs=crs)
+    if bounds_wgs84.empty:
         raise ValueError("Bounds GeoDataFrame is empty")
     b4326 = bounds_wgs84.to_crs(4326)
     cx = float(b4326.geometry.centroid.x.iloc[0])
