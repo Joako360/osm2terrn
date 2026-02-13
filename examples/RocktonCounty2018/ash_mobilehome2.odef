@@ -1,0 +1,12 @@
+ash_mobilehome2.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_mobilehome2.mesh
+endmesh
+
+beginlodmesh
+100, ash_mobilehome2_lod1.mesh
+200, ash_mobilehome2_lod2.mesh
+
+end

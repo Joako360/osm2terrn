@@ -1,0 +1,14 @@
+material a1da0UID-tunapicker
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture a1da0UID-tunapicker.dds
+			}
+		}
+	}
+}

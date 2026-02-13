@@ -1,0 +1,14 @@
+material Material.er987zsdf6g54er
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture haus1.dds
+			}
+		}
+	}
+}

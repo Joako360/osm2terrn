@@ -1,0 +1,6 @@
+Small_House.mesh
+1, 1, 1
+beginmesh
+mesh Small_House.mesh
+endmesh
+end

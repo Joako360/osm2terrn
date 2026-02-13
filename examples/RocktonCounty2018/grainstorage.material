@@ -1,0 +1,355 @@
+material grainstorage_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material grainstorage_DarkGoldenrod
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+         ambient 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+      }
+   }
+}
+material grainstorage_Gray6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material grainstorage_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material grainstorage_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+         ambient 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+      }
+   }
+}
+material grainstorage_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material grainstorage_Redwood
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+         ambient 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+      }
+   }
+}
+material grainstorage_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material grainstorage_Brick_Tumbled
+{
+   technique
+   {
+      pass
+      {
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material grainstorage_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material grainstorage_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material grainstorage_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material grainstorage_0134_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material grainstorage_Cladding_Siding_Tan
+{
+   technique
+   {
+      pass
+      {
+         30.0, 30.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_Tan.jpg
+         }
+      }
+   }
+}
+material grainstorage_Roofing_Slate_Dark
+{
+   technique
+   {
+      pass
+      {
+         32.0, 32.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Slate_Dark.jpg
+         }
+      }
+   }
+}
+material grainstorage_Metal_Steel_Textured
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Steel_Textured.jpg
+         }
+      }
+   }
+}
+material grainstorage_Metal_Embossed
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Embossed.jpg
+         }
+      }
+   }
+}
+material grainstorage_Gray_Glass1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.156862745098039 0.156862745098039 0.156862745098039 0.79
+         ambient 0.156862745098039 0.156862745098039 0.156862745098039 0.79
+      }
+   }
+}
+material grainstorage_Ivory
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.96078431372549 0.96078431372549 0.96078431372549 0.1
+         ambient 0.96078431372549 0.96078431372549 0.96078431372549 0.1
+      }
+   }
+}
+material grainstorage_Wood_Bamboo_Medium
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Bamboo_Medium.jpg
+         }
+      }
+   }
+}
+material grainstorage_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material grainstorage_Material1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.764705882352941 0.764705882352941 0.764705882352941 1.0
+         ambient 0.764705882352941 0.764705882352941 0.764705882352941 1.0
+      }
+   }
+}
+material grainstorage_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material grainstorage_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material grainstorage_Concrete_Form_4x8
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material grainstorage_Concrete_Block_8x8_Gray
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Block_8x8_Gray.jpg
+         }
+      }
+   }
+}
+material grainstorage__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

@@ -1,0 +1,285 @@
+material BrickBurger_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+      }
+   }
+}
+material BrickBurger_Brick_Rough_Dark
+{
+   technique
+   {
+      pass
+      {
+         36.0, 22.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Rough_Dark.jpg
+         }
+      }
+   }
+}
+material BrickBurger_Color_D01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.619607843137255 0.0 1.0
+         ambient 0.827450980392157 0.619607843137255 0.0 1.0
+      }
+   }
+}
+material BrickBurger_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material BrickBurger_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         132.0, 132.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material BrickBurger_Color_006
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+         ambient 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+      }
+   }
+}
+material BrickBurger_Color_001
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+         ambient 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+      }
+   }
+}
+material BrickBurger_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material BrickBurger_Color_A06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.0 0.0 1.0
+         ambient 0.8 0.0 0.0 1.0
+      }
+   }
+}
+material BrickBurger_Color_A11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.0 0.0 1.0
+         ambient 0.6 0.0 0.0 1.0
+      }
+   }
+}
+material BrickBurger_Color_007
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+         ambient 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+      }
+   }
+}
+material BrickBurger_Material1
+{
+   technique
+   {
+      pass
+      {
+         185.0, 138.75
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture brick burger sign.dds
+         }
+      }
+   }
+}
+material BrickBurger_Material2
+{
+   technique
+   {
+      pass
+      {
+         185.0, 138.75
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture brick burger sign.dds
+         }
+      }
+   }
+}
+material BrickBurger_Material3
+{
+   technique
+   {
+      pass
+      {
+         100.0, 75.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture BBmenu.dds
+         }
+      }
+   }
+}
+material BrickBurger_[Asphalt_New]1
+{
+   technique
+   {
+      pass
+      {
+         80.0, 80.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material BrickBurger_Color_B10
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.67843137254902 0.63921568627451 1.0
+         ambient 0.8 0.67843137254902 0.63921568627451 1.0
+      }
+   }
+}
+material BrickBurger_[Color_D01]1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.749019607843137 0.0 1.0
+         ambient 1.0 0.749019607843137 0.0 1.0
+      }
+   }
+}
+material BrickBurger_[Asphalt_New]2
+{
+   technique
+   {
+      pass
+      {
+         90.0, 90.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material BrickBurger_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material BrickBurger_[Asphalt_New]3
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material BrickBurger_Color_008
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+         ambient 0.117647058823529 0.117647058823529 0.117647058823529 1.0
+      }
+   }
+}
+material BrickBurger__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.890196078431373 0.882352941176471 0.870588235294118
+         ambient 0.890196078431373 0.882352941176471 0.870588235294118
+      }
+   }
+}

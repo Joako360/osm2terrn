@@ -51,6 +51,11 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+# Local cache and output and examples files
+cache/
+output/
+examples/
+
 # Translations
 *.mo
 *.pot
@@ -76,6 +81,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+notebooks/cache/
 
 # IPython
 profile_default/

@@ -1,0 +1,279 @@
+material opmapmart2coll_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material opmapmart2coll_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material opmapmart2coll_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material opmapmart2coll_LightGray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 0.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 0.0
+      }
+   }
+}
+material opmapmart2coll_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material opmapmart2coll_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material opmapmart2coll_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material opmapmart2coll_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material opmapmart2coll_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material opmapmart2coll_Color_I12
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.117647058823529 0.117647058823529 0.6 1.0
+         ambient 0.117647058823529 0.117647058823529 0.6 1.0
+      }
+   }
+}
+material opmapmart2coll_Color_I08
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.8 1.0
+         ambient 0.317647058823529 0.317647058823529 0.8 1.0
+      }
+   }
+}
+material opmapmart2coll_Color_I13
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.23921568627451 0.23921568627451 0.6 1.0
+         ambient 0.23921568627451 0.23921568627451 0.6 1.0
+      }
+   }
+}
+material opmapmart2coll_Roofing_Shingles_GAF_Estates
+{
+   technique
+   {
+      pass
+      {
+         22.0, 16.375
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_GAF_Estates.jpg
+         }
+      }
+   }
+}
+material opmapmart2coll_Color_H18
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.156862745098039 0.4 0.4 1.0
+         ambient 0.156862745098039 0.4 0.4 1.0
+      }
+   }
+}
+material opmapmart2coll_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         59.0551181102362, 59.0551181102362
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material opmapmart2coll_Color_G05
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 1.0 0.8 1.0
+         ambient 0.8 1.0 0.8 1.0
+      }
+   }
+}
+material opmapmart2coll_Color_H04
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 1.0 1.0 1.0
+         ambient 0.6 1.0 1.0 1.0
+      }
+   }
+}
+material opmapmart2coll_Color_H05
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 1.0 1.0 1.0
+         ambient 0.8 1.0 1.0 1.0
+      }
+   }
+}
+material opmapmart2coll_Roofing_Metal_Standing_Seam_Red
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Metal_Standing_Seam_Red.jpg
+         }
+      }
+   }
+}
+material opmapmart2coll_Material1
+{
+   technique
+   {
+      pass
+      {
+         71.7004745267769, 39.3700787401575
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Air conditionger fan for airport.jpg
+         }
+      }
+   }
+}
+material opmapmart2coll_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material opmapmart2coll_0126_Violet
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+         ambient 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+      }
+   }
+}
+material opmapmart2coll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

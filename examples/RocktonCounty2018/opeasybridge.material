@@ -1,0 +1,70 @@
+material opeasybridge_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opeasybridge_0060_GrassGreen
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.243137254901961 0.356862745098039 0.0196078431372549 1.0
+         ambient 0.243137254901961 0.356862745098039 0.0196078431372549 1.0
+      }
+   }
+}
+material opeasybridge_0076_Green
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.501960784313725 0.0 1.0
+         ambient 0.0 0.501960784313725 0.0 1.0
+      }
+   }
+}
+material opeasybridge_0077_DarkGreen
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.47843137254902 0.109803921568627 0.109803921568627 1.0
+         ambient 0.47843137254902 0.109803921568627 0.109803921568627 1.0
+      }
+   }
+}
+material opeasybridge_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material opeasybridge__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.890196078431373 0.882352941176471 0.870588235294118
+         ambient 0.890196078431373 0.882352941176471 0.870588235294118
+      }
+   }
+}

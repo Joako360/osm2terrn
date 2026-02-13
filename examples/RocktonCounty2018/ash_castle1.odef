@@ -1,0 +1,11 @@
+ash_castle1.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_castle1C.mesh
+endmesh
+
+beginlodmesh
+400, ash_castle1_lod1.mesh
+
+end

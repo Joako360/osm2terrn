@@ -1,0 +1,356 @@
+material opmill_black
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material opmill_Beige1
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material opmill_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material opmill_LightGray
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material opmill_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material opmill_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material opmill_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material opmill_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material opmill_Wood_Lumber_ButtJoined
+{
+   technique
+   {
+      pass
+      {
+         60.0, 30.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Wood_Lumber_ButtJoined.jpg
+         }
+      }
+   }
+}
+material opmill_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material opmill_Metal_Corrogated_Shiny
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Corrogated_Shiny.jpg
+         }
+      }
+   }
+}
+material opmill_Metal_Brass_Ceiling
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Brass_Ceiling.jpg
+         }
+      }
+   }
+}
+material opmill_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opmill_Brick_Rough_Dark
+{
+   technique
+   {
+      pass
+      {
+         36.0, 22.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Brick_Rough_Dark.jpg
+         }
+      }
+   }
+}
+material opmill_Roofing_Metal_Standing_Seam_Red
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Roofing_Metal_Standing_Seam_Red.jpg
+         }
+      }
+   }
+}
+material opmill_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material opmill_Cladding_Siding_Tan
+{
+   technique
+   {
+      pass
+      {
+         30.0, 30.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Cladding_Siding_Tan.jpg
+         }
+      }
+   }
+}
+material opmill_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         cull_hardware none
+         cull_software none
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material opmill_Concrete_Form_4x8
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material opmill_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material opmill_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material opmill_[Asphalt_New]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material opmill__SketchupDefault
+{
+   technique
+   {
+      pass
+         cull_hardware none
+         cull_software none
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

@@ -1,0 +1,195 @@
+material bmoffice7_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmoffice7_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmoffice7_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmoffice7_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmoffice7_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmoffice7_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmoffice7_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmoffice7_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmoffice7_Material1
+{
+   technique
+   {
+      pass
+      {
+         350.0, 319.454545454546
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 164337_143414955718131_7464108_n.jpg
+         }
+      }
+   }
+}
+material bmoffice7_Color_001
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+         ambient 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+      }
+   }
+}
+material bmoffice7_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+      }
+   }
+}
+material bmoffice7_Wood_Cherry_Original
+{
+   technique
+   {
+      pass
+      {
+         72.0, 72.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Cherry_Original.jpg
+         }
+      }
+   }
+}
+material bmoffice7_Color_C10
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.717647058823529 0.63921568627451 1.0
+         ambient 0.8 0.717647058823529 0.63921568627451 1.0
+      }
+   }
+}
+material bmoffice7_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmoffice7_Wood_Floor_Dark
+{
+   technique
+   {
+      pass
+      {
+         120.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Floor_Dark.jpg
+         }
+      }
+   }
+}
+material bmoffice7__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

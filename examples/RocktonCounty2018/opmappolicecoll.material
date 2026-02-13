@@ -1,0 +1,210 @@
+material opmappolicecoll_Metal_Corrogated_Shiny
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         14.0, 14.0
+         diffuse 1 1 1 0.81
+         texture_unit
+         {
+            texture Metal_Corrogated_Shiny.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         228.0, 228.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_Stone_Masonry_Multi
+{
+   technique
+   {
+      pass
+      {
+         83.0, 56.5106382978723
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Masonry_Multi.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+      }
+   }
+}
+material opmappolicecoll_[Metal_Rough]1
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_Color_I17
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0784313725490196 0.0784313725490196 0.4 1.0
+         ambient 0.0784313725490196 0.0784313725490196 0.4 1.0
+      }
+   }
+}
+material opmappolicecoll_Color_I07
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.156862745098039 0.156862745098039 0.8 1.0
+         ambient 0.156862745098039 0.156862745098039 0.8 1.0
+      }
+   }
+}
+material opmappolicecoll_Color_I05
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.8 1.0 1.0
+         ambient 0.8 0.8 1.0 1.0
+      }
+   }
+}
+material opmappolicecoll_Wood_Floor_Parquet
+{
+   technique
+   {
+      pass
+      {
+         144.0, 144.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Floor_Parquet.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_Wood_Bamboo_Medium
+{
+   technique
+   {
+      pass
+      {
+         264.0, 264.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Bamboo_Medium.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_Brick_Tumbled
+{
+   technique
+   {
+      pass
+      {
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         178.0, 113.551724137931
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_[Stone_Masonry_Multi]1
+{
+   technique
+   {
+      pass
+      {
+         47.0, 32.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Masonry_Multi.jpg
+         }
+      }
+   }
+}
+material opmappolicecoll_0126_Violet
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+         ambient 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+      }
+   }
+}
+material opmappolicecoll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.890196078431373 0.882352941176471 0.870588235294118
+         ambient 0.890196078431373 0.882352941176471 0.870588235294118
+      }
+   }
+}

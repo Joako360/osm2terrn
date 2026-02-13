@@ -1,0 +1,197 @@
+import * from "managed_mats.material"
+
+material rey_si_light
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.700000 0.700000 0.700000 1.000000
+			diffuse 0.698988 0.698988 0.698988 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material rey_si_dark
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.100000 0.100000 0.100000 1.000000
+			diffuse 0.130303 0.130303 0.130303 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material rey_si_concrete: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.770000 0.750000 0.750000 1.000000
+			diffuse 0.200000 0.200000 0.200000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_concrete.dds
+			}
+		}
+	}
+}
+material rey_si_concrete2: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_concrete2.dds
+			}
+		}
+	}
+}
+material rey_si_busstop: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.200000 0.200000 0.200000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_busstop.dds
+			}
+		}
+	}
+}
+material rey_si_windows: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_windows.dds
+			}
+		}
+	}
+}
+material rey_si_door: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_door.dds
+			}
+		}
+	}
+}
+material rey_si_rolldoor: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_rolldoor.dds
+			}
+		}
+	}
+}
+material rey_si_roof: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_roof.dds
+			}
+		}
+	}
+}
+material rey_si_gasstation_rim
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.100000 0.100000 0.100000 1.000000
+			diffuse 0.130303 0.130303 0.130303 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material rey_si_gasstation_stuff: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_gasstation_stuff.dds
+			}
+		}
+	}
+}
+material rey_si_shedmetal: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.640000 0.640000 0.640000 1.000000
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_shedmetal.dds
+			}
+		}
+	}
+}
+material rey_si_speedbump: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			texture_unit Diffuse_Map
+			{
+				texture rey_si_speedbump.dds
+			}
+		}
+	}
+}
+

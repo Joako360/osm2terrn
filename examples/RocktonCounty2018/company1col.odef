@@ -1,0 +1,6 @@
+company1col.mesh
+1, 1, 1
+beginmesh
+mesh company1col.mesh
+endmesh
+end

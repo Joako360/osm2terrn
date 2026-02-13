@@ -1,0 +1,11 @@
+ash_tent2.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_tent2C.mesh
+endmesh
+
+beginlodmesh
+1, ash_tent2_lod1.mesh
+
+end

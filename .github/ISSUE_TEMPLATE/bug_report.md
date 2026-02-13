@@ -1,38 +1,45 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+# Bug Report Template
+
+Thank you for reporting a bug in **OSM2terrn**!
+Please fill out the form below to help us reproduce and fix the issue.
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## 🐞 Bug Description
 
-**To Reproduce**
-Steps to reproduce the behavior:
+### What happened?
+_A clear and concise description of what the bug is._
+
+### Steps to Reproduce
+_Provide steps to reproduce the behavior:_
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+2. Click on '...'
+3. Scroll down to '...'
+4. See the error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+### Expected behavior
+_What did you expect to happen instead?_
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+### Screenshots or Logs
+_If applicable, add screenshots, logs, or files to help explain your problem._
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+### Environment Information
+- OS: [e.g., Windows 10, Ubuntu 22.04]
+- Python Version: [e.g., 3.10]
+- Project version / commit: [e.g., v1.0.0 or commit hash]
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+### Additional context
+_Any other context or details about the problem?_
 
-**Additional context**
-Add any other context about the problem here.
+---
+
+## 📋 Contribution Intent
+
+- [ ] I am willing to submit a Pull Request to fix this bug.
+- [ ] I would like someone else to fix this bug.
+- [ ] I need guidance or mentorship to work on this fix.
+
+---
+
+Thank you for helping improve **OSM2terrn**! 🚀
+

@@ -1,0 +1,6 @@
+ohareyard.mesh
+1, 1, 1
+beginmesh
+mesh ohareyard.mesh
+endmesh
+end

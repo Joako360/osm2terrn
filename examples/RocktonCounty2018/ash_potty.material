@@ -1,0 +1,17 @@
+material Material#0.003/SOLID/TEX/ash_clutter1.dds
+{
+	technique
+	{
+		pass
+		{
+			alpha_rejection greater_equal 128 
+			scene_blend alpha_blend 
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture ash_clutter1.dds
+			}
+		}
+	}
+}

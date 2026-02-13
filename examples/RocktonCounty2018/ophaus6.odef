@@ -1,0 +1,8 @@
+haus6.mesh
+1, 1, 1,
+
+beginmesh
+mesh haus6Kol.mesh
+endmesh
+
+end

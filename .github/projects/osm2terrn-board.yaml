@@ -1,0 +1,34 @@
+name: OSM2terrn Development Board
+description: Kanban board to manage Issues and Pull Requests for the OSM2terrn project.
+
+# Columns
+columns:
+  - name: To Do
+    automation:
+      - triggers:
+          - issue_opened
+          - pr_opened
+        action: add
+
+  - name: In Progress
+    automation:
+      - triggers:
+          - pr_assigned
+          - pr_opened
+        action: move
+
+  - name: Done
+    automation:
+      - triggers:
+          - issue_closed
+          - pr_merged
+          - pr_closed
+        action: move
+
+# Visibility
+visibility: public
+
+# Scope
+scope:
+  repos:
+    - Joako360/osm2terrn

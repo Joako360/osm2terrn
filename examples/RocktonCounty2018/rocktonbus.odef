@@ -1,0 +1,6 @@
+rocktonbus.mesh
+1, 1, 1
+beginmesh
+mesh rocktonbuscoll.mesh
+endmesh
+end

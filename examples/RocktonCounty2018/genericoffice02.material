@@ -1,0 +1,30 @@
+material Material/TEXFACE/windowedwall01.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture windowedwall01.png
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE/glasswall01.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture glasswall01.png
+				colour_op modulate
+			}
+		}
+	}
+}

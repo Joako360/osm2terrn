@@ -1,0 +1,8 @@
+ash_house1.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_house1C.mesh
+endmesh
+
+end

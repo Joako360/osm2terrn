@@ -1,0 +1,17 @@
+material Material/TEXFACE/cementplant.jpg
+{
+	technique
+	{
+		pass
+		{
+
+			texture_unit
+			{
+				texture_alias 0
+				texture cementplant.jpg
+			}
+		}
+
+	}
+
+}

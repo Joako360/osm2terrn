@@ -1,0 +1,171 @@
+material company1col_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material company1col_DarkGoldenrod
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+         ambient 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+      }
+   }
+}
+material company1col_Gray6
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 0.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 0.0
+      }
+   }
+}
+material company1col_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material company1col_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+         ambient 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+      }
+   }
+}
+material company1col_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material company1col_Redwood
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+         ambient 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+      }
+   }
+}
+material company1col_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material company1col_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material company1col_Gray_Glass1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.156862745098039 0.156862745098039 0.156862745098039 0.79
+         ambient 0.156862745098039 0.156862745098039 0.156862745098039 0.79
+      }
+   }
+}
+material company1col_Ivory
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.96078431372549 0.96078431372549 0.96078431372549 0.1
+         ambient 0.96078431372549 0.96078431372549 0.96078431372549 0.1
+      }
+   }
+}
+material company1col_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material company1col_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material company1col__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

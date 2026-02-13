@@ -1,0 +1,229 @@
+material bmoffice5_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmoffice5_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmoffice5_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmoffice5_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmoffice5_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmoffice5_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmoffice5_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmoffice5_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmoffice5_Material2
+{
+   technique
+   {
+      pass
+      {
+         1000.0, 1016.94915254237
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 170759_143418115717815_3665452_o.jpg
+         }
+      }
+   }
+}
+material bmoffice5_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmoffice5_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+      }
+   }
+}
+material bmoffice5_Roofing_Shingles_GAF_Estates
+{
+   technique
+   {
+      pass
+      {
+         22.0, 16.375
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_GAF_Estates.jpg
+         }
+      }
+   }
+}
+material bmoffice5_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material bmoffice5_Concrete_Form_4x8
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material bmoffice5_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmoffice5_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material bmoffice5_WarmGray6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.513725490196078 0.443137254901961 0.4 1.0
+         ambient 0.513725490196078 0.443137254901961 0.4 1.0
+      }
+   }
+}
+material bmoffice5__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

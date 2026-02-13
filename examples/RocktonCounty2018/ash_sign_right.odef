@@ -1,0 +1,10 @@
+ash_sign_right.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_sign_right.mesh
+endmesh
+
+beginlodmesh
+100, ash_sign_right_lod1.mesh
+end

@@ -1,0 +1,6 @@
+bmoffice8.mesh
+1, 1, 1
+beginmesh
+mesh bmoffice8.mesh
+endmesh
+end

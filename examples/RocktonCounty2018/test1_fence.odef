@@ -1,0 +1,11 @@
+test1_fence.mesh
+1, 1, 1
+
+beginmesh
+mesh test1_fenceC.mesh
+endmesh
+
+beginlodmesh
+3, test1_fence_lod1.mesh
+
+end

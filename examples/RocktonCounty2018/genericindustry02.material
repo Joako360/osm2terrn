@@ -1,0 +1,119 @@
+material Material/TEXFACE/Windowedwall03.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Windowedwall03.png
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE/Door01.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Door01.png
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.500000 0.500000 0.500000 1.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material Material/TEXFACE/tanksupportred.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tanksupportred.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE/Metalroof01.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Metalroof01.png
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE/Roof01.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Roof01.png
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE/uglyibeamgreen.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture uglyibeamgreen.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+material Material/TEXFACE/Brick01.png
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Brick01.png
+				colour_op modulate
+			}
+		}
+	}
+}

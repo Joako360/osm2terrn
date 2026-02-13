@@ -1,0 +1,180 @@
+material Material#0.001/SOLID/TEX/ash_concrete_bridge.dds
+{   
+   technique
+   {
+   
+      pass Ambient
+      {
+		vertex_program_ref ETAmbient_VS
+        {
+        }        
+      }	
+           
+      pass Lighting
+      {
+         scene_blend add
+         iteration once_per_light
+         
+         		 
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+	   param_named splatScaleX float 1
+           param_named splatScaleZ float 1
+         }
+         
+		 texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture test1_RGB0.dds
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+         
+        texture_unit
+         {
+         	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture ash_concrete_bridge_NRM.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+	 texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         } 
+         
+      }
+     
+         // primary splatting technique, requires PS 2.0
+	pass Splatting
+    {
+         scene_blend modulate
+                    
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+         }          
+         
+         vertex_program_ref ET/Programs/VSLodMorph2
+         {
+         }
+
+         fragment_program_ref ET/Programs/PSSplat2
+         {
+           param_named splatScaleX float 1
+           param_named splatScaleZ float 1
+         }
+
+         texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture test1_RGB0.dds
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture test1_RGB0.dds
+         }
+
+         // splatting textures
+         texture_unit
+         {
+            	texture none.dds
+         }
+         texture_unit
+         {
+		texture none.dds
+         }
+         texture_unit
+         {
+           	texture ash_concrete_bridge.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+	 texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+         texture_unit
+         {
+           	texture none.dds
+         }
+      }    
+      
+      pass
+	  {
+			// colour map
+			scene_blend modulate	
+		     
+		    vertex_program_ref ET/Programs/VSLodMorph3
+			{
+			} 					
+			
+			texture_unit 
+			{			
+				texture ash_concrete_bridge_lightmap.dds
+			}					
+			      
+		}   
+		        
+      
+   }
+} 

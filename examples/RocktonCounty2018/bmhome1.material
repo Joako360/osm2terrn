@@ -1,0 +1,256 @@
+material bmhome1_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome1_Cladding_Siding_Tanyellow
+{
+   technique
+   {
+      pass
+      {
+         30.0, 30.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_Tan.jpg
+         }
+      }
+   }
+}
+material bmhome1_Roofing_Shingles_Asphalt
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_Asphalt.jpg
+         }
+      }
+   }
+}
+material bmhome1_Color_D11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.447058823529412 0.0 1.0
+         ambient 0.6 0.447058823529412 0.0 1.0
+      }
+   }
+}
+material bmhome1_Color_C25
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.176470588235294 0.156862745098039 1.0
+         ambient 0.2 0.176470588235294 0.156862745098039 1.0
+      }
+   }
+}
+material bmhome1_Wood_Bamboo_Medium
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Bamboo_Medium.jpg
+         }
+      }
+   }
+}
+material bmhome1_Concrete_Block_8x8_Gray
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Block_8x8_Gray.jpg
+         }
+      }
+   }
+}
+material bmhome1_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmhome1_Metal_Panel
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Panel.jpg
+         }
+      }
+   }
+}
+material bmhome1_Metal_Embossed
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Embossed.jpg
+         }
+      }
+   }
+}
+material bmhome1_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.88
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.88
+      }
+   }
+}
+material bmhome1_Translucent_Glass_Block_Dark
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         18.0, 18.0
+         diffuse 1 1 1 0.8
+         texture_unit
+         {
+            texture Translucent_Glass_Block_Dark.jpg
+         }
+      }
+   }
+}
+material bmhome1_Color_D05
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.949019607843137 0.8 1.0
+         ambient 1.0 0.949019607843137 0.8 1.0
+      }
+   }
+}
+material bmhome1_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material bmhome1_Material1
+{
+   technique
+   {
+      pass
+      {
+         40.0, 88.8135593220339
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture door9.dds
+         }
+      }
+   }
+}
+material bmhome1_door2
+{
+   technique
+   {
+      pass
+      {
+         40.2845625000001, 82.3124999999999
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture door2.dds
+         }
+      }
+   }
+}
+material bmhome1_Material2
+{
+   technique
+   {
+      pass
+      {
+         33.2898259705489, 88.8125
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture misc_window_texture_by_dbszabo1-d4jl603.jpg
+         }
+      }
+   }
+}
+material bmhome1__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

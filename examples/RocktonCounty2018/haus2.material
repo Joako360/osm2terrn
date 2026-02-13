@@ -1,0 +1,14 @@
+material Material.89465iotsdhbcus
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture haus2.dds
+			}
+		}
+	}
+}

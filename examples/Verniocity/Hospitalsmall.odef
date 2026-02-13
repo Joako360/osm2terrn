@@ -1,0 +1,6 @@
+Hospitalsmall.mesh
+1, 1, 1
+beginmesh
+mesh HospitalsmallCOLLISHION.mesh
+endmesh
+end

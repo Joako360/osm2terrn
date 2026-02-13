@@ -1,0 +1,8 @@
+distcent4floor.mesh
+1.0, 1.0, 1.0
+
+beginmesh
+mesh distcent4floorLOW.mesh
+endmesh
+
+end

@@ -1,0 +1,583 @@
+material bmpizzacoll_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzacoll_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmpizzacoll_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmpizzacoll_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmpizzacoll_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmpizzacoll_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmpizzacoll_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmpizzacoll_Material2
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.219607843137255 0.219607843137255 0.219607843137255 1.0
+         ambient 0.219607843137255 0.219607843137255 0.219607843137255 1.0
+      }
+   }
+}
+material bmpizzacoll_Ivory
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.96078431372549 0.96078431372549 0.96078431372549 0.1
+         ambient 0.96078431372549 0.96078431372549 0.96078431372549 0.1
+      }
+   }
+}
+material bmpizzacoll_0133_Gray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 1.0
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 1.0
+      }
+   }
+}
+material bmpizzacoll_[Translucent_Glass_Gray]1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material bmpizzacoll_Steve_Glasses_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.168627450980392 0.168627450980392 0.168627450980392 1.0
+         ambient 0.168627450980392 0.168627450980392 0.168627450980392 1.0
+      }
+   }
+}
+material bmpizzacoll_Color_D15
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.568627450980392 0.47843137254902 1.0
+         ambient 0.6 0.568627450980392 0.47843137254902 1.0
+      }
+   }
+}
+material bmpizzacoll_Metal_Brushed1
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Brushed.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_0035_Tan
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.627450980392157 0.541176470588235 0.427450980392157 1.0
+         ambient 0.627450980392157 0.541176470588235 0.427450980392157 1.0
+      }
+   }
+}
+material bmpizzacoll_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_[Metal_Seamed]1
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_[Translucent_Glass_Gray]2
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+      }
+   }
+}
+material bmpizzacoll_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_Material5
+{
+   technique
+   {
+      pass
+      {
+         40.0, 55.732946298984
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1743637_640816979311257_1964790384_n.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_0134_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material bmpizzacoll_0022_Maroon
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.501960784313725 0.0 0.0 1.0
+         ambient 0.501960784313725 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzacoll_0136_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmpizzacoll_[Color_003]12
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.96078431372549 0.96078431372549 0.96078431372549 1.0
+         ambient 0.96078431372549 0.96078431372549 0.96078431372549 1.0
+      }
+   }
+}
+material bmpizzacoll_[Color_003]1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material bmpizzacoll_Color_009
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzacoll_[Color_003]3
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+         ambient 0.666666666666667 0.666666666666667 0.666666666666667 1.0
+      }
+   }
+}
+material bmpizzacoll_Color_003
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.23921568627451 0.207843137254902 0.145098039215686 1.0
+         ambient 0.23921568627451 0.207843137254902 0.145098039215686 1.0
+      }
+   }
+}
+material bmpizzacoll_Color_007
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+         ambient 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+      }
+   }
+}
+material bmpizzacoll_0137_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmpizzacoll_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material bmpizzacoll_[Color_004]1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material bmpizzacoll_Charcoal2
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.274509803921569 1.0
+         ambient 0.0 0.0 0.274509803921569 1.0
+      }
+   }
+}
+material bmpizzacoll_Material7
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.0 0.0 0.0 0.84
+         ambient 0.0 0.0 0.0 0.84
+      }
+   }
+}
+material bmpizzacoll_[Color_006]1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.2 0.2 1.0
+         ambient 0.2 0.2 0.2 1.0
+      }
+   }
+}
+material bmpizzacoll_[0133_Gray]1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 1.0
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 1.0
+      }
+   }
+}
+material bmpizzacoll_[Metal_Aluminum_Anodized]1
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_Tire_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.149019607843137 0.149019607843137 0.149019607843137 1.0
+         ambient 0.149019607843137 0.149019607843137 0.149019607843137 1.0
+      }
+   }
+}
+material bmpizzacoll_0130_Gainsboro
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.862745098039216 0.862745098039216 0.862745098039216 1.0
+         ambient 0.862745098039216 0.862745098039216 0.862745098039216 1.0
+      }
+   }
+}
+material bmpizzacoll_Cobalt
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.227450980392157 0.219607843137255 0.176470588235294 1.0
+         ambient 0.227450980392157 0.219607843137255 0.176470588235294 1.0
+      }
+   }
+}
+material bmpizzacoll_Material8
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.713725490196078 0.611764705882353 0.403921568627451 1.0
+         ambient 0.713725490196078 0.611764705882353 0.403921568627451 1.0
+      }
+   }
+}
+material bmpizzacoll_Color_006
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+         ambient 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+      }
+   }
+}
+material bmpizzacoll_Material10
+{
+   technique
+   {
+      pass
+      {
+         120.0, 120.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asphaltparklot.dds
+         }
+      }
+   }
+}
+material bmpizzacoll_Material6
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture asbmsb.dds
+         }
+      }
+   }
+}
+material bmpizzacoll_[Metal_Rough]2
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmpizzacoll_Color_L03
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 0.396078431372549 0.698039215686274 0.0
+         ambient 1.0 0.396078431372549 0.698039215686274 0.0
+      }
+   }
+}
+material bmpizzacoll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

@@ -1,0 +1,11 @@
+ash_rockwall.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_rockwallC.mesh
+endmesh
+
+beginlodmesh
+5, ash_rockwall_lod1.mesh
+
+end

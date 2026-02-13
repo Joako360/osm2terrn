@@ -1,0 +1,92 @@
+material limoserv_Brick_Rough_Dark
+{
+   technique
+   {
+      pass
+      {
+         36.0, 22.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Rough_Dark.jpg
+         }
+      }
+   }
+}
+material limoserv_Translucent_Glass_Blue
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.392156862745098 0.584313725490196 0.929411764705882 0.5
+         ambient 0.392156862745098 0.584313725490196 0.929411764705882 0.5
+      }
+   }
+}
+material limoserv_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material limoserv_Color_009
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material limoserv_Tile_Checker_BW
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Tile_Checker_BW.jpg
+         }
+      }
+   }
+}
+material limoserv_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material limoserv__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

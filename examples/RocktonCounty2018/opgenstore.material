@@ -1,0 +1,271 @@
+material opgenstore_black
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material opgenstore_Beige1
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material opgenstore_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material opgenstore_LightGray
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material opgenstore_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material opgenstore_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material opgenstore_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material opgenstore_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material opgenstore_Blinds_Roman_Hobbled_Blue
+{
+   technique
+   {
+      pass
+      {
+         12.0, 24.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Blinds_Roman_Hobbled_Blue.jpg
+         }
+      }
+   }
+}
+material opgenstore_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         cull_hardware none
+         cull_software none
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material opgenstore_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material opgenstore_Concrete_Block_Layers
+{
+   technique
+   {
+      pass
+      {
+         16.0, 10.666667
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Block_Layers.jpg
+         }
+      }
+   }
+}
+material opgenstore_Concrete_Pavers_Block_Multi
+{
+   technique
+   {
+      pass
+      {
+         17.0, 34.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Pavers_Block_Multi.jpg
+         }
+      }
+   }
+}
+material opgenstore_Concrete_Block_Retaining_Gray
+{
+   technique
+   {
+      pass
+      {
+         24.0, 12.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Block_Retaining_Gray.jpg
+         }
+      }
+   }
+}
+material opgenstore_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material opgenstore_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material opgenstore_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material opgenstore__SketchupDefault
+{
+   technique
+   {
+      pass
+         cull_hardware none
+         cull_software none
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

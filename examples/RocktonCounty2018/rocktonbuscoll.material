@@ -1,0 +1,421 @@
+material rocktonbuscoll_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material rocktonbuscoll_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material rocktonbuscoll_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material rocktonbuscoll_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material rocktonbuscoll_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material rocktonbuscoll_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material rocktonbuscoll_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material rocktonbuscoll_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material rocktonbuscoll_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Color_D01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.749019607843137 0.0 1.0
+         ambient 1.0 0.749019607843137 0.0 1.0
+      }
+   }
+}
+material rocktonbuscoll_[Concrete_Aggregate_Smoke]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+      }
+   }
+}
+material rocktonbuscoll_[Translucent_Glass_Gray]1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material rocktonbuscoll_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_[Metal_Aluminum_Anodized]1
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_[Metal_Rough]1
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_[Metal_Aluminum_Anodized]2
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_[Metal_Rough]2
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Carpet_Plush_Forest
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Carpet_Plush_Forest.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Material1
+{
+   technique
+   {
+      pass
+      {
+         70.0, 70.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 156612_133086286750998_5405172_n.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Cladding_Stucco_White
+{
+   technique
+   {
+      pass
+      {
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_Color_007
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+         ambient 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+      }
+   }
+}
+material rocktonbuscoll_Material3
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 993665_562205433839079_895736661_n.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_0102_RoyalBlue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.254901960784314 0.411764705882353 0.882352941176471 1.0
+         ambient 0.254901960784314 0.411764705882353 0.882352941176471 1.0
+      }
+   }
+}
+material rocktonbuscoll_[Metal_Seamed]1
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material rocktonbuscoll_0129_WhiteSmoke
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.96078431372549 0.96078431372549 0.96078431372549 1.0
+         ambient 0.96078431372549 0.96078431372549 0.96078431372549 1.0
+      }
+   }
+}
+material rocktonbuscoll_0137_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material rocktonbuscoll_Material2
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture invisible.dds
+         }
+      }
+   }
+}
+material rocktonbuscoll_0126_Violet
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+         ambient 0.933333333333333 0.509803921568627 0.933333333333333 0.0
+      }
+   }
+}
+material rocktonbuscoll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

@@ -1,0 +1,6 @@
+lakesidelot.mesh
+1, 1, 1
+beginmesh
+mesh lakesidelot.mesh
+endmesh
+end

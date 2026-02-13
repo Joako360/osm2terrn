@@ -1,0 +1,221 @@
+material opsteelshed_black
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material opsteelshed_Beige1
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material opsteelshed_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material opsteelshed_LightGray
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material opsteelshed_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material opsteelshed_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material opsteelshed_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material opsteelshed_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material opsteelshed_Concrete_Stamped_Ashlar
+{
+   technique
+   {
+      pass
+      {
+         48.0, 38.4
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Stamped_Ashlar.jpg
+         }
+      }
+   }
+}
+material opsteelshed_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material opsteelshed_Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material opsteelshed_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material opsteelshed_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material opsteelshed_Roofing_Metal_Standing_Seam_Red
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         cull_hardware none
+         cull_software none
+         texture_unit
+         {
+            texture Roofing_Metal_Standing_Seam_Red.jpg
+         }
+      }
+   }
+}
+material opsteelshed__SketchupDefault
+{
+   technique
+   {
+      pass
+         cull_hardware none
+         cull_software none
+      {
+         cull_hardware none
+         cull_software none
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

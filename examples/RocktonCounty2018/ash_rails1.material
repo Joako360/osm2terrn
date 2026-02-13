@@ -1,0 +1,26 @@
+material Material#0.002/SOLID/TEX/ash_guard1.dds
+{
+	transparency_casts_shadows on
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.25 0.25 0.25 1
+			diffuse 0.4 0.4 0.4 1
+			specular 0.05 0.05 0.05 1 10
+			emissive 0.35 0.35 0.35 1
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture ash_guard1.dds
+			}
+
+		}
+
+	}
+
+}

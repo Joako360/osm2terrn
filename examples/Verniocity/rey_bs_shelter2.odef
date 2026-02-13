@@ -1,0 +1,8 @@
+rey_bs_shelter2.mesh
+1, 1, 1
+
+beginmesh
+mesh rey_bs_shelter2.mesh
+endmesh
+
+end

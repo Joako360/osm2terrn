@@ -1,0 +1,367 @@
+import * from "managed_mats.material"
+
+material Apparment_V1_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material Apparment_V1_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material Apparment_V1_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material Apparment_V1_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material Apparment_V1_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material Apparment_V1_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material Apparment_V1_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material Apparment_V1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material Apparment_V1_texturemuro: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         318.897637795276, 322.694038245219
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture HighRiseResidential0051_1_thumbhuge.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Color_000
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material Apparment_V1_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.5
+      }
+   }
+}
+material Apparment_V1_Translucent_Glass_Blue
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.392156862745098 0.584313725490196 0.929411764705882 0.5
+         ambient 0.392156862745098 0.584313725490196 0.929411764705882 0.5
+      }
+   }
+}
+material Apparment_V1_Metal_Aluminum_Anodized: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Metal_Rough: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Tile_Ceramic_Natural: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         16.0, 16.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Tile_Ceramic_Natural.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Translucent_Glass_Block_Dark: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         18.0, 18.0
+         diffuse 1 1 1 0.8
+         texture_unit Diffuse_Map
+         {
+            texture Translucent_Glass_Block_Dark.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Color_009
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material Apparment_V1_Material1
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.392156862745098 0.584313725490196 0.929411764705882 0.95
+         ambient 0.392156862745098 0.584313725490196 0.929411764705882 0.95
+      }
+   }
+}
+material Apparment_V1_Roofing_Metal_Standing_Seam_Red: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Roofing_Metal_Standing_Seam_Red.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Cladding_Stucco_White: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Brick_Tumbled: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Brick_Antique: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Brick_Pavers_Modular: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Brick_Pavers_Modular.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Cladding_Siding_White: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Brick_Basket_Two: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         32.0, 32.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Brick_Basket_Two.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Brick_Pavers_Herringbone: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Brick_Pavers_Herringbone.jpg
+         }
+      }
+   }
+}
+material Apparment_V1_Stone_Pavers_Flagstone_Gray: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         72.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Stone_Pavers_Flagstone_Gray.jpg
+         }
+      }
+   }
+}

@@ -1,0 +1,17 @@
+Heightmap.0.0.raw.size=1025
+Heightmap.0.0.raw.bpp=2
+Heightmap.0.0.flipX=1
+ 
+WorldSizeX=3000
+WorldSizeZ=3000
+WorldSizeY=100
+PageSize=1025
+ 
+PageFileFormat=RTBM18-page-0-0.otc
+ 
+disableCaching=1
+
+MaxPixelError=4
+LightmapEnabled=0
+SpecularMappingEnabled=1
+NormalMappingEnabled=0

@@ -1,0 +1,11 @@
+ash_tyre1.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_tyre1_lod1.mesh
+endmesh
+
+beginlodmesh
+100, ash_tyre1_lod1.mesh
+200, ash_tyre1_lod2.mesh
+end

@@ -1,0 +1,66 @@
+# the amount of pages in this terrain
+# 0, 0 means that you only have one page
+PagesX=0
+PagesZ=0
+
+PageFileFormat=template_04_png-page-{X}-{Z}.otc
+
+# the factor with what the heightmap values get multiplied with
+WorldSizeY=0
+
+# The world size of the terrain
+WorldSizeX=3000
+WorldSizeZ=3000
+
+# Sets the default size of blend maps for a new terrain. This is the resolution of each blending layer for a new terrain. default: 1024
+LayerBlendMapSize=2048
+
+# disableCaching=1 will always enforce regeneration of the terrain, useful if you want to change the terrain config (.otc) and test it. Does not cache the objects on it.
+disableCaching=1
+
+#optimizations
+
+# Minimum batch size (along one edge) in vertices; must be 2^n+1. The terrain will be divided into tiles, and this is the minimum size of one tile in vertices (at any LOD). default: 17
+minBatchSize=17
+
+# Maximum batch size (along one edge) in vertices; must be 2^n+1 and <= 65. The terrain will be divided into hierarchical tiles, and this is the maximum size of one tile in vertices (at any LOD). default: 65
+maxBatchSize=65
+
+# Whether to support a light map over the terrain in the shader, if it's present (default true).
+LightmapEnabled=1
+
+# Whether to support normal mapping per layer in the shader (default true). 
+NormalMappingEnabled=1
+
+# Whether to support specular mapping per layer in the shader (default true). 
+SpecularMappingEnabled=1
+
+# Whether to support parallax mapping per layer in the shader (default true). 
+ParallaxMappingEnabled=0
+
+# Whether to support a global colour map over the terrain in the shader, if it's present (default true). 
+GlobalColourMapEnabled=0
+
+# Whether to use depth shadows (default false). 
+ReceiveDynamicShadowsDepth=0
+
+# Sets the default size of composite maps for a new terrain, default: 1024
+CompositeMapSize=1024
+
+# Set the distance at which to start using a composite map if present, default: 4000
+CompositeMapDistance=5000
+
+# the default size of 'skirts' used to hide terrain cracks, default: 30
+SkirtSize=30
+
+#  Sets the default size of lightmaps for a new terrain, default: 1024
+LightMapSize=1024
+
+# Whether the terrain will be able to cast shadows, default: 0
+CastsDynamicShadows=0
+
+# Set the maximum screen pixel error that should  be allowed when rendering, default:
+MaxPixelError=0
+
+# dump the blend maps to files named blendmap_layer_X.png
+DebugBlendMaps=0

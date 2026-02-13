@@ -1,0 +1,18 @@
+import * from "managed_mats.material"
+
+material a1da0UID-tracks/liebherrcrane
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			texture_unit Diffuse_Map
+			{
+				texture a1da0UID-liebherr.dds
+			}
+		}
+	}
+}
+
+
+

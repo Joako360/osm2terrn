@@ -1,0 +1,250 @@
+import * from "managed_mats.material"
+
+material black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material <Beige>1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material <LightGray>
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material 0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material 96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material <Charcoal>
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material Red
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.909803921568627 0.333333333333333 0.325490196078431 1.0
+      }
+   }
+}
+material Color_H15
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.47843137254902 0.6 0.6 1.0
+      }
+   }
+}
+material Concrete_Aggregate_Smoke: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material Asphalt_New: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material Color_D01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.749019607843137 0.0 1.0
+      }
+   }
+}
+material Wood_Bamboo_Medium: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Wood_Bamboo_Medium.jpg
+         }
+      }
+   }
+}
+material Cladding_Stucco_White: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material Metal_Aluminum_Anodized: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material Color_B12
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.23921568627451 0.117647058823529 1.0
+      }
+   }
+}
+material Wood_OSB: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         12.0, 9.890625
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Wood_OSB.jpg
+         }
+      }
+   }
+}
+material Concrete_Block_Retaining_Gray: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+         24.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit Diffuse_Map
+         {
+            texture Concrete_Block_Retaining_Gray.jpg
+         }
+      }
+   }
+}
+material Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+      }
+   }
+}

@@ -1,0 +1,8 @@
+a1da0UID-monorailstation.mesh
+1, 1, 1
+
+beginmesh
+mesh a1da0UID-monorailstation.mesh
+endmesh
+
+end

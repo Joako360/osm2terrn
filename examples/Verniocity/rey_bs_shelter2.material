@@ -1,0 +1,24 @@
+material rey_bs_shelter2_col
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.200000 0.200000 0.200000 1.000000
+			diffuse 0.100000 0.100000 0.100000 1.000000
+		}
+	}
+}
+material rey_bs_shelter2_mat
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.770000 0.750000 0.750000 1.000000
+			diffuse 0.200000 0.200000 0.200000 1.000000
+		}
+	}
+}

@@ -1,0 +1,392 @@
+material bmhome6wgaragevar1_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_Color_F25
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.176470588235294 0.2 0.156862745098039 1.0
+         ambient 0.176470588235294 0.2 0.156862745098039 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_0022_Maroon
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.501960784313725 0.0 0.0 1.0
+         ambient 0.501960784313725 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_0021_DarkRed
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.545098039215686 0.0 0.0 1.0
+         ambient 0.545098039215686 0.0 0.0 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_Metal_Seamed
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Seamed.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Roofing_Shingles_Multi
+{
+   technique
+   {
+      pass
+      {
+         108.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Roofing_Shingles_Multi.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Material1
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1377601_586940444698911_262222097_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Material2
+{
+   technique
+   {
+      pass
+      {
+         36.0, 36.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 10414908_787521181307502_7268420964378931633_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Material3
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1011611_562206133839009_1175229661_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_[Concrete_Aggregate_Smoke]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Material5
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1004538_562206170505672_611876040_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Material6
+{
+   technique
+   {
+      pass
+      {
+         7.91100123609394, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 562961_586663964726559_2073421477_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Material4
+{
+   technique
+   {
+      pass
+      {
+         35.0, 35.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1383465_586938428032446_1328677219_n.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_Material7
+{
+   technique
+   {
+      pass
+      {
+         75.0, 49.9338624338624
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 135180_132601700132790_5765761_o.jpg
+         }
+      }
+   }
+}
+material bmhome6wgaragevar1_0044_DarkGoldenrod
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+         ambient 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_0042_Sienna
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.627450980392157 0.32156862745098 0.176470588235294 1.0
+         ambient 0.627450980392157 0.32156862745098 0.176470588235294 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_0040_Peru
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.803921568627451 0.52156862745098 0.247058823529412 1.0
+         ambient 0.803921568627451 0.52156862745098 0.247058823529412 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_0041_Chocolate
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.823529411764706 0.411764705882353 0.117647058823529 1.0
+         ambient 0.823529411764706 0.411764705882353 0.117647058823529 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_0043_SaddleBrown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.545098039215686 0.270588235294118 0.0745098039215686 1.0
+         ambient 0.545098039215686 0.270588235294118 0.0745098039215686 1.0
+      }
+   }
+}
+material bmhome6wgaragevar1_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+      }
+   }
+}
+material bmhome6wgaragevar1__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

@@ -1,0 +1,8 @@
+a1da0UID-myobs.mesh
+1.0, 1.0, 1.0
+
+beginbox
+boxcoords -1.54, 1.54, 0.0, 13.0, -1.54, 1.54
+endbox
+
+end

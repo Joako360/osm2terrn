@@ -1,0 +1,6 @@
+Opmapmart2.mesh
+1, 1, 1
+beginmesh
+mesh opmapmart2coll.mesh
+endmesh
+end

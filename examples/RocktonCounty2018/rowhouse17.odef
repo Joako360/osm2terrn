@@ -1,0 +1,6 @@
+rowhouse17.mesh
+1,1,1
+beginmesh
+mesh rowhouse17.mesh
+endmesh
+end

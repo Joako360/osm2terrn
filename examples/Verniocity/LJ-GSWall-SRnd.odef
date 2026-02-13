@@ -1,0 +1,8 @@
+LJ-GSWall-SRnd.mesh
+1, 1, 1
+
+beginmesh
+mesh LJ-GSWall-SRndC.mesh
+endmesh
+
+end

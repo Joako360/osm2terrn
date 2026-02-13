@@ -1,0 +1,207 @@
+material rowhousecol_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material rowhousecol_DarkGoldenrod
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+         ambient 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+      }
+   }
+}
+material rowhousecol_Gray6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material rowhousecol_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material rowhousecol_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+         ambient 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+      }
+   }
+}
+material rowhousecol_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material rowhousecol_Redwood
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+         ambient 0.654901960784314 0.396078431372549 0.32156862745098 1.0
+      }
+   }
+}
+material rowhousecol_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material rowhousecol_Brick_Coppersand
+{
+   technique
+   {
+      pass
+      {
+         24.0, 16.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Coppersand.jpg
+         }
+      }
+   }
+}
+material rowhousecol_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material rowhousecol_Brick_Slump_Gray
+{
+   technique
+   {
+      pass
+      {
+         72.0, 66.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Slump_Gray.jpg
+         }
+      }
+   }
+}
+material rowhousecol_Brick_Tumbled
+{
+   technique
+   {
+      pass
+      {
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material rowhousecol_Brick_Flemish_Stretcher_Dark
+{
+   technique
+   {
+      pass
+      {
+         20.0, 16.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Flemish_Stretcher_Dark.jpg
+         }
+      }
+   }
+}
+material rowhousecol_Concrete_Aggregate_Large
+{
+   technique
+   {
+      pass
+      {
+         14.0, 14.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Large.jpg
+         }
+      }
+   }
+}
+material rowhousecol_Translucent_Glass_Sky_Reflection
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         72.0, 72.0
+         diffuse 1 1 1 0.52
+         texture_unit
+         {
+            texture Translucent_Glass_Sky_Reflection_.jpg
+         }
+      }
+   }
+}
+material rowhousecol__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

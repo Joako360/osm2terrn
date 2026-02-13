@@ -1,0 +1,25 @@
+[General]
+Name = North St Helens (Air Race)
+GeometryConfig = a1da0UID-nhelens.otc
+Water = 1
+WaterLine = 33
+AmbientColor = 0.93, 0.86, 0.76
+CaelumConfigFile = nhelens-sky2.os
+StartPosition = 1162.73 34.9059 941.82
+TractionMap = a1da0UID-nhelens-landuse.cfg
+Gravity = -9.81
+CategoryID = 129
+Version = 2
+GUID = 8454a8dc-bfa3-4cb4-8aa0-662601ddba05
+
+ 
+[Authors]
+terrain = pricorde
+objects = various
+update = klink
+update2 = CuriousMike 
+ 
+[Objects]
+a1da0UID-nhelens.tobj=
+[Scripts]
+27a17UID-nhelensAir.terrn.as=

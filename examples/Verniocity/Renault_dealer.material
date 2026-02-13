@@ -1,0 +1,464 @@
+material black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material <Beige>1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material <LightGray>
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material 0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material 96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material <Charcoal>
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material Color_E02
+{
+   technique
+   {
+      pass
+      {
+         547.244094488189, 111.667376037455
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 4plus740.jpg
+         }
+      }
+   }
+}
+material Color_E01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 0.0 1.0
+      }
+   }
+}
+material Color_E06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.8 0.0 1.0
+      }
+   }
+}
+material Color_E08
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.8 0.317647058823529 1.0
+      }
+   }
+}
+material Color_D02
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.8 0.196078431372549 1.0
+      }
+   }
+}
+material Translucent_Glass_Tinted
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         24.0, 24.0
+         diffuse 1 1 1 0.48
+         texture_unit
+         {
+            texture Translucent_Glass_Tinted.jpg
+         }
+      }
+   }
+}
+material Translucent_Glass_Blue
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.392156862745098 0.584313725490196 0.929411764705882 0.5
+      }
+   }
+}
+material Brick_Pavers_Herringbone
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Pavers_Herringbone.jpg
+         }
+      }
+   }
+}
+material Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material Brick_Tumbled
+{
+   technique
+   {
+      pass
+      {
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material Brick_Basket_Two
+{
+   technique
+   {
+      pass
+      {
+         32.0, 32.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Basket_Two.jpg
+         }
+      }
+   }
+}
+material Cladding_Siding_White
+{
+   technique
+   {
+      pass
+      {
+         38.0, 38.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Siding_White.jpg
+         }
+      }
+   }
+}
+material Brick_Pavers_Modular
+{
+   technique
+   {
+      pass
+      {
+         18.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Pavers_Modular.jpg
+         }
+      }
+   }
+}
+material Wood_Cherry_Original
+{
+   technique
+   {
+      pass
+      {
+         72.0, 72.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Cherry_Original.jpg
+         }
+      }
+   }
+}
+material [Wood_Cherry_Original]1
+{
+   technique
+   {
+      pass
+      {
+         72.0, 72.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Cherry_Original.jpg
+         }
+      }
+   }
+}
+material Color_E03
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 0.396078431372549 1.0
+      }
+   }
+}
+material Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material Color_009
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material Color_D03
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.847058823529412 0.396078431372549 1.0
+      }
+   }
+}
+material Color_000
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material Color_001
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.886274509803922 0.886274509803922 0.886274509803922 1.0
+      }
+   }
+}
+material Tile_Hexagon_White
+{
+   technique
+   {
+      pass
+      {
+         12.0, 10.666667
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Tile_Hexagon_White.jpg
+         }
+      }
+   }
+}
+material Tile_Various_Tan
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Tile_Various_Tan.jpg
+         }
+      }
+   }
+}
+material Color_005
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.447058823529412 0.447058823529412 0.447058823529412 1.0
+      }
+   }
+}
+material Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material Color_004
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.556862745098039 0.556862745098039 0.556862745098039 1.0
+      }
+   }
+}
+material Metal_Steel_Textured_White
+{
+   technique
+   {
+      pass
+      {
+         6.0, 6.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Steel_Textured_White.jpg
+         }
+      }
+   }
+}
+material Metal_Corrogated_Shiny
+{
+   technique
+   {
+      pass
+      {
+         4.0, 4.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Corrogated_Shiny.jpg
+         }
+      }
+   }
+}
+material Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 0.913725490196078 0.788235294117647 0.0
+      }
+   }
+}
+material SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+      }
+   }
+}

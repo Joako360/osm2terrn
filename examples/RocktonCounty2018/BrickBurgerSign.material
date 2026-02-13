@@ -1,0 +1,44 @@
+material BrickBurgerSign_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material BrickBurgerSign_Color_A11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.0 0.0 1.0
+         ambient 0.6 0.0 0.0 1.0
+      }
+   }
+}
+material BrickBurgerSign_Color_D01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.749019607843137 0.0 1.0
+         ambient 1.0 0.749019607843137 0.0 1.0
+      }
+   }
+}
+material BrickBurgerSign__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

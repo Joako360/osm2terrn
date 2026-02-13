@@ -1,0 +1,309 @@
+material bmoffice4_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmoffice4_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmoffice4_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material bmoffice4_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmoffice4_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmoffice4_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmoffice4_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmoffice4_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmoffice4_Material1
+{
+   technique
+   {
+      pass
+      {
+         250.0, 250.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture HighRiseGlass0055_1_S.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Metal_Aluminum_Anodized
+{
+   technique
+   {
+      pass
+      {
+         54.0, 54.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Aluminum_Anodized.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Material2
+{
+   technique
+   {
+      pass
+      {
+         30.0, 30.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 67352_787520961307524_394608331378481947_n.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Material3
+{
+   technique
+   {
+      pass
+      {
+         11.21484375, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture BuildingsHighRise0300_1_S.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Material4
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1146524_562205210505768_1116921238_n.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Asphalt_New
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Asphalt_New.jpg
+         }
+      }
+   }
+}
+material bmoffice4_Color_A01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.0 0.0 1.0
+         ambient 1.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmoffice4_0078_DarkSlateGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.184313725490196 0.309803921568627 0.309803921568627 1.0
+         ambient 0.184313725490196 0.309803921568627 0.309803921568627 1.0
+      }
+   }
+}
+material bmoffice4_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.92
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.92
+      }
+   }
+}
+material bmoffice4_[Concrete_Aggregate_Smoke]1
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmoffice4_[Translucent_Glass_Gray]1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+      }
+   }
+}
+material bmoffice4_Translucent_Glass_Blue
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.329411764705882 0.392156862745098 0.505882352941176 0.95
+         ambient 0.329411764705882 0.392156862745098 0.505882352941176 0.95
+      }
+   }
+}
+material bmoffice4_Color_006
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+         ambient 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+      }
+   }
+}
+material bmoffice4__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

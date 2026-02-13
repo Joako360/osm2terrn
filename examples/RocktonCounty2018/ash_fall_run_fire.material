@@ -1,0 +1,19 @@
+material ash_fall_run_campfire
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend alpha_blend
+			alpha_rejection greater_equal 128
+			depth_write off
+			texture_unit
+			{
+			texture ash_fall_run_campfire.dds
+			tex_address_mode clamp
+			}
+		}
+	}
+}

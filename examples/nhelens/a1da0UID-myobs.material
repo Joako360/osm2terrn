@@ -1,0 +1,16 @@
+import * from "managed_mats.material"
+
+material a1da0UID-myobs-white: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			texture_unit Diffuse_Map
+			{
+				texture a1da0UID-myobs.dds
+				//colour_op_ex modulate src_manual src_current 0.8 0.8 0.8 0.0 0.0
+			}
+		}
+	}
+}

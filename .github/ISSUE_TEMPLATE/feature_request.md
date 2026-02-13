@@ -1,20 +1,36 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+# Feature Request Template
+
+Thank you for suggesting a new feature for **OSM2terrn**!
+Please fill out the form below to help us understand your proposal.
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## 🚀 Feature Proposal
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+### Describe the feature you'd like
+_A clear and concise description of what you want to happen._
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+### Problem this feature would solve
+_Explain why this feature is needed. What problem or limitation does it address?_
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+### Suggested solution
+_Describe how you think this feature could be implemented._
+
+### Alternatives considered
+_List any alternative solutions you've considered._
+
+### Additional context
+_Add any other context, references, or visual examples that would help understand the request._
+
+---
+
+## 📋 Contribution Intent
+
+- [ ] I am willing to submit a Pull Request to implement this feature.
+- [ ] I would like someone else to implement this feature.
+- [ ] I need guidance or mentorship to work on this feature.
+
+---
+
+Thank you for helping improve **OSM2terrn**! Your ideas and feedback are highly appreciated. 🚀
+

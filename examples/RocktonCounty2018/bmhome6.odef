@@ -1,0 +1,6 @@
+bmhome6.mesh
+1, 1, 1
+beginmesh
+mesh bmhome6coll.mesh
+endmesh
+end

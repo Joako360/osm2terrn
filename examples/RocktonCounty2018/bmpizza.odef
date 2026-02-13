@@ -1,0 +1,6 @@
+bmpizza.mesh
+1, 1, 1
+beginmesh
+mesh bmpizzacoll.mesh
+endmesh
+end

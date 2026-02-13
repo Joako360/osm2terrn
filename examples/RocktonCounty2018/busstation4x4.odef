@@ -1,0 +1,8 @@
+busstation4x4.mesh
+1.0, 1.0, 1.0
+
+beginmesh
+mesh busstation4x4col.mesh
+endmesh
+
+end

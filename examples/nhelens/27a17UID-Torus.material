@@ -1,0 +1,16 @@
+material 27a17UID-torusRed
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			ambient 0.416440 0.036356 0.036356 0.491538
+			diffuse 0.306323 0.026742 0.026742 0.491538
+			specular 0.269680 0.269680 0.269680 0.491538 33.000000
+			emissive 0.000000 0.000000 0.000000 0.491538
+			scene_blend alpha_blend
+			depth_write off
+		}
+	}
+}

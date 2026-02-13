@@ -1,0 +1,28 @@
+repository:
+  name: osm2terrn
+  topics:
+    - map-generator
+    - realistic-terrain
+    - rigs-of-rods
+    - simulator-maps
+    - open-source
+    - openstreetmap
+    - opentopodata
+    - geospatial-data
+    - heightmaps
+    - object-placement
+    - texture-splatting
+    - python
+    - cli-tool
+    - data-processing
+    - geometry-processing
+    - modular-architecture
+    - community-driven
+    - modding-tools
+    - game-modding
+    # Opcionales a futuro:
+    - procedural-generation
+    - visual-validation
+    - map-templates
+    - GDAL
+    - 3d-mapping

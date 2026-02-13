@@ -1,0 +1,11 @@
+ash_foodstand1.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_foodstand1C.mesh
+endmesh
+
+beginlodmesh
+1, ash_foodstand1_lod1.mesh
+
+end

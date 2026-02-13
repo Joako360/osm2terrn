@@ -1,0 +1,291 @@
+material bmoffice3coll_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material bmoffice3coll_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material bmoffice3coll_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material bmoffice3coll_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material bmoffice3coll_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material bmoffice3coll_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material bmoffice3coll_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material bmoffice3coll_Concrete_Form_4x8
+{
+   technique
+   {
+      pass
+      {
+         48.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Form_4x8.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.95
+      }
+   }
+}
+material bmoffice3coll_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_Concrete_Aggregate_Smoke
+{
+   technique
+   {
+      pass
+      {
+         12.0, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Smoke.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_Vegetation_Ivy_Hedera
+{
+   technique
+   {
+      pass
+      {
+         28.0, 28.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Vegetation_Ivy_Hedera.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_Material1
+{
+   technique
+   {
+      pass
+      {
+         30.0, 41.799709724238
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1743637_640816979311257_1964790384_n.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_[Vegetation_Ivy_Hedera]1
+{
+   technique
+   {
+      pass
+      {
+         28.0, 28.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Vegetation_Ivy_Hedera.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_Tile_Various_Tan
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Tile_Various_Tan.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_Material2
+{
+   technique
+   {
+      pass
+      {
+         50.0, 37.5
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture 1270363_572588166134139_1144298172_o.jpg
+         }
+      }
+   }
+}
+material bmoffice3coll_Dark_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.305882352941176 0.247058823529412 0.168627450980392 1.0
+         ambient 0.305882352941176 0.247058823529412 0.168627450980392 1.0
+      }
+   }
+}
+material bmoffice3coll_WarmGray6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.513725490196078 0.443137254901961 0.4 1.0
+         ambient 0.513725490196078 0.443137254901961 0.4 1.0
+      }
+   }
+}
+material bmoffice3coll_WarmGray5
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.682352941176471 0.580392156862745 0.505882352941176 1.0
+         ambient 0.682352941176471 0.580392156862745 0.505882352941176 1.0
+      }
+   }
+}
+material bmoffice3coll_WarmGray8
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.380392156862745 0.333333333333333 0.298039215686275 1.0
+         ambient 0.380392156862745 0.333333333333333 0.298039215686275 1.0
+      }
+   }
+}
+material bmoffice3coll_Chipboard
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.6 0.443137254901961 1.0
+         ambient 0.662745098039216 0.6 0.443137254901961 1.0
+      }
+   }
+}
+material bmoffice3coll_Color_L03
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 0.396078431372549 0.698039215686274 0.0
+         ambient 1.0 0.396078431372549 0.698039215686274 0.0
+      }
+   }
+}
+material bmoffice3coll__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

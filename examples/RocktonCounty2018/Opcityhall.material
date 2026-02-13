@@ -1,0 +1,214 @@
+material Opcityhall_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material Opcityhall_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material Opcityhall_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material Opcityhall_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material Opcityhall_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material Opcityhall_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material Opcityhall_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material Opcityhall_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material Opcityhall_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.129411764705882 0.129411764705882 0.129411764705882 0.84
+         ambient 0.129411764705882 0.129411764705882 0.129411764705882 0.84
+      }
+   }
+}
+material Opcityhall_Stone_Marble
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Marble.jpg
+         }
+      }
+   }
+}
+material Opcityhall_Stone_Pavers_Flagstone_Gray
+{
+   technique
+   {
+      pass
+      {
+         72.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Pavers_Flagstone_Gray.jpg
+         }
+      }
+   }
+}
+material Opcityhall_Stone_Vein_Gray
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Vein_Gray.jpg
+         }
+      }
+   }
+}
+material Opcityhall_Cladding_Stucco_White
+{
+   technique
+   {
+      pass
+      {
+         18.0, 27.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Cladding_Stucco_White.jpg
+         }
+      }
+   }
+}
+material Opcityhall_Material1
+{
+   technique
+   {
+      pass
+      {
+         300.0, 360.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture oxycopper.jpg
+         }
+      }
+   }
+}
+material Opcityhall_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material Opcityhall_0030_OldLace
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.992156862745098 0.96078431372549 0.901960784313726 1.0
+         ambient 0.992156862745098 0.96078431372549 0.901960784313726 1.0
+      }
+   }
+}
+material Opcityhall__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

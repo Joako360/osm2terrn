@@ -1,0 +1,6 @@
+bmgrainsilo.mesh
+1, 1, 1
+beginmesh
+mesh bmgrainsilocoll.mesh
+endmesh
+end

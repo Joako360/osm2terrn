@@ -1,0 +1,10 @@
+ash_lightpoll1.mesh
+1, 1, 1
+
+beginmesh
+
+mesh ash_lightpoll1.mesh
+
+endmesh
+
+end

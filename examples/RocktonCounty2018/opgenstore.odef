@@ -1,0 +1,6 @@
+opgenstore.mesh
+1, 1, 1
+beginmesh
+mesh opgenstore.mesh
+endmesh
+end

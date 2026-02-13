@@ -1,0 +1,7 @@
+RCrail1t10mstrtcross.mesh
+1,1,1
+beginmesh
+mesh RCrail1t10mstrtcross.mesh
+stdfriction asphalt
+endmesh
+end

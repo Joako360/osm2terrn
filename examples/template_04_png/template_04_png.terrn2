@@ -1,0 +1,26 @@
+[General]
+Name = Template 0.4 (PNG Heightmap) Terrain
+GeometryConfig = template_04_png.otc
+Water=0
+#WaterLine=1.0
+AmbientColor = 0.93, 0.86, 0.76
+StartPosition = 512, 1, 512
+#CaelumConfigFile =
+SandStormCubeMap = tracks/skyboxcol
+Gravity = -9.81
+CategoryID = 129
+Version = 1
+GUID = 5b1cbbe4-31e8-48d4-bb29-c3b9a4730e04
+//TractionMap = template_04_png-landuse.cfg
+
+
+[Authors]
+template = CuriousMike
+
+ 
+[Objects]
+template_04_png.tobj=
+
+[Scripts]
+
+

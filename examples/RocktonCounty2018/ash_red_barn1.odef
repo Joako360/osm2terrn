@@ -1,0 +1,11 @@
+ash_red_barn1.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_red_barn1.mesh
+endmesh
+
+beginlodmesh
+100, ash_red_barn1_lod1.mesh
+
+end

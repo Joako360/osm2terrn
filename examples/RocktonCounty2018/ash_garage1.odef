@@ -1,0 +1,24 @@
+ash_garage1.mesh
+1, 1, 1
+beginmesh
+mesh ash_garage1.mesh
+endmesh
+
+;boxcoords x, x1, y, y1, z, z1 
+
+;virtualBox_1_avatar
+beginbox
+boxcoords   -3.8, -2.95, -0.15,  2.95,   3.0, 3.55
+virtual
+event shoptruck avatar
+endbox
+
+;virtualBox_2_spawnzone
+beginbox
+boxcoords  -0.1, -10.0,  0,    5,  10.0,  20.0
+virtual
+event spawnzone
+endbox
+
+
+end

@@ -1,0 +1,8 @@
+// format: grass range, SwaySpeed, SwayLength, SwayDistribution, Density, minx, miny, maxx, maxy, fadetype, minY, maxY, material colormap densitymap
+grass 300, 0.5, 0.05, 10, 0.3, 0.2, 0.2, 1, 1, 1, 10, 0, grass1 8d25UID-smallisland.png smallisland_grass.png
+grass 300, 0.5, 0.05, 10, 0.3, 0.2, 0.2, 1, 1, 1, 10, 0, grass2 8d25UID-smallisland.png smallisland_grass.png
+grass 300, 0.5, 0.05, 10, 0.3, 0.2, 0.2, 1, 1, 1, 10, 0, grass3 8d25UID-smallisland.png smallisland_grass.png
+grass 300, 0.5, 0.05, 10, 0.3, 0.2, 0.2, 1, 1, 1, 10, 0, grass4 8d25UID-smallisland.png smallisland_grass.png
+grass 300, 0.5, 0.05, 10, 0.3, 0.2, 0.2, 1, 1, 1, 10, 0, grass5 8d25UID-smallisland.png smallisland_grass.png
+grass 300, 0.5, 0.05, 10, 0.3, 0.2, 0.2, 1, 1, 1, 10, 0, grass6 8d25UID-smallisland.png smallisland_grass.png
+grass 300, 0.5, 0.05, 10, 3.3, 0.2, 0.2, 1, 1, 1, 10, 0, grass7 8d25UID-smallisland.png smallisland_grass.png

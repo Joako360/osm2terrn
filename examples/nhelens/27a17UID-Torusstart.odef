@@ -1,0 +1,9 @@
+27a17UID-torusstart.mesh
+1,1,1
+
+beginbox
+boxcoords  -3.08501052856,2.80536174774,-14.1514053345, 12.644657135, -14.4554100037, 12.3926029205
+virtual
+event checkpoint
+endbox
+end

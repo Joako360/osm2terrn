@@ -1,0 +1,331 @@
+material Opmapfire_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material Opmapfire_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material Opmapfire_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material Opmapfire_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material Opmapfire_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material Opmapfire_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material Opmapfire_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material Opmapfire_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material Opmapfire_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material Opmapfire_0021_DarkRed
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.545098039215686 0.0 0.0 1.0
+         ambient 0.545098039215686 0.0 0.0 1.0
+      }
+   }
+}
+material Opmapfire_0132_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material Opmapfire_0134_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material Opmapfire_0038_Orange
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.647058823529412 0.0 1.0
+         ambient 1.0 0.647058823529412 0.0 1.0
+      }
+   }
+}
+material Opmapfire_Color_A07
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.156862745098039 0.156862745098039 1.0
+         ambient 0.8 0.156862745098039 0.156862745098039 1.0
+      }
+   }
+}
+material Opmapfire_Color_006
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+         ambient 0.337254901960784 0.337254901960784 0.337254901960784 1.0
+      }
+   }
+}
+material Opmapfire_Metal_Rough
+{
+   technique
+   {
+      pass
+      {
+         48.0, 48.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material Opmapfire_Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+         ambient 0.501960784313725 0.501960784313725 0.501960784313725 0.93
+      }
+   }
+}
+material Opmapfire_[Metal_Rough]1
+{
+   technique
+   {
+      pass
+      {
+         8.0, 8.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Metal_Rough.jpg
+         }
+      }
+   }
+}
+material Opmapfire_Color_002
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+         ambient 0.776470588235294 0.776470588235294 0.776470588235294 1.0
+      }
+   }
+}
+material Opmapfire_Wood_Bamboo_Medium
+{
+   technique
+   {
+      pass
+      {
+         24.0, 24.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_Bamboo_Medium.jpg
+         }
+      }
+   }
+}
+material Opmapfire_Color_D02
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.8 0.196078431372549 1.0
+         ambient 1.0 0.8 0.196078431372549 1.0
+      }
+   }
+}
+material Opmapfire_Color_B16
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.4 0.0980392156862745 0.0 1.0
+         ambient 0.4 0.0980392156862745 0.0 1.0
+      }
+   }
+}
+material Opmapfire_Color_A06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.0 0.0 1.0
+         ambient 0.8 0.0 0.0 1.0
+      }
+   }
+}
+material Opmapfire_Color_C01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.498039215686275 0.0 1.0
+         ambient 1.0 0.498039215686275 0.0 1.0
+      }
+   }
+}
+material Opmapfire_Color_D01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.749019607843137 0.0 1.0
+         ambient 1.0 0.749019607843137 0.0 1.0
+      }
+   }
+}
+material Opmapfire_Color_A11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.6 0.0 0.0 1.0
+         ambient 0.6 0.0 0.0 1.0
+      }
+   }
+}
+material Opmapfire_Stone_Pavers_Flagstone_Gray
+{
+   technique
+   {
+      pass
+      {
+         72.0, 96.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Pavers_Flagstone_Gray.jpg
+         }
+      }
+   }
+}
+material Opmapfire__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

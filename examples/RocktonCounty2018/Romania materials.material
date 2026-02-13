@@ -1,0 +1,2949 @@
+material RomaniaBlock1_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaBlock1_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaBlock1_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaBlock1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaBlock1_RomaniaShop1
+{
+   technique
+   {
+      pass
+      {
+         245.984251968504, 114.584461122047
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaShop1.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock1_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaBlock1_RomaniaBuilding1
+{
+   technique
+   {
+      pass
+      {
+         393.700787401575, 319.112942913386
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaBuilding1.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock1_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         236.220472440945, 236.220472440945
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock1_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaStore2_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaStore2_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaStore2_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaStore2_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaStore2_RomaniaShop3
+{
+   technique
+   {
+      pass
+      {
+         118.110236220472, 81.6272965879265
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaShop3.jpg
+         }
+      }
+   }
+}
+material RomaniaStore2_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaStore2_RomaniaPlasterBeige
+{
+   technique
+   {
+      pass
+      {
+         196.850393700787, 196.850393700787
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterBeige.jpg
+         }
+      }
+   }
+}
+material RomaniaStore2_RomaniaRoof2
+{
+   technique
+   {
+      pass
+      {
+         92.1259842519684, 92.1259842519685
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof2.jpg
+         }
+      }
+   }
+}
+material RomaniaStore2_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaIndustry2_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaIndustry2_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaIndustry2_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaIndustry2_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaIndustry2_RomaniaIndustrial2
+{
+   technique
+   {
+      pass
+      {
+         734.179370078739, 538.446002860482
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaIndustrial2.jpg
+         }
+      }
+   }
+}
+material RomaniaIndustry2_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         501.181102362205, 501.181102362205
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaIndustry2_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaIndustry2_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+
+material RomaniaBlock2_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaBlock2_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaBlock2_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaBlock2_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaBlock2_RomaniaBuilding2
+{
+   technique
+   {
+      pass
+      {
+         323.763779527559, 312.634399606299
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaBuilding2.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock2_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaBlock2_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         354.330708661417, 354.330708661417
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+
+material RomaniaBlock3_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaBlock3_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaBlock3_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaBlock3_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaBlock3_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         371.653543307087, 371.653543307087
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock3_RomaniaBuilding3
+{
+   technique
+   {
+      pass
+      {
+         422.086614173001, 360.236220472441
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaBuilding3.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock3_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+
+material RomaniaBlock4_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaBlock4_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaBlock4_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaBlock4_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaBlock4_RomaniaBuilding4
+{
+   technique
+   {
+      pass
+      {
+         874.015748031496, 646.122969980314
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaBuilding4.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock4_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaBlock4_RomaniaRoof
+{
+   technique
+   {
+      pass
+      {
+         313.250492125984, 322.834645669291
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock4_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         748.031496062992, 748.031496062992
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaBlock4_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaGasPump_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaGasPump_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaGasPump_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaGasPump_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaGasPump_RomaniaRed
+{
+   technique
+   {
+      pass
+      {
+         39.3700787401575, 39.3700787401575
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRed.dds
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaLukoil
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         39.8031496062992, 10.8661417322834
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaLukoil.dds
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaGasConsole
+{
+   technique
+   {
+      pass
+      {
+         34.6075732089142, 22.4803149606299
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaGasConsole.dds
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaGrey
+{
+   technique
+   {
+      pass
+      {
+         39.3700787401575, 39.3700787401575
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaGrey.dds
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaMetal2
+{
+   technique
+   {
+      pass
+      {
+         31.496062992126, 31.496062992126
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaMetal2.jpg
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         48.8188976377953, 48.8188976377953
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaLukoilMarket
+{
+   technique
+   {
+      pass
+      {
+         184.645669291339, 32.8669291338583
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaLukoilMarket.dds
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaModernDoor
+{
+   technique
+   {
+      pass
+      {
+         157.48031496063, 117.966234469411
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaModernDoor.jpg
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaPlasterWhite
+{
+   technique
+   {
+      pass
+      {
+         89.7637795275591, 89.7637795275591
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterWhite.jpg
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaLukoilRestrooms
+{
+   technique
+   {
+      pass
+      {
+         184.645669291339, 32.8669291338583
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaLukoilRestrooms.dds
+         }
+      }
+   }
+}
+material RomaniaGasPump_RomaniaDoor2
+{
+   technique
+   {
+      pass
+      {
+         72.5501353346457, 118.110236220472
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaDoor2.jpg
+         }
+      }
+   }
+}
+material RomaniaGasPump_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaGasPump_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaGasPump_Material2
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaGasPump_RomaniaLukoilCarWashSign
+{
+   technique
+   {
+      pass
+      {
+         79.3700787401588, 23.321592699194
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaLukoilCarWashSign.dds
+         }
+      }
+   }
+}
+
+material RomaniaHaystack_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaHaystack_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaHaystack_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaHaystack_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaHaystack_Color_000
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaHaystack_RomaniaHay
+{
+   technique
+   {
+      pass
+      {
+         129.92125984252, 129.92125984252
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaHay.jpg
+         }
+      }
+   }
+}
+material RomaniaHaystack_RomaniaWood
+{
+   technique
+   {
+      pass
+      {
+         157.48031496063, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWood.jpg
+         }
+      }
+   }
+}
+material RomaniaHaystack_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaHouse1_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaHouse1_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse1_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaHouse1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaHouse1_RomaniaPlasterWhite
+{
+   technique
+   {
+      pass
+      {
+         157.48031496063, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterWhite.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse1_RomaniaDoor
+{
+   technique
+   {
+      pass
+      {
+         107.652559055118, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaDoor.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse1_RomaniaRoof
+{
+   technique
+   {
+      pass
+      {
+         116.513902559055, 120.07874015748
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse1_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         121.259842519685, 121.259842519685
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse1_RomaniaWindow
+{
+   technique
+   {
+      pass
+      {
+         47.9073111466535, 53.1496062992126
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWindow.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse1_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaHouse2_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaHouse2_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse2_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaHouse2_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaHouse2_RomaniaDoor
+{
+   technique
+   {
+      pass
+      {
+         80.7394192913386, 118.110236220472
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaDoor.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse2_RomaniaPlasterBeige
+{
+   technique
+   {
+      pass
+      {
+         137.795275590551, 137.795275590551
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterBeige.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse2_RomaniaRoof
+{
+   technique
+   {
+      pass
+      {
+         122.244094488189, 125.984251968504
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse2_RomaniaWindow
+{
+   technique
+   {
+      pass
+      {
+         40.455062746063, 44.8818897637795
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWindow.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse2_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         90.9448818897638, 90.9448818897638
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse2_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse2_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaHouse3_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaHouse3_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse3_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaHouse3_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaHouse3_BuildingsHouseOld0027_S
+{
+   technique
+   {
+      pass
+      {
+         78.740157480315, 65.2066929133858
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture BuildingsHouseOld0027_S.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse3_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         212.204724409449, 212.204724409449
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse3_RomaniaRoof
+{
+   technique
+   {
+      pass
+      {
+         152.805118110236, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse3_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaHouse3_Material2
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaHouse3_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse3_Material3
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaHouse4_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaHouse4_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse4_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaHouse4_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaHouse4_RomaniaDoor
+{
+   technique
+   {
+      pass
+      {
+         80.7394192913386, 118.110236220472
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaDoor.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse4_RomaniaPlasterBeige
+{
+   technique
+   {
+      pass
+      {
+         137.795275590551, 137.795275590551
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterBeige.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse4_RomaniaRoof
+{
+   technique
+   {
+      pass
+      {
+         122.244094488189, 125.984251968504
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse4_RomaniaWindow
+{
+   technique
+   {
+      pass
+      {
+         40.455062746063, 44.8818897637795
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWindow.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse4_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         90.9448818897638, 90.9448818897638
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse4_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse4_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaHouse4_RomaniaPlasterWhite
+{
+   technique
+   {
+      pass
+      {
+         128.503937007874, 128.503937007874
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterWhite.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse4_RomaniaRoof2
+{
+   technique
+   {
+      pass
+      {
+         115.157480314961, 115.157480314961
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof2.jpg
+         }
+      }
+   }
+}
+
+material RomaniaHouse5_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaHouse5_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaHouse5_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaHouse5_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaHouse5_RomaniaPlasterWhite
+{
+   technique
+   {
+      pass
+      {
+         157.48031496063, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterWhite.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse5_RomaniaDoor
+{
+   technique
+   {
+      pass
+      {
+         107.652559055118, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaDoor.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse5_RomaniaRoof
+{
+   technique
+   {
+      pass
+      {
+         116.513902559055, 120.07874015748
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse5_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         121.259842519685, 121.259842519685
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse5_RomaniaWindow
+{
+   technique
+   {
+      pass
+      {
+         47.9073111466535, 53.1496062992126
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWindow.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse5_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaHouse5_RomaniaPlasterBeige
+{
+   technique
+   {
+      pass
+      {
+         157.48031496063, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterBeige.jpg
+         }
+      }
+   }
+}
+material RomaniaHouse5_RomaniaRoof2
+{
+   technique
+   {
+      pass
+      {
+         129.133858267717, 129.133858267717
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof2.jpg
+         }
+      }
+   }
+}
+
+material RomaniaIndustry1_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaIndustry1_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaIndustry1_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaIndustry1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaIndustry1_RomaniaIndustrial1
+{
+   technique
+   {
+      pass
+      {
+         411.830988096702, 500.25496062992
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaIndustrial1.jpg
+         }
+      }
+   }
+}
+material RomaniaIndustry1_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         181.889763779528, 181.889763779528
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaIndustry1_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaInn_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaInn_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaInn_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaInn_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaInn_RomaniaWood1
+{
+   technique
+   {
+      pass
+      {
+         211.889763779527, 211.889763779527
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWood1.jpg
+         }
+      }
+   }
+}
+material RomaniaInn_RomaniaRoof2
+{
+   technique
+   {
+      pass
+      {
+         124.015748031496, 124.015748031496
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof2.jpg
+         }
+      }
+   }
+}
+material RomaniaInn_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         314.96062992126, 314.96062992126
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaInn_RomaniaModernDoor
+{
+   technique
+   {
+      pass
+      {
+         152.362204724409, 114.132331849155
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaModernDoor.jpg
+         }
+      }
+   }
+}
+material RomaniaInn_RomaniaWindow
+{
+   technique
+   {
+      pass
+      {
+         49.681656003937, 55.1181102362204
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWindow.jpg
+         }
+      }
+   }
+}
+material RomaniaInn_RomaniaBrick2
+{
+   technique
+   {
+      pass
+      {
+         87.4015748031496, 65.5511811023622
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaBrick2.JPG
+         }
+      }
+   }
+}
+material RomaniaInn_RomaniaPlasterWhite
+{
+   technique
+   {
+      pass
+      {
+         118.110236220472, 118.110236220472
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterWhite.jpg
+         }
+      }
+   }
+}
+material RomaniaInn_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaInn2_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaInn2_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaInn2_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaInn2_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaInn2_RomaniaWood1
+{
+   technique
+   {
+      pass
+      {
+         211.889763779527, 211.889763779527
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWood1.jpg
+         }
+      }
+   }
+}
+material RomaniaInn2_RomaniaRoof2
+{
+   technique
+   {
+      pass
+      {
+         124.015748031496, 124.015748031496
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof2.jpg
+         }
+      }
+   }
+}
+material RomaniaInn2_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         314.96062992126, 314.96062992126
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaInn2_RomaniaModernDoor
+{
+   technique
+   {
+      pass
+      {
+         152.362204724409, 114.132331849155
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaModernDoor.jpg
+         }
+      }
+   }
+}
+material RomaniaInn2_RomaniaWindow
+{
+   technique
+   {
+      pass
+      {
+         49.681656003937, 55.1181102362204
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaWindow.jpg
+         }
+      }
+   }
+}
+material RomaniaInn2_RomaniaBrick2
+{
+   technique
+   {
+      pass
+      {
+         87.4015748031496, 65.5511811023622
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaBrick2.JPG
+         }
+      }
+   }
+}
+material RomaniaInn2_RomaniaPlasterWhite
+{
+   technique
+   {
+      pass
+      {
+         118.110236220472, 118.110236220472
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterWhite.jpg
+         }
+      }
+   }
+}
+material RomaniaInn2_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaInn2_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+
+material RomaniaPowerPlant_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaPowerPlant_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaPowerPlant_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaPowerPlant_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaPowerPlant_RomaniaPowerPlantOffice
+{
+   technique
+   {
+      pass
+      {
+         562.889763779527, 301.783672182579
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPowerPlantOffice.jpg
+         }
+      }
+   }
+}
+material RomaniaPowerPlant_RomaniaMetal1
+{
+   technique
+   {
+      pass
+      {
+         519.685039370079, 519.685039370079
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaMetal1.jpg
+         }
+      }
+   }
+}
+material RomaniaPowerPlant_RomaniaMetal2
+{
+   technique
+   {
+      pass
+      {
+         226.771653543307, 226.771653543307
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaMetal2.jpg
+         }
+      }
+   }
+}
+material RomaniaPowerPlant_RomaniaColor1
+{
+   technique
+   {
+      pass
+      {
+         240.157480314961, 240.157480314961
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaColor1.jpg
+         }
+      }
+   }
+}
+material RomaniaPowerPlant_RomaniaColor2
+{
+   technique
+   {
+      pass
+      {
+         354.232283464566, 354.232283464566
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaColor2.jpg
+         }
+      }
+   }
+}
+material RomaniaPowerPlant_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         1464.56692913386, 1464.56692913386
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaPowerPlant_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaRadio_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaRadio_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaRadio_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaRadio_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaRadio_RomaniaRadioHouse
+{
+   technique
+   {
+      pass
+      {
+         293.430118110236, 314.960629921259
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRadioHouse.jpg
+         }
+      }
+   }
+}
+material RomaniaRadio_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         287.40157480315, 287.40157480315
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaRadio_RomaniaColor1
+{
+   technique
+   {
+      pass
+      {
+         159.842519685039, 159.842519685039
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaColor1.jpg
+         }
+      }
+   }
+}
+material RomaniaRadio_RomaniaColor2
+{
+   technique
+   {
+      pass
+      {
+         102.755905511811, 102.755905511811
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaColor2.jpg
+         }
+      }
+   }
+}
+material RomaniaRadio_RomaniaMetal1
+{
+   technique
+   {
+      pass
+      {
+         226.771653543307, 226.771653543307
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaMetal1.jpg
+         }
+      }
+   }
+}
+material RomaniaRadio_RomaniaMetal2
+{
+   technique
+   {
+      pass
+      {
+         129.92125984252, 129.92125984252
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaMetal2.jpg
+         }
+      }
+   }
+}
+material RomaniaRadio_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaStadium_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaStadium_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaStadium_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaStadium_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaStadium_RomaniaSeats
+{
+   technique
+   {
+      pass
+      {
+         57.511811023622, 57.511811023622
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaSeats.dds
+         }
+      }
+   }
+}
+material RomaniaStadium_RomaniaFC1
+{
+   technique
+   {
+      pass
+      {
+         41.4124015748031, 55.2165354330709
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaFC1.dds
+         }
+      }
+   }
+}
+material RomaniaStadium_RomaniaFC
+{
+   technique
+   {
+      pass
+      {
+         385.259842519685, 59.9212598425197
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaFC.dds
+         }
+      }
+   }
+}
+material RomaniaStadium_RomaniaBrick
+{
+   technique
+   {
+      pass
+      {
+         236.220472440945, 236.220472440945
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaBrick.jpg
+         }
+      }
+   }
+}
+material RomaniaStadium_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         433.070866141732, 433.070866141732
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaStadium_RomaniaMetal1
+{
+   technique
+   {
+      pass
+      {
+         173.228346456693, 173.228346456693
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaMetal1.jpg
+         }
+      }
+   }
+}
+material RomaniaStadium_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaStadium_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+
+material RomaniaStore1_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaStore1_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaStore1_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaStore1_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaStore1_RomaniaShop4
+{
+   technique
+   {
+      pass
+      {
+         292.913385826771, 125.706036745407
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaShop4.jpg
+         }
+      }
+   }
+}
+material RomaniaStore1_RomaniaShop2
+{
+   technique
+   {
+      pass
+      {
+         236.220472440945, 125.706036745407
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaShop2.jpg
+         }
+      }
+   }
+}
+material RomaniaStore1_RomaniaShop3
+{
+   technique
+   {
+      pass
+      {
+         181.889763779528, 125.706036745407
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaShop3.jpg
+         }
+      }
+   }
+}
+material RomaniaStore1_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+material RomaniaStore1_RomaniaConcrete
+{
+   technique
+   {
+      pass
+      {
+         157.48031496063, 157.48031496063
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaConcrete.jpg
+         }
+      }
+   }
+}
+material RomaniaStore1_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+
+material RomaniaStore3_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaStore3_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaStore3_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaStore3_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaStore3_RomaniaShop4
+{
+   technique
+   {
+      pass
+      {
+         118.110236220472, 46.4566929133858
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaShop4.jpg
+         }
+      }
+   }
+}
+material RomaniaStore3_RomaniaPlasterWhite
+{
+   technique
+   {
+      pass
+      {
+         77.1653543307087, 77.1653543307087
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaPlasterWhite.jpg
+         }
+      }
+   }
+}
+material RomaniaStore3_RomaniaRoof
+{
+   technique
+   {
+      pass
+      {
+         114.603838582677, 118.110236220472
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture RomaniaRoof.jpg
+         }
+      }
+   }
+}
+material RomaniaStore3_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}
+material RomaniaStore3_Backfaces
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.188235294117647 0.784313725490196 1.0
+         ambient 1.0 0.188235294117647 0.784313725490196 1.0
+      }
+   }
+}
+
+material RomaniaWoodFence_White
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0 1.0
+      }
+   }
+}
+material RomaniaWoodFence_Burnt_Umber1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+         ambient 0.0274509803921569 0.0117647058823529 0.00784313725490196 1.0
+      }
+   }
+}
+material RomaniaWoodFence_DimGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+         ambient 0.411764705882353 0.411764705882353 0.411764705882353 1.0
+      }
+   }
+}
+material RomaniaWoodFence_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material RomaniaWoodFence_WoodRough0023_2_S
+{
+   technique
+   {
+      pass
+      {
+         9.84251968503937, 39.3700787401575
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture WoodRough0023_2_S.jpg
+         }
+      }
+   }
+}
+material RomaniaWoodFence_Material1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1.0 1.0 1.0 0.0
+         ambient 1.0 1.0 1.0 0.0
+      }
+   }
+}

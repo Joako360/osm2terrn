@@ -1,0 +1,482 @@
+material rowhouse_Black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material rowhouse_DarkGoldenrod
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+         ambient 0.72156862745098 0.525490196078431 0.0431372549019608 1.0
+      }
+   }
+}
+material rowhouse_Gray6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material rowhouse_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material rowhouse_Brown
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+         ambient 0.466666666666667 0.345098039215686 0.211764705882353 1.0
+      }
+   }
+}
+material rowhouse_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material rowhouse_Redwood
+{
+   technique
+   {
+      pass
+      {
+         8.25, 12.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture DoorsWoodPanelled0094_S.jpg
+         }
+      }
+   }
+}
+material rowhouse_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material rowhouse_Brick_Coppersand
+{
+   technique
+   {
+      pass
+      {
+         24.0, 16.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Coppersand.jpg
+         }
+      }
+   }
+}
+material rowhouse_Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         58.0, 37.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+material rowhouse_Brick_Slump_Gray
+{
+   technique
+   {
+      pass
+      {
+         72.0, 66.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Slump_Gray.jpg
+         }
+      }
+   }
+}
+material rowhouse_Brick_Tumbled
+{
+   technique
+   {
+      pass
+      {
+         36.0, 18.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Tumbled.jpg
+         }
+      }
+   }
+}
+material rowhouse_Brick_Flemish_Stretcher_Dark
+{
+   technique
+   {
+      pass
+      {
+         20.0, 16.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Flemish_Stretcher_Dark.jpg
+         }
+      }
+   }
+}
+material rowhouse_Concrete_Aggregate_Large
+{
+   technique
+   {
+      pass
+      {
+         14.0, 14.0
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Concrete_Aggregate_Large.jpg
+         }
+      }
+   }
+}
+material rowhouse_Translucent_Glass_Sky_Reflection
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         72.0, 72.0
+         diffuse 1 1 1 0.52
+         texture_unit
+         {
+            texture Translucent_Glass_Sky_Reflection_.jpg
+         }
+      }
+   }
+}
+material rowhouse__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}
+
+material Material/TEXFACE/Rowhouses02.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses02.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses03.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses03.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses04.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses04.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses05.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses05.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses06.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses06.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/SOLID/TEX/Rowhouse07_grp.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.800000 0.800000 0.800000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture Rowhouse07_grp.dds
+			}
+		}
+	}
+}
+
+material Material/SOLID/TEX/Rowhouse08_grp.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.800000 0.800000 0.800000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture Rowhouse08_grp.dds
+			}
+		}
+	}
+}
+
+material Material/SOLID/TEX/Rowhouse09_grp.png
+{
+	technique
+	{
+		pass
+		{
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture Rowhouse09_grp.dds
+			}
+		}
+	}
+}
+
+material Material/SOLID/TEX/Rowhouse10_grp.png
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.800000 0.800000 0.800000
+			specular 0.500000 0.500000 0.500000 12.500000
+			texture_unit
+			{
+				texture Rowhouse10_grp.dds
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses12.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses12.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses13.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses13.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses14.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses14.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses15.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses15.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses16.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses16.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses17.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses17.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses18.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses18.jpg
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Material/TEXFACE/Rowhouses19.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Rowhouses19.jpg
+				colour_op modulate
+			}
+		}
+	}
+}

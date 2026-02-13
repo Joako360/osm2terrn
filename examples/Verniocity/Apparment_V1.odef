@@ -1,0 +1,6 @@
+Apparment_V1.mesh
+1, 1, 1
+beginmesh
+mesh Apparment_V1.mesh
+endmesh
+end

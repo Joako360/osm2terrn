@@ -1,0 +1,6 @@
+RomaniaStore3.mesh
+1, 1, 1
+beginmesh
+mesh RomaniaStore3Collision.mesh
+endmesh
+end

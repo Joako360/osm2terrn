@@ -1,0 +1,6 @@
+Opmapair.mesh
+1, 1, 1
+beginmesh
+mesh Opmapair.mesh
+endmesh
+end

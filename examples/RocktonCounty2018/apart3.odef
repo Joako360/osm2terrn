@@ -1,0 +1,6 @@
+apart3.mesh
+1, 1, 1
+beginmesh
+mesh apart3.mesh
+endmesh
+end

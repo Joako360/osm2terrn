@@ -1,0 +1,176 @@
+material opoiltanker_black
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.0 0.0 0.0 1.0
+         ambient 0.0 0.0 0.0 1.0
+      }
+   }
+}
+material opoiltanker_Beige1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+         ambient 0.827450980392157 0.741176470588235 0.564705882352941 1.0
+      }
+   }
+}
+material opoiltanker_Color_B24
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.2 0.137254901960784 0.117647058823529 1.0
+         ambient 0.2 0.137254901960784 0.117647058823529 1.0
+      }
+   }
+}
+material opoiltanker_LightGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+         ambient 0.662745098039216 0.662745098039216 0.662745098039216 1.0
+      }
+   }
+}
+material opoiltanker_0135_DarkGray
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+         ambient 0.317647058823529 0.317647058823529 0.317647058823529 1.0
+      }
+   }
+}
+material opoiltanker_96,96,96
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+         ambient 0.376470588235294 0.376470588235294 0.376470588235294 1.0
+      }
+   }
+}
+material opoiltanker_jean_blue
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+         ambient 0.141176470588235 0.184313725490196 0.258823529411765 1.0
+      }
+   }
+}
+material opoiltanker_Charcoal
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+         ambient 0.137254901960784 0.137254901960784 0.137254901960784 1.0
+      }
+   }
+}
+material opoiltanker_Color_007
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+         ambient 0.227450980392157 0.227450980392157 0.227450980392157 1.0
+      }
+   }
+}
+material opoiltanker_Color_A06
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.349019607843137 0.0 0.0 1.0
+         ambient 0.349019607843137 0.0 0.0 1.0
+      }
+   }
+}
+material opoiltanker_[Color_A06]1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.8 0.0 0.0 1.0
+         ambient 0.8 0.0 0.0 1.0
+      }
+   }
+}
+material opoiltanker_Color_B01
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.768627450980392 0.188235294117647 0.0 1.0
+         ambient 0.768627450980392 0.188235294117647 0.0 1.0
+      }
+   }
+}
+material opoiltanker_Color_F18
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.27843137254902 0.4 0.156862745098039 1.0
+         ambient 0.27843137254902 0.4 0.156862745098039 1.0
+      }
+   }
+}
+material opoiltanker_0032_Moccasin
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 0.894117647058824 0.709803921568627 1.0
+         ambient 1.0 0.894117647058824 0.709803921568627 1.0
+      }
+   }
+}
+material opoiltanker_0030_OldLace
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.992156862745098 0.96078431372549 0.901960784313726 1.0
+         ambient 0.992156862745098 0.96078431372549 0.901960784313726 1.0
+      }
+   }
+}
+material opoiltanker__SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1.0 1.0 1.0
+         ambient 1.0 1.0 1.0
+      }
+   }
+}

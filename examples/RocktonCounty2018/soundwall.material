@@ -1,0 +1,15 @@
+material Material/TEXFACE/concrete1.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture concrete1.jpg
+				colour_op modulate
+			}
+		}
+	}
+}

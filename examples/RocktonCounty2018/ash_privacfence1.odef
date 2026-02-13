@@ -1,0 +1,8 @@
+ash_privacyfence1.mesh
+1, 1, 1
+
+beginmesh
+mesh ash_privacyfence1.mesh
+endmesh
+
+end

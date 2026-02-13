@@ -1,0 +1,13 @@
+material a89a5UID-smallhouse2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture a89a5UID-smallhouse2.dds
+			}
+		}
+	}
+}

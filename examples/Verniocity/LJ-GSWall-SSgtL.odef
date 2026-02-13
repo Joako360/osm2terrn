@@ -1,0 +1,8 @@
+LJ-GSWall-SSgtL.mesh
+1, 1, 1
+
+beginmesh
+mesh LJ-GSWall-SSgtLC.mesh
+endmesh
+
+end
