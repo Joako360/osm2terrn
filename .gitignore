@@ -51,9 +51,10 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Local cache and output files
+# Local cache and output and examples files
 cache/
 output/
+examples/
 
 # Translations
 *.mo
