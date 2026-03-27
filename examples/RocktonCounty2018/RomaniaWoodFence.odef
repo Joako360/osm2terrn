@@ -1,6 +1,0 @@
-RomaniaWoodFence.mesh
-1, 1, 1
-beginmesh
-mesh RomaniaWoodFenceCollision.mesh
-endmesh
-end

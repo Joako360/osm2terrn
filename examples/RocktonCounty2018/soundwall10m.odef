@@ -1,6 +1,0 @@
-soundwall10m.mesh
-1,1,1
-beginmesh
-mesh soundwall10m.mesh
-endmesh
-end

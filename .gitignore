@@ -55,6 +55,10 @@ coverage.xml
 cache/
 output/
 examples/
+.examples/
+.docs/download/
+.docs/images/
+.docs/terrain-creation/
 
 # Translations
 *.mo

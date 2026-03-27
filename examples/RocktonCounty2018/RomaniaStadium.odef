@@ -1,6 +1,0 @@
-RomaniaStadium.mesh
-1, 1, 1
-beginmesh
-mesh RomaniaStadiumCollision.mesh
-endmesh
-end

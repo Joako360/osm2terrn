@@ -1,6 +1,0 @@
-RomaniaHaystack.mesh
-1, 1, 1
-beginmesh
-mesh RomaniaHaystackCollision.mesh
-endmesh
-end

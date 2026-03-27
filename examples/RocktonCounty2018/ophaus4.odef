@@ -1,8 +1,0 @@
-haus4.mesh
-1, 1, 1,
-
-beginmesh
-mesh haus4Kol.mesh
-endmesh
-
-end

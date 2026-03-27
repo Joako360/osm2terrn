@@ -166,7 +166,7 @@ The project follows a flexible release schedule:
 - PRs reviewed for code quality and consistency
 
 **Support**:
-- 📖 Documentation: [README.md](README.md), [docs/](docs/)
+- 📖 Documentation: [README.md](README.md), [.docs/](.docs/)
 - 🐛 Bug Reports: [Issues](https://github.com/Joako360/osm2terrn/issues)
 - 💬 Discussions: [GitHub Discussions](https://github.com/Joako360/osm2terrn/discussions)
 - 🤝 Contributions: Via Pull Requests

@@ -1,6 +1,0 @@
-grainstorage.mesh
-1, 1, 1
-beginmesh
-mesh grainstorage.mesh
-endmesh
-end
