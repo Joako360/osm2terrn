@@ -1,0 +1,23 @@
+# Function reference: processing modules
+
+- `heightmap_handler.py`
+  - `fetch_elevation_from_api(bounds)`
+  - `generate_heightmap_n_texture(...)`
+- `road_network_formatter.py`
+  - `build_roads_from_place(...)`
+- `road_merger.py`
+  - `merge_by_highway(...)`
+- `road_exporters.py`
+  - `export_procedural_roads_block(...)`
+  - `to_intermediate_json(...)`
+  - `map_osm_type_to_ror(...)`
+- `tobj_exporter.py`
+  - `TObject`, `TobjExporter`
+- `otc_exporter.py`
+  - `export_global_otc(...)`, `export_paged_otc(...)`
+- `terrn2_exporter.py`
+  - `export_terrn2_entrypoint(...)`
+- `texture_splatting.py`
+  - `create_texture_splat(...)`
+- `rail_track_formatter.py`
+  - `export_rails_and_stations(...)`

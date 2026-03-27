@@ -160,6 +160,22 @@ output/
 
 ---
 
+
+## Contributor Learning Path
+
+If you are new and want to contribute, read in this order:
+
+1. [CONTRIBUTING.md](CONTRIBUTING.md)
+2. [Contributor onboarding guide (English)](docs/contributor-onboarding-en.md)
+3. [Contributor docs index (short, topic-focused pages)](docs/contributors/README.md)
+4. [Architecture index](docs/contributors/architecture-index.md)
+5. [CLI flow index](docs/contributors/cli-index.md)
+6. [Function reference index](docs/contributors/function-reference-index.md)
+7. [Troubleshooting index](docs/contributors/troubleshooting-index.md)
+8. [Testing and validation index](docs/contributors/testing-index.md)
+9. [Exporter docs](docs/exporters-docs.md)
+10. [Contributor onboarding guide (Spanish)](docs/contributor-onboarding-es.md)
+
 ## Project Status
 
 ### ✅ Completed
