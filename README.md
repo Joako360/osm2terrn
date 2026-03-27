@@ -174,8 +174,9 @@ If you are new and want to contribute, read in this order:
 7. [Troubleshooting index](docs/contributors/troubleshooting-index.md)
 8. [Testing and validation index](docs/contributors/testing-index.md)
 9. [Exporter docs](docs/exporters-docs.md)
-10. [OpenTopography API key setup](docs/contributors/opentopography-api-key.md)
-11. [Contributor onboarding guide (Spanish)](docs/contributor-onboarding-es.md)
+10. [OpenTopography API key setup (English)](docs/contributors/opentopography-api-key-en.md)
+11. [OpenTopography API key setup (Spanish)](docs/contributors/opentopography-api-key.md)
+12. [Contributor onboarding guide (Spanish)](docs/contributor-onboarding-es.md)
 
 ## Project Status
 
