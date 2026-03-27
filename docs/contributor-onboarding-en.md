@@ -85,6 +85,7 @@ Implemented: [Contributor testing and validation guide](contributor-testing-vali
 - [Function reference index](contributors/function-reference-index.md)
 - [Troubleshooting index](contributors/troubleshooting-index.md)
 - [Testing index](contributors/testing-index.md)
+- [OpenTopography API key setup](contributors/opentopography-api-key.md)
 
 ---
 ## Practical way to start contributing

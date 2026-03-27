@@ -87,6 +87,14 @@ Debe incluir:
 
 ---
 
+
+## Documentación específica (dividida por tema)
+
+- [Índice de documentación para contributors](contributors/README.md)
+- [Configuración de clave API OpenTopography](contributors/opentopography-api-key.md)
+
+---
+
 ## Recomendación práctica para empezar a contribuir
 
 1. Corre el flujo completo con un bbox pequeño.

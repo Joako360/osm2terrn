@@ -11,6 +11,7 @@ This folder contains shorter, focused documentation pages for contributors.
 5. [Function reference index](function-reference-index.md)
 6. [Troubleshooting index](troubleshooting-index.md)
 7. [Testing and validation index](testing-index.md)
+8. [OpenTopography API key setup](opentopography-api-key.md)
 
 ## Why this structure?
 
