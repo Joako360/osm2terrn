@@ -14,11 +14,11 @@ The project processes geographic data (roads, elevation, terrain) and outputs Ri
 ## Features
 
 - 📥 Download and process **OSM data** (roads, rivers, power lines, terrain).
-- 📊 Obtain **elevation data** from OpenTopoData API.
+- 📊 Obtain **elevation data** from OpenTopography API.
 - 🗺️ Generate **heightmaps (PNG)** with automatic size optimization.
-- 🛣️ Export **procedural road networks** (.tobj format).
+- 🛣️ Generate **procedural road networks** (.tobj format).
 - 🎨 Apply **texture splatting** for terrain detail layers.
-- 📐 Create complete **terrain packages** (.terrn2 + .otc + .tobj).
+- 📐 Export complete **terrain packages** (.terrn2 + .otc + .tobj).
 - 🔧 **Modular architecture** for easy extension and maintenance.
 - ⚡ **Robust CLI interface** with interactive menus.
 
@@ -129,7 +129,7 @@ The CLI provides an interactive menu:
 **Step 1: Download**
 - Select a city (search by name) or enter custom bounding box
 - System downloads OSM data (roads, terrain features)
-- Elevation data fetched from OpenTopoData API
+- Elevation data fetched from OpenTopography API
 
 **Step 2: Process**
 - Roads are merged and optimized
@@ -142,7 +142,7 @@ The CLI provides an interactive menu:
 - `-page-0-0.otc` - Paging configuration
 - `.tobj` - Procedural roads and objects
 - `*heightmap.png` - Elevation raster
-- `*groundmap.png` - Texture detail
+- `*groundmap.png` - Terrain rendering (Simulated Satellite Image)
 
 ### 4. Output Files
 
@@ -181,7 +181,7 @@ If you are new and want to contribute, read in this order:
 ### ✅ Completed
 
 - [x] OSM data download and parsing
-- [x] Elevation data fetching (OpenTopoData)
+- [x] Elevation data fetching (OpenTopography)
 - [x] Heightmap generation (PNG format)
 - [x] Ground texture splatting
 - [x] Procedural road network export (.tobj)
