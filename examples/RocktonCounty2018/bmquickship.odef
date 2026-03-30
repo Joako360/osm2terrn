@@ -1,6 +1,0 @@
-bmquickship.mesh
-1, 1, 1
-beginmesh
-mesh bmquickshipcoll.mesh
-endmesh
-end

@@ -1,8 +1,0 @@
-chemicaltank.mesh
-1, 1, 1
-
-beginmesh
-mesh chemicaltank.mesh
-endmesh
-
-end

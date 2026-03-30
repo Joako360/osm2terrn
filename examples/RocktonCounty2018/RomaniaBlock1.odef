@@ -1,6 +1,0 @@
-RomaniaBlock1.mesh
-1, 1, 1
-beginmesh
-mesh RomaniaBlock1Collision.mesh
-endmesh
-end

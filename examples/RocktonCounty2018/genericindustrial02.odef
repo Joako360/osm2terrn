@@ -1,8 +1,0 @@
-genericindustrial02.mesh
-1, 1, 1
-
-beginmesh
-mesh genericindustrial02box.mesh
-endmesh
-
-end

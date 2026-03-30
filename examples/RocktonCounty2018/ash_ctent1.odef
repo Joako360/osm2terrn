@@ -1,7 +1,0 @@
-ash_ctent1.mesh
-1, 1, 1
-
-beginlodmesh
-100, ash_ctent1_lod1.mesh
-
-end

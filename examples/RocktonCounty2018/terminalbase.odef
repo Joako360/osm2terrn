@@ -1,6 +1,0 @@
-terminalbase.mesh
-1, 1, 1
-beginmesh
-mesh terminalbase-col.mesh
-endmesh
-end

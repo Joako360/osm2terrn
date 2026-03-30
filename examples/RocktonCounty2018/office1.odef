@@ -1,6 +1,0 @@
-office1.mesh
-1, 1, 1
-beginmesh
-mesh office1.mesh
-endmesh
-end
