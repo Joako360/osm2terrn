@@ -1,0 +1,1 @@
+OSM2terrn generates realistic, production-ready terrains for the Rigs of Rods driving simulator from real-world OpenStreetMap data and elevation models. Features procedural road networks, texture splatting, heightmap generation, and modular exporter architecture.
