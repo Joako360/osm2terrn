@@ -53,7 +53,6 @@ coverage.xml
 
 # Local cache and output and examples files
 cache/
-output/
 examples/
 .examples/
 .docs/download/

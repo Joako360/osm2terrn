@@ -18,10 +18,10 @@ This document proposes the **minimum learning path** for new contributors to und
    - Sequence: download data â†’ process/export.
    - Session state (`MapData`) and interactive menu behavior.
 
-4. **Exporter docs (`.docs/exporters-docs.md`)**
+4. **Exporter docs (`docs/exporters-docs.md`)**
    - Explains generated file contracts (`.terrn2`, `.otc`, `.tobj`).
 
-5. **Function reference (`.docs/function-reference.md`)**
+5. **Function reference (`docs/function-reference.md`)**
    - Module-by-module summary of key functions/classes.
    - Inputs/outputs and responsibilities across the pipeline.
 
