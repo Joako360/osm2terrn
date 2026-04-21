@@ -15,7 +15,7 @@ This document proposes the **minimum learning path** for new contributors to und
 
 3. **`src/main.py` (main flow)**
    - Application entry point.
-   - Sequence: download data â†’ process/export.
+   - Sequence: download -> process -> export.
    - Session state (`MapData`) and interactive menu behavior.
 
 4. **Exporter docs (`docs/exporters-docs.md`)**
@@ -47,7 +47,7 @@ Implemented: [Contributor architecture guide](architecture.md).
 Implemented: [Contributor CLI flow guide](cli-flow.md).
 
 ### 3) Module and function reference
-**Goal:** provide a navigable map of â€œwhat each function doesâ€ so contributors do not need to inspect the whole repo first.
+**Goal:** provide a navigable map of what each function does so contributors do not need to inspect the whole repo first.
 
 It should include:
 - `src/data/*`: OSM download and parsing.
