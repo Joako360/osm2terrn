@@ -1,4 +1,4 @@
-﻿# Guá de onboarding para contribuidores (español)
+﻿# Guía de onboarding para contribuidores (español)
 
 Este documento propone el **camino mí­nimo** que deberá seguir una persona nueva para entender el proyecto rápido y empezar a contribuir sin perderse.
 
@@ -15,11 +15,11 @@ Este documento propone el **camino mí­nimo** que deberá seguir una persona nu
 
 3. **`src/main.py` (flujo principal)**
    - Punto de entrada de la aplicación.
-   - Secuencia: descargar datos â†’ procesar/exportar.
+   - Secuencia: descargar -> procesar -> exportar.
    - Estado de sesión (`MapData`) y menú interactivo.
 
 4. **Documentación de exportadores (`.docs/exporters-docs.md`)**
-   - Explica el contrato de salida de archivos (`.terrn2`, `.otc`, `.tobj`).
+   - Explica el formato de salida de archivos (`.terrn2`, `.otc`, `.tobj`).
 
 5. **Referencia funcional (`.docs/function-reference.md`)**
    - Resumen por módulo de funciones y clases clave.
@@ -35,28 +35,28 @@ Si quieres que la documentación sirva para contributors nuevos, estos son los a
 **Objetivo:** explicar cómo viajan los datos desde OSM hasta archivos de terreno para RoR.
 
 Debe responder:
-- Â¿Qué módulos participan y en qué orden?
-- Â¿Qué estructuras se comparten entre módulos?
-- Â¿Dónde se guarda estado temporal?
+- ¿Qué módulos participan y en qué orden?
+- ¿Qué estructuras se comparten entre módulos?
+- ¿Dónde se guarda estado temporal?
 
 > Estado actual: parte de esta explicación ya está en `README.md`, pero conviene extraerla a un artí­culo dedicado de arquitectura.
 
-### 2) Guá del flujo de ejecución (CLI)
+### 2) Guía del flujo de ejecución (CLI)
 **Objetivo:** describir exactamente qué hace cada opción del menú principal.
 
 Debe responder:
-- Â¿Qué hace `dlcity()`?
-- Â¿Qué valida `download_menu()`?
-- Â¿Qué genera `export()` y en qué carpeta?
-- Â¿Qué variables de entorno afectan el resultado?
+- ¿Qué hace `dlcity()`?
+- ¿Qué valida `download_menu()`?
+- ¿Qué genera `export()` y en qué carpeta?
+- ¿Qué variables de entorno afectan el resultado?
 
 ### 3) Referencia de módulos y funciones
-**Objetivo:** mapa navegable de â€œqué hace cada funciónâ€ para no tener que abrir todo el repo.
+**Objetivo:** mapa navegable de qué hace cada función para no tener que abrir todo el repo.
 
 Debe incluir:
 - `src/data/*`: descarga y parsing OSM.
 - `src/processing/*`: altura, carreteras y exportadores.
-- `src/utils/*`: BBox, geometrá, logging, constantes.
+- `src/utils/*`: BBox, geometría, logging, constantes.
 - Firma resumida + propósito + side effects de cada función pública.
 
 ### 4) Formatos de salida (contratos)
@@ -90,9 +90,9 @@ Debe incluir:
 
 ## Documentación especí­fica (dividida por tema)
 
-- [índice de documentación para contributors](README.md)
+- [Índice de documentación para contributors](README.md)
 - [Configuración de clave API OpenTopography](opentopography-api/opentopography-api-key-es.md)
-- [índice de documentación de exporters](exporters/README.md)
+- [Índice de documentación de exporters](exporters/README.md)
 
 ---
 
