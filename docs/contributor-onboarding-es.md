@@ -18,10 +18,10 @@ Este documento propone el **camino mí­nimo** que deberá seguir una persona nu
    - Secuencia: descargar -> procesar -> exportar.
    - Estado de sesión (`MapData`) y menú interactivo.
 
-4. **Documentación de exportadores (`.docs/exporters-docs.md`)**
+4. **Documentación de exportadores (`exporters-docs.md`)**
    - Explica el formato de salida de archivos (`.terrn2`, `.otc`, `.tobj`).
 
-5. **Referencia funcional (`.docs/function-reference.md`)**
+5. **Referencia funcional (`function-reference.md`)**
    - Resumen por módulo de funciones y clases clave.
    - Qué entra/sale de cada parte del pipeline.
 
@@ -93,6 +93,8 @@ Debe incluir:
 - [Índice de documentación para contributors](README.md)
 - [Configuración de clave API OpenTopography](opentopography-api/opentopography-api-key-es.md)
 - [Índice de documentación de exporters](exporters/README.md)
+- [Ajustes de Elevación Realista (Español)](elevation-realism/elevation_realism_improvements-es.md)
+- [Guía Rápida de Elevación Realista (Español)](ELEVATION_REALISM_QUICK_START_ES.md)
 
 ---
 
@@ -100,7 +102,7 @@ Debe incluir:
 
 1. Corre el flujo completo con un bbox pequeño.
 2. Abre los archivos resultantes en `output/` y valida que se generan todos.
-3. Revisa `.docs/function-reference.md` para ubicar qué módulo tocar según tu issue.
+3. Revisa function-reference.md para ubicar qué módulo tocar según tu issue.
 4. Haz cambios pequeños (un módulo por PR) y adjunta evidencia de salida.
 
 ---
@@ -110,6 +112,3 @@ Debe incluir:
 La referencia funcional fue pensada como í­ndice de navegación:
 - **No** reemplaza docstrings detallados.
 - **Sí­** acelera el onboarding al mostrar dependencias y responsabilidades por módulo.
-
-
-

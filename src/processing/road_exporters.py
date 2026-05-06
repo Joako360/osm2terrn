@@ -44,13 +44,15 @@ def _export_roads_single_block(roads: List[Road]) -> str:
     blocks = []
     
     for road in roads:
-        lines = ["begin_procedural_roads"]
+        lines = []
         
-        # Add metadata comments
+        # Add metadata comments OUTSIDE the procedural roads block
         if hasattr(road, 'name') and road.name:
-            lines.append(f"  // OSM street: {road.name}")
+            lines.append(f"// OSM street: {road.name}")
         if getattr(road, "is_bridge", False):
-            lines.append("  // OSM: bridge=yes")
+            lines.append("// OSM: bridge=yes")
+        
+        lines.append("begin_procedural_roads")
         
         # Points - each point on its own line with all required values
         for point in road.points_m:
@@ -84,13 +86,15 @@ def _export_roads_per_segment(roads: List[Road]) -> str:
     blocks = []
     
     for road in roads:
-        lines = ["begin_procedural_roads"]
+        lines = []
         
+        # Add metadata comments OUTSIDE the procedural roads block
         if hasattr(road, 'name') and road.name:
-            lines.append(f"  // OSM street: {road.name}")
+            lines.append(f"// OSM street: {road.name}")
         if getattr(road, "is_bridge", False):
-            lines.append("  // OSM: bridge=yes")
+            lines.append("// OSM: bridge=yes")
         
+        lines.append("begin_procedural_roads")
         lines.append("  road")
         lines.append(f"    width {road.width:.2f}")
         

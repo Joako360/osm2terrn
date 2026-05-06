@@ -9,7 +9,7 @@ Edge = Tuple[LineString, Dict]
 @dataclass
 class FilterConfig:
     """
-    Declarative filtering for OSM edges → keep a clean subset before merging/densifying.
+    Declarative filtering for OSM edges → keep a clean subset before merging.
     
     Attributes:
         include_highway: Highway types to keep.

@@ -132,10 +132,10 @@ def generate_heightmap_n_texture(
     heightmap_path: str = "heightmap.png",
     groundmap_path: str = "groundmap.png",
     cmap_name: str = "gist_earth",
-    output_size: tuple[int, int] = (1024, 1024),
+    output_size: tuple[int, int] = (1025, 1025),
     smoothing_sigma: float = 1.0,
     elevation_data: Optional[dict] = None
-) -> None:
+) -> Optional[Dict[str, float]]:
     """
     Generates and saves both the grayscale heightmap and colored ground texture using a matplotlib colormap,
     with optional rescaling and smoothing.
@@ -147,6 +147,14 @@ def generate_heightmap_n_texture(
         cmap_name (str): Name of the matplotlib colormap to use for ground texture.
         output_size (tuple[int, int]): Output image size (width, height).
         smoothing_sigma (float): Sigma for Gaussian smoothing.
+        elevation_data (dict, optional): Dictionary with 'elevation', 'maxh', 'minh' keys.
+
+    Returns:
+        Optional[Dict[str, float]]: Dictionary with elevation statistics:
+            - 'min_elevation': Minimum elevation in meters
+            - 'max_elevation': Maximum elevation in meters
+            - 'elevation_range': Difference between max and min
+            Returns None if heightmap generation fails.
     """
     # Normalize bbox early so we work with a canonical format. This handles GeoDataFrame,
     # shapely geometries, dicts and sequences. Represented with the BBox class.
@@ -154,7 +162,7 @@ def generate_heightmap_n_texture(
         bbox_obj = BBox(bounds)
     except Exception as e:
         log_warning(logger, f"No valid bbox provided: {e}")
-        return
+        return None
 
     if elevation_data and 'elevation' in elevation_data and 'maxh' in elevation_data and 'minh' in elevation_data:
         elevation = elevation_data['elevation']
@@ -173,6 +181,8 @@ def generate_heightmap_n_texture(
             log_warning(logger, f"Falling back to flat heightmap due to elevation fetch failure: {e}")
             w, h = output_size
             elevation_normalized = np.zeros((h, w), dtype=np.float32)
+            maxh = 0.0
+            minh = 0.0
 
     # Smoothing
     elevation_smoothed = scipy.ndimage.gaussian_filter(elevation_normalized, sigma=smoothing_sigma)
@@ -191,3 +201,10 @@ def generate_heightmap_n_texture(
     img_groundmap = img_groundmap.resize(output_size, Image.Resampling.LANCZOS)
     img_groundmap.save(groundmap_path)
     log_info(logger, f"Ground texture saved to: {groundmap_path}")
+
+    # Return elevation statistics for realistic terrain configuration
+    return {
+        'min_elevation': float(minh),
+        'max_elevation': float(maxh),
+        'elevation_range': float(maxh - minh),
+    }

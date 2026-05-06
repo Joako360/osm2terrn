@@ -18,10 +18,10 @@ This document proposes the **minimum learning path** for new contributors to und
    - Sequence: download -> process -> export.
    - Session state (`MapData`) and interactive menu behavior.
 
-4. **Exporter docs (`docs/exporters-docs.md`)**
+4. **Exporter docs (`exporters-docs.md`)**
    - Explains generated file contracts (`.terrn2`, `.otc`, `.tobj`).
 
-5. **Function reference (`docs/function-reference.md`)**
+5. **Function reference (`function-reference.md`)**
    - Module-by-module summary of key functions/classes.
    - Inputs/outputs and responsibilities across the pipeline.
 
@@ -88,13 +88,15 @@ Implemented: [Contributor testing and validation guide](testing-validation.md).
 - [OpenTopography API key setup (English)](opentopography-api/opentopography-api-key-en.md)
 - [OpenTopography API key setup (Spanish)](opentopography-api/opentopography-api-key-es.md)
 - [Exporter docs index](exporters/README.md)
+- [Realistic Elevation Adjustments (English)](elevation-realism/elevation_realism_improvements-en.md)
+- [Realistic Elevation Quick Start (English)](ELEVATION_REALISM_QUICK_START_EN.md)
 
 ---
 ## Practical way to start contributing
 
 1. Run the full workflow with a small bbox.
 2. Open generated files in `output/` and confirm all expected outputs are created.
-3. Use `.docs/function-reference.md` to identify which module to modify for your issue.
+3. Use function-reference.md to identify which module to modify for your issue.
 4. Keep changes small (ideally one module per PR) and attach output evidence.
 
 ---
@@ -104,5 +106,3 @@ Implemented: [Contributor testing and validation guide](testing-validation.md).
 The function reference is designed as a navigation index:
 - It does **not** replace detailed docstrings.
 - It **does** accelerate onboarding by showing dependencies and module responsibilities.
-
-

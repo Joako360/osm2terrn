@@ -1,8 +1,66 @@
 import os
 from typing import Any, List, Dict, Optional
 from utils.logger import get_logger, log_info, log_error, log_warning
+from utils.constants import (
+    ENABLE_REALISTIC_ELEVATION,
+    DEFAULT_WORLD_SIZE_Y,
+    MIN_WORLD_SIZE_Y,
+    MAX_WORLD_SIZE_Y,
+)
 
 logger = get_logger("otc_exporter")
+
+
+def calculate_world_size_y(
+    min_elevation: Optional[float] = None,
+    max_elevation: Optional[float] = None,
+    default_height: float = DEFAULT_WORLD_SIZE_Y,
+) -> float:
+    """
+    Calculates the WorldSizeY (vertical terrain extent) based on elevation data.
+
+    WorldSizeY is simply the difference between maximum and minimum elevation,
+    which ensures the terrain height matches real topography in Rigs of Rods.
+
+    Formula: WorldSizeY = max_elevation - min_elevation
+
+    If ENABLE_REALISTIC_ELEVATION is True and elevation data is provided,
+    uses the actual elevation range. Otherwise, returns the default height.
+
+    Args:
+        min_elevation (float, optional): Minimum elevation in meters
+        max_elevation (float, optional): Maximum elevation in meters
+        default_height (float): Default height to use if realistic calculation unavailable
+
+    Returns:
+        float: Recommended WorldSizeY value in meters
+
+    Example:
+        - Elevation range: 45m - 235m
+        - WorldSizeY = 235 - 45 = 190m
+    """
+    if not ENABLE_REALISTIC_ELEVATION or min_elevation is None or max_elevation is None:
+        return default_height
+
+    try:
+        # Calculate elevation range directly
+        world_height = max_elevation - min_elevation
+
+        # Ensure minimum height for very flat terrain
+        world_height = max(world_height, MIN_WORLD_SIZE_Y)
+        # Cap at maximum to prevent extreme values
+        world_height = min(world_height, MAX_WORLD_SIZE_Y)
+
+        log_info(
+            logger,
+            f"Calculated WorldSizeY: {world_height:.2f}m from elevation range "
+            f"{min_elevation:.2f}m - {max_elevation:.2f}m",
+        )
+        return world_height
+
+    except Exception as e:
+        log_error(logger, f"Error calculating world height: {e}; using default {default_height}m")
+        return default_height
 
 
 def export_otc_config(
@@ -139,11 +197,18 @@ def export_paged_otc(
     """
     try:
         # Default ground/base layer (covers entire page)
-        base_layer = {
-            "worldSize": 6,                        # tiling scale
-            "diffuse": "terrain_detail.dds",
-            "normal": "blank_NRM.dds",
-        }
+        if groundmap_file:
+            base_layer = {
+                "worldSize": 8192,                      # large tiling scale for base ground layer
+                "diffuse": os.path.basename(groundmap_file),
+                "normal": "blank_NRM.dds",
+            }
+        else:
+            base_layer = {
+                "worldSize": 6,                        # tiling scale
+                "diffuse": "terrain_detail.dds",
+                "normal": "blank_NRM.dds",
+            }
 
         # Provide simple defaults using stock textures if layers not provided
         if layers is None:
@@ -151,8 +216,7 @@ def export_paged_otc(
             if groundmap_file:
                 gm = os.path.basename(groundmap_file)
                 layers = [
-                    {"worldSize": 6, "diffuse": "terrain_detail.dds", "normal": "blank_NRM.dds", "blend": gm, "blendmode": "R", "alpha": 0.5},
-                    {"worldSize": 6, "diffuse": "terrain_grass.dds",  "normal": "blank_NRM.dds", "blend": gm, "blendmode": "G", "alpha": 0.5},
+                    {"worldSize": 6, "diffuse": "terrain_detail.dds", "normal": "blank_NRM.dds", "blend": gm, "blendmode": "G", "alpha": 0.5},
                 ]
 
         total_layers = 1 + (len(layers) if layers else 0)

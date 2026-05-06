@@ -53,9 +53,9 @@ coverage.xml
 
 # Local cache and output and examples files
 cache/
-examples/
-.examples/
 .docs/
+.examples/
+output/*
 
 # Translations
 *.mo

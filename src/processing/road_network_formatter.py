@@ -1,7 +1,7 @@
 from processing.road_model import Road
 import osmnx as ox
 from typing import List, Optional, Tuple
-from utils.geometry_utils import utm_crs_from_lonlat, densify_linestring
+from utils.geometry_utils import utm_crs_from_lonlat
 from data.osm_loader import load_graph, edges_to_lines
 from processing.road_merger import merge_by_highway
 from processing.road_exporters import map_osm_type_to_ror
@@ -15,8 +15,8 @@ def build_roads_from_place(
     origin_lon: float,
     origin_lat: float,
     network_type: str = "drive",
-    densify_step_m: float = 5.0,
-    tobj_prefix: str = "terrain"
+    tobj_prefix: str = "terrain",
+    simplify: bool = True,
 ) -> str:
     """
     Loads OSM data for a given place, generates Road objects, and exports the procedural block to a .tobj file.
@@ -26,26 +26,26 @@ def build_roads_from_place(
         origin_lon (float): Longitude of the local origin (center of terrain).
         origin_lat (float): Latitude of the local origin (center of terrain).
         network_type (str, optional): Type of road network to extract (default: "drive").
-        densify_step_m (float, optional): Step size in meters for densifying road lines (default: 5.0).
+        tobj_prefix (str, optional): Prefix for output filename (default: "terrain").
+        simplify (bool, optional): Whether to simplify the graph (default: True).
 
     Returns:
         str: Path to the generated .tobj file containing procedural road definitions.
     """
-    G = load_graph(place=place, network_type=network_type)
+    G = load_graph(place=place, network_type=network_type, simplify=simplify)
     geoms_attrs, src_crs = edges_to_lines(G)
-    merged = merge_by_highway(geoms_attrs)
-    merged_dense = [(densify_linestring(ls, densify_step_m), attrs) for ls, attrs in merged]
+    merged = merge_by_highway(geoms_attrs, merge_by_name=True)
+    merged_dense = merged
     # Build elevation sampler from original projected graph nodes if elevations are present
     import numpy as np
     elev_sampler = None
     try:
         # We need original metric graph nodes with possible 'elevation' attribute
         # Re-load with same inputs; project as in edges_to_lines
-        G2 = load_graph(place=place, network_type=network_type)
-        G2m = ox.project_graph(G2)
+        G2 = load_graph(place=place, network_type=network_type, simplify=simplify)
         node_coords = []
         node_elev = []
-        for nid, nd in G2m.nodes(data=True):
+        for nid, nd in G2.nodes(data=True):
             if 'x' in nd and 'y' in nd and ('elevation' in nd or 'elev' in nd):
                 node_coords.append([float(nd['x']), float(nd['y'])])
                 node_elev.append(float(nd.get('elevation', nd.get('elev', 0.0))))
@@ -65,15 +65,35 @@ def build_roads_from_place(
         elev_sampler = None
     from shapely.ops import transform as shp_transform
     from pyproj import Transformer
+    import geopandas as gpd
+    from shapely.geometry import box as shp_box
+    
     utm = utm_crs_from_lonlat(origin_lon, origin_lat)
     to_utm = Transformer.from_crs("EPSG:4326", utm, always_xy=True)
     to_utm_fn = lambda x, y, z=None: to_utm.transform(x, y)
     wgs84_to_utm = Transformer.from_crs("EPSG:4326", utm, always_xy=True)
-    x0, y0 = wgs84_to_utm.transform(origin_lon, origin_lat)
+    
+    # Calculate bbox in UTM to determine the top-left corner (0,0) for Rigs of Rods
+    # For Rigs of Rods: origin (0,0) is at the top-left corner, not the center
+    geoms_gdf = gpd.GeoDataFrame(
+        geometry=[geom for geom, _ in merged_dense],
+        crs=src_crs  # Use the actual CRS from edges_to_lines
+    )
+    # If geometries are not already in UTM, project them
+    if str(src_crs) != str(utm):
+        geoms_utm = geoms_gdf.to_crs(utm)
+    else:
+        geoms_utm = geoms_gdf
+    minx_utm, miny_utm, maxx_utm, maxy_utm = geoms_utm.total_bounds
+    
+    # Top-left corner (superior izquierda) in UTM coordinates
+    # In UTM: minx is west (left), maxy is north (top in northern hemisphere)
+    x0, y0 = minx_utm, maxy_utm
+    
     # Add local mapping options
     INVERT_Y_AXIS = True  # flip Y if your engine uses opposite northing
-    WORLD_OFFSET_X = 0.0  # set to world_size_x / 2.0 if origin is top-left corner
-    WORLD_OFFSET_Z = 0.0  # set to world_size_z / 2.0 if origin is top-left corner
+    WORLD_OFFSET_X = 0.0  # offset from corner origin
+    WORLD_OFFSET_Z = 0.0  # offset from corner origin
     from utils.logger import get_logger, log_warning, log_info
     logger = get_logger("road_network_formatter")
     log_info(logger, f"CRS used for UTM: {utm}")

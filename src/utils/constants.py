@@ -113,6 +113,28 @@ TERRN2_DEFAULT_WATER_ENABLED = 1
 TERRN2_DEFAULT_WATER_LINE = 0.0
 TERRN2_DEFAULT_WATER_BOTTOM_LINE = -150.0
 
+# ============================================================================
+# Elevation & Water Realism Settings
+# ============================================================================
+
+# Enable realistic elevation/water scaling (dynamic based on actual data)
+ENABLE_REALISTIC_ELEVATION = True
+
+# Enable automatic water level detection from elevation and water features
+ENABLE_REALISTIC_WATER = True
+
+# Water depth below surface (in meters) - realistic depth for game physics
+WATER_DEPTH_DEFAULT = 150.0
+
+# Default World Size Y if no elevation data available (in meters)
+DEFAULT_WORLD_SIZE_Y = 300.0
+
+# Minimum world height even for very flat terrain (in meters)
+MIN_WORLD_SIZE_Y = 50.0
+
+# Maximum world height to prevent extreme stretching (in meters)
+MAX_WORLD_SIZE_Y = 10000.0
+
 # Visual and atmospheric settings
 TERRN2_DEFAULT_AMBIENT_COLOR = "1.0, 1.0, 1.0"
 TERRN2_DEFAULT_SANDSTORM_CUBEMAP = "tracks/skyboxcol"

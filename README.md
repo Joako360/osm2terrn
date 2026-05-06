@@ -175,6 +175,7 @@ If you are new and want to contribute, read in this order:
 8. [Testing and validation index](docs/testing-validation/testing-index.md)
 9. [Exporter docs](docs/exporters-docs.md)
 10. [OpenTopography API key setup (English)](docs/opentopography-api/opentopography-api-key-en.md) or [OpenTopography API key setup (Spanish)](docs/opentopography-api/opentopography-api-key-es.md)
+11. [Realistic Elevation Adjustments (English)](docs/elevation-realism/elevation_realism_improvements-en.md) or [Ajustes de Elevación Realista (Spanish)](docs/elevation-realism/elevation_realism_improvements-es.md)
 
 ## Project Status
 
@@ -319,4 +320,3 @@ See [LICENCE.txt](LICENCE.txt) for full terms.
 This project is **unofficial** and not affiliated with Rigs of Rods developers. It is provided as-is for community use.
 
 **Attribution**: OSM data © OpenStreetMap contributors, available under ODbL license.
-

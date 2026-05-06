@@ -13,6 +13,7 @@ The exporter documentation was split into shorter topic-focused pages.
 7. [Troubleshooting](exporters/troubleshooting.md)
 8. [CI, naming, and review checklist](exporters/ci-review.md)
 9. [Minimal examples](exporters/examples.md)
+10. [Realistic Elevation and Water Level Adjustments](elevation-realism/elevation_realism_improvements-en.md)
 
 ## Entry index
 

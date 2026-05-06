@@ -13,6 +13,7 @@ from utils.constants import (
     TERRN2_DEFAULT_GRAVITY,
     TERRN2_DEFAULT_CATEGORY_ID,
     TERRN2_DEFAULT_VERSION,
+    ENABLE_REALISTIC_WATER,
 )
 
 logger = get_logger("terrn2_exporter")
@@ -28,6 +29,61 @@ def _generate_guid() -> str:
     return str(uuid.uuid4())
 
 
+def prepare_water_config(
+    elevation_stats: Optional[Dict[str, float]] = None,
+    water_config: Optional[Dict[str, float]] = None,
+) -> Dict[str, float]:
+    """
+    Prepares water configuration with realistic values.
+
+    If ENABLE_REALISTIC_WATER is True and elevation statistics are provided,
+    calculates water level based on elevation data. Otherwise uses provided config or defaults.
+
+    Args:
+        elevation_stats (dict, optional): Dictionary with 'min_elevation' and 'max_elevation'
+        water_config (dict, optional): Custom water config with 'enabled', 'water_line', 'water_bottom_line'
+
+    Returns:
+        dict: Processed water configuration
+    """
+    if ENABLE_REALISTIC_WATER and elevation_stats:
+        try:
+            from utils.elevation_utils import (
+                detect_water_level,
+                calculate_water_bottom_line,
+            )
+            import numpy as np
+
+            min_elev = elevation_stats.get('min_elevation', 0.0)
+            max_elev = elevation_stats.get('max_elevation', 100.0)
+
+            # Detect water level from elevation range
+            # Use a simplified approach: water is at minimum elevation or slightly above
+            water_level = min_elev
+            water_bottom = calculate_water_bottom_line(water_level)
+
+            config = {
+                "enabled": True,
+                "water_line": water_level,
+                "water_bottom_line": water_bottom,
+            }
+            log_info(logger, f"Prepared realistic water config: {config}")
+            return config
+        except Exception as e:
+            log_error(logger, f"Error preparing realistic water config: {e}")
+            # Fall through to use provided config or defaults
+
+    # Use provided config or defaults
+    if water_config:
+        return water_config
+
+    return {
+        "enabled": bool(TERRN2_DEFAULT_WATER_ENABLED),
+        "water_line": TERRN2_DEFAULT_WATER_LINE,
+        "water_bottom_line": TERRN2_DEFAULT_WATER_BOTTOM_LINE,
+    }
+
+
 def export_terrn2_entrypoint(
     filepath: str,
     terrain_name: str,
@@ -35,6 +91,7 @@ def export_terrn2_entrypoint(
     objects_files: List[str],
     authors: Optional[Any] = None,
     water_config: Optional[Dict[str, float]] = None,
+    elevation_stats: Optional[Dict[str, float]] = None,
     ambient_color: Optional[str] = None,
     start_position: Optional[str] = None,
     start_rotation: Optional[float] = None,
@@ -69,6 +126,9 @@ def export_terrn2_entrypoint(
             - 'enabled': bool (default: True)
             - 'water_line': float in meters (default: 0.0)
             - 'water_bottom_line': float in meters (default: -150.0)
+        elevation_stats (dict, optional): Elevation statistics for realistic water config:
+            - 'min_elevation': float (minimum elevation in meters)
+            - 'max_elevation': float (maximum elevation in meters)
         ambient_color (str, optional): RGB ambient light as "R, G, B" with values 0-1.
         start_position (str, optional): Spawn position as "X, Y, Z" in local coordinates.
         start_rotation (float, optional): Spawn rotation in degrees (0-360).
@@ -95,20 +155,17 @@ def export_terrn2_entrypoint(
         ...     objects_files=["MyTerrain.tobj"],
         ...     authors={"terrain": "John Doe", "objects": "Jane Smith"},
         ...     water_config={"enabled": True, "water_line": 50.0},
+        ...     elevation_stats={"min_elevation": 10.0, "max_elevation": 100.0},
         ...     start_position="256.0, 10.0, 256.0"
         ...     # GUID will be auto-generated if not provided
         ... )
     """
     try:
-        # Prepare water settings
-        water_enabled = TERRN2_DEFAULT_WATER_ENABLED
-        water_line = TERRN2_DEFAULT_WATER_LINE
-        water_bottom_line = TERRN2_DEFAULT_WATER_BOTTOM_LINE
-
-        if water_config:
-            water_enabled = 1 if water_config.get("enabled", True) else 0
-            water_line = water_config.get("water_line", TERRN2_DEFAULT_WATER_LINE)
-            water_bottom_line = water_config.get("water_bottom_line", TERRN2_DEFAULT_WATER_BOTTOM_LINE)
+        # Prepare water settings with realistic values if elevation data provided
+        processed_water_config = prepare_water_config(elevation_stats, water_config)
+        water_enabled = 1 if processed_water_config.get("enabled", True) else 0
+        water_line = processed_water_config.get("water_line", TERRN2_DEFAULT_WATER_LINE)
+        water_bottom_line = processed_water_config.get("water_bottom_line", TERRN2_DEFAULT_WATER_BOTTOM_LINE)
 
         # Use provided values or defaults
         ambient_color = ambient_color or TERRN2_DEFAULT_AMBIENT_COLOR
