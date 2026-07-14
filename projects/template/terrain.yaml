@@ -1,0 +1,5 @@
+terrain:
+  page_size: 1025          # heightmap resolution in pixels (2^n + 1)
+  output_size: [1025, 1025]
+  colormap: gist_earth     # groundmap palette; options: terrain, physical, cet_l10
+  smoothing_sigma: 1.0     # gaussian smoothing sigma (0 = disabled)

@@ -1,6 +1,6 @@
 import pytest
 
-from src.utils.bbox import BBox
+from osm2terrn.domain.entities.bbox import BBox
 
 
 def test_bbox_sequence_requires_numeric_values():

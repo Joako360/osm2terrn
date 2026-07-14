@@ -1,0 +1,2 @@
+buildings:
+  enabled: true   # set to false to skip buildings during export

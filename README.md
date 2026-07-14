@@ -28,44 +28,19 @@ The project processes geographic data (roads, elevation, terrain) and outputs Ri
 
 ```
 osm2terrn/
-├── main.py                           # CLI entry point with interactive menu
-├── src/
-│   ├── data/
-│   │   ├── osm_data_handler.py       # OSM data download and parsing
-│   │   └── osm_loader.py             # OSM graph loading utilities
-│   ├── processing/
-│   │   ├── heightmap_handler.py      # Elevation data and heightmap generation
-│   │   ├── otc_exporter.py           # .otc terrain geometry export
-│   │   ├── terrn2_exporter.py        # .terrn2 entry point export
-│   │   ├── tobj_exporter.py          # .tobj objects/roads export
-│   │   ├── road_network_formatter.py # Road network processing pipeline
-│   │   ├── road_exporters.py         # Road export utilities
-│   │   ├── road_merger.py            # Road merging and optimization
-│   │   ├── road_model.py             # Road data structures
-│   │   ├── texture_splatting.py      # Texture layer blending
-│   │   └── rail_track_formatter.py   # Railroad track support
-│   └── utils/
-│       ├── bbox.py                   # BBox class for bounds handling ⭐
-│       ├── geometry.py               # Coordinate transformations
-│       ├── geometry_utils.py         # Advanced geometry operations
-│       ├── io_utils.py               # File I/O helpers
-│       ├── logger.py                 # Centralized logging
-│       ├── constants.py              # Global constants and defaults
-│       └── visualization.py          # Visualization utilities
-├── tests/
-│   ├── test_bbox.py                  # BBox unit tests
-│   └── run_bbox_tests.py             # Test runner
-├── scripts/
-│   └── *.py                          # Example automation scripts
-├── docs/
-│   ├── exporters-docs.md             # Exporter format specifications
-│   └── ...
-├── .github/
-│   ├── copilot-instructions.md       # Copilot development guidelines
-│   └── instructions/
-│       └── exporters.instructions.md # Exporter format rules
-├── requirements.txt                  # Python dependencies
-└── README.md
+├── osm2terrn/
+│   ├── app/            # Application entry point and session state
+│   ├── cli/            # Interactive menu and commands
+│   ├── config/         # Centralized configuration system ⭐
+│   ├── data/           # OSM data acquisition and loading
+│   ├── domain/         # Typed domain models and adapters
+│   ├── processing/     # Terrain, roads, OTC and network exporters
+│   └── utils/          # Shared utilities (logging, coordinates, bbox…)
+├── projects/
+│   └── template/       # Starter project — copy and customize
+├── tests/              # pytest unit tests
+├── docs/               # Extended documentation
+└── output/             # Generated terrain files (gitignored)
 ```
 
 ---
@@ -160,6 +135,166 @@ output/
 
 ---
 
+## Configuration
+
+osm2terrn uses a centralized YAML configuration system.  
+Every parameter has a single source of truth; no hardcoded values exist in business logic.
+
+### Precedence order (lowest → highest)
+
+| Layer | Origin | How to supply |
+|-------|--------|---------------|
+| 1 | **Defaults** | Built into the program (`config/defaults.py`) |
+| 2 | **Project files** | `project.yaml` + any `includes:` fragments |
+| 3 | **CLI arguments** | Flags passed to `osm2terrn` at launch |
+| 4 | **Interface / API** | Programmatic injection via `configure()` |
+
+A later layer always wins over an earlier one.
+
+### Using a project
+
+```bash
+# Launch with a specific project directory
+python -m osm2terrn --project-dir projects/my_city/
+
+# Or point to a single config file
+python -m osm2terrn --config-file projects/my_city/project.yaml
+```
+
+The project directory is auto-detected from the environment variable `OSM2TERRN_PROJECT_DIR` as well.
+
+### Anatomy of a project
+
+```
+projects/
+└── my_city/
+    ├── project.yaml    ← entrypoint; may include other files
+    ├── terrain.yaml
+    ├── roads.yaml
+    ├── buildings.yaml
+    ├── materials.yaml
+    ├── export.yaml
+    └── pipeline.yaml
+```
+
+Copy `projects/template/` as a starting point.
+
+#### project.yaml (entrypoint)
+
+```yaml
+# includes merges files before this file is applied
+includes:
+  - terrain.yaml
+  - roads.yaml
+  - buildings.yaml
+  - materials.yaml
+  - export.yaml
+  - pipeline.yaml
+
+export:
+  output_name: my_city
+```
+
+#### terrain.yaml
+
+```yaml
+terrain:
+  page_size: 1025          # heightmap size in pixels (2^n + 1)
+  output_size: [1025, 1025]
+  colormap: gist_earth     # groundmap palette: terrain, physical, cet_l10…
+  smoothing_sigma: 1.0     # gaussian smoothing (0 = none)
+```
+
+#### roads.yaml
+
+```yaml
+roads:
+  network_type: drive      # drive | walk | bike | all
+  simplify: true
+  default_width: 7.0       # metres
+  default_border_width: 0.0
+  default_border_height: 0.0
+```
+
+#### buildings.yaml / materials.yaml / export.yaml / pipeline.yaml
+
+```yaml
+buildings:
+  enabled: true
+
+materials:
+  default_ground_texture: terrain_detail.dds
+
+export:
+  include_roads: true
+  include_buildings: true
+
+pipeline:
+  preload_elevation: true
+```
+
+### CLI overrides (layer 3)
+
+Any project value can be overridden at launch without editing files:
+
+```bash
+python -m osm2terrn \
+  --project-dir projects/my_city/ \
+  --terrain-page-size 2049 \
+  --terrain-colormap physical \
+  --roads-network-type all \
+  --roads-no-simplify \
+  --export-output-name custom_name \
+  --output-dir /tmp/output
+```
+
+Full list of flags:
+
+| Flag | Description |
+|------|-------------|
+| `--project-dir PATH` | Project directory to load |
+| `--config-file PATH` | Single config file to load |
+| `--output-dir PATH` | Override output directory |
+| `--logs-dir PATH` | Override logs directory |
+| `--cache-dir PATH` | Override cache directory |
+| `--terrain-page-size N` | Heightmap resolution |
+| `--terrain-output-width W --terrain-output-height H` | Output image size (both required) |
+| `--terrain-colormap NAME` | Ground texture colormap |
+| `--terrain-smoothing-sigma F` | Gaussian sigma |
+| `--roads-network-type TYPE` | OSM network type |
+| `--roads-simplify / --roads-no-simplify` | Road graph simplification |
+| `--roads-default-width F` | Default road width (m) |
+| `--export-output-name NAME` | Base name for output files |
+| `--export-include-roads / --export-no-include-roads` | Include roads in export |
+| `--export-include-buildings / --export-no-include-buildings` | Include buildings |
+| `--pipeline-preload-elevation / --pipeline-no-preload-elevation` | Preload DEM on download |
+
+### Using includes
+
+A project file can include other YAML files.  
+Useful for sharing base settings across projects:
+
+```yaml
+# projects/my_city/project.yaml
+includes:
+  - ../shared/base_roads.yaml   # relative paths are supported
+  - terrain.yaml
+
+export:
+  output_name: my_city
+```
+
+Circular includes are detected and raise a `ValueError`.
+
+### Supported config formats
+
+| Format | Extension | Notes |
+|--------|-----------|-------|
+| **YAML** | `.yaml`, `.yml` | Recommended — hierarchical and readable |
+| TOML | `.toml` | Supported; requires Python ≥ 3.11 `tomllib` |
+| JSON | `.json` | Supported for programmatic use |
+
+---
 
 ## Contributor Learning Path
 

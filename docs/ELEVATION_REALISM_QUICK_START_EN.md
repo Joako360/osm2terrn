@@ -41,7 +41,7 @@ WaterBottomLine = -195.50
 
 ## ⚙️ Configuration (Optional)
 
-If you want to adjust the behavior, edit [src/utils/constants.py](../src/utils/constants.py):
+If you want to adjust the behavior, edit [osm2terrn/utils/constants.py](../osm2terrn/utils/constants.py):
 
 ```python
 # Disable realistic scaling (reverts to default values)
