@@ -6,6 +6,7 @@ Unified road export tests: covers procedural road exporter unit tests and integr
 import sys
 import os
 from pathlib import Path
+import pytest
 
 # Make 'src' importable
 ROOT = Path(__file__).resolve().parent.parent
@@ -13,9 +14,10 @@ SRC = ROOT / 'src'
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from processing.road_model import Road
-from processing.road_exporters import export_procedural_roads_block, to_intermediate_json
-from processing.road_network_formatter import build_roads_from_place
+from osm2terrn.processing.roads.road_model import Road
+from osm2terrn.processing.roads.road_exporters_blocks import export_procedural_roads_block
+from osm2terrn.processing.roads.road_exporters_utils import to_intermediate_json
+from osm2terrn.processing.network.road_network_export import build_roads_from_place
 
 # --- Unit Tests (formerly in test_road_exporters.py) ---
 
@@ -28,6 +30,36 @@ def test_export_procedural_roads_block_uses_curvature_detail():
 
     out = export_procedural_roads_block([road], per_segment=False)
     assert "road" in out
+
+
+def test_export_procedural_roads_block_uses_road_block_format():
+    road = Road(
+        points_m=[(0.0, 0.0, 0.0), (0.0, 0.0, 10.0)],
+        width=7.0,
+        type="road",
+        name="Test Street",
+    )
+
+    out = export_procedural_roads_block([road], per_segment=True)
+    assert "begin_procedural_roads" in out
+    assert "road" in out
+    assert "end_road" in out
+    assert "end_procedural_roads" in out
+
+
+def test_export_procedural_roads_block_includes_point_orientation():
+    road = Road(
+        points_m=[(0.0, 0.0, 0.0), (0.0, 0.0, 10.0)],
+        width=7.0,
+        type="road",
+        yaw_deg=[90.0, 90.0],
+        pitch_deg=[5.0, 5.0],
+        roll_deg=[0.0, 0.0],
+    )
+
+    out = export_procedural_roads_block([road], per_segment=False)
+    assert "90.000000, 5.000000, 0.000000" in out
+
 
 def test_to_intermediate_json_includes_road_data():
     road = Road(
@@ -42,6 +74,8 @@ def test_to_intermediate_json_includes_road_data():
 
 def test_road_export():
     """Test road export with the corrected offset."""
+    pytest.skip("Network integration smoke test is excluded from automated unit test runs.")
+
     place = "Luis Guillón, Buenos Aires, Argentina"
     origin_lon, origin_lat = -58.5208, -34.7556
 

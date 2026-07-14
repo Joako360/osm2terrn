@@ -53,31 +53,31 @@ La función `generate_heightmap_n_texture()` ahora retorna estadísticas de elev
 ## 📦 Archivos Modificados
 
 ### Nuevos Archivos
-- **[src/utils/elevation_utils.py](src/utils/elevation_utils.py)**
+- **[osm2terrn/utils/elevation_utils.py](osm2terrn/utils/elevation_utils.py)**
   - Funciones para calcular niveles de agua realistas
   - Cálculo dinámico de altura del mundo
   - Normalización de parámetros de elevación
 
 ### Archivos Actualizados
-- **[src/utils/constants.py](src/utils/constants.py)**
+- **[osm2terrn/utils/constants.py](osm2terrn/utils/constants.py)**
   - Nuevas constantes para configuración realista
   - Parámetros ajustables para escala de elevación
   - Configuración de agua realista
 
-- **[src/processing/heightmap_handler.py](src/processing/heightmap_handler.py)**
+- **[osm2terrn/processing/heightmap_handler.py](osm2terrn/processing/heightmap_handler.py)**
   - `generate_heightmap_n_texture()` ahora retorna estadísticas de elevación
   - Mejor documentación de parámetros
 
-- **[src/processing/otc_exporter.py](src/processing/otc_exporter.py)**
+- **[osm2terrn/processing/otc_exporter.py](osm2terrn/processing/otc_exporter.py)**
   - Nueva función `calculate_world_size_y()`
   - Cálculo dinámico de altura basado en datos reales
 
-- **[src/processing/terrn2_exporter.py](src/processing/terrn2_exporter.py)**
+- **[osm2terrn/processing/terrn2_exporter.py](osm2terrn/processing/terrn2_exporter.py)**
   - Nueva función `prepare_water_config()`
   - Soporte para parámetro `elevation_stats`
   - Cálculo de agua realista en exportación TERRN2
 
-- **[src/main.py](src/main.py)**
+- **[osm2terrn/main.py](osm2terrn/main.py)**
   - Captura de estadísticas de elevación
   - Cálculo dinámico de WorldSizeY
   - Paso de datos de elevación a exportadores
@@ -85,7 +85,7 @@ La función `generate_heightmap_n_texture()` ahora retorna estadísticas de elev
 
 ## ⚙️ Configuración
 
-Las nuevas características se controlan mediante constantes en `src/utils/constants.py`:
+Las nuevas características se controlan mediante constantes en `osm2terrn/utils/constants.py`:
 
 ```python
 # Habilitar escalado dinámico de elevación

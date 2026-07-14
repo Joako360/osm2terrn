@@ -9,6 +9,13 @@ The Rigs of Rods coordinate system has:
 - The bottom-right corner is at (8192, 8192) for an 8192x8192 world
 """
 
+import pytest
+
+pytest.skip(
+    "Legacy manual integration script not intended for automated pytest collection.",
+    allow_module_level=True,
+)
+
 import sys
 import os
 from pathlib import Path
@@ -19,7 +26,7 @@ SRC = ROOT / 'src'
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from utils.geometry_utils import utm_crs_from_lonlat
+from osm2terrn.utils.geometry.crs import utm_crs_from_lonlat
 from data.osm_loader import load_graph, edges_to_lines
 from processing.road_merger import merge_by_highway
 import geopandas as gpd

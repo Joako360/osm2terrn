@@ -13,7 +13,7 @@ Este documento propone el **camino mí­nimo** que deberá seguir una persona nu
    - Convenciones de contribución, ramas, commits y estilo.
    - Criterios de calidad esperados para PRs.
 
-3. **`src/main.py` (flujo principal)**
+3. **`osm2terrn/main.py` (flujo principal)**
    - Punto de entrada de la aplicación.
    - Secuencia: descargar -> procesar -> exportar.
    - Estado de sesión (`MapData`) y menú interactivo.
@@ -54,9 +54,9 @@ Debe responder:
 **Objetivo:** mapa navegable de qué hace cada función para no tener que abrir todo el repo.
 
 Debe incluir:
-- `src/data/*`: descarga y parsing OSM.
-- `src/processing/*`: altura, carreteras y exportadores.
-- `src/utils/*`: BBox, geometría, logging, constantes.
+- `osm2terrn/data/*`: descarga y parsing OSM.
+- `osm2terrn/processing/*`: altura, carreteras y exportadores.
+- `osm2terrn/utils/*`: BBox, geometría, logging, constantes.
 - Firma resumida + propósito + side effects de cada función pública.
 
 ### 4) Formatos de salida (contratos)

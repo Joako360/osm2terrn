@@ -53,31 +53,31 @@ The `generate_heightmap_n_texture()` function now returns elevation statistics:
 ## 📦 Modified Files
 
 ### New Files
-- **[src/utils/elevation_utils.py](../../src/utils/elevation_utils.py)**
+- **[osm2terrn/utils/elevation_utils.py](../../osm2terrn/utils/elevation_utils.py)**
   - Functions for calculating realistic water levels
   - Dynamic world height calculation
   - Elevation parameter normalization
 
 ### Updated Files
-- **[src/utils/constants.py](../../src/utils/constants.py)**
+- **[osm2terrn/utils/constants.py](../../osm2terrn/utils/constants.py)**
   - New constants for realistic configuration
   - Adjustable parameters for elevation scaling
   - Realistic water configuration settings
 
-- **[src/processing/heightmap_handler.py](../../src/processing/heightmap_handler.py)**
+- **[osm2terrn/processing/heightmap_handler.py](../../osm2terrn/processing/heightmap_handler.py)**
   - `generate_heightmap_n_texture()` now returns elevation statistics
   - Improved parameter documentation
 
-- **src/processing/otc_exporter.py**
+- **osm2terrn/processing/otc_exporter.py**
   - New function `calculate_world_size_y()`
   - Dynamic height calculation based on real-world data
 
-- **src/processing/terrn2_exporter.py**
+- **osm2terrn/processing/terrn2_exporter.py**
   - New function `prepare_water_config()`
   - Support for `elevation_stats` parameter
   - Realistic water calculation during TERRN2 export
 
-- **src/main.py**
+- **osm2terrn/main.py**
   - Captures elevation statistics
   - Handles dynamic WorldSizeY calculation
   - Passes elevation data to exporters
@@ -85,7 +85,7 @@ The `generate_heightmap_n_texture()` function now returns elevation statistics:
 
 ## ⚙️ Configuration
 
-The new features are controlled via constants in src/utils/constants.py:
+The new features are controlled via constants in osm2terrn/utils/constants.py:
 
 ```python
 # Enable dynamic elevation scaling

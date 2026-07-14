@@ -13,7 +13,7 @@ This document proposes the **minimum learning path** for new contributors to und
    - Contribution conventions, branches, commit style, and code expectations.
    - Quality bar expected for pull requests.
 
-3. **`src/main.py` (main flow)**
+3. **`osm2terrn/main.py` (main flow)**
    - Application entry point.
    - Sequence: download -> process -> export.
    - Session state (`MapData`) and interactive menu behavior.
@@ -50,9 +50,9 @@ Implemented: [Contributor CLI flow guide](cli-flow.md).
 **Goal:** provide a navigable map of what each function does so contributors do not need to inspect the whole repo first.
 
 It should include:
-- `src/data/*`: OSM download and parsing.
-- `src/processing/*`: elevation, roads, and exporters.
-- `src/utils/*`: BBox, geometry, logging, constants.
+- `osm2terrn/data/*`: OSM download and parsing.
+- `osm2terrn/processing/*`: elevation, roads, and exporters.
+- `osm2terrn/utils/*`: BBox, geometry, logging, constants.
 - Short signature summary + purpose + side effects for each public function.
 
 ### 4) Output formats (contracts)

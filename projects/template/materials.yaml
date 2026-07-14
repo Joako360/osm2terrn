@@ -1,0 +1,2 @@
+materials:
+  default_ground_texture: terrain_detail.dds   # base ground texture (.dds)

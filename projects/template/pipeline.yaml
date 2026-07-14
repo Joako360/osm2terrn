@@ -1,0 +1,2 @@
+pipeline:
+  preload_elevation: true   # set to false to skip elevation download

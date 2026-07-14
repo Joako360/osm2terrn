@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from src.processing.terrn2_exporter import export_terrn2_entrypoint
+from osm2terrn.processing.terrain.terrn2_entrypoint import export_terrn2_entrypoint
 
 
 def test_export_terrn2_entrypoint_writes_expected_sections(tmp_path: Path):

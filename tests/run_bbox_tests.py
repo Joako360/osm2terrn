@@ -4,7 +4,7 @@ import pathlib
 # Ensure repository root is on sys.path so we can import src package
 repo_root = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(repo_root))
-# Also make the package-level imports like `utils` resolvable by adding src/ to path
+# Also make the package-level imports like `utils` resolvable by adding osm2terrn/ to path
 sys.path.insert(0, str(repo_root / "src"))
 
 from src.utils.bbox import BBox

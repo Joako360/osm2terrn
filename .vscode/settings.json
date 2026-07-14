@@ -2,7 +2,7 @@
     "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
     "python.analysis.extraPaths": [
         "${workspaceFolder}",
-        "${workspaceFolder}/src"
+        "${workspaceFolder}/osm2terrn"
     ],
     "python.analysis.autoImportCompletions": true,
     "python.testing.pytestArgs": [

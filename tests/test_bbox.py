@@ -1,11 +1,11 @@
 import sys
 import pathlib
 
-# Ensure repository root is on sys.path so we can import src package
+# Ensure repository root is on sys.path
 repo_root = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(repo_root))
 
-from src.utils.bbox import BBox
+from osm2terrn.domain.entities.bbox import BBox
 
 
 def test_tuple_input():

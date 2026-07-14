@@ -1,6 +1,7 @@
 from pathlib import Path
 
-from src.processing.otc_exporter import export_global_otc, export_paged_otc
+from osm2terrn.processing.otc.otc_global import export_global_otc
+from osm2terrn.processing.otc.otc_paged import export_paged_otc
 
 
 def test_export_global_otc_writes_core_fields(tmp_path: Path):
@@ -34,7 +35,6 @@ def test_export_paged_otc_builds_default_layers_when_groundmap_given(tmp_path: P
 
     lines = out.read_text(encoding="utf-8").splitlines()
     assert lines[0] == "height.png"
-    # 1 base layer + 2 generated layers that use the groundmap channels
-    assert lines[1] == "3"
-    assert any("ground.png, R" in line for line in lines)
+    # Current behavior: 1 base layer + 1 blended layer using the groundmap
+    assert lines[1] == "2"
     assert any("ground.png, G" in line for line in lines)

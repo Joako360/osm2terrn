@@ -1,0 +1,118 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osm2terrn"
+version = "0.1.0"
+description = "Generate realistic Rigs of Rods terrains from open geospatial data sources such as OpenStreetMap, OpenTopography and Overture Maps."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "Joaquin Nicolas Gomez (Joako360)", email = "joaaquin.gomez@gmail.com" }
+]
+
+keywords = [
+    "elevation-data",
+    "geospatial",
+    "gis",
+    "map-generator",
+    "openstreetmap",
+    "opentopography",
+    "overture-maps",
+    "procedural-generation",
+    "python",
+    "rigsofrods",
+    "simulator",
+    "terrain-generation",
+]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+
+    "Environment :: Console",
+
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+
+    "Operating System :: OS Independent",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+
+    "Topic :: Games/Entertainment",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "cmasher",
+    "cmcrameri",
+    "colorcet",
+    "fused",
+    "geopandas",
+    "matplotlib",
+    "networkx",
+    "numpy",
+    "osmnx",
+    "Pillow",
+    "pyproj",
+    "python-dotenv",
+    "rasterio",
+    "requests",
+    "rich",
+    "scipy",
+    "shapely",
+]
+
+[project.optional-dependencies]
+
+dev = [
+    "autopep8",
+    "black",
+    "deptry",
+    "ipykernel",
+    "pip-review",
+    "ruff",
+    "spyder-kernels",
+]
+
+test = [
+    "pytest",
+    "pytest-cov",
+]
+
+docs = [
+    "myst-parser",
+    "numpydoc",
+    "sphinx",
+]
+
+[project.urls]
+Homepage = "https://github.com/Joako360/osm2terrn"
+Repository = "https://github.com/Joako360/osm2terrn"
+Documentation = "https://joako360.github.io/osm2terrn/"
+Wiki = "https://github.com/Joako360/osm2terrn/wiki"
+Issues = "https://github.com/Joako360/osm2terrn/issues"
+
+[project.scripts]
+osm2terrn = "osm2terrn.app.main:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["osm2terrn*"]
+exclude = [
+    "tests*",
+    "docs*",
+    "examples*"
+]

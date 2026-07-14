@@ -39,18 +39,18 @@ OPENTOPO_ELEVATION_API_KEY=replace_with_your_opentopography_key
 
 ### Paso A: carga automática de `.env`
 
-Al iniciar la app, `src/main.py` ejecuta `load_dotenv()`, por lo que variables del `.env` pasan al entorno del proceso.
+Al iniciar la app, `osm2terrn/main.py` ejecuta `load_dotenv()`, por lo que variables del `.env` pasan al entorno del proceso.
 
 ### Paso B: lectura de la variable
 
-`src/utils/constants.py` define:
+`osm2terrn/utils/constants.py` define:
 - `get_opentopo_elevation_api_key()`
 
 Esta función lee `OPENTOPO_ELEVATION_API_KEY` desde variables de entorno.
 
 ### Paso C: uso al llamar la API
 
-`src/processing/heightmap_handler.py`:
+`osm2terrn/processing/heightmap_handler.py`:
 1. Llama a `get_opentopo_elevation_api_key()`.
 2. Construye parámetros de `requests.get(...)` con:
    - `demtype`

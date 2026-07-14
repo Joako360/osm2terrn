@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────
+# project.yaml  —  project entrypoint
+#
+# Configuration precedence (lowest → highest priority):
+#   1. Program internal defaults
+#   2. Included files  (terrain, roads, buildings…)
+#   3. This file  (overrides any key from included files)
+#   4. CLI arguments  (--export-output-name, etc.)
+#   5. API / GUI injection
+# ─────────────────────────────────────────────────────────────
+
+includes:
+  - terrain.yaml
+  - roads.yaml
+  - buildings.yaml
+  - materials.yaml
+  - export.yaml
+  - pipeline.yaml
+
+export:
+  output_name: template_city   # base name for all output files
