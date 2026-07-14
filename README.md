@@ -48,7 +48,7 @@ osm2terrn/
 ## Installation
 
 ### Prerequisites
-- Python 3.10 or higher
+- Python 3.12 or higher
 - pip package manager
 - GDAL/Rasterio system dependencies (usually installed via pip)
 
