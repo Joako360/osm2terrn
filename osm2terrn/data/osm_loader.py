@@ -84,26 +84,29 @@ def load_graph(
 
     return G
 
-def edges_to_lines(G: Union[nx.MultiDiGraph, nx.MultiGraph]) -> Tuple[LineStringWithAttrs, CRS]:  # Cambiar parámetro
-    G_metric = ox.project_graph(G) # type: ignore
-    metric_crs = G_metric.graph.get("crs", None)
-    if metric_crs is None:
-        # fallback if projection did not set CRS
-        metric_crs = CRS.from_epsg(4326)
-        log_warning(logger, "CRS not found in graph, defaulting to WGS84 (EPSG:4326)")
+def edges_to_lines(G: Union[nx.MultiDiGraph, nx.MultiGraph]) -> Tuple[LineStringWithAttrs, CRS]:
+    source_crs_value = G.graph.get("crs")
+    if source_crs_value is None:
+        raise ValueError("Graph CRS is required before projecting street geometries")
+    source_crs = CRS.from_user_input(source_crs_value)
     geometries_with_attrs: LineStringWithAttrs = []
-    for u, v, k, data in G_metric.edges(keys=True, data=True):
-        if 'geometry' in data:
-            geometry = data['geometry']
+    for u, v, k, data in G.edges(keys=True, data=True):
+        if "geometry" in data:
+            geometry = data["geometry"]
         else:
-            p0 = (G_metric.nodes[u]['x'], G_metric.nodes[u]['y'])
-            p1 = (G_metric.nodes[v]['x'], G_metric.nodes[v]['y'])
+            try:
+                p0 = (float(G.nodes[u]["x"]), float(G.nodes[u]["y"]))
+                p1 = (float(G.nodes[v]["x"]), float(G.nodes[v]["y"]))
+            except (KeyError, TypeError, ValueError) as exc:
+                raise ValueError(f"Street edge {(u, v, k)!r} has no geometry or usable endpoint coordinates") from exc
             geometry = LineString([p0, p1])
+        if geometry is None or geometry.is_empty or geometry.geom_type != "LineString":
+            raise ValueError(f"Street edge {(u, v, k)!r} must have a non-empty LineString geometry")
         attrs = dict(data)
         # Keep edge endpoints so downstream formatters can classify intersections.
         attrs["u"] = u
         attrs["v"] = v
         attrs["k"] = k
         geometries_with_attrs.append((geometry, attrs))
-    return geometries_with_attrs, metric_crs
+    return geometries_with_attrs, source_crs
 

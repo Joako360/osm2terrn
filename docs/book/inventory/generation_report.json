@@ -1,0 +1,156 @@
+{
+  "analysis_input_digest": "92072d486fd2a6572bc4d9d3b83ade02b36a255214f4e778a106200bd2965a48",
+  "counts": {
+    "call_sites": {
+      "call_sites_builtin_skipped": 1663,
+      "call_sites_external": 786,
+      "call_sites_internal_inferred": 216,
+      "call_sites_internal_static": 1300,
+      "call_sites_unresolved": 2213
+    },
+    "dependencies_by_classification": {
+      "declared_not_observed": 11,
+      "stdlib": 35,
+      "third_party_declared": 18,
+      "undeclared_or_unresolved": 4
+    },
+    "entry_points_by_kind": {
+      "batch_launcher": 1,
+      "console_script": 1,
+      "main_guard": 11,
+      "module_main": 1,
+      "notebook": 1,
+      "pytest_conftest": 1,
+      "pytest_module": 31
+    },
+    "files_by_disposition": {
+      "excluded": 49,
+      "included": 300
+    },
+    "files_by_git_state": {
+      "ignored": 49,
+      "modified": 62,
+      "tracked": 172,
+      "untracked": 66
+    },
+    "files_by_kind": {
+      "build_metadata": 2,
+      "configuration": 16,
+      "data": 29,
+      "documentation": 120,
+      "notebook": 1,
+      "other": 33,
+      "python_source": 105,
+      "python_test": 33,
+      "script": 10
+    },
+    "python_files_failed": 0,
+    "python_files_parsed": 147,
+    "relations_by_kind_and_resolution": {
+      "calls/inferred": 149,
+      "calls/static": 707,
+      "contains/static": 861,
+      "imports/static": 394,
+      "inherits/static": 16,
+      "references_test/inferred": 5,
+      "references_test/static": 375
+    },
+    "symbols_by_kind": {
+      "class": 96,
+      "enum": 3,
+      "function": 508,
+      "method": 242,
+      "module": 147,
+      "property": 12
+    },
+    "unresolved_by_reason": {
+      "attribute_not_found_on_class": 75,
+      "callee_is_expression": 19,
+      "callee_is_variable": 30,
+      "dynamic_construct": 95,
+      "external_base_class": 11,
+      "imported_name_not_found": 7,
+      "instance_attribute_receiver": 100,
+      "receiver_is_expression": 208,
+      "receiver_is_variable": 1781
+    }
+  },
+  "generator": {
+    "path": "docs/book/inventory/inventory_tool.py",
+    "version": "2.0.1"
+  },
+  "git_revision": "f34a086350934258a73214441bce7020b1b38921",
+  "limitations": [
+    "Analysis is static (AST); no code, test or pipeline was executed, so no record shows that anything runs.",
+    "Receiver types are not inferred: calls on variables, parameters, attributes of self and call results are reported as unresolved.",
+    "self/cls method resolution assumes the enclosing class; subclass overrides and dynamic attributes are not considered.",
+    "Class instantiation is linked to the class symbol, not to __init__.",
+    "Decorator effects, metaclasses, star imports, plugin loading and environment-dependent branches are not modelled.",
+    "Module-level variables and constants are not inventoried as symbols.",
+    "Callable references that are not called (callbacks, getattr targets, string-based references outside tests) are not captured.",
+    "Calls made inside lambdas and comprehensions are attributed to the enclosing symbol.",
+    "Non-Python files (documentation, YAML, notebooks, batch files) are classified by path and extension only.",
+    "Third-party distribution matching uses normalized names plus a small alias table, not installed metadata.",
+    "docs_cross_reference.jsonl is intentionally empty: documentation cross-referencing is a later stage.",
+    "control_flow.jsonl and claims.jsonl are contracts for later reviewed documentation; the generator does not populate them.",
+    "No control-flow graph is generated; syntactic branches and exception handlers are not proof of reachability or execution."
+  ],
+  "python_version": "3.12",
+  "regeneration_command": "python docs/book/inventory/inventory_tool.py generate",
+  "schema_id": "urn:osm2terrn:technical-book-inventory:v3",
+  "skipped": {
+    "excluded_paths": [
+      ".cache",
+      ".docs",
+      ".env",
+      ".examples",
+      ".pytest_cache",
+      ".venv",
+      "cache",
+      "docs/book/inventory/__pycache__",
+      "docs/book/validation/__pycache__",
+      "logs",
+      "logs/osm2terrn.log",
+      "logs/osmnx_2026-07-15.log",
+      "logs/osmnx_2026-08-07.log",
+      "logs/osmnx_2026-10-20.log",
+      "logs/osmnx_2026-10-27.log",
+      "logs/osmnx_2026-11-05.log",
+      "osm2terrn.egg-info",
+      "osm2terrn/adapters/__pycache__",
+      "osm2terrn/app/__pycache__",
+      "osm2terrn/cache/__pycache__",
+      "osm2terrn/cli/__pycache__",
+      "osm2terrn/config/__pycache__",
+      "osm2terrn/data/__pycache__",
+      "osm2terrn/domain/__pycache__",
+      "osm2terrn/domain/adapters/__pycache__",
+      "osm2terrn/domain/adapters/osmnx/__pycache__",
+      "osm2terrn/domain/entities/__pycache__",
+      "osm2terrn/domain/value_objects/__pycache__",
+      "osm2terrn/processing/__pycache__",
+      "osm2terrn/processing/network/__pycache__",
+      "osm2terrn/processing/network/intersections/__pycache__",
+      "osm2terrn/processing/otc/__pycache__",
+      "osm2terrn/processing/roads/__pycache__",
+      "osm2terrn/processing/terrain/__pycache__",
+      "osm2terrn/tools/__pycache__",
+      "osm2terrn/tools/visualization/__pycache__",
+      "osm2terrn/utils/__pycache__",
+      "osm2terrn/utils/geometry/__pycache__",
+      "output",
+      "output/Luis Guillón-page-0-0.otc",
+      "output/Luis Guillón.otc",
+      "output/Luis Guillón.terrn2",
+      "output/Luis Guillón.tobj",
+      "output/Luis Guillón_groundmap.png",
+      "output/Luis Guillón_heightmap.png",
+      "output/Test City.tobj",
+      "output/validation",
+      "scripts/__pycache__",
+      "tests/__pycache__"
+    ],
+    "python_files_failed": [],
+    "tracked_paths_missing_on_disk": []
+  }
+}

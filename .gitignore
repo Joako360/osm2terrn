@@ -52,7 +52,7 @@ coverage.xml
 .pytest_cache/
 
 # Local cache and output and examples files
-cache/
+/cache/
 .docs/
 .examples/
 output/*

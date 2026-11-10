@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from osm2terrn.config.models import ProgramConfig, ProjectConfig
 
@@ -27,6 +28,27 @@ def validate_program_config(config: ProgramConfig) -> ProgramConfig:
     _ensure_positive_int(config.cache.max_size_mb, "cache.max_size_mb")
     _ensure_positive_int(config.osm.max_query_area_size, "osm.max_query_area_size")
     _ensure_positive_int(config.osm.requests_timeout, "osm.requests_timeout")
+    _ensure_positive_int(config.osm.overpass_max_attempts, "osm.overpass_max_attempts")
+    _ensure_positive_int(
+        config.osm.overpass_max_elapsed_seconds,
+        "osm.overpass_max_elapsed_seconds",
+    )
+    if not config.osm.overpass_endpoints:
+        raise ConfigurationError("osm.overpass_endpoints must contain a primary endpoint")
+    for endpoint in config.osm.overpass_endpoints:
+        parsed_endpoint = urlsplit(endpoint)
+        if (
+            parsed_endpoint.scheme not in {"http", "https"}
+            or not parsed_endpoint.hostname
+            or parsed_endpoint.username is not None
+            or parsed_endpoint.password is not None
+            or parsed_endpoint.query
+            or parsed_endpoint.fragment
+        ):
+            raise ConfigurationError(
+                "osm.overpass_endpoints must contain HTTP(S) URLs without credentials, "
+                "query parameters, or fragments"
+            )
     _ensure_positive_int(config.terrain_runtime.page_size, "terrain_runtime.page_size")
     _ensure_positive_int(config.otc_runtime.default_page_size, "otc_runtime.default_page_size")
     _ensure_positive_int(

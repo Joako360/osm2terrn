@@ -2,15 +2,13 @@ from __future__ import annotations
 
 import os
 
-import geopandas as gpd
-from shapely.geometry import box
 from rich.console import Console
 
 from osm2terrn.config.settings import get_project_config
 from osm2terrn.app.app_state import current_map
 from osm2terrn.data.osm_data_handler import download_data_from_bbox, download_menu
 from osm2terrn.processing.terrain.heightmap_handler import fetch_elevation_from_api as heightmapper
-from osm2terrn.domain.entities.bbox import BBox
+from osm2terrn.domain.adapters.bounds import require_domain_bounding_box
 from osm2terrn.utils.geometry.bounds import compute_world_params, make_square_bounds_centered
 from osm2terrn.utils.logger import get_logger, log_info, log_warning
 from osm2terrn.processing.orchestrator import export_terrain_assets
@@ -34,42 +32,38 @@ def dlcity() -> None:
     console.print(f"[cyan]Processing data for: [bold]{place}[/bold][/cyan]")
 
     data = download_data_from_bbox(bbox)
-    bounds_gdf = data.get("bounds")
-    if bounds_gdf is None:
+    domain_bounds = data.get("bounds")
+    if domain_bounds is None:
         console.print("[red]Error: No bounds data available from bounding box.[/red]")
         current_map.data = {}
         current_map.elevation_data = {}
+        current_map.terrain_world_size = None
         return
 
     try:
-        bbox_obj = BBox(bbox)
-        origin_lon = (bbox_obj.west + bbox_obj.east) / 2.0
-        origin_lat = (bbox_obj.south + bbox_obj.north) / 2.0
+        bbox_obj = require_domain_bounding_box(domain_bounds)
+        if bbox_obj.crs is not None and bbox_obj.crs != "EPSG:4326":
+            bbox_obj = bbox_obj.reproject("EPSG:4326")
+        origin_lon = float((bbox_obj.west + bbox_obj.east) / 2.0)
+        origin_lat = float((bbox_obj.south + bbox_obj.north) / 2.0)
     except Exception:
-        try:
-            centroid = bounds_gdf.to_crs(4326).geometry.centroid.iloc[0]
-            origin_lon = float(centroid.x)
-            origin_lat = float(centroid.y)
-        except Exception:
-            origin_lon, origin_lat = 0.0, 0.0
+        origin_lon, origin_lat = 0.0, 0.0
 
     os.environ["OSM2TERRN_PLACE_NAME"] = place
     os.environ["OSM2TERRN_ORIGIN_LON"] = str(origin_lon)
     os.environ["OSM2TERRN_ORIGIN_LAT"] = str(origin_lat)
 
+    current_map.terrain_world_size = None
     try:
-        minx, miny, maxx, maxy = bounds_gdf.to_crs(4326).total_bounds
+        initial_bounds = require_domain_bounding_box(domain_bounds)
         page_size = _PROJECT_CONFIG.terrain.page_size
-        initial_bounds = gpd.GeoDataFrame(
-            geometry=[box(minx, miny, maxx, maxy)],
-            crs="EPSG:4326",
-        )
         world_size, _ = compute_world_params(initial_bounds, page_size=page_size, snap_to_pow2=True)
         square_bounds = make_square_bounds_centered(initial_bounds, world_size)
         data["bounds"] = square_bounds
+        current_map.terrain_world_size = world_size
     except Exception as exc:
         log_warning(logger, f"Could not square bounds: {exc}")
-        data["bounds"] = bounds_gdf
+        data["bounds"] = domain_bounds
 
     current_map.data = data
     current_map.place = place
@@ -115,10 +109,42 @@ def export() -> None:
             origin_lon=current_map.origin_lon,
             origin_lat=current_map.origin_lat,
             target_bounds=current_map.data.get("bounds"),
+            road_network=current_map.data.get("roads"),
+            acquisition_results=current_map.data.get("acquisition_results"),
+            terrain_world_size=current_map.terrain_world_size,
         )
-        console.print("[green]✓ Export complete:[/green]")
+        roads_outcome = output_files.get("roads_outcome")
+        export_outcome = output_files.get("export_outcome")
+        if export_outcome is None:
+            export_outcome = (
+                "partial"
+                if roads_outcome in {"failed", "not_requested"}
+                else "complete"
+            )
+        partial_reasons = output_files.get("partial_reasons")
+        acquisition_warnings = output_files.get("acquisition_warnings")
+        if export_outcome == "partial":
+            reason = partial_reasons or "one or more requested export stages did not complete"
+            log_warning(logger, f"Partial export: {reason}.")
+            console.print(
+                f"[yellow]⚠ Partial export: {reason}.[/yellow]"
+            )
+        elif acquisition_warnings:
+            log_warning(logger, f"Export completed with acquisition warnings: {acquisition_warnings}.")
+            console.print(
+                f"[yellow]⚠ Export complete with acquisition warnings: {acquisition_warnings}[/yellow]"
+            )
+        else:
+            console.print("[green]✓ Export complete:[/green]")
         for label, path in output_files.items():
-            if path:
+            if label not in {
+                "roads_outcome",
+                "buildings_outcome",
+                "elevation_outcome",
+                "export_outcome",
+                "partial_reasons",
+                "acquisition_warnings",
+            } and path:
                 console.print(f"  [green]✓[/green] {label}: [cyan]{path}[/cyan]")
     except Exception as exc:
         console.print(f"[red]Error during export: {exc}[/red]")

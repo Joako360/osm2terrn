@@ -1,5 +1,12 @@
 # Quick Start Guide: Realistic Elevation and Water Levels
 
+> **Historical guidance, not a verified current feature contract.** This page
+> describes an earlier proposal/example. Its calculated values, sample outputs,
+> flags and `python main.py` command were not verified against the current
+> implementation. For the current source route and limits, see the
+> [execution map](book/execution/README.md) and
+> [architecture guide](architecture/architecture-index.md).
+
 ## 🎯 What Changed?
 
 Generated maps now have:
@@ -11,7 +18,7 @@ Generated maps now have:
 **No changes required to your normal workflow:**
 
 ```
-1. Run main.py
+1. Run the declared package entry (`python -m osm2terrn`; execution is not verified here).
 2. Download a city
 3. Export the terrain
 ↓
@@ -41,7 +48,7 @@ WaterBottomLine = -195.50
 
 ## ⚙️ Configuration (Optional)
 
-If you want to adjust the behavior, edit [osm2terrn/utils/constants.py](../osm2terrn/utils/constants.py):
+The configuration example below is historical and is not a current supported-settings list. Check `pyproject.toml`, `osm2terrn/config/`, and current source before using these names.
 
 ```python
 # Disable realistic scaling (reverts to default values)

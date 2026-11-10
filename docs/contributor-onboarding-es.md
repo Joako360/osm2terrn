@@ -13,10 +13,9 @@ Este documento propone el **camino mí­nimo** que deberá seguir una persona nu
    - Convenciones de contribución, ramas, commits y estilo.
    - Criterios de calidad esperados para PRs.
 
-3. **`osm2terrn/main.py` (flujo principal)**
-   - Punto de entrada de la aplicación.
-   - Secuencia: descargar -> procesar -> exportar.
-   - Estado de sesión (`MapData`) y menú interactivo.
+3. **Flujo de la aplicación**
+   - Punto de entrada declarado: `osm2terrn.app.main:main` (`pyproject.toml`) o `python -m osm2terrn`.
+   - Lee el [mapa fuente del CLI](cli-flow/cli-index.md), que separa rutas y límites de verificación.
 
 4. **Documentación de exportadores (`exporters-docs.md`)**
    - Explica el formato de salida de archivos (`.terrn2`, `.otc`, `.tobj`).
@@ -100,14 +99,14 @@ Debe incluir:
 
 ## Recomendación práctica para empezar a contribuir
 
-1. Corre el flujo completo con un bbox pequeño.
-2. Abre los archivos resultantes en `output/` y valida que se generan todos.
-3. Revisa function-reference.md para ubicar qué módulo tocar según tu issue.
-4. Haz cambios pequeños (un módulo por PR) y adjunta evidencia de salida.
+1. Lee el [flujo CLI actual](cli-flow/cli-index.md) y sus límites conocidos.
+2. Empieza por pruebas offline acotadas. No ejecutes solicitudes geográficas ni generación de terrenos salvo que la tarea lo autorice explícitamente.
+3. Usa el [índice de referencia funcional](function-reference/function-reference-index.md) y la guía de arquitectura para ubicar el código.
+4. Haz cambios pequeños y adjunta solo evidencia de verificaciones realmente ejecutadas.
 
 ---
 
-## Alcance de `.docs/function-reference.md`
+## Alcance de la referencia funcional
 
 La referencia funcional fue pensada como í­ndice de navegación:
 - **No** reemplaza docstrings detallados.

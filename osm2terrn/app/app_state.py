@@ -13,6 +13,7 @@ class MapData:
         self.place: str = config.terrain_runtime.default_place_name
         self.origin_lon: float = 0.0
         self.origin_lat: float = 0.0
+        self.terrain_world_size: int | None = None
 
     def has_data(self) -> bool:
         return bool(self.data)

@@ -1,12 +1,9 @@
 from __future__ import annotations
 
-import math
 from typing import Any
 
-from osm2terrn.config.settings import get_program_config
 from osm2terrn.domain.value_objects import BoundingBox
-
-_PROGRAM_CONFIG = get_program_config()
+from osm2terrn.utils.geometry.crs import determine_is_projected
 
 
 def to_domain_bounding_box(bounds: Any) -> BoundingBox | None:
@@ -17,6 +14,17 @@ def to_domain_bounding_box(bounds: Any) -> BoundingBox | None:
     if isinstance(bounds, BoundingBox):
         return bounds
 
+    if isinstance(bounds, dict):
+        try:
+            bbox_obj = BoundingBox(bounds)
+            crs = bounds.get("crs")
+            if isinstance(crs, str) and crs.strip():
+                bbox_obj.crs = crs.strip()
+                bbox_obj.is_projected = determine_is_projected(bbox_obj.crs)
+            return bbox_obj
+        except Exception:
+            return None
+
     if isinstance(bounds, (tuple, list)) and len(bounds) == 4:
         min_x, min_y, max_x, max_y = bounds
         return BoundingBox(float(min_x), float(min_y), float(max_x), float(max_y))
@@ -26,41 +34,43 @@ def to_domain_bounding_box(bounds: Any) -> BoundingBox | None:
         if total_bounds is None:
             return None
         min_x, min_y, max_x, max_y = map(float, total_bounds)
-        return BoundingBox(min_x, min_y, max_x, max_y)
+        crs_obj = getattr(bounds, "crs", None)
+        crs_text = str(crs_obj) if crs_obj is not None else None
+        is_projected = determine_is_projected(crs_text) if crs_text else False
+        return BoundingBox(min_x, min_y, max_x, max_y, crs=crs_text, is_projected=is_projected)
 
     if hasattr(bounds, "min_x") and hasattr(bounds, "min_y") and hasattr(bounds, "max_x") and hasattr(bounds, "max_y"):
-        return BoundingBox(
+        bbox_obj = BoundingBox(
             float(getattr(bounds, "min_x")),
             float(getattr(bounds, "min_y")),
             float(getattr(bounds, "max_x")),
             float(getattr(bounds, "max_y")),
         )
+        crs = getattr(bounds, "crs", None)
+        if isinstance(crs, str) and crs.strip():
+            bbox_obj.crs = crs.strip()
+            bbox_obj.is_projected = determine_is_projected(bbox_obj.crs)
+        return bbox_obj
+
+    if hasattr(bounds, "west") and hasattr(bounds, "south") and hasattr(bounds, "east") and hasattr(bounds, "north"):
+        bbox_obj = BoundingBox(
+            float(getattr(bounds, "west")),
+            float(getattr(bounds, "south")),
+            float(getattr(bounds, "east")),
+            float(getattr(bounds, "north")),
+        )
+        crs = getattr(bounds, "crs", None)
+        if isinstance(crs, str) and crs.strip():
+            bbox_obj.crs = crs.strip()
+            bbox_obj.is_projected = determine_is_projected(bbox_obj.crs)
+        return bbox_obj
 
     return None
 
 
-def compute_world_params(
-    bounds: Any,
-    page_size: int = _PROGRAM_CONFIG.terrain_runtime.page_size,
-    snap_to_pow2: bool = True,
-) -> tuple[int, float]:
-    """Compute a square world size from a bounds-like object using domain values only."""
-    domain_bounds = to_domain_bounding_box(bounds)
-    if domain_bounds is None:
-        return int(max(page_size - 1, 1)), 1.0
-
-    width = domain_bounds.width
-    height = domain_bounds.height
-    side = max(width, height)
-    if side <= 0:
-        return int(max(page_size - 1, 1)), 1.0
-
-    if snap_to_pow2:
-        world_size = 1
-        while world_size < side:
-            world_size <<= 1
-    else:
-        world_size = int(math.ceil(side))
-
-    meters_per_pixel = float(world_size) / float(max(page_size - 1, 1))
-    return int(world_size), float(meters_per_pixel)
+def require_domain_bounding_box(bounds: Any) -> BoundingBox:
+    """Return the domain BoundingBox or raise a ValueError if conversion fails."""
+    domain_bbox = to_domain_bounding_box(bounds)
+    if domain_bbox is None:
+        raise ValueError("Bounds are required and must be convertible to domain BoundingBox")
+    return domain_bbox

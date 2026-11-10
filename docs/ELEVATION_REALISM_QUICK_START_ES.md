@@ -1,5 +1,10 @@
 # Guía Rápida: Ajustes Realistas de Elevación y Agua
 
+> **Guía histórica, no contrato funcional verificado.** Los valores, nombres y
+> ejemplos siguientes pertenecen a una propuesta anterior y no se comprobaron
+> contra la implementación actual. Consulta el [mapa de ejecución](book/execution/README.md)
+> y la [arquitectura](architecture/architecture-index.md) para el estado vigente.
+
 ## 🎯 ¿Qué se cambió?
 
 Los mapas generados ahora tienen:
@@ -11,7 +16,7 @@ Los mapas generados ahora tienen:
 **No requiere cambios en el flujo de trabajo normal:**
 
 ```
-1. Ejecuta main.py
+1. Ejecuta el punto de entrada declarado (`python -m osm2terrn`; no verificado aquí).
 2. Descarga una ciudad
 3. Exporta el terreno
 ↓
@@ -41,7 +46,7 @@ WaterBottomLine = -195.50
 
 ## ⚙️ Configuración (Opcional)
 
-Si quieres ajustar el comportamiento, edita osm2terrn/utils/constants.py:
+El siguiente ejemplo de configuración es histórico y no representa la lista actual de opciones. Verifica `pyproject.toml`, `osm2terrn/config/` y el código vigente antes de usar esos nombres.
 
 ```python
 # Deshabilitar escalado realista (vuelve a valores por defecto)

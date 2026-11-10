@@ -1,0 +1,4353 @@
+// Object instances
+// intersection cross
+319.717791, 0.000000, 43.458570, 226.101655, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-435.818300, 8.000000, -24.385557, 279.041646, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-424.188846, 5.000000, 48.515120, 99.088804, 6.889190, 0.000000, road-crossing road-crossing
+// intersection cross
+-113.325304, 50.000000, 336.795683, 189.129510, 25.902520, 0.000000, road-crossing road-crossing
+// intersection cross
+-151.722862, 48.500000, 342.966261, 9.129510, -3.333044, 0.000000, road-crossing road-crossing
+// intersection cross
+-93.642174, 55.000000, 333.643737, 8.952111, -51.805040, 0.000000, road-crossing road-crossing
+// intersection cross
+82.329755, 0.000000, -121.393248, 21.588042, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-23.002013, 11.000000, -102.490791, 9.110484, -12.228708, 0.000000, road-crossing road-crossing
+// intersection cross
+-7.643852, 0.000000, -105.087994, 190.181724, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-13.350339, 11.000000, -94.576982, 97.853893, -6.948771, 0.000000, road-crossing road-crossing
+// intersection cross
+-15.736805, 2.000000, -114.899771, 275.725827, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-285.694910, 10.000000, -60.407242, 9.006334, 1.198872, 0.000000, road-crossing road-crossing
+// intersection cross
+-205.504167, 0.000000, -73.046931, 188.747706, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-302.347754, 6.000000, -58.310073, 7.419224, 2.535470, 0.000000, road-crossing road-crossing
+// intersection cross
+-291.974171, 16.000000, -50.573500, 99.103090, -5.064589, 0.000000, road-crossing road-crossing
+// intersection cross
+-295.214191, 10.000000, -70.463527, 279.372591, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-436.284883, 0.000000, -27.293593, 99.044003, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-429.644329, 11.000000, -37.948553, 9.087674, -2.535470, 0.000000, road-crossing road-crossing
+// intersection cross
+-439.533346, 7.000000, -47.627648, 279.106486, 1.438536, 0.000000, road-crossing road-crossing
+// intersection cross
+293.895624, 0.000000, 489.572709, 154.113388, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+292.477686, 0.000000, 488.884604, 174.438188, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+294.820387, 0.000000, 490.593808, 132.165676, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-326.248850, 0.000000, -262.482290, 110.914877, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-336.261268, 0.000000, -265.701486, 11.387339, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-321.052996, 3.000000, -268.830877, 191.904415, 13.030095, 0.000000, road-crossing road-crossing
+// intersection cross
+-472.351656, 0.000000, -252.089349, 280.136970, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-479.273835, 3.000000, -242.377875, 8.379139, 13.561968, 0.000000, road-crossing road-crossing
+// intersection cross
+-461.652608, 3.000000, -245.107292, 189.194881, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-470.027575, 0.000000, -239.202947, 100.389180, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-39.744785, 60.000000, 317.439233, 98.850106, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+60.458936, 67.000000, 414.890730, 189.138385, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+142.680840, 0.000000, -19.724657, 163.494778, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+136.912638, 9.000000, -21.433849, 343.494778, 14.351776, 0.000000, road-crossing road-crossing
+// intersection cross
+145.648701, 11.000000, -13.320425, 114.864032, -9.331376, 0.000000, road-crossing road-crossing
+// intersection cross
+7.476627, 0.000000, -1.054435, 8.060359, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+0.801381, 9.000000, -8.524247, 278.121797, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+3.029402, 12.000000, 7.713999, 97.491433, 3.170624, 0.000000, road-crossing road-crossing
+// intersection cross
+-136.376035, 0.000000, 13.895169, 279.338632, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-223.656950, 17.500000, 36.191712, 8.631447, 5.429745, 0.000000, road-crossing road-crossing
+// intersection cross
+-265.232321, 21.000000, 42.583663, 8.740426, -10.859490, 0.000000, road-crossing road-crossing
+// intersection cross
+-284.756302, 0.000000, 45.668610, 189.299078, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-268.790140, 0.000000, 43.127412, 8.689401, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-278.177546, 0.000000, 35.468597, 279.125681, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-275.668236, 0.000000, 51.096467, 99.116952, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-309.520165, 9.000000, 49.596861, 189.199747, 40.210392, 0.000000, road-crossing road-crossing
+// intersection cross
+-326.648813, 6.000000, 52.371019, 9.199747, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-287.873801, 14.000000, 46.179068, 188.972486, -40.210392, 0.000000, road-crossing road-crossing
+// intersection cross
+-422.709839, 0.000000, 57.794194, 279.086641, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-420.068748, 0.000000, 74.343354, 99.041694, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-430.019766, 0.000000, 68.682208, 9.143368, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-413.260926, 0.000000, 66.008140, 8.870815, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-317.555182, 26.500000, 369.599792, 9.112109, -1.250684, 0.000000, road-crossing road-crossing
+// intersection cross
+-359.678341, 20.000000, 376.224326, 8.937466, 12.692258, 0.000000, road-crossing road-crossing
+// intersection cross
+-235.845422, 39.000000, 356.494296, 189.112109, -10.190891, 0.000000, road-crossing road-crossing
+// intersection cross
+224.373801, 0.000000, 488.797948, 277.726476, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+217.522219, 0.000000, 496.323438, 10.974505, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+235.726028, 1.000000, 492.715674, 9.053148, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+190.233760, 0.000000, 296.903472, 109.766873, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+188.921476, 57.000000, 293.251841, 289.766873, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+192.162554, 57.000000, 302.253278, 109.826030, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+159.247400, 0.000000, 71.988385, 279.006586, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+151.233699, 0.000000, 82.133277, 188.765423, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+463.444510, 0.000000, 456.200498, 1.747561, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+481.842051, 0.000000, 455.622280, 9.195051, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+437.728459, 27.000000, 457.001053, 1.783445, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+420.017961, 28.000000, 459.776794, 8.907423, 4.701106, 0.000000, road-crossing road-crossing
+// intersection cross
+460.582279, 27.000000, 456.289453, 1.780113, 0.000000, 0.000000, road-crossing road-crossing
+// intersection tee
+368.612534, 30.000000, 467.837328, 0.000000, -1.424981, 0.000000, road-tee road-tee
+// intersection cross
+377.031864, 0.000000, 466.516133, 188.918351, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+91.164796, 25.000000, 91.535250, 8.891956, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+99.962464, 23.000000, 90.158838, 188.891956, -23.000067, 0.000000, road-crossing road-crossing
+// intersection cross
+20.712933, 47.500000, 117.741125, 279.479929, 13.345659, 0.000000, road-crossing road-crossing
+// intersection cross
+-10.101074, 45.500000, 114.766538, 354.486118, 4.130732, 0.000000, road-crossing road-crossing
+// intersection cross
+-46.762600, 51.000000, 114.766412, 189.077470, -6.014661, 0.000000, road-crossing road-crossing
+// intersection cross
+-107.545299, 48.000000, 124.477710, 9.077470, 3.767858, 0.000000, road-crossing road-crossing
+// intersection cross
+-123.951895, 0.000000, 126.908221, 188.917834, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-113.436877, 0.000000, 125.287878, 188.752234, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-207.006593, 36.000000, 139.803912, 8.823115, -1.662565, 0.000000, road-crossing road-crossing
+// intersection cross
+-249.841800, 31.000000, 145.840730, 8.021933, 4.196364, 0.000000, road-crossing road-crossing
+// intersection cross
+-126.215178, 40.000000, 127.263364, 188.823115, -0.871234, 0.000000, road-crossing road-crossing
+// intersection cross
+-268.177127, 0.000000, 148.637171, 188.432240, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-252.809620, 0.000000, 146.262412, 187.997972, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-261.686366, 0.000000, 138.215159, 279.080045, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-259.018509, 0.000000, 154.886358, 99.105975, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-406.299692, 0.000000, 160.818519, 279.389420, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-403.658516, 0.000000, 177.001395, 99.077346, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-412.174228, 0.000000, 171.939703, 188.770204, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-396.445555, 0.000000, 169.309947, 9.110260, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-416.921010, 16.000000, 172.672016, 8.770204, -6.241353, 0.000000, road-crossing road-crossing
+// intersection cross
+34.548340, 0.000000, 204.726114, 99.269148, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+30.893600, 0.000000, 205.880453, 17.528575, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+33.465099, 72.000000, 198.088751, 279.269148, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+352.808688, 23.000000, 368.000061, 278.717008, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+343.174117, 23.000000, 369.287984, 7.614004, -38.958322, 0.000000, road-crossing road-crossing
+// intersection tee
+62.590188, 0.000000, 414.546636, 0.000000, 0.000000, 0.000000, road-tee road-tee
+// intersection cross
+-42.105572, 49.000000, 431.417661, 9.148373, 9.183576, 0.000000, road-crossing road-crossing
+// intersection cross
+-62.176419, 49.000000, 434.658522, 189.091954, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-74.752630, 0.000000, 436.589691, 189.850149, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-64.950582, 0.000000, 435.102471, 189.136624, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-102.503000, 40.000000, 432.893334, 279.950878, 6.296714, 0.000000, road-crossing road-crossing
+// intersection cross
+-78.715723, 40.000000, 437.277809, 9.850149, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-136.990998, 0.000000, 453.859358, 99.124241, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-172.711477, 38.000000, 443.336576, 279.261257, 10.380084, 0.000000, road-crossing road-crossing
+// intersection cross
+-199.819328, 36.000000, 456.211118, 188.879986, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-209.172488, 0.000000, 466.144734, 98.956255, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-211.919793, 0.000000, 448.840899, 279.081132, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-218.498800, 0.000000, 459.129752, 8.883439, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-203.086693, 0.000000, 456.721605, 8.879986, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-356.740960, 0.000000, 470.568272, 279.113856, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-371.563531, 0.000000, 483.076495, 8.912262, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-346.639812, 0.000000, 479.170639, 188.895442, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-401.128552, 1.000000, 487.681306, 8.931667, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-509.636296, 30.000000, 451.247493, 9.163779, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-514.759121, 29.000000, 406.850083, 278.457804, 2.148927, 0.000000, road-crossing road-crossing
+// intersection cross
+-519.803200, 0.000000, 371.476382, 98.296905, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-517.884239, 0.000000, 386.083147, 278.564825, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-517.145391, 21.000000, 400.789731, 8.303509, -37.300118, 0.000000, road-crossing road-crossing
+// intersection cross
+-81.339124, 0.000000, 331.657097, 189.158364, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-91.810367, 0.000000, 333.355176, 9.257509, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-98.114738, 0.000000, 227.534614, 189.026174, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-106.348960, 0.000000, 228.833127, 188.975113, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-136.640200, 20.000000, 12.274669, 99.318622, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-206.329283, 6.000000, -179.877541, 8.964491, 4.378901, 0.000000, road-crossing road-crossing
+// intersection cross
+-97.105772, 7.000000, -197.112715, 188.968572, 0.522444, 0.000000, road-crossing road-crossing
+// intersection cross
+-373.169963, 0.000000, 367.632887, 278.986785, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-370.660752, 0.000000, 383.693649, 98.669650, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-380.154299, 0.000000, 379.653081, 9.093249, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-363.465292, 0.000000, 376.879016, 189.808522, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-389.757035, 17.000000, 263.853901, 278.961216, -3.404595, 0.000000, road-crossing road-crossing
+// intersection cross
+-386.816454, 0.000000, 281.923660, 99.539219, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-397.410552, 12.000000, 274.553237, 8.924555, 1.035816, 0.000000, road-crossing road-crossing
+// intersection cross
+-378.731435, 22.000000, 271.623909, 188.901485, 6.627644, 0.000000, road-crossing road-crossing
+// intersection cross
+-456.074732, 5.000000, -151.062753, 279.003891, -2.046678, 0.000000, road-crossing road-crossing
+// intersection cross
+-452.976009, 0.000000, -131.594441, 99.088853, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-445.807151, 0.000000, -142.093971, 188.986086, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-32.450702, 0.000000, -217.346200, 85.463435, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-48.759786, 0.000000, -204.737494, 188.994550, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-58.085535, 0.000000, -203.261350, 8.994550, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-311.827777, 7.000000, -174.331221, 279.050739, 4.107451, 0.000000, road-crossing road-crossing
+// intersection cross
+-302.018014, 0.000000, -164.763273, 9.121615, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-318.697091, 0.000000, -162.133372, 9.023290, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-308.596645, 11.000000, -154.441184, 99.437773, -3.791464, 0.000000, road-crossing road-crossing
+// intersection cross
+440.236138, 7.500000, 249.633184, 98.997815, -0.628208, 0.000000, road-crossing road-crossing
+// intersection cross
+431.068480, 0.000000, 251.065476, 8.879714, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+344.385075, 23.000000, 264.610675, 8.880768, -6.605965, 0.000000, road-crossing road-crossing
+// intersection cross
+327.731755, 22.000000, 267.252983, 189.406879, -12.035006, 0.000000, road-crossing road-crossing
+// intersection cross
+-218.205378, 41.000000, 353.664468, 189.022201, 6.666088, 0.000000, road-crossing road-crossing
+// intersection cross
+-228.553090, 0.000000, 344.851363, 278.976935, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-225.823465, 0.000000, 362.033115, 99.100142, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-405.192228, 22.000000, 383.680923, 189.124750, 1.040546, 0.000000, road-crossing road-crossing
+// intersection cross
+-448.160999, 23.000000, 390.582444, 9.124750, -1.040546, 0.000000, road-crossing road-crossing
+// intersection cross
+-382.144651, 22.000000, 379.974868, 189.134975, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-268.448417, 23.000000, 96.115380, 279.122244, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-262.258678, 23.000000, 134.663372, 99.122244, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-269.707484, 0.000000, 88.123858, 278.953374, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-179.676777, 43.000000, 400.604227, 279.257699, -5.190042, 0.000000, road-crossing road-crossing
+// intersection cross
+-109.935419, 43.000000, 390.349725, 188.364615, -3.148357, 0.000000, road-crossing road-crossing
+// intersection cross
+-294.908947, 34.000000, 258.452499, 188.930126, -4.362474, 0.000000, road-crossing road-crossing
+// intersection cross
+-252.125940, 37.000000, 251.738858, 8.978729, 2.097305, 0.000000, road-crossing road-crossing
+// intersection cross
+29.299485, 72.000000, 172.660324, 99.309722, -25.330024, 0.000000, road-crossing road-crossing
+// intersection cross
+320.673539, 9.500000, 162.886766, 188.777929, 0.000000, 0.000000, road-crossing road-crossing
+// intersection tee
+294.461498, 1.000000, 59.553467, 307.610141, 3.868610, 0.000000, road-tee road-tee
+// intersection cross
+-491.287026, 0.000000, -362.683735, 119.659681, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-493.056847, 0.000000, -365.791641, 299.659681, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-489.975163, 0.000000, -358.787807, 108.609753, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-498.965395, 1.000000, -370.398201, 168.562456, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-73.870032, 0.000000, 223.516930, 8.200215, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-80.069912, 0.000000, 224.704494, 10.843456, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-57.234287, 56.000000, 221.119618, 188.200215, 12.101643, 0.000000, road-crossing road-crossing
+// intersection cross
+-234.996905, 0.000000, 249.053341, 188.844172, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-242.253890, 0.000000, 259.186769, 99.340191, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-245.089115, 39.000000, 241.605432, 278.981758, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-467.855870, 14.000000, 285.615512, 188.915741, -3.911281, 0.000000, road-crossing road-crossing
+// intersection cross
+-218.867263, 35.500000, 405.475859, 99.092977, 2.266160, 0.000000, road-crossing road-crossing
+// intersection cross
+-225.383200, 41.000000, 364.763548, 279.092977, -4.532320, 0.000000, road-crossing road-crossing
+// intersection cross
+-212.597814, 32.000000, 444.634257, 99.096134, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-252.423658, 37.000000, 196.009384, 99.102713, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-258.366950, 35.000000, 158.915416, 279.102713, 0.000000, 0.000000, road-crossing road-crossing
+// intersection tee
+120.584007, 2.333333, -132.049030, 193.479578, -2.722753, 0.000000, road-tee road-tee
+// intersection tee
+94.895990, 3.000000, -147.720880, 277.609400, -17.507328, 0.000000, road-tee road-tee
+// intersection tee
+456.972547, 2.333333, 158.629305, 207.643345, 0.352954, 0.000000, road-tee road-tee
+// intersection cross
+-27.853974, 3.500000, -191.240668, 278.983259, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-24.093801, 2.000000, -167.454893, 98.983259, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-35.532887, 0.000000, -210.753238, 246.424739, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-177.336934, 0.000000, -288.283572, 161.522638, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+415.607415, 3.000000, 144.646407, 35.258740, 9.860781, 0.000000, road-crossing road-crossing
+// intersection tee
+434.144471, 2.666667, 130.849049, 219.343288, 0.000000, 0.000000, road-tee road-tee
+// intersection cross
+329.562988, 5.000000, 33.391135, 318.464408, 18.371899, 0.000000, road-crossing road-crossing
+// intersection cross
+438.118304, 2.000000, 170.051486, 126.451835, 2.507115, 0.000000, road-crossing road-crossing
+// intersection tee
+431.372797, 4.000000, 176.345132, 0.000000, 0.000000, 0.000000, road-tee road-tee
+// intersection cross
+-169.887066, 5.000000, -284.431963, 332.808047, 4.414237, 0.000000, road-crossing road-crossing
+// intersection cross
+-109.565770, 9.000000, -253.441736, 332.044540, -4.414237, 0.000000, road-crossing road-crossing
+// intersection tee
+-423.720218, 10.000000, -330.258965, 347.998416, 0.000000, 0.000000, road-tee road-tee
+// intersection cross
+-407.948767, 12.000000, -326.906184, 167.998416, -5.409431, 0.000000, road-crossing road-crossing
+// intersection cross
+-502.568624, 0.000000, -344.581480, 184.285948, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-509.375713, 0.000000, -344.071332, 186.879646, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-495.462183, 0.000000, -344.248071, 177.313852, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-262.544832, 12.000000, -281.337696, 192.281671, -16.362579, 0.000000, road-crossing road-crossing
+// intersection cross
+-518.754201, 9.000000, -342.939790, 188.625987, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-334.075438, 0.000000, -312.884457, 349.452573, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-331.213490, 1.000000, -312.351575, 169.452573, 7.130301, 0.000000, road-crossing road-crossing
+// intersection cross
+-340.847250, 2.000000, -314.016861, 169.126673, 10.818862, 0.000000, road-crossing road-crossing
+// intersection cross
+-488.892288, 0.000000, -354.348028, 103.706992, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-495.663252, 0.000000, -368.644314, 152.025625, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+221.880190, 69.000000, 442.269867, 279.152289, -3.742197, 0.000000, road-crossing road-crossing
+// intersection cross
+224.636724, 67.000000, 441.737027, 190.940378, -13.580050, 0.000000, road-crossing road-crossing
+// intersection cross
+7.538563, 0.000000, 317.406027, 189.135951, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+1.188909, 68.000000, 318.427164, 9.135951, -2.567893, 0.000000, road-crossing road-crossing
+// intersection cross
+-482.833733, 19.000000, 396.019127, 8.868865, 4.664987, 0.000000, road-crossing road-crossing
+// intersection cross
+-474.158940, 0.000000, 394.665520, 188.868865, 0.000000, 0.000000, road-crossing road-crossing
+// intersection tee
+-493.481266, 20.333333, 397.550195, 189.415683, 0.000000, 0.000000, road-tee road-tee
+// intersection cross
+78.781884, 20.000000, -11.388238, 9.804484, -11.935137, 0.000000, road-crossing road-crossing
+// intersection cross
+9.827933, 11.000000, -1.387416, 8.252421, 9.518498, 0.000000, road-crossing road-crossing
+// intersection cross
+154.861262, 4.500000, 44.551051, 99.045021, 4.665688, 0.000000, road-crossing road-crossing
+// intersection cross
+158.974367, 5.000000, 70.301300, 99.075231, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+221.837009, 1.000000, 473.947191, 279.735408, 88.313213, 0.000000, road-crossing road-crossing
+// intersection cross
+223.977425, 0.000000, 486.422715, 99.735408, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+272.486021, 0.000000, 489.939721, 348.398738, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+271.754894, 0.000000, 485.289150, 203.309348, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+278.862252, 0.000000, 490.594365, 179.805709, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+275.621305, 0.000000, 490.583374, 359.805709, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+290.654648, 0.000000, 488.707080, 189.092649, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+298.113884, 0.000000, 482.568916, 309.017536, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+299.390943, 0.000000, 484.144967, 129.017536, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+296.317232, 0.000000, 481.403558, 327.031424, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+293.816054, 0.000000, 480.948577, 349.690257, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+291.209219, 0.000000, 481.226152, 189.888575, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+277.708309, 0.000000, 483.579664, 194.372713, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+274.502621, 0.000000, 484.401117, 14.372713, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+300.183620, 0.000000, 485.665538, 117.533138, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+458.585353, 2.500000, 180.250607, 127.252512, -0.763074, 0.000000, road-crossing road-crossing
+// intersection cross
+-468.346390, 23.000000, 393.744613, 8.903384, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-75.873712, 3.000000, -235.560410, 332.025707, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-353.635844, 3.000000, -262.838599, 189.350999, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+18.467476, 69.000000, 209.221372, 12.890326, -12.101643, 0.000000, road-crossing road-crossing
+// intersection cross
+-312.213413, 1.000000, 473.788870, 188.751049, 47.142008, 0.000000, road-crossing road-crossing
+// intersection cross
+-314.159749, 1.000000, 474.088476, 188.895220, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-276.237037, 23.000000, 468.162825, 8.882010, -21.143331, 0.000000, road-crossing road-crossing
+// intersection cross
+-208.758626, 1.000000, 468.575486, 279.087326, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-225.535531, 26.000000, 460.239490, 8.951062, -4.855347, 0.000000, road-crossing road-crossing
+// intersection cross
+-491.613990, 0.000000, -343.570784, 170.018094, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+77.451096, 3.000000, -120.283272, 190.007470, 9.472250, 0.000000, road-crossing road-crossing
+// intersection cross
+43.987323, 8.500000, -114.378207, 10.007470, -2.598353, 0.000000, road-crossing road-crossing
+// intersection cross
+-485.239024, 14.000000, -333.458956, 100.019559, -9.952557, 0.000000, road-crossing road-crossing
+// intersection cross
+-472.923844, 3.000000, -255.741046, 99.004223, 9.952557, 0.000000, road-crossing road-crossing
+// intersection cross
+-487.809523, 0.000000, -348.021371, 279.995559, 0.000000, 0.000000, road-crossing road-crossing
+// intersection tee
+335.367982, 5.333333, 71.605718, 261.173854, 0.000000, 0.000000, road-tee road-tee
+// intersection cross
+-325.333156, 12.000000, -258.886086, 104.285526, -4.107451, 0.000000, road-crossing road-crossing
+// intersection cross
+409.777635, 6.000000, 147.743398, 136.061536, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+428.444116, 15.000000, 251.476286, 188.880768, 6.605965, 0.000000, road-crossing road-crossing
+// intersection tee
+311.574431, 8.333333, 112.052424, 110.232296, -10.512317, 0.000000, road-tee road-tee
+// intersection cross
+81.008616, 0.000000, -141.716020, 327.672565, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-95.009339, 3.000000, -245.716454, 152.044540, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+1.910963, 13.000000, -106.808380, 190.206987, -4.275543, 0.000000, road-crossing road-crossing
+// intersection cross
+-9.431566, 10.000000, -70.691323, 99.317160, 19.298381, 0.000000, road-crossing road-crossing
+// intersection cross
+25.160500, 0.000000, 207.689655, 192.890326, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-3.267158, 9.000000, -35.994966, 100.056907, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-5.776959, 13.000000, -50.146551, 280.056907, -31.647990, 0.000000, road-crossing road-crossing
+// intersection cross
+301.528969, 52.000000, 428.071366, 343.358146, 6.790025, 0.000000, road-crossing road-crossing
+// intersection cross
+-78.996526, 55.000000, 331.290844, 9.115492, 7.459219, 0.000000, road-crossing road-crossing
+// intersection cross
+-436.854329, 3.000000, -249.134979, 9.350999, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-284.260818, 8.000000, -276.610122, 191.938640, 9.847532, 0.000000, road-crossing road-crossing
+// intersection cross
+322.694248, 0.000000, 40.395052, 45.558282, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-469.499395, 0.000000, -235.917529, 99.133019, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-434.350138, 6.000000, -143.869243, 188.807976, 1.738960, 0.000000, road-crossing road-crossing
+// intersection cross
+-320.942690, 9.000000, -161.789381, 188.979379, -1.738960, 0.000000, road-crossing road-crossing
+// intersection cross
+-301.562141, 9.500000, -108.800675, 279.401857, 1.895732, 0.000000, road-crossing road-crossing
+// intersection cross
+148.353987, 9.000000, 82.577301, 188.904191, 23.000067, 0.000000, road-crossing road-crossing
+// intersection cross
+-189.617514, 0.000000, -75.699278, 189.478363, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-247.780266, 11.500000, -173.330108, 8.976054, -5.236871, 0.000000, road-crossing road-crossing
+// intersection cross
+-296.558128, 13.000000, -165.639918, 189.121615, 1.715939, 0.000000, road-crossing road-crossing
+// intersection cross
+-345.142628, 1.000000, 478.937617, 8.895220, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-467.254610, 3.000000, -222.154289, 278.937158, 2.046678, 0.000000, road-crossing road-crossing
+// intersection cross
+511.218126, 1.000000, 254.568260, 125.306645, 0.763074, 0.000000, road-crossing road-crossing
+// intersection cross
+414.311939, 2.000000, 126.499154, 312.590771, 0.971473, 0.000000, road-crossing road-crossing
+// intersection cross
+358.907866, 2.500000, 75.988941, 317.645519, -0.485736, 0.000000, road-crossing road-crossing
+// intersection cross
+331.333789, 0.000000, 51.005620, 317.736837, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+336.512173, 2.000000, 55.711504, 137.736837, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+321.936975, 0.000000, 42.448449, 317.677566, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+300.563047, 0.000000, 23.247504, 318.091694, 14.580593, 0.000000, road-crossing road-crossing
+// intersection cross
+231.668646, 2.500000, -40.460137, 317.239996, 9.879207, 0.000000, road-crossing road-crossing
+// intersection cross
+207.811749, 8.000000, -60.060830, 320.593666, -21.965663, 0.000000, road-crossing road-crossing
+// intersection cross
+193.562872, 2.000000, -70.138630, 324.729386, -1.259214, 0.000000, road-crossing road-crossing
+// intersection cross
+141.728314, 2.500000, -103.224532, 327.449986, -2.421975, 0.000000, road-crossing road-crossing
+// intersection cross
+74.624054, 1.000000, -145.722801, 327.888714, 15.697651, 0.000000, road-crossing road-crossing
+// intersection cross
+-6.569413, 1.500000, -196.435088, 327.957764, -3.979361, 0.000000, road-crossing road-crossing
+// intersection cross
+57.997806, 2.000000, -156.022801, 147.957764, -8.324887, 0.000000, road-crossing road-crossing
+// intersection cross
+-72.932768, 7.000000, -200.919519, 188.949533, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-448.354298, 12.000000, -102.747154, 99.103611, 1.990653, 0.000000, road-crossing road-crossing
+// intersection cross
+-452.553455, 17.000000, -128.952788, 279.103611, -5.419842, 0.000000, road-crossing road-crossing
+// intersection cross
+-423.220448, 0.000000, 54.564277, 99.095198, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-419.540529, 0.000000, 77.673164, 99.013906, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-419.258810, 12.000000, 79.415765, 99.183297, -4.553336, 0.000000, road-crossing road-crossing
+// intersection cross
+-384.254474, 20.000000, 298.372906, 99.085368, -3.254813, 0.000000, road-crossing road-crossing
+// intersection cross
+-386.693217, 0.000000, 283.122388, 279.085368, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-373.284388, 17.000000, 366.245473, 99.181185, 3.254813, 0.000000, road-crossing road-crossing
+// intersection cross
+-357.709455, 19.000000, 464.496928, 99.080193, 3.626716, 0.000000, road-crossing road-crossing
+// intersection cross
+-370.194112, 23.000000, 386.379695, 279.080193, -3.626716, 0.000000, road-crossing road-crossing
+// intersection cross
+-357.040313, 0.000000, 468.703581, 99.038167, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-186.993223, 10.000000, -76.120990, 189.129148, -1.486043, 0.000000, road-crossing road-crossing
+// intersection cross
+-229.063797, 35.000000, 341.787950, 99.100873, 6.194324, 0.000000, road-crossing road-crossing
+// intersection cross
+-241.796035, 42.000000, 262.305679, 279.100873, -6.194324, 0.000000, road-crossing road-crossing
+// intersection cross
+-96.186081, 0.000000, 227.234956, 8.923379, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-96.538347, 0.000000, 227.290449, 8.952201, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-231.667972, 43.000000, 248.520670, 8.926862, 6.899042, 0.000000, road-crossing road-crossing
+// intersection cross
+-109.721910, 56.000000, 229.365848, 188.926862, -6.899042, 0.000000, road-crossing road-crossing
+// intersection cross
+-212.342455, 0.000000, 446.188162, 99.332224, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-57.020724, 7.000000, -97.019011, 189.134295, 6.857375, 0.000000, road-crossing road-crossing
+// intersection cross
+-278.723429, 10.000000, 32.072199, 99.108818, 5.064589, 0.000000, road-crossing road-crossing
+// intersection cross
+380.184709, 30.000000, 466.027620, 188.807574, -4.701106, 0.000000, road-crossing road-crossing
+// intersection cross
+-272.216821, 21.000000, 72.640282, 99.110934, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-275.175179, 21.000000, 54.193182, 279.110934, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-221.942307, 0.000000, 459.673524, 188.951062, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-402.910185, 13.000000, 181.663128, 279.092062, 3.404595, 0.000000, road-crossing road-crossing
+// intersection cross
+-347.995792, 6.500000, 55.822020, 9.183116, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-374.582658, 8.000000, 59.894288, 8.708225, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-409.350825, 9.000000, 65.397875, 8.994936, 0.000000, 0.000000, road-crossing road-crossing
+// intersection cross
+-393.054998, 15.000000, 168.766245, 189.110260, 7.443267, 0.000000, road-crossing road-crossing
+// intersection cross
+-271.470793, 29.000000, 149.125432, 8.432240, -7.443267, 0.000000, road-crossing road-crossing
+// intersection cross
+-406.819102, 7.000000, 157.211228, 99.084844, 4.553336, 0.000000, road-crossing road-crossing
+// intersection cross
+-111.666761, 0.000000, 125.021520, 188.557391, 0.000000, 0.000000, road-crossing road-crossing
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 308.952, 1.000, 53.275, 146.477047, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 304.501, 1.000, 56.223, 146.477047, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 317.211, 2.000, 55.077, 42.396463, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 322.854, 2.000, 60.229, 42.396463, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Vandewater Street
+begin_procedural_roads
+ -433.551, 7.000, 15.050, 170.487450, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -438.321, 7.000, 15.849, 170.487450, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -431.219, 8.000, 4.520, 260.958354, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -434.561, 8.000, -16.485, 260.958354, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -428.067, 7.000, 24.270, 80.911196, -6.889190, 0.000000, 7.00, 0.00, 0.00, road-both
+ -425.453, 5.000, 40.616, 80.911196, -6.889190, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -95.861, 60.000, 266.759, 260.510282, 1.971130, 0.000000, 7.00, 0.00, 0.00, road-both
+ -100.651, 61.000, 238.101, 260.510282, 1.971130, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -121.224, 50.000, 338.065, 170.870490, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -143.824, 50.000, 341.697, 170.870490, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -105.426, 50.000, 335.531, 350.902214, 51.805040, 0.000000, 7.00, 0.00, 0.00, road-both
+ -101.542, 55.000, 334.909, 350.902214, 51.805040, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 96.108, 1.000, -122.028, 33.548856, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 101.668, 1.000, -118.341, 33.548856, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 93.096, 1.000, -127.572, 301.315005, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 94.975, 1.000, -130.661, 301.315005, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Midway Street
+begin_procedural_roads
+ -220.092, 8.000, -66.834, 80.756139, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -219.322, 8.000, -62.103, 80.756139, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -230.598, 11.000, -69.140, 170.993666, -1.198872, 0.000000, 7.00, 0.00, 0.00, road
+ -277.794, 10.000, -61.660, 170.993666, -1.198872, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -441.845, 10.000, -36.553, 173.255467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -446.746, 10.000, -35.974, 173.255467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Child Street
+begin_procedural_roads
+ -44.069, 60.000, 289.669, 81.149894, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -40.976, 60.000, 309.534, 81.149894, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ 30.093, 66.000, 419.780, 170.832882, -18.405871, 0.000000, 7.00, 0.00, 0.00, road-both
+ 9.326, 59.000, 423.132, 170.832882, -18.405871, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ 49.188, 67.000, 416.704, 350.861615, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 52.560, 67.000, 416.161, 350.861615, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -106.241, 28.000, 18.402, 171.418612, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -125.035, 28.000, 21.238, 171.418612, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -144.810, 25.000, 24.230, 171.375107, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -193.885, 25.000, 31.674, 171.375107, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -125.035, 28.000, 21.238, 351.418612, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -106.241, 28.000, 18.402, 351.418612, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -212.720, 19.000, 34.532, 171.368553, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -215.748, 19.000, 34.991, 171.368553, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -193.885, 25.000, 31.674, 351.375107, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -144.810, 25.000, 24.230, 351.375107, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -231.564, 16.000, 37.407, 171.259574, 10.859490, 0.000000, 7.00, 0.00, 0.00, road-both
+ -257.325, 21.000, 41.368, 171.259574, 10.859490, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -215.748, 19.000, 34.991, 351.368553, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -212.720, 19.000, 34.532, 351.368553, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -301.618, 9.000, 48.349, 351.027514, 40.210392, 0.000000, 7.00, 0.00, 0.00, road-both
+ -295.776, 14.000, 47.427, 351.027514, 40.210392, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -325.458, 26.000, 370.843, 171.062534, -12.692258, 0.000000, 7.00, 0.00, 0.00, road-both
+ -351.775, 20.000, 374.981, 171.062534, -12.692258, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -309.656, 27.000, 368.333, 350.887891, 10.190891, 0.000000, 7.00, 0.00, 0.00, road-both
+ -243.744, 39.000, 357.761, 350.887891, 10.190891, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 214.870, 71.000, 456.988, 81.296030, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 216.068, 71.000, 464.813, 81.296030, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 212.105, 66.000, 439.773, 80.872665, 16.001225, 0.000000, 7.00, 0.00, 0.00, road-both
+ 214.870, 71.000, 456.988, 80.872665, 16.001225, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 204.529, 63.000, 392.701, 80.858009, 3.600466, 0.000000, 7.00, 0.00, 0.00, road-both
+ 212.105, 66.000, 439.773, 80.858009, 3.600466, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 191.256, 57.000, 310.156, 80.865126, 18.458228, 0.000000, 7.00, 0.00, 0.00, road-both
+ 194.109, 63.000, 327.904, 80.865126, 18.458228, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 177.365, 14.000, 185.023, 351.225660, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 185.564, 14.000, 183.758, 351.225660, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 161.152, 9.000, 83.953, 80.847717, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 161.802, 9.000, 87.982, 80.847717, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 473.539, 19.000, 459.762, 80.875956, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 474.295, 19.000, 464.469, 80.875956, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Union Street
+begin_procedural_roads
+ 445.725, 27.000, 456.752, 358.216555, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 452.586, 27.000, 456.538, 358.216555, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 367.672, 30.000, 461.911, 260.982386, -1.424981, 0.000000, 7.00, 0.00, 0.00, road
+ 361.371, 29.000, 422.209, 260.982386, -1.424981, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 88.977, 25.000, 91.875, 171.174061, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 86.304, 25.000, 92.290, 171.174061, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 22.031, 52.000, 125.632, 80.520071, 26.691318, 0.000000, 7.00, 0.00, 0.00, road-both
+ 25.962, 64.000, 149.174, 80.520071, 26.691318, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 12.750, 43.000, 116.972, 185.513882, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -2.138, 43.000, 115.535, 185.513882, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -54.662, 51.000, 116.029, 170.922530, -3.767858, 0.000000, 7.00, 0.00, 0.00, road-both
+ -99.645, 48.000, 123.216, 170.922530, -3.767858, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -38.763, 51.000, 114.766, 0.000198, -8.261465, 0.000000, 7.00, 0.00, 0.00, road-both
+ -18.101, 48.000, 114.767, 0.000198, -8.261465, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -119.196, 42.000, 121.784, 260.539520, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -120.068, 42.000, 116.553, 260.539520, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -214.928, 33.000, 140.920, 171.978067, -4.196364, 0.000000, 7.00, 0.00, 0.00, road-both
+ -241.920, 31.000, 144.724, 171.978067, -4.196364, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -199.101, 39.000, 138.577, 351.176885, 0.871234, 0.000000, 7.00, 0.00, 0.00, road-both
+ -134.121, 40.000, 128.490, 351.176885, 0.871234, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -515.186, 6.000, 187.895, 351.194045, 6.241353, 0.000000, 7.00, 0.00, 0.00, road-both
+ -424.827, 16.000, 173.897, 351.194045, 6.241353, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 457.486, 14.000, 358.172, 81.070655, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 459.186, 14.000, 368.994, 81.070655, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 351.595, 23.000, 360.093, 261.272975, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 350.069, 23.000, 350.153, 261.272975, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Varennes Street
+begin_procedural_roads
+ 0.021, 59.000, 428.271, 80.920339, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 0.713, 59.000, 432.605, 80.920339, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -10.419, 57.000, 426.315, 170.851627, -18.367152, 0.000000, 7.00, 0.00, 0.00, road-both
+ -34.207, 49.000, 430.146, 170.851627, -18.367152, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ 9.326, 59.000, 423.132, 350.832882, 18.405871, 0.000000, 7.00, 0.00, 0.00, road-both
+ 30.093, 66.000, 419.780, 350.832882, 18.405871, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -50.003, 49.000, 432.693, 170.827561, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -54.279, 49.000, 433.383, 170.827561, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -34.207, 49.000, 430.146, 350.851627, 18.367152, 0.000000, 7.00, 0.00, 0.00, road-both
+ -10.419, 57.000, 426.315, 350.851627, 18.367152, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -70.097, 44.000, 431.606, 262.967719, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -70.737, 44.000, 426.423, 262.967719, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -111.000, 40.000, 442.319, 171.111029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -128.282, 40.000, 445.022, 171.111029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -91.240, 40.000, 439.232, 351.131094, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -86.620, 40.000, 438.511, 351.131094, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -148.042, 40.000, 448.114, 171.102230, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -161.458, 40.000, 450.214, 171.102230, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -128.282, 40.000, 445.022, 351.111029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -111.000, 40.000, 442.319, 351.111029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -181.218, 36.000, 453.305, 171.119489, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -191.915, 36.000, 454.976, 171.119489, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -161.458, 40.000, 450.214, 351.102230, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -148.042, 40.000, 448.114, 351.102230, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -468.678, 1.000, 498.322, 351.048147, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -409.031, 1.000, 488.926, 351.048147, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Mason Street
+begin_procedural_roads
+ -506.543, 30.000, 460.878, 80.509113, -41.280138, 0.000000, 7.00, 0.00, 0.00, road-both
+ -501.096, 1.000, 493.459, 80.509113, -41.280138, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Mason Street
+begin_procedural_roads
+ -509.663, 30.000, 441.123, 261.542196, -2.148927, 0.000000, 7.00, 0.00, 0.00, road-both
+ -513.582, 29.000, 414.763, 261.542196, -2.148927, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -514.004, 15.000, 375.800, 50.939350, 21.069680, 0.000000, 7.00, 0.00, 0.00, road
+ -504.190, 21.000, 387.893, 50.939350, 21.069680, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -81.225, 47.000, 363.390, 260.779419, 19.997197, 0.000000, 7.00, 0.00, 0.00, road-both
+ -84.747, 55.000, 341.691, 260.779419, 19.997197, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -86.869, 55.000, 328.384, 261.016232, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -87.653, 55.000, 323.421, 261.016232, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -91.722, 54.000, 291.922, 260.659188, 13.240406, 0.000000, 7.00, 0.00, 0.00, road-both
+ -95.861, 60.000, 266.759, 260.659188, 13.240406, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -102.838, 57.000, 224.824, 261.062461, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -103.487, 57.000, 220.697, 261.062461, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -110.628, 51.000, 175.468, 260.882971, -11.700112, 0.000000, 7.00, 0.00, 0.00, road-both
+ -117.514, 42.000, 132.558, 260.882971, -11.700112, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -126.681, 41.000, 73.976, 260.864253, -35.800625, 0.000000, 7.00, 0.00, 0.00, road-both
+ -127.342, 38.000, 69.869, 260.864253, -35.800625, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -140.744, 20.000, -12.732, 80.681378, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -137.936, 20.000, 4.380, 80.681378, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -169.333, 8.000, -187.572, 260.935783, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -169.686, 8.000, -189.788, 260.935783, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -178.922, 7.000, -184.201, 171.035509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -198.427, 7.000, -181.124, 171.035509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -159.166, 8.000, -187.318, 351.031428, -1.044887, 0.000000, 7.00, 0.00, 0.00, road
+ -105.008, 7.000, -195.866, 351.031428, -1.044887, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -458.860, 17.000, -140.030, 171.018360, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -464.265, 17.000, -139.176, 171.018360, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -40.351, 1.000, -223.876, 217.483592, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -52.476, 1.000, -233.174, 217.483592, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 441.492, 6.000, 257.534, 80.970767, -1.256416, 0.000000, 7.00, 0.00, 0.00, road
+ 455.803, 4.000, 347.595, 80.970767, -1.256416, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 336.265, 23.000, 261.897, 261.368128, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 335.543, 23.000, 257.141, 261.368128, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -159.621, 47.000, 344.237, 170.858469, -6.666088, 0.000000, 7.00, 0.00, 0.00, road-both
+ -210.307, 41.000, 352.393, 170.858469, -6.666088, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -143.824, 50.000, 341.697, 350.870490, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -121.224, 50.000, 338.065, 350.870490, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -413.091, 22.000, 384.950, 170.875250, 2.081091, 0.000000, 7.00, 0.00, 0.00, road-both
+ -440.262, 23.000, 389.314, 170.875250, 2.081091, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -397.294, 22.000, 382.411, 350.865025, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -390.043, 22.000, 381.245, 350.865025, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -267.180, 23.000, 104.014, 80.877756, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -263.527, 23.000, 126.765, 80.877756, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Krausgrill Place
+begin_procedural_roads
+ -178.390, 43.000, 408.500, 80.742301, -10.380084, 0.000000, 7.00, 0.00, 0.00, road-both
+ -173.998, 38.000, 435.441, 80.742301, -10.380084, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -171.762, 43.000, 399.440, 351.635385, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -117.850, 43.000, 391.514, 351.635385, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -302.812, 30.000, 259.694, 171.069874, -6.627644, 0.000000, 7.00, 0.00, 0.00, road-both
+ -370.828, 22.000, 270.382, 171.069874, -6.627644, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -287.006, 38.000, 257.212, 351.081700, -2.097305, 0.000000, 7.00, 0.00, 0.00, road-both
+ -260.029, 37.000, 252.979, 351.081700, -2.097305, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 28.432, 72.000, 167.366, 260.690278, -50.660047, 0.000000, 7.00, 0.00, 0.00, road-both
+ 27.371, 64.000, 160.895, 260.690278, -50.660047, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 30.593, 72.000, 180.555, 80.696599, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 32.172, 72.000, 190.194, 80.696599, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 361.371, 29.000, 422.209, 260.980330, -7.278756, 0.000000, 7.00, 0.00, 0.00, road
+ 354.007, 23.000, 375.814, 260.980330, -7.278756, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 323.868, 8.000, 162.407, 351.460531, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 327.772, 8.000, 161.821, 351.460531, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 319.857, 8.000, 157.867, 260.760377, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 318.859, 8.000, 151.732, 260.760377, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 304.501, 1.000, 56.223, 161.648629, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 298.979, 1.000, 58.055, 161.648629, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -502.752, 1.000, -371.164, 11.437544, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -500.669, 1.000, -370.743, 11.437544, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -475.759, 15.000, 286.855, 171.084259, -6.786746, 0.000000, 7.00, 0.00, 0.00, road-both
+ -525.567, 9.000, 294.669, 171.084259, -6.786746, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -459.953, 13.000, 284.374, 351.075524, -1.035816, 0.000000, 7.00, 0.00, 0.00, road-both
+ -405.314, 12.000, 275.794, 351.075524, -1.035816, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -220.132, 39.000, 397.576, 260.907023, 4.532320, 0.000000, 7.00, 0.00, 0.00, road-both
+ -224.119, 41.000, 372.663, 260.907023, 4.532320, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -217.603, 32.000, 413.375, 80.903866, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -213.863, 32.000, 436.735, 80.903866, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -253.689, 35.000, 188.110, 260.897287, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -257.101, 35.000, 166.815, 260.897287, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -251.153, 39.000, 203.908, 80.861731, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -246.360, 39.000, 233.707, 80.861731, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 114.749, 1.000, -130.650, 166.520422, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 105.534, 1.000, -128.442, 166.520422, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 115.462, 3.000, -135.174, 211.386702, -6.308484, 0.000000, 7.00, 0.00, 0.00, road
+ 100.018, 1.000, -144.596, 211.386702, -6.308484, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 487.448, 2.000, 240.618, 53.824415, -0.867901, 0.000000, 7.00, 0.00, 0.00, road
+ 526.412, 1.000, 293.903, 53.824415, -0.867901, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 446.758, 2.000, 182.682, 54.935410, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 449.726, 2.000, 186.911, 54.935410, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -7.054, 1.000, -186.546, 32.038641, 1.257421, 0.000000, 7.00, 0.00, 0.00, road
+ 70.186, 3.000, -138.209, 32.038641, 1.257421, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 507.615, 1.000, 230.849, 235.507830, 6.093094, 0.000000, 7.00, 0.00, 0.00, road
+ 491.700, 4.000, 207.686, 235.507830, 6.093094, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 454.979, 2.000, 159.673, 152.356655, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 452.543, 2.000, 160.949, 152.356655, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 453.287, 2.000, 153.895, 232.100163, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 448.773, 2.000, 148.097, 232.100163, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 68.729, 69.000, 418.587, 77.831993, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 69.389, 69.000, 421.650, 77.831993, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 65.100, 67.000, 414.880, 32.216655, 38.678895, 0.000000, 7.00, 0.00, 0.00, road-both
+ 67.214, 69.000, 416.211, 32.216655, 38.678895, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 10.902, 15.000, 69.370, 262.723200, -3.170624, 0.000000, 7.00, 0.00, 0.00, road-both
+ 4.043, 12.000, 15.650, 262.723200, -3.170624, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -26.605, 2.000, -183.339, 81.016741, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -25.343, 2.000, -175.357, 81.016741, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -31.858, 5.000, -198.166, 239.962757, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -32.930, 5.000, -200.019, 239.962757, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -28.845, 2.000, -201.533, 34.530925, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -11.096, 2.000, -189.320, 34.530925, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -32.930, 5.000, -200.019, 59.962757, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -31.858, 5.000, -198.166, 59.962757, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -195.829, 5.000, -292.644, 188.541509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -200.664, 5.000, -293.370, 188.541509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 75.619, 3.000, -134.801, 31.469725, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 84.386, 3.000, -129.435, 31.469725, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 419.091, 3.000, 142.184, 324.741260, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 423.348, 3.000, 139.174, 324.741260, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 419.820, 3.000, 148.497, 42.428571, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 424.969, 3.000, 153.203, 42.428571, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 430.768, 3.000, 126.948, 229.118759, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 426.641, 3.000, 122.181, 229.118759, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 228.216, 8.000, -58.141, 215.759011, -4.828855, 0.000000, 7.00, 0.00, 0.00, road
+ 189.793, 4.000, -85.811, 215.759011, -4.828855, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 426.641, 3.000, 122.181, 226.164615, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 422.378, 3.000, 117.741, 226.164615, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 336.855, 9.000, 39.851, 221.535592, -36.743799, 0.000000, 7.00, 0.00, 0.00, road
+ 332.844, 5.000, 36.298, 221.535592, -36.743799, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 302.545, 1.000, 41.872, 41.461225, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 305.874, 1.000, 44.813, 41.461225, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 301.329, 18.000, 271.627, 350.593121, 12.035006, 0.000000, 7.00, 0.00, 0.00, road-both
+ 319.839, 22.000, 268.561, 350.593121, 12.035006, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 442.006, 2.000, 175.735, 55.625817, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 446.758, 2.000, 182.682, 55.625817, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -162.771, 5.000, -280.776, 27.191953, 4.414237, 0.000000, 7.00, 0.00, 0.00, road
+ -116.682, 9.000, -257.098, 27.191953, 4.414237, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -417.851, 12.000, -329.011, 12.001584, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -415.046, 12.000, -328.415, 12.001584, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -429.628, 6.000, -331.310, 190.085050, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -445.506, 6.000, -334.134, 190.085050, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -252.057, 12.000, -286.554, 153.556448, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -257.825, 12.000, -283.685, 153.556448, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Jefferson Street
+begin_procedural_roads
+ -522.638, 9.000, -342.351, 171.374013, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -527.384, 9.000, -341.631, 171.374013, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 225.324, 71.000, 463.647, 260.847711, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 223.153, 71.000, 450.168, 260.847711, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 220.609, 67.000, 434.372, 260.855766, -7.484394, 0.000000, 7.00, 0.00, 0.00, road-both
+ 214.560, 62.000, 396.796, 260.855766, -7.484394, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 214.560, 62.000, 396.796, 260.808005, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 213.274, 62.000, 388.849, 260.808005, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 213.274, 62.000, 388.849, 260.862874, 11.205986, 0.000000, 7.00, 0.00, 0.00, road-both
+ 212.473, 63.000, 383.866, 260.862874, 11.205986, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 203.031, 63.000, 327.526, 253.926975, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 201.419, 63.000, 321.932, 253.926975, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 216.068, 71.000, 464.813, 70.013592, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 217.328, 71.000, 468.276, 70.013592, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 18.318, 76.000, 309.847, 166.852865, -71.498764, 0.000000, 7.00, 0.00, 0.00, road-both
+ 16.037, 69.000, 310.380, 166.852865, -71.498764, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 16.037, 69.000, 310.380, 153.609833, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 13.800, 69.000, 311.490, 153.609833, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -398.318, 22.000, 470.122, 222.014133, -9.788872, 0.000000, 7.00, 0.00, 0.00, road
+ -406.931, 20.000, 462.364, 222.014133, -9.788872, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -385.820, 1.000, 480.671, 220.669907, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -391.405, 1.000, 475.872, 220.669907, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -479.690, 19.000, 409.327, 41.467749, 0.616079, 0.000000, 7.00, 0.00, 0.00, road
+ -410.005, 20.000, 470.910, 41.467749, 0.616079, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -488.899, 19.000, 390.803, 220.695410, 8.543239, 0.000000, 7.00, 0.00, 0.00, road
+ -498.993, 21.000, 382.122, 220.695410, 8.543239, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -488.919, 19.000, 401.447, 40.496865, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -479.690, 19.000, 409.327, 40.496865, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Medau Place
+begin_procedural_roads
+ -108.559, 43.000, 398.230, 80.090368, -6.296714, 0.000000, 7.00, 0.00, 0.00, road-both
+ -103.880, 40.000, 425.013, 80.090368, -6.296714, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -117.850, 43.000, 391.514, 171.635385, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -171.762, 43.000, 399.440, 171.635385, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ 70.865, 20.000, -10.240, 171.747579, -9.518498, 0.000000, 7.00, 0.00, 0.00, road-both
+ 17.745, 11.000, -2.536, 171.747579, -9.518498, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ 86.665, 20.000, -12.751, 350.195516, -14.351776, 0.000000, 7.00, 0.00, 0.00, road-both
+ 129.029, 9.000, -20.072, 350.195516, -14.351776, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 153.604, 4.000, 36.651, 260.954979, 9.331376, 0.000000, 7.00, 0.00, 0.00, road-both
+ 146.906, 11.000, -5.420, 260.954979, 9.331376, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 156.123, 5.000, 52.451, 80.924769, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 157.713, 5.000, 62.401, 80.924769, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 197.151, 20.000, 74.896, 171.042850, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 169.824, 20.000, 79.203, 171.042850, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 197.033, 57.000, 309.401, 240.436492, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 195.465, 57.000, 306.637, 240.436492, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 185.126, 57.000, 286.792, 59.560707, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 187.213, 57.000, 290.345, 59.560707, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 222.840, 1.000, 472.604, 306.731373, 88.323346, 0.000000, 7.00, 0.00, 0.00, road-both
+ 224.065, 71.000, 470.961, 306.731373, 88.323346, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Union Street
+begin_procedural_roads
+ 255.671, 1.000, 489.538, 170.946852, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 243.626, 1.000, 491.457, 170.946852, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ 324.213, 14.000, 371.830, 352.362666, 38.958322, 0.000000, 7.00, 0.00, 0.00, road-both
+ 335.245, 23.000, 370.351, 352.362666, 38.958322, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 431.151, 4.000, 179.292, 94.303777, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 430.880, 4.000, 182.894, 94.303777, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 430.880, 4.000, 182.894, 91.830753, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 430.678, 4.000, 189.220, 91.830753, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 429.107, 3.000, 134.978, 320.656712, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 431.878, 3.000, 132.707, 320.656712, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 451.896, 2.000, 171.454, 52.747488, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 453.743, 2.000, 173.883, 52.747488, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 440.080, 2.000, 156.526, 230.636599, 4.091596, 0.000000, 7.00, 0.00, 0.00, road
+ 431.214, 3.000, 145.718, 230.636599, 4.091596, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 452.543, 2.000, 160.949, 151.418689, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 448.386, 2.000, 163.214, 151.418689, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 424.969, 3.000, 153.203, 49.282650, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 429.936, 3.000, 158.975, 49.282650, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 429.936, 3.000, 158.975, 53.548165, -7.521345, 0.000000, 7.00, 0.00, 0.00, road
+ 434.436, 2.000, 165.067, 53.548165, -7.521345, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ 129.029, 9.000, -20.072, 170.195516, 14.351776, 0.000000, 7.00, 0.00, 0.00, road-both
+ 86.665, 20.000, -12.751, 170.195516, 14.351776, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 146.906, 11.000, -5.420, 80.954979, -9.331376, 0.000000, 7.00, 0.00, 0.00, road-both
+ 153.604, 4.000, 36.651, 80.954979, -9.331376, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 186.280, 2.000, -62.591, 38.442416, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 195.606, 2.000, -55.188, 38.442416, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 195.606, 2.000, -55.188, 42.142695, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 224.932, 2.000, -28.650, 42.142695, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 77.028, 1.000, -157.266, 211.723114, 2.956325, 0.000000, 7.00, 0.00, 0.00, road
+ 27.616, 4.000, -187.811, 211.723114, 2.956325, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -12.320, 0.000, -211.563, 197.215897, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -23.372, 0.000, -214.988, 197.215897, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -513.940, 21.000, 400.446, 353.112706, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -504.939, 21.000, 399.359, 353.112706, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -502.781, 21.000, 399.092, 350.584317, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -497.666, 21.000, 398.244, 350.584317, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -520.367, 21.000, 400.770, 180.358897, -37.300118, 0.000000, 7.00, 0.00, 0.00, road-both
+ -524.305, 18.000, 400.745, 180.358897, -37.300118, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 203.243, 63.000, 384.710, 80.858273, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 204.529, 63.000, 392.701, 80.858273, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -456.065, 23.000, 391.821, 171.096616, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -460.443, 23.000, 392.506, 171.096616, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -440.262, 23.000, 389.314, 350.875250, -2.081091, 0.000000, 7.00, 0.00, 0.00, road-both
+ -413.091, 22.000, 384.950, 350.875250, -2.081091, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 101.668, 1.000, -118.341, 33.380627, 0.565433, 0.000000, 7.00, 0.00, 0.00, road
+ 186.280, 2.000, -62.591, 33.380627, 0.565433, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -6.710, 68.000, 319.694, 170.887574, -2.567893, 0.000000, 7.00, 0.00, 0.00, road-both
+ -28.726, 67.000, 323.225, 170.887574, -2.567893, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -0.916, 1.000, -205.448, 208.203711, -4.418899, 0.000000, 7.00, 0.00, 0.00, road
+ -12.320, 0.000, -211.563, 208.203711, -4.418899, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -54.986, 1.000, -222.569, 57.881457, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -52.802, 1.000, -219.089, 57.881457, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -65.368, 3.000, -229.981, 207.974293, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -68.808, 3.000, -231.808, 207.974293, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -47.991, 1.000, -220.632, 28.575701, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -43.302, 1.000, -218.078, 28.575701, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -348.704, 2.000, -315.526, 190.873327, 10.818862, 0.000000, 7.00, 0.00, 0.00, road
+ -400.092, 12.000, -325.397, 190.873327, 10.818862, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -11.096, 2.000, -189.320, 34.469265, -11.528143, 0.000000, 7.00, 0.00, 0.00, road
+ -7.054, 1.000, -186.546, 34.469265, -11.528143, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Valparaiso Street
+begin_procedural_roads
+ -513.267, 30.000, 451.812, 171.166367, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -517.703, 30.000, 452.501, 171.166367, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -504.190, 21.000, 387.893, 42.044411, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -497.937, 21.000, 393.532, 42.044411, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -498.993, 21.000, 382.122, 213.451878, -26.951513, 0.000000, 7.00, 0.00, 0.00, road
+ -508.839, 15.000, 375.617, 213.451878, -26.951513, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 25.962, 64.000, 149.174, 260.520071, -26.691318, 0.000000, 7.00, 0.00, 0.00, road-both
+ 22.031, 52.000, 125.632, 260.520071, -26.691318, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 27.371, 64.000, 160.895, 80.690278, 50.660047, 0.000000, 7.00, 0.00, 0.00, road-both
+ 28.432, 72.000, 167.366, 80.690278, 50.660047, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -49.331, 56.000, 219.877, 351.067745, 12.101643, 0.000000, 7.00, 0.00, 0.00, road-both
+ 10.564, 69.000, 210.464, 351.067745, 12.101643, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 15.218, 68.000, 319.948, 6.817564, 65.829730, 0.000000, 7.00, 0.00, 0.00, road-both
+ 17.446, 73.000, 320.214, 6.817564, 65.829730, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 11.519, 68.000, 319.071, 13.336235, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 15.218, 68.000, 319.948, 13.336235, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 10.797, 69.000, 313.333, 135.849223, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 8.842, 69.000, 315.231, 135.849223, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 17.446, 73.000, 320.214, 354.685947, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 19.833, 73.000, 319.992, 354.685947, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 13.800, 69.000, 311.490, 148.469670, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 10.797, 69.000, 313.333, 148.469670, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -304.309, 1.000, 472.553, 351.111978, 47.142008, 0.000000, 7.00, 0.00, 0.00, road-both
+ -284.141, 23.000, 469.399, 351.111978, 47.142008, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -206.998, 1.000, 479.586, 260.912674, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -207.966, 1.000, 473.530, 260.912674, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -284.141, 23.000, 469.399, 171.111978, -47.142008, 0.000000, 7.00, 0.00, 0.00, road-both
+ -304.309, 1.000, 472.553, 171.111978, -47.142008, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -268.333, 23.000, 466.928, 351.117990, 4.855347, 0.000000, 7.00, 0.00, 0.00, road-both
+ -233.440, 26.000, 461.475, 351.117990, 4.855347, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 307.214, 1.000, 67.067, 290.148958, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 309.494, 1.000, 60.852, 290.148958, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 255.262, 3.000, -1.169, 44.083261, -4.154254, 0.000000, 7.00, 0.00, 0.00, road
+ 265.152, 2.000, 8.409, 44.083261, -4.154254, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 69.573, 3.000, -118.893, 169.992530, 9.472250, 0.000000, 7.00, 0.00, 0.00, road
+ 51.866, 6.000, -115.768, 169.992530, 9.472250, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 224.932, 2.000, -28.650, 42.178637, 1.399635, 0.000000, 7.00, 0.00, 0.00, road
+ 255.262, 3.000, -1.169, 42.178637, 1.399635, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -483.987, 14.000, -325.558, 80.995777, -9.952557, 0.000000, 7.00, 0.00, 0.00, road-both
+ -474.176, 3.000, -263.642, 80.995777, -9.952557, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 288.535, 1.000, 60.488, 171.040462, 11.605831, 0.000000, 7.00, 0.00, 0.00, road-both
+ 197.151, 20.000, 74.896, 171.040462, 11.605831, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 422.378, 3.000, 117.741, 222.814981, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 376.618, 3.000, 75.344, 222.814981, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 376.618, 3.000, 75.344, 221.737242, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 369.713, 3.000, 69.185, 221.737242, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 448.773, 2.000, 148.097, 229.696804, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 438.025, 2.000, 135.425, 229.696804, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 89.093, 1.000, -150.862, 207.960385, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 77.028, 1.000, -157.266, 207.960385, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 322.854, 2.000, 60.229, 42.272428, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 330.928, 2.000, 67.570, 42.272428, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 339.453, 2.000, 42.159, 221.623874, 63.595749, 0.000000, 7.00, 0.00, 0.00, road
+ 336.855, 9.000, 39.851, 221.623874, 63.595749, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 405.708, 9.000, 135.823, 41.712095, -39.443126, 0.000000, 7.00, 0.00, 0.00, road
+ 411.153, 3.000, 140.676, 41.712095, -39.443126, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -324.071, 12.000, -250.986, 80.925184, -4.107451, 0.000000, 7.00, 0.00, 0.00, road-both
+ -313.090, 7.000, -182.231, 80.925184, -4.107451, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -476.706, 4.000, -340.407, 191.816881, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -482.280, 4.000, -341.573, 191.816881, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -183.880, 5.000, -278.439, 261.608877, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -184.673, 5.000, -283.811, 261.608877, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 338.282, 23.000, 274.833, 261.035029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 337.498, 23.000, 269.858, 261.035029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 319.839, 22.000, 268.561, 170.593121, -12.035006, 0.000000, 7.00, 0.00, 0.00, road-both
+ 301.329, 18.000, 271.627, 170.593121, -12.035006, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 352.289, 23.000, 263.376, 351.119232, -6.605965, 0.000000, 7.00, 0.00, 0.00, road-both
+ 420.540, 15.000, 252.711, 351.119232, -6.605965, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 335.543, 23.000, 257.141, 261.035472, -8.519777, 0.000000, 7.00, 0.00, 0.00, road
+ 323.061, 11.000, 178.015, 261.035472, -8.519777, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 322.039, 11.000, 171.700, 261.193185, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 321.288, 11.000, 166.853, 261.193185, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 311.039, 11.000, 164.374, 351.222071, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 316.338, 11.000, 163.556, 351.222071, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 327.772, 8.000, 161.821, 351.065979, 3.119413, 0.000000, 7.00, 0.00, 0.00, road-both
+ 382.152, 11.000, 153.272, 351.065979, 3.119413, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 318.859, 8.000, 151.732, 259.597281, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 312.658, 8.000, 117.954, 259.597281, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -415.046, 12.000, -328.415, 192.001584, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -417.851, 12.000, -329.011, 192.001584, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -400.092, 12.000, -325.397, 10.873327, -10.818862, 0.000000, 7.00, 0.00, 0.00, road
+ -348.704, 2.000, -315.526, 10.873327, -10.818862, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 92.284, 7.000, -149.134, 208.424259, -58.830469, 0.000000, 7.00, 0.00, 0.00, road
+ 89.093, 1.000, -150.862, 208.424259, -58.830469, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -169.686, 8.000, -189.788, 260.914834, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -170.814, 8.000, -196.836, 260.914834, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 412.147, 3.000, 146.489, 331.968118, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 414.050, 3.000, 145.476, 331.968118, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 265.152, 2.000, 8.409, 41.825235, -1.141655, 0.000000, 7.00, 0.00, 0.00, road
+ 302.545, 1.000, 41.872, 41.825235, -1.141655, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 95.997, 1.000, -136.078, 267.437202, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 95.768, 1.000, -141.195, 267.437202, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 95.768, 1.000, -141.195, 262.390600, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 95.288, 1.000, -144.784, 262.390600, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -116.682, 9.000, -257.098, 207.191953, -4.414237, 0.000000, 7.00, 0.00, 0.00, road
+ -162.771, 5.000, -280.776, 207.191953, -4.414237, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 359.393, 7.000, 92.793, 42.893867, 1.811999, 0.000000, 7.00, 0.00, 0.00, road
+ 405.708, 9.000, 135.823, 42.893867, 1.811999, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 51.866, 6.000, -115.768, 349.992530, -9.472250, 0.000000, 7.00, 0.00, 0.00, road
+ 69.573, 3.000, -118.893, 349.992530, -9.472250, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 36.114, 11.000, -112.962, 169.801193, 4.275543, 0.000000, 7.00, 0.00, 0.00, road
+ 9.785, 13.000, -108.225, 169.801193, 4.275543, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 430.678, 4.000, 189.220, 81.010539, 5.470568, 0.000000, 7.00, 0.00, 0.00, road
+ 438.835, 9.000, 240.787, 81.010539, 5.470568, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -16.993, 2.000, -122.801, 260.964819, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -22.837, 2.000, -159.554, 260.964819, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -310.247, 6.000, -57.047, 170.912326, 2.535470, 0.000000, 7.00, 0.00, 0.00, road
+ -421.745, 11.000, -39.212, 170.912326, 2.535470, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -12.055, 11.000, -86.683, 80.682840, -6.948771, 0.000000, 7.00, 0.00, 0.00, road-both
+ -10.727, 10.000, -78.586, 80.682840, -6.948771, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 10.564, 69.000, 210.464, 171.067745, -12.101643, 0.000000, 7.00, 0.00, 0.00, road-both
+ -49.331, 56.000, 219.877, 171.067745, -12.101643, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -421.745, 11.000, -39.212, 350.912326, -2.535470, 0.000000, 7.00, 0.00, 0.00, road
+ -310.247, 6.000, -57.047, 350.912326, -2.535470, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -446.746, 10.000, -35.974, 353.255467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -441.845, 10.000, -36.553, 353.255467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -2.095, 9.000, -28.081, 81.575475, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -0.371, 9.000, -16.438, 81.575475, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -500.669, 1.000, -370.743, 191.437544, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -502.752, 1.000, -371.164, 191.437544, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -10.727, 10.000, -78.586, 260.682840, 6.948771, 0.000000, 7.00, 0.00, 0.00, road-both
+ -12.055, 11.000, -86.683, 260.682840, 6.948771, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -8.030, 10.000, -62.815, 79.913446, 31.647990, 0.000000, 7.00, 0.00, 0.00, road-both
+ -7.178, 13.000, -58.023, 79.913446, 31.647990, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Jefferson Street
+begin_procedural_roads
+ -527.384, 9.000, -341.631, 351.374013, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -522.638, 9.000, -342.351, 351.374013, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -277.794, 10.000, -61.660, 350.993666, 1.198872, 0.000000, 7.00, 0.00, 0.00, road
+ -230.598, 11.000, -69.140, 350.993666, 1.198872, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 191.238, 57.000, 307.437, 89.627561, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 191.256, 57.000, 310.156, 89.627561, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 204.132, 63.000, 332.743, 258.082591, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 203.031, 63.000, 327.526, 258.082591, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 217.328, 71.000, 468.276, 58.534555, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 219.168, 71.000, 471.283, 58.534555, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 191.537, 57.000, 304.962, 96.896475, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 191.238, 57.000, 307.437, 96.896475, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 195.465, 57.000, 306.637, 233.008841, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 193.649, 57.000, 304.226, 233.008841, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 67.214, 69.000, 416.211, 57.472444, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 68.729, 69.000, 418.587, 57.472444, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -524.305, 18.000, 400.745, 0.358897, 37.300118, 0.000000, 7.00, 0.00, 0.00, road-both
+ -520.367, 21.000, 400.770, 0.358897, 37.300118, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 225.157, 71.000, 467.410, 272.544785, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 225.324, 71.000, 463.647, 272.544785, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Alta Street
+begin_procedural_roads
+ 310.477, 52.000, 430.746, 196.641854, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 305.556, 52.000, 429.275, 196.641854, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 219.168, 71.000, 471.283, 44.948339, -88.303080, 0.000000, 7.00, 0.00, 0.00, road-both
+ 220.636, 1.000, 472.749, 44.948339, -88.303080, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 205.145, 63.000, 338.359, 259.776277, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 204.132, 63.000, 332.743, 259.776277, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Union Street
+begin_procedural_roads
+ 243.626, 1.000, 491.457, 350.946852, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 255.671, 1.000, 489.538, 350.946852, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 201.419, 63.000, 321.932, 252.225724, -43.001555, 0.000000, 7.00, 0.00, 0.00, road-both
+ 199.455, 57.000, 315.805, 252.225724, -43.001555, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 224.065, 71.000, 470.961, 287.089429, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 225.157, 71.000, 467.410, 287.089429, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -48.474, 58.000, 326.393, 170.884508, -7.459219, 0.000000, 7.00, 0.00, 0.00, road-both
+ -71.098, 55.000, 330.023, 170.884508, -7.459219, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -28.726, 67.000, 323.225, 350.887574, 2.567893, 0.000000, 7.00, 0.00, 0.00, road-both
+ -6.710, 68.000, 319.694, 350.887574, 2.567893, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 9.406, 68.000, 318.394, 17.761775, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 11.519, 68.000, 319.071, 17.761775, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 23.047, 73.000, 317.950, 288.134973, 56.192871, 0.000000, 7.00, 0.00, 0.00, road-both
+ 23.672, 76.000, 316.041, 288.134973, 56.192871, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 23.179, 76.000, 312.422, 232.336724, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 21.920, 76.000, 310.791, 232.336724, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 176.716, 1.000, -94.390, 213.857651, 1.859775, 0.000000, 7.00, 0.00, 0.00, road
+ 125.567, 3.000, -128.706, 213.857651, 1.859775, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -428.961, 3.000, -250.435, 350.649001, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -361.530, 3.000, -261.539, 350.649001, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -444.751, 3.000, -247.852, 170.774692, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -453.756, 3.000, -246.390, 170.774692, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -258.816, 12.000, -280.209, 16.843525, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -254.258, 12.000, -278.829, 16.843525, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -270.362, 12.000, -279.636, 167.718329, -32.725158, 0.000000, 7.00, 0.00, 0.00, road-both
+ -276.444, 8.000, -278.312, 167.718329, -32.725158, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -254.258, 12.000, -278.829, 349.298341, 9.689541, 0.000000, 7.00, 0.00, 0.00, road
+ -242.749, 14.000, -281.004, 349.298341, 9.689541, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -242.749, 14.000, -281.004, 345.443005, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -230.526, 14.000, -284.178, 345.443005, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -230.526, 14.000, -284.178, 350.702898, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -220.425, 14.000, -285.832, 350.702898, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -220.425, 14.000, -285.832, 351.371805, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -210.113, 14.000, -287.396, 351.371805, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -237.729, 14.000, -290.350, 165.162586, -7.684854, 0.000000, 7.00, 0.00, 0.00, road
+ -252.057, 12.000, -286.554, 165.162586, -7.684854, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -224.441, 14.000, -292.880, 169.219318, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -237.729, 14.000, -290.350, 169.219318, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -388.991, 1.000, 489.431, 40.701854, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -384.598, 1.000, 493.210, 40.701854, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 491.700, 4.000, 207.686, 234.705403, -1.058863, 0.000000, 7.00, 0.00, 0.00, road
+ 460.439, 3.000, 163.526, 234.705403, -1.058863, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 364.473, 3.000, 64.501, 221.763385, -1.707603, 0.000000, 7.00, 0.00, 0.00, road
+ 339.453, 2.000, 42.159, 221.763385, -1.707603, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 27.616, 4.000, -187.811, 211.721734, -5.110791, 0.000000, 7.00, 0.00, 0.00, road
+ -0.916, 1.000, -205.448, 211.721734, -5.110791, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -445.506, 6.000, -334.134, 191.368122, -3.596087, 0.000000, 7.00, 0.00, 0.00, road
+ -476.706, 4.000, -340.407, 191.368122, -3.596087, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -220.450, 14.000, -296.290, 188.250722, -7.130301, 0.000000, 7.00, 0.00, 0.00, road
+ -323.296, 1.000, -311.204, 188.250722, -7.130301, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -216.803, 14.000, -293.966, 171.904614, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -224.441, 14.000, -292.880, 171.904614, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -200.664, 5.000, -293.370, 8.541509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -195.829, 5.000, -292.644, 8.541509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 444.917, 2.000, 165.090, 143.876583, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 441.178, 2.000, 167.819, 143.876583, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 426.457, 3.000, 136.832, 325.033420, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 429.107, 3.000, 134.978, 325.033420, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 324.112, 5.000, 28.652, 222.151166, 1.422252, 0.000000, 7.00, 0.00, 0.00, road
+ 234.530, 8.000, -52.436, 222.151166, 1.422252, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 189.793, 4.000, -85.811, 213.266670, -10.857927, 0.000000, 7.00, 0.00, 0.00, road
+ 176.716, 1.000, -94.390, 213.266670, -10.857927, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 100.233, 1.000, -127.265, 165.644519, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 95.462, 1.000, -126.044, 165.644519, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -52.802, 1.000, -219.089, 37.098325, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -44.156, 1.000, -212.551, 37.098325, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -33.886, 1.000, -218.345, 197.167121, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -47.219, 1.000, -222.464, 197.167121, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -313.226, 3.000, -270.486, 348.061360, 13.030095, 0.000000, 7.00, 0.00, 0.00, road-both
+ -292.088, 8.000, -274.955, 348.061360, 13.030095, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -210.113, 14.000, -287.396, 351.153871, -31.891673, 0.000000, 7.00, 0.00, 0.00, road
+ -195.821, 5.000, -289.621, 351.153871, -31.891673, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -323.296, 1.000, -311.204, 8.250722, 7.130301, 0.000000, 7.00, 0.00, 0.00, road
+ -220.450, 14.000, -296.290, 8.250722, 7.130301, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -127.342, 38.000, 69.869, 260.849361, -18.346252, 0.000000, 7.00, 0.00, 0.00, road-both
+ -133.576, 25.000, 31.166, 260.849361, -18.346252, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 194.109, 63.000, 327.904, 80.865417, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 203.243, 63.000, 384.710, 80.865417, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -426.448, 6.000, -145.118, 351.020621, 1.738960, 0.000000, 7.00, 0.00, 0.00, road
+ -328.845, 9.000, -160.541, 351.020621, 1.738960, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -300.255, 10.000, -100.908, 80.598143, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -296.521, 10.000, -78.356, 80.598143, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -302.781, 9.000, -116.707, 261.238034, 3.791464, 0.000000, 7.00, 0.00, 0.00, road-both
+ -307.378, 11.000, -146.535, 261.238034, 3.791464, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 449.726, 2.000, 186.911, 54.917334, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 487.448, 2.000, 240.618, 54.917334, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -184.673, 5.000, -283.811, 260.209592, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -185.370, 5.000, -287.852, 260.209592, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 107.866, 23.000, 88.921, 351.095809, -23.000067, 0.000000, 7.00, 0.00, 0.00, road-both
+ 140.450, 9.000, 83.816, 351.095809, -23.000067, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -7.178, 13.000, -58.023, 259.913446, -31.647990, 0.000000, 7.00, 0.00, 0.00, road-both
+ -8.030, 10.000, -62.815, 259.913446, -31.647990, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ 9.785, 13.000, -108.225, 349.801193, -4.275543, 0.000000, 7.00, 0.00, 0.00, road
+ 36.114, 11.000, -112.962, 349.801193, -4.275543, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -214.231, 5.000, -178.629, 171.023946, 8.757802, 0.000000, 7.00, 0.00, 0.00, road
+ -239.878, 9.000, -174.578, 171.023946, 8.757802, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -198.427, 7.000, -181.124, 351.035509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -178.922, 7.000, -184.201, 351.035509, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -255.683, 14.000, -172.084, 171.040642, -1.715939, 0.000000, 7.00, 0.00, 0.00, road
+ -288.656, 13.000, -166.886, 171.040642, -1.715939, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -239.878, 9.000, -174.578, 351.023946, -8.757802, 0.000000, 7.00, 0.00, 0.00, road
+ -214.231, 5.000, -178.629, 351.023946, -8.757802, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -292.088, 8.000, -274.955, 168.061360, -13.030095, 0.000000, 7.00, 0.00, 0.00, road-both
+ -313.226, 3.000, -270.486, 168.061360, -13.030095, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -276.444, 8.000, -278.312, 347.718329, 32.725158, 0.000000, 7.00, 0.00, 0.00, road-both
+ -270.362, 12.000, -279.636, 347.718329, 32.725158, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -322.064, 1.000, 475.325, 171.104780, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -337.239, 1.000, 477.701, 171.104780, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -421.981, 20.000, 449.210, 221.156704, -0.786736, 0.000000, 7.00, 0.00, 0.00, road
+ -476.810, 19.000, 401.284, 221.156704, -0.786736, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -406.931, 20.000, 462.364, 221.152240, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -421.981, 20.000, 449.210, 221.152240, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -25.343, 2.000, -175.357, 261.016741, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -26.605, 2.000, -183.339, 261.016741, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -22.837, 2.000, -159.554, 80.964819, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -16.993, 2.000, -122.801, 80.964819, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -466.012, 3.000, -214.251, 81.062842, 2.046678, 0.000000, 7.00, 0.00, 0.00, road-both
+ -457.318, 5.000, -158.966, 81.062842, 2.046678, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 369.713, 3.000, 69.185, 221.790955, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 364.473, 3.000, 64.501, 221.790955, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 463.209, 3.000, 186.779, 54.693355, -1.526149, 0.000000, 7.00, 0.00, 0.00, road
+ 506.595, 1.000, 248.040, 54.693355, -1.526149, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 453.743, 2.000, 173.883, 232.747488, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 451.896, 2.000, 171.454, 232.747488, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 431.214, 3.000, 145.718, 50.636599, -4.091596, 0.000000, 7.00, 0.00, 0.00, road
+ 440.080, 2.000, 156.526, 50.636599, -4.091596, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 408.400, 2.000, 121.109, 222.354481, 0.971473, 0.000000, 7.00, 0.00, 0.00, road
+ 364.820, 3.000, 81.379, 222.354481, 0.971473, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 306.517, 0.000, 28.591, 41.908306, 26.953937, 0.000000, 7.00, 0.00, 0.00, road
+ 313.834, 5.000, 35.159, 41.908306, 26.953937, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 294.689, 0.000, 17.816, 222.760004, 2.207248, 0.000000, 7.00, 0.00, 0.00, road
+ 237.542, 3.000, -35.029, 222.760004, 2.207248, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 237.542, 3.000, -35.029, 42.760004, -2.207248, 0.000000, 7.00, 0.00, 0.00, road
+ 294.689, 0.000, 17.816, 42.760004, -2.207248, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 225.487, 2.000, -45.539, 219.406334, 21.965663, 0.000000, 7.00, 0.00, 0.00, road
+ 213.993, 8.000, -54.982, 219.406334, 21.965663, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 213.993, 8.000, -54.982, 39.406334, -21.965663, 0.000000, 7.00, 0.00, 0.00, road
+ 225.487, 2.000, -45.539, 39.406334, -21.965663, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 186.819, 2.000, -74.443, 212.550014, -1.259214, 0.000000, 7.00, 0.00, 0.00, road
+ 148.472, 1.000, -98.920, 212.550014, -1.259214, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 148.472, 1.000, -98.920, 32.550014, 1.259214, 0.000000, 7.00, 0.00, 0.00, road
+ 186.819, 2.000, -74.443, 32.550014, 1.259214, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 134.966, 4.000, -107.499, 212.293883, -6.103165, 0.000000, 7.00, 0.00, 0.00, road
+ 111.249, 1.000, -122.488, 212.293883, -6.103165, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 111.249, 1.000, -122.488, 32.293883, 6.103165, 0.000000, 7.00, 0.00, 0.00, road
+ 134.966, 4.000, -107.499, 32.293883, 6.103165, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 0.212, 1.000, -192.191, 32.042236, 0.952122, 0.000000, 7.00, 0.00, 0.00, road
+ 51.217, 2.000, -160.267, 32.042236, 0.952122, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -12.737, 2.000, -201.530, 219.559750, -10.043603, 0.000000, 7.00, 0.00, 0.00, road
+ -21.443, 0.000, -208.722, 219.559750, -10.043603, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -25.957, 0.000, -208.130, 31.098359, 7.778087, 0.000000, 7.00, 0.00, 0.00, road
+ -13.420, 2.000, -200.567, 31.098359, 7.778087, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -453.756, 3.000, -246.390, 350.774692, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -444.751, 3.000, -247.852, 350.774692, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -487.172, 3.000, -241.107, 170.858381, 13.561968, 0.000000, 7.00, 0.00, 0.00, road-both
+ -503.544, 7.000, -238.472, 170.858381, 13.561968, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 462.551, 16.000, 390.282, 81.022986, 2.993709, 0.000000, 7.00, 0.00, 0.00, road
+ 471.502, 19.000, 446.943, 81.022986, 2.993709, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 350.069, 23.000, 350.153, 261.106029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 338.282, 23.000, 274.833, 261.106029, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -339.218, 2.000, -321.831, 190.588672, 1.673566, 0.000000, 7.00, 0.00, 0.00, road
+ -406.504, 4.000, -334.409, 190.588672, 1.673566, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -330.755, 2.000, -320.254, 190.552370, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -339.218, 2.000, -321.831, 190.552370, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -323.719, 1.000, -319.055, 189.670875, 7.975607, 0.000000, 7.00, 0.00, 0.00, road
+ -330.755, 2.000, -320.254, 189.670875, 7.975607, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -289.446, 0.000, -314.847, 186.999522, 1.658824, 0.000000, 7.00, 0.00, 0.00, road
+ -323.719, 1.000, -319.055, 186.999522, 1.658824, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -210.183, 3.000, -305.233, 186.916030, -2.151776, 0.000000, 7.00, 0.00, 0.00, road
+ -289.446, 0.000, -314.847, 186.916030, -2.151776, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -202.082, 1.000, -303.990, 188.724954, 13.712754, 0.000000, 7.00, 0.00, 0.00, road
+ -210.183, 3.000, -305.233, 188.724954, 13.712754, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -196.270, 1.000, -303.035, 189.328134, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -202.082, 1.000, -303.990, 189.328134, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -182.523, 1.000, -299.516, 196.270043, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -188.723, 1.000, -301.325, 196.270043, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -176.421, 5.000, -297.152, 201.177592, -31.433119, 0.000000, 7.00, 0.00, 0.00, road
+ -182.523, 1.000, -299.516, 201.177592, -31.433119, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -165.730, 5.000, -292.878, 201.788708, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -176.421, 5.000, -297.152, 201.788708, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -158.712, 5.000, -289.415, 206.263354, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -165.730, 5.000, -292.878, 206.263354, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -113.000, 9.000, -265.340, 207.774370, -4.427172, 0.000000, 7.00, 0.00, 0.00, road
+ -158.712, 5.000, -289.415, 207.774370, -4.427172, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -92.376, 3.000, -255.439, 205.644159, 14.695955, 0.000000, 7.00, 0.00, 0.00, road
+ -113.000, 9.000, -265.340, 205.644159, 14.695955, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -70.414, 1.000, -243.885, 207.746905, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -75.689, 1.000, -246.660, 207.746905, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -57.927, 3.000, -236.570, 210.360457, -7.868507, 0.000000, 7.00, 0.00, 0.00, road
+ -70.414, 1.000, -243.885, 210.360457, -7.868507, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -52.476, 1.000, -233.174, 211.926370, 17.296798, 0.000000, 7.00, 0.00, 0.00, road
+ -57.927, 3.000, -236.570, 211.926370, 17.296798, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -21.443, 0.000, -208.722, 219.571929, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -27.478, 0.000, -213.710, 219.571929, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -288.656, 13.000, -166.886, 351.040642, 1.715939, 0.000000, 7.00, 0.00, 0.00, road
+ -255.683, 14.000, -172.084, 351.040642, 1.715939, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -328.845, 9.000, -160.541, 171.020621, -1.738960, 0.000000, 7.00, 0.00, 0.00, road
+ -426.448, 6.000, -145.118, 171.020621, -1.738960, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -474.176, 3.000, -263.642, 260.995777, 9.952557, 0.000000, 7.00, 0.00, 0.00, road-both
+ -483.987, 14.000, -325.558, 260.995777, 9.952557, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -478.097, 4.000, -347.155, 152.111086, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -482.906, 4.000, -344.610, 152.111086, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -473.958, 4.000, -347.077, 185.012776, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -477.630, 4.000, -347.399, 185.012776, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -406.504, 4.000, -334.409, 190.636362, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -473.958, 4.000, -347.077, 190.636362, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 70.186, 3.000, -138.209, 32.034706, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 75.153, 3.000, -135.101, 32.034706, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 64.799, 2.000, -151.810, 31.778313, -15.697651, 0.000000, 7.00, 0.00, 0.00, road
+ 67.823, 1.000, -149.936, 31.778313, -15.697651, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 51.217, 2.000, -160.267, 212.042236, -0.952122, 0.000000, 7.00, 0.00, 0.00, road
+ 0.212, 1.000, -192.191, 212.042236, -0.952122, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 67.823, 1.000, -149.936, 211.778313, 15.697651, 0.000000, 7.00, 0.00, 0.00, road
+ 64.799, 2.000, -151.810, 211.778313, 15.697651, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 364.820, 3.000, 81.379, 42.354481, -0.971473, 0.000000, 7.00, 0.00, 0.00, road
+ 408.400, 2.000, 121.109, 42.354481, -0.971473, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 352.978, 2.000, 70.619, 222.158220, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 342.443, 2.000, 61.081, 222.158220, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 342.443, 2.000, 61.081, 42.158220, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 352.978, 2.000, 70.619, 42.158220, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 515.852, 1.000, 261.090, 54.606154, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 526.966, 1.000, 276.733, 54.606154, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 506.595, 1.000, 248.040, 234.693355, 1.526149, 0.000000, 7.00, 0.00, 0.00, road
+ 463.209, 3.000, 186.779, 234.693355, 1.526149, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 526.966, 1.000, 276.733, 234.606154, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 515.852, 1.000, 261.090, 234.606154, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -361.530, 3.000, -261.539, 170.649001, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -428.961, 3.000, -250.435, 170.649001, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -105.008, 7.000, -195.866, 171.031428, 1.044887, 0.000000, 7.00, 0.00, 0.00, road
+ -159.166, 8.000, -187.318, 171.031428, 1.044887, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -89.203, 7.000, -198.357, 351.050467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -80.835, 7.000, -199.675, 351.050467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -80.835, 7.000, -199.675, 171.050467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -89.203, 7.000, -198.357, 171.050467, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -68.808, 3.000, -231.808, 27.974293, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -65.368, 3.000, -229.981, 27.974293, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -82.940, 3.000, -239.311, 207.956682, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -87.943, 3.000, -241.966, 207.956682, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 323.061, 11.000, 178.015, 260.809448, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 322.039, 11.000, 171.700, 260.809448, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -449.620, 16.000, -110.646, 260.896389, 5.419842, 0.000000, 7.00, 0.00, 0.00, road-both
+ -451.288, 17.000, -121.054, 260.896389, 5.419842, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -447.090, 8.000, -94.848, 80.907867, -1.438536, 0.000000, 7.00, 0.00, 0.00, road-both
+ -440.798, 7.000, -55.527, 80.907867, -1.438536, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -451.288, 17.000, -121.054, 80.896389, -5.419842, 0.000000, 7.00, 0.00, 0.00, road-both
+ -449.620, 16.000, -110.646, 80.896389, -5.419842, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -434.561, 8.000, -16.485, 80.958354, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -431.219, 8.000, 4.520, 80.958354, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -425.453, 5.000, 40.616, 260.911196, 6.889190, 0.000000, 7.00, 0.00, 0.00, road-both
+ -428.067, 7.000, 24.270, 260.911196, 6.889190, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -382.978, 20.000, 306.270, 80.818815, -3.254813, 0.000000, 7.00, 0.00, 0.00, road-both
+ -374.561, 17.000, 358.348, 80.818815, -3.254813, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -358.972, 19.000, 456.597, 260.919807, 3.626716, 0.000000, 7.00, 0.00, 0.00, road-both
+ -368.932, 23.000, 394.279, 260.919807, 3.626716, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -508.839, 15.000, 375.617, 213.473452, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -515.145, 15.000, 371.447, 213.473452, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -410.005, 20.000, 470.910, 41.549104, -61.986723, 0.000000, 7.00, 0.00, 0.00, road
+ -402.440, 1.000, 477.614, 41.549104, -61.986723, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -224.119, 41.000, 372.663, 80.907023, -4.532320, 0.000000, 7.00, 0.00, 0.00, road-both
+ -220.132, 39.000, 397.576, 80.907023, -4.532320, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -230.329, 35.000, 333.889, 260.899127, 6.194324, 0.000000, 7.00, 0.00, 0.00, road-both
+ -240.531, 42.000, 270.205, 260.899127, 6.194324, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -223.765, 43.000, 247.279, 351.073138, 6.899042, 0.000000, 7.00, 0.00, 0.00, road-both
+ -117.625, 56.000, 230.607, 351.073138, 6.899042, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -240.531, 42.000, 270.205, 80.899127, -6.194324, 0.000000, 7.00, 0.00, 0.00, road-both
+ -230.329, 35.000, 333.889, 80.899127, -6.194324, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -213.863, 32.000, 436.735, 260.903866, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -217.603, 32.000, 413.375, 260.903866, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ 17.745, 11.000, -2.536, 351.747579, 9.518498, 0.000000, 7.00, 0.00, 0.00, road-both
+ 70.865, 20.000, -10.240, 351.747579, 9.518498, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 140.450, 9.000, 83.816, 171.095809, 23.000067, 0.000000, 7.00, 0.00, 0.00, road-both
+ 107.866, 23.000, 88.921, 171.095809, 23.000067, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 169.824, 20.000, 79.203, 170.934337, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 167.041, 20.000, 79.647, 170.934337, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 157.713, 5.000, 62.401, 260.924769, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 156.123, 5.000, 52.451, 260.924769, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Beach Street
+begin_procedural_roads
+ -503.544, 7.000, -238.472, 350.858381, -13.561968, 0.000000, 7.00, 0.00, 0.00, road-both
+ -487.172, 3.000, -241.107, 350.858381, -13.561968, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -409.031, 1.000, 488.926, 171.048147, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -468.678, 1.000, 498.322, 171.048147, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -402.440, 1.000, 477.614, 41.519464, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -397.020, 1.000, 482.413, 41.519464, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -391.405, 1.000, 475.872, 219.750767, 66.820478, 0.000000, 7.00, 0.00, 0.00, road
+ -398.318, 22.000, 470.122, 219.750767, 66.820478, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Columbus Avenue
+begin_procedural_roads
+ -373.299, 1.000, 491.379, 220.458668, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -377.673, 1.000, 487.649, 220.458668, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -353.562, 1.000, 488.183, 258.340752, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -354.434, 1.000, 483.959, 258.340752, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Midway Street
+begin_procedural_roads
+ -219.322, 8.000, -62.103, 80.730505, 7.401970, 0.000000, 7.00, 0.00, 0.00, road-both
+ -205.683, 19.000, 21.463, 80.730505, 7.401970, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: North Point Street
+begin_procedural_roads
+ -464.265, 17.000, -139.176, 351.018360, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -458.860, 17.000, -140.030, 351.018360, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -457.318, 5.000, -158.966, 261.062842, -2.046678, 0.000000, 7.00, 0.00, 0.00, road-both
+ -466.012, 3.000, -214.251, 261.062842, -2.046678, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -307.378, 11.000, -146.535, 81.238034, -3.791464, 0.000000, 7.00, 0.00, 0.00, road-both
+ -302.781, 9.000, -116.707, 81.238034, -3.791464, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -313.090, 7.000, -182.231, 260.925184, 4.107451, 0.000000, 7.00, 0.00, 0.00, road-both
+ -324.071, 12.000, -250.986, 260.925184, 4.107451, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -30.900, 11.000, -101.220, 170.862456, -12.228708, 0.000000, 7.00, 0.00, 0.00, road
+ -49.122, 7.000, -98.289, 170.862456, -12.228708, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -170.814, 8.000, -196.836, 260.902742, -2.078997, 0.000000, 7.00, 0.00, 0.00, road-both
+ -183.880, 5.000, -278.439, 260.902742, -2.078997, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -290.708, 16.000, -42.674, 80.891182, -5.064589, 0.000000, 7.00, 0.00, 0.00, road-both
+ -279.990, 10.000, 24.173, 80.891182, -5.064589, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -296.521, 10.000, -78.356, 260.598143, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -300.255, 10.000, -100.908, 260.598143, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -440.798, 7.000, -55.527, 260.907867, 1.438536, 0.000000, 7.00, 0.00, 0.00, road-both
+ -447.090, 8.000, -94.848, 260.907867, 1.438536, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Valparaiso Street
+begin_procedural_roads
+ -517.703, 30.000, 452.501, 351.166367, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -513.267, 30.000, 451.812, 351.166367, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Mason Street
+begin_procedural_roads
+ -501.096, 1.000, 493.459, 260.509113, 41.280138, 0.000000, 7.00, 0.00, 0.00, road-both
+ -506.543, 30.000, 460.878, 260.509113, 41.280138, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Mason Street
+begin_procedural_roads
+ -513.582, 29.000, 414.763, 81.542196, 2.148927, 0.000000, 7.00, 0.00, 0.00, road-both
+ -509.663, 30.000, 441.123, 81.542196, 2.148927, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 459.186, 14.000, 368.994, 81.016629, 5.301652, 0.000000, 7.00, 0.00, 0.00, road
+ 462.551, 16.000, 390.282, 81.016629, 5.301652, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 455.803, 4.000, 347.595, 80.961080, 43.035114, 0.000000, 7.00, 0.00, 0.00, road
+ 457.486, 14.000, 358.172, 80.961080, 43.035114, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ 335.245, 23.000, 370.351, 172.362666, -38.958322, 0.000000, 7.00, 0.00, 0.00, road-both
+ 324.213, 14.000, 371.830, 172.362666, -38.958322, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 471.502, 19.000, 446.943, 81.012409, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 472.282, 19.000, 451.876, 81.012409, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Union Street
+begin_procedural_roads
+ 412.115, 28.000, 461.017, 171.081602, 4.701106, 0.000000, 7.00, 0.00, 0.00, road-both
+ 388.088, 30.000, 464.787, 171.081602, 4.701106, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Battery Street
+begin_procedural_roads
+ 438.835, 9.000, 240.787, 81.002185, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 439.606, 9.000, 245.652, 81.002185, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 354.007, 23.000, 375.814, 261.282992, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 353.348, 23.000, 371.516, 261.282992, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ -87.943, 3.000, -241.966, 27.956682, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -82.940, 3.000, -239.311, 27.956682, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -75.689, 1.000, -246.660, 207.749938, 6.054491, 0.000000, 7.00, 0.00, 0.00, road
+ -92.376, 3.000, -255.439, 207.749938, 6.054491, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -179.095, 10.000, -77.391, 350.865705, -1.486043, 0.000000, 7.00, 0.00, 0.00, road
+ -64.919, 7.000, -95.749, 350.865705, -1.486043, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ 420.540, 15.000, 252.711, 171.119232, 6.605965, 0.000000, 7.00, 0.00, 0.00, road-both
+ 352.289, 23.000, 263.376, 171.119232, 6.605965, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 382.152, 11.000, 153.272, 351.066521, -4.622137, 0.000000, 7.00, 0.00, 0.00, road-both
+ 406.590, 9.000, 149.431, 351.066521, -4.622137, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -64.919, 7.000, -95.749, 170.865705, 1.486043, 0.000000, 7.00, 0.00, 0.00, road
+ -179.095, 10.000, -77.391, 170.865705, 1.486043, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Bay Street
+begin_procedural_roads
+ -49.122, 7.000, -98.289, 350.862456, 12.228708, 0.000000, 7.00, 0.00, 0.00, road
+ -30.900, 11.000, -101.220, 350.862456, 12.228708, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 220.085, 30.000, 178.429, 351.215863, -11.664661, 0.000000, 7.00, 0.00, 0.00, road-both
+ 311.039, 11.000, 164.374, 351.215863, -11.664661, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -273.484, 21.000, 64.741, 260.889066, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -273.908, 21.000, 62.092, 260.889066, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 335.039, 7.000, 73.723, 98.826146, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 334.637, 7.000, 76.312, 98.826146, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 339.868, 7.000, 75.574, 41.408915, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 359.393, 7.000, 92.793, 41.408915, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 334.637, 7.000, 76.312, 66.441461, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 337.473, 7.000, 82.816, 66.441461, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 337.473, 7.000, 82.816, 41.664013, 1.330412, 0.000000, 7.00, 0.00, 0.00, road
+ 401.807, 9.000, 140.063, 41.664013, 1.330412, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 401.807, 9.000, 140.063, 43.938464, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 406.191, 9.000, 144.287, 43.938464, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 411.795, 3.000, 149.591, 42.491889, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 414.260, 3.000, 151.850, 42.491889, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 418.585, 3.000, 155.956, 46.036815, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 425.392, 3.000, 163.015, 46.036815, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 425.392, 3.000, 163.015, 63.322341, 9.969577, 0.000000, 7.00, 0.00, 0.00, road
+ 427.947, 4.000, 168.099, 63.322341, 9.969577, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 427.947, 4.000, 168.099, 67.438695, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 429.831, 4.000, 172.634, 67.438695, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 310.996, 8.000, 106.080, 264.463002, -10.125660, 0.000000, 7.00, 0.00, 0.00, road
+ 307.214, 1.000, 67.067, 264.463002, -10.125660, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 309.499, 9.000, 106.423, 249.767704, -21.411291, 0.000000, 7.00, 0.00, 0.00, road
+ 306.854, 6.000, 99.244, 249.767704, -21.411291, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 327.110, 5.000, 31.259, 221.002249, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 324.112, 5.000, 28.652, 221.002249, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 306.854, 6.000, 99.244, 258.510013, -8.687909, 0.000000, 7.00, 0.00, 0.00, road
+ 300.336, 1.000, 67.178, 258.510013, -8.687909, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 300.336, 1.000, 67.178, 232.389859, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 297.105, 1.000, 62.985, 232.389859, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 313.834, 5.000, 35.159, 221.908306, -26.953937, 0.000000, 7.00, 0.00, 0.00, road
+ 306.517, 0.000, 28.591, 221.908306, -26.953937, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ 414.260, 3.000, 151.850, 43.520734, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 418.585, 3.000, 155.956, 43.520734, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -233.440, 26.000, 461.475, 171.117990, -4.855347, 0.000000, 7.00, 0.00, 0.00, road-both
+ -268.333, 23.000, 466.928, 171.117990, -4.855347, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -243.744, 39.000, 357.761, 170.887891, -10.190891, 0.000000, 7.00, 0.00, 0.00, road-both
+ -309.656, 27.000, 368.333, 170.887891, -10.190891, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -210.307, 41.000, 352.393, 350.858469, 6.666088, 0.000000, 7.00, 0.00, 0.00, road-both
+ -159.621, 47.000, 344.237, 350.858469, 6.666088, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -87.653, 55.000, 323.421, 262.640690, -1.803347, 0.000000, 7.00, 0.00, 0.00, road-both
+ -91.722, 54.000, 291.922, 262.640690, -1.803347, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -370.828, 22.000, 270.382, 351.069874, 6.627644, 0.000000, 7.00, 0.00, 0.00, road-both
+ -302.812, 30.000, 259.694, 351.069874, 6.627644, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -391.021, 17.000, 255.954, 260.907938, -3.404595, 0.000000, 7.00, 0.00, 0.00, road-both
+ -401.646, 13.000, 189.563, 260.907938, -3.404595, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -405.314, 12.000, 275.794, 171.075524, 1.035816, 0.000000, 7.00, 0.00, 0.00, road-both
+ -459.953, 13.000, 284.374, 171.075524, 1.035816, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -246.360, 39.000, 233.707, 260.861731, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -251.153, 39.000, 203.908, 260.861731, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -260.029, 37.000, 252.979, 171.081700, 2.097305, 0.000000, 7.00, 0.00, 0.00, road-both
+ -287.006, 38.000, 257.212, 171.081700, 2.097305, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 305.874, 1.000, 44.813, 41.993171, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 309.570, 1.000, 48.140, 41.993171, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -355.904, 7.000, 57.033, 171.291775, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -366.675, 7.000, 58.683, 171.291775, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -340.098, 6.000, 54.545, 350.816884, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -334.546, 6.000, 53.648, 350.816884, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -382.484, 9.000, 61.145, 171.005064, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -401.449, 9.000, 64.147, 171.005064, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -366.675, 7.000, 58.683, 351.291775, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -355.904, 7.000, 57.033, 351.291775, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -334.546, 6.000, 53.648, 170.816884, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -340.098, 6.000, 54.545, 170.816884, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -68.315, 47.000, 443.793, 260.995642, -34.133316, 0.000000, 7.00, 0.00, 0.00, road-both
+ -69.007, 44.000, 439.422, 260.995642, -34.133316, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -85.197, 55.000, 338.916, 260.953062, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -85.763, 55.000, 335.357, 260.953062, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -424.827, 16.000, 173.897, 171.194045, -6.241353, 0.000000, 7.00, 0.00, 0.00, road-both
+ -515.186, 6.000, 187.895, 171.194045, -6.241353, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -385.157, 15.000, 167.490, 350.823665, 7.443267, 0.000000, 7.00, 0.00, 0.00, road-both
+ -279.368, 29.000, 150.401, 350.823665, 7.443267, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -408.082, 7.000, 149.312, 260.915156, 4.553336, 0.000000, 7.00, 0.00, 0.00, road-both
+ -417.996, 12.000, 87.315, 260.915156, 4.553336, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -401.646, 13.000, 189.563, 80.907938, 3.404595, 0.000000, 7.00, 0.00, 0.00, road-both
+ -391.021, 17.000, 255.954, 80.907938, 3.404595, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -390.043, 22.000, 381.245, 170.865025, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -397.294, 22.000, 382.411, 170.865025, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -351.775, 20.000, 374.981, 351.062534, 12.692258, 0.000000, 7.00, 0.00, 0.00, road-both
+ -325.458, 26.000, 370.843, 351.062534, 12.692258, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -374.561, 17.000, 358.348, 260.818815, 3.254813, 0.000000, 7.00, 0.00, 0.00, road-both
+ -382.978, 20.000, 306.270, 260.818815, 3.254813, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -368.932, 23.000, 394.279, 80.919807, -3.626716, 0.000000, 7.00, 0.00, 0.00, road-both
+ -358.972, 19.000, 456.597, 80.919807, -3.626716, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -134.121, 40.000, 128.490, 171.176885, -0.871234, 0.000000, 7.00, 0.00, 0.00, road-both
+ -199.101, 39.000, 138.577, 171.176885, -0.871234, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -117.625, 56.000, 230.607, 171.073138, -6.899042, 0.000000, 7.00, 0.00, 0.00, road-both
+ -223.765, 43.000, 247.279, 171.073138, -6.899042, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -100.651, 61.000, 238.101, 260.465111, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -101.065, 61.000, 235.637, 260.465111, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -137.936, 20.000, 4.380, 260.681378, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -140.744, 20.000, -12.732, 260.681378, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -101.542, 55.000, 334.909, 170.902214, -51.805040, 0.000000, 7.00, 0.00, 0.00, road-both
+ -105.426, 50.000, 335.531, 170.902214, -51.805040, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -71.098, 55.000, 330.023, 350.884508, 7.459219, 0.000000, 7.00, 0.00, 0.00, road-both
+ -48.474, 58.000, 326.393, 350.884508, 7.459219, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -84.747, 55.000, 341.691, 260.806183, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -85.197, 55.000, 338.916, 260.806183, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -86.620, 40.000, 438.511, 171.131094, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -91.240, 40.000, 439.232, 171.131094, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -67.848, 47.000, 446.790, 261.147559, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -68.315, 47.000, 443.793, 261.147559, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -54.279, 49.000, 433.383, 350.827561, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -50.003, 49.000, 432.693, 350.827561, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -401.449, 9.000, 64.147, 351.005064, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -382.484, 9.000, 61.145, 351.005064, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -417.996, 12.000, 87.315, 80.915156, -4.553336, 0.000000, 7.00, 0.00, 0.00, road-both
+ -408.082, 7.000, 149.312, 80.915156, -4.553336, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -504.939, 21.000, 399.359, 352.965477, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -502.781, 21.000, 399.092, 352.965477, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Greenwich Street
+begin_procedural_roads
+ -460.443, 23.000, 392.506, 351.096616, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -456.065, 23.000, 391.821, 351.096616, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -295.776, 14.000, 47.427, 171.027514, -40.210392, 0.000000, 7.00, 0.00, 0.00, road-both
+ -301.618, 9.000, 48.349, 171.027514, -40.210392, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -279.990, 10.000, 24.173, 260.891182, 5.064589, 0.000000, 7.00, 0.00, 0.00, road-both
+ -290.708, 16.000, -42.674, 260.891182, 5.064589, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Midway Street
+begin_procedural_roads
+ -205.683, 19.000, 21.463, 80.684281, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -205.146, 19.000, 24.738, 80.684281, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -279.368, 29.000, 150.401, 170.823665, -7.443267, 0.000000, 7.00, 0.00, 0.00, road-both
+ -385.157, 15.000, 167.490, 170.823665, -7.443267, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -263.527, 23.000, 126.765, 260.877756, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -267.180, 23.000, 104.014, 260.877756, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -241.920, 31.000, 144.724, 351.978067, 4.196364, 0.000000, 7.00, 0.00, 0.00, road-both
+ -214.928, 33.000, 140.920, 351.978067, 4.196364, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -257.101, 35.000, 166.815, 80.897287, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -253.689, 35.000, 188.110, 80.897287, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Francisco Street
+begin_procedural_roads
+ -257.325, 21.000, 41.368, 351.259574, -10.859490, 0.000000, 7.00, 0.00, 0.00, road-both
+ -231.564, 16.000, 37.407, 351.259574, -10.859490, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -273.908, 21.000, 62.092, 80.889066, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -273.484, 21.000, 64.741, 80.889066, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Union Street
+begin_procedural_roads
+ 388.088, 30.000, 464.787, 351.081602, -4.701106, 0.000000, 7.00, 0.00, 0.00, road-both
+ 412.115, 28.000, 461.017, 351.081602, -4.701106, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Union Street
+begin_procedural_roads
+ 452.586, 27.000, 456.538, 178.216555, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 445.725, 27.000, 456.752, 178.216555, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ 52.560, 67.000, 416.161, 170.861615, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 49.188, 67.000, 416.704, 170.861615, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Stockton Street
+begin_procedural_roads
+ -207.966, 1.000, 473.530, 80.912674, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -206.998, 1.000, 479.586, 80.912674, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -191.915, 36.000, 454.976, 351.119489, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -181.218, 36.000, 453.305, 351.119489, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Sansome Street
+begin_procedural_roads
+ 309.494, 1.000, 60.852, 287.237871, 9.861438, 0.000000, 7.00, 0.00, 0.00, road
+ 311.199, 2.000, 55.357, 287.237871, 9.861438, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Filbert Street
+begin_procedural_roads
+ -337.239, 1.000, 477.701, 351.104780, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -322.064, 1.000, 475.325, 351.104780, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Powell Street
+begin_procedural_roads
+ -353.149, 1.000, 490.170, 258.233763, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -353.562, 1.000, 488.183, 258.233763, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -190.563, 1.000, -301.747, 192.926181, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -193.707, 1.000, -302.469, 192.926181, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+begin_procedural_roads
+ -193.707, 1.000, -302.469, 192.457796, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ -196.270, 1.000, -303.035, 192.457796, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ 167.041, 20.000, 79.647, 171.057912, -71.998712, 0.000000, 7.00, 0.00, 0.00, road-both
+ 163.510, 9.000, 80.202, 171.057912, -71.998712, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 161.802, 9.000, 87.982, 80.887842, 3.141585, 0.000000, 7.00, 0.00, 0.00, road-both
+ 176.229, 14.000, 177.931, 80.887842, 3.141585, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: The Embarcadero
+begin_procedural_roads
+ 234.530, 8.000, -52.436, 222.097219, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+ 228.216, 8.000, -58.141, 222.097219, 0.000000, 0.000000, 7.00, 0.00, 0.00, road
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 199.059, 57.000, 314.762, 249.300369, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 197.033, 57.000, 309.401, 249.300369, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ 185.564, 14.000, 183.758, 351.225508, 24.610261, 0.000000, 7.00, 0.00, 0.00, road-both
+ 220.085, 30.000, 178.429, 351.225508, 24.610261, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -70.737, 44.000, 426.423, 260.548175, 2.746876, 0.000000, 7.00, 0.00, 0.00, road-both
+ -81.005, 47.000, 364.744, 260.548175, 2.746876, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ -0.371, 9.000, -16.438, 261.575475, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -2.095, 9.000, -28.081, 261.575475, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 4.043, 12.000, 15.650, 82.723200, 3.170624, 0.000000, 7.00, 0.00, 0.00, road-both
+ 10.902, 15.000, 69.370, 82.723200, 3.170624, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 212.473, 63.000, 383.866, 260.851664, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 205.145, 63.000, 338.359, 260.851664, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Lombard Street
+begin_procedural_roads
+ -525.567, 9.000, 294.669, 351.084259, 6.786746, 0.000000, 7.00, 0.00, 0.00, road-both
+ -475.759, 15.000, 286.855, 351.084259, 6.786746, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 86.304, 25.000, 92.290, 351.174061, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 88.977, 25.000, 91.875, 351.174061, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 187.213, 57.000, 290.345, 239.560707, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 185.126, 57.000, 286.792, 239.560707, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Alta Street
+begin_procedural_roads
+ 293.652, 52.000, 429.471, 169.922342, 13.580050, 0.000000, 7.00, 0.00, 0.00, road-both
+ 232.513, 67.000, 440.337, 169.922342, 13.580050, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Alta Street
+begin_procedural_roads
+ 305.556, 52.000, 429.275, 16.641854, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 310.477, 52.000, 430.746, 16.641854, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Krausgrill Place
+begin_procedural_roads
+ -173.998, 38.000, 435.441, 260.742301, 10.380084, 0.000000, 7.00, 0.00, 0.00, road-both
+ -178.390, 43.000, 408.500, 260.742301, 10.380084, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Medau Place
+begin_procedural_roads
+ -103.880, 40.000, 425.013, 260.090368, 6.296714, 0.000000, 7.00, 0.00, 0.00, road-both
+ -108.559, 43.000, 398.230, 260.090368, 6.296714, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Midway Street
+begin_procedural_roads
+ -205.146, 19.000, 24.738, 80.751413, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -204.390, 19.000, 29.377, 80.751413, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -133.849, 25.000, 29.445, 260.910882, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -134.440, 25.000, 25.752, 260.910882, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -120.068, 42.000, 116.553, 261.189279, -1.421445, 0.000000, 7.00, 0.00, 0.00, road-both
+ -126.241, 41.000, 76.728, 261.189279, -1.421445, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -117.514, 42.000, 132.558, 261.515309, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -118.047, 42.000, 128.987, 261.515309, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -99.645, 48.000, 123.216, 350.922530, 3.767858, 0.000000, 7.00, 0.00, 0.00, road-both
+ -54.662, 51.000, 116.029, 350.922530, 3.767858, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -103.487, 57.000, 220.697, 261.027317, -7.465108, 0.000000, 7.00, 0.00, 0.00, road-both
+ -110.628, 51.000, 175.468, 261.027317, -7.465108, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Grant Avenue
+begin_procedural_roads
+ -101.065, 61.000, 235.637, 260.521015, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -101.748, 61.000, 231.547, 260.521015, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Child Street
+begin_procedural_roads
+ -40.976, 60.000, 309.534, 261.149894, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ -44.069, 60.000, 289.669, 261.149894, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -18.101, 48.000, 114.767, 180.000198, 8.261465, 0.000000, 7.00, 0.00, 0.00, road-both
+ -38.763, 51.000, 114.766, 180.000198, 8.261465, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Chestnut Street
+begin_procedural_roads
+ -2.138, 43.000, 115.535, 5.513882, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 12.750, 43.000, 116.972, 5.513882, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Varennes Street
+begin_procedural_roads
+ 0.713, 59.000, 432.605, 80.933906, -22.219823, 0.000000, 7.00, 0.00, 0.00, road-both
+ 2.642, 54.000, 444.692, 80.933906, -22.219823, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Genoa Place
+begin_procedural_roads
+ 41.269, 66.000, 426.301, 260.873350, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 40.552, 66.000, 421.838, 260.873350, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Alta Street
+begin_procedural_roads
+ 232.513, 67.000, 440.337, 349.922342, -13.580050, 0.000000, 7.00, 0.00, 0.00, road-both
+ 293.652, 52.000, 429.471, 349.922342, -13.580050, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Montgomery Street
+begin_procedural_roads
+ 176.229, 14.000, 177.931, 80.898570, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 177.365, 14.000, 185.023, 80.898570, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+// OSM street: Kearny Street
+begin_procedural_roads
+ 32.172, 72.000, 190.194, 260.696599, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+ 30.593, 72.000, 180.555, 260.696599, 0.000000, 0.000000, 7.00, 0.00, 0.00, road-both
+end_road
+end_procedural_roads
+
+

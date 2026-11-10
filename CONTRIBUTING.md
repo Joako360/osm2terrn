@@ -1,6 +1,6 @@
 # Contributing to OSM2terrn
 
-Thank you for considering contributing to **OSM2terrn**! 🎉 This is a community-driven open-source project that generates realistic terrains for **Rigs of Rods** using real-world data from **OpenStreetMap (OSM)** and **OpenTopoData**.
+Thank you for considering contributing to **OSM2terrn**! This is an open-source project for generating terrain assets for **Rigs of Rods** from geospatial data. The current package includes OSMnx/Overpass, OpenTopography and a separate Overture/Fused integration; not every integration is established as part of the default route.
 
 We welcome all contributions, whether it's fixing bugs, improving documentation, or adding new features.
 
@@ -64,11 +64,11 @@ git push origin feature/your-feature-name
 
 ### General Style
 
-- All code must be **Python 3.10+** compliant.
+- All code must be **Python 3.12+** compliant, as declared in `pyproject.toml`.
 - Follow **PEP8** coding standards strictly.
 - Maintain a balance between readability and optimization (clear code over clever tricks).
 - Modularize large code blocks into reusable functions or modules.
-- Only use dependencies listed in `requirements.txt`. You may propose a new dependency if justified.
+- Use dependencies declared in `pyproject.toml`. Propose a new dependency only when justified.
 
 ### Naming Conventions
 

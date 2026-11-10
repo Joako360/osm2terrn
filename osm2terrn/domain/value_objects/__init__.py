@@ -4,14 +4,16 @@ from dataclasses import dataclass, field
 from math import isfinite
 from typing import Any
 
+from pyproj import CRS, Transformer
+
 
 @dataclass(slots=True)
 class Point2D:
-    """Two-dimensional point expressed in local projected coordinates.
+    """Two-dimensional coordinate pair interpreted by its owning domain object.
 
     Args:
-        x: Horizontal coordinate in meters.
-        y: Vertical coordinate in meters.
+        x: First coordinate in the owning object's CRS.
+        y: Second coordinate in the owning object's CRS.
     """
 
     x: float
@@ -188,7 +190,28 @@ class BoundingBox:
         return self.min_x <= point.x <= self.max_x and self.min_y <= point.y <= self.max_y
 
     def reproject(self, to_crs: str) -> "BoundingBox":
-        return BoundingBox(self.min_x, self.min_y, self.max_x, self.max_y, crs=to_crs, is_projected=False)
+        source_crs = self.crs or "EPSG:4326"
+        source = CRS.from_user_input(source_crs)
+        target = CRS.from_user_input(to_crs)
+        transformer = Transformer.from_crs(source, target, always_xy=True)
+
+        corners = (
+            (self.min_x, self.min_y),
+            (self.min_x, self.max_y),
+            (self.max_x, self.min_y),
+            (self.max_x, self.max_y),
+        )
+        transformed = [transformer.transform(x, y) for x, y in corners]
+        xs = [float(point[0]) for point in transformed]
+        ys = [float(point[1]) for point in transformed]
+        return BoundingBox(
+            min(xs),
+            min(ys),
+            max(xs),
+            max(ys),
+            crs=target.to_string(),
+            is_projected=not bool(target.is_geographic),
+        )
 
 
 __all__ = [

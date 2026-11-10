@@ -44,7 +44,7 @@ def utm_crs_from_lonlat(lon: float, lat: float) -> CRS:
 def local_crs_from_lonlat(lon: float, lat: float) -> CRS:
     """Build a local azimuthal equidistant CRS centered at lon/lat."""
     return CRS.from_proj4(
-        f"+proj=aeqd +lat_0={lat:.8f} +lon_0={lon:.8f} +x_0=0 +y_0=0 +units=m +no_defs"
+        f"+proj=aeqd +lat_0={lat:.8f} +lon_0={lon:.8f} +ellps=WGS84 +x_0=0 +y_0=0 +units=m +no_defs"
     )
 
 

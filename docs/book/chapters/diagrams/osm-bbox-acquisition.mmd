@@ -1,0 +1,94 @@
+%% diagram:osm-bbox-acquisition
+%% Relation: inferred data/control flow across statically inspected call sites
+%% Classification: static source analysis; not observed execution
+%% Sources: osm2terrn/cli/menu.py, cli/commands.py::dlcity, data/download_menu.py::DownloadMenu.show_main_menu/get_custom_bbox, data/osm_data_handler.py::download_data_from_bbox, data/acquisition.py::LayerAcquisitionResult, data/street_network.py::StreetNetworkResult, adapters/coordinate_transform.py, data/overpass.py::call_with_retries
+%% Evidence: claim:osm-bbox-acquisition:bbox-and-query-route; claim:osm-bbox-acquisition:layer-outcome-contract; claim:osm-bbox-acquisition:partial-layer-cache; claim:osm-bbox-acquisition:bounded-overpass-retries
+%% Generation: authored Mermaid source; no renderer or runtime execution
+%% Omissions: elevation details, terrain generation, export, and OSMnx internals
+%% Review: pending
+
+flowchart TD
+    MENU[CLI menu selects download callback] --> DLCITY[dlcity]
+    DLCITY --> SELECT[download_menu]
+    SELECT --> MODE{Selected mode?}
+    MODE -->|Place search| SEARCH[Return selected place and bbox]
+    MODE -->|Manual bbox| CUSTOM[get_custom_bbox returns empty place and bbox]
+    MODE -->|Cancel| CANCEL[Return empty place and no bbox]
+    SEARCH --> GUARD{place and bbox truthy?}
+    CUSTOM --> GUARD
+    CANCEL --> GUARD
+    GUARD -->|No| EARLY[Return before download; current_map is not cleared here]
+    GUARD -->|Yes| CONVERT[require_domain_bounding_box]
+    CONVERT[Convert to domain BoundingBox; new/coerced values check finite ordered limits; existing instance is returned as-is]
+    CONVERT -->|Conversion or new-value validation raises| BBOX_ERROR[ValueError escapes before layer handlers]
+    CONVERT -->|Accepted or existing instance| CRS{Explicit CRS differs from EPSG:4326?}
+    CRS -->|No or missing| USE_INPUT[Keep bounds; missing CRS is treated as geographic by caller convention]
+    CRS -->|Yes| REPROJECT[Try reproject to EPSG:4326]
+    REPROJECT -->|Success| USE_REPROJECTED[Use reprojected bbox]
+    REPROJECT -->|Failure| WARN[Warn; retain original bbox]
+    USE_INPUT --> BUNDLE_CACHE{Valid whole-bundle cache?}
+    USE_REPROJECTED --> BUNDLE_CACHE
+    WARN --> BUNDLE_CACHE
+    BUNDLE_CACHE -->|Valid hit| RETURN_BUNDLE[Return cached bundle]
+    BUNDLE_CACHE -->|Miss, unreadable, or invalid| REQUEST_TUPLE[_bbox_to_osmnx_tuple]
+    REQUEST_TUPLE -->|CRS reprojection raises| PRELAYER_ERROR[Exception escapes before per-layer handlers]
+    REQUEST_TUPLE -->|Success| GEOM_LOOP[Iterate configured geometry layers]
+
+    subgraph GEOMETRY[Per geometry layer]
+        GCACHE{Valid layer cache?}
+        GCACHE -->|available or empty| GREUSE[Reuse cached result]
+        GCACHE -->|miss or invalid| GQUERY[OSMnx features_from_bbox via retry wrapper]
+        GQUERY --> GEMPTY{No matching features or empty GDF?}
+        GEMPTY -->|Yes| GEMPTY_RESULT[Record empty; cache empty result]
+        GEMPTY -->|No| GTRANSFORM[transform_gdf_to_ror]
+        GTRANSFORM -->|Success| GAVAILABLE[Record available; cache transformed GDF]
+        GTRANSFORM -->|Exception| GFAILED[Record failed at transformation; continue]
+        GQUERY -->|Other exception| GQUERY_FAILED[Record failed at acquisition; continue]
+    end
+    GEOM_LOOP --> GCACHE
+    GREUSE --> NETWORK_LOOP[Iterate configured network layers]
+    GEMPTY_RESULT --> NETWORK_LOOP
+    GAVAILABLE --> NETWORK_LOOP
+    GFAILED --> NETWORK_LOOP
+    GQUERY_FAILED --> NETWORK_LOOP
+
+    subgraph NETWORK[Per network layer]
+        NCACHE{Valid layer cache?}
+        NCACHE -->|available or empty| NREUSE[Reuse cached result]
+        NCACHE -->|miss or invalid| NQUERY[OSMnx graph_from_bbox via retry wrapper]
+        NQUERY --> NTYPE{Roads or non-road network?}
+        NTYPE -->|Non-road empty| NEMPTY[Record empty; cache empty result]
+        NTYPE -->|Non-road with nodes| NTRANSFORM[transform_graph_to_ror]
+        NTRANSFORM -->|Success| NAVAIL[Record available; cache transformed graph]
+        NTRANSFORM -->|Exception| NFAIL_TRANSFORM[Record failed at transformation; continue]
+        NTYPE -->|Road graph empty| REMPTY[StreetNetworkResult empty]
+        NTYPE -->|Road graph with nodes| RTRANSFORM[transform_graph_to_ror and validate graph CRS]
+        RTRANSFORM -->|Success| RRESULT[StreetNetworkResult available or nodes-only empty; cache result]
+        RTRANSFORM -->|Exception| RFAIL[StreetNetworkResult failed; stage reported as acquisition]
+        NQUERY -->|Query exception| NFAIL_QUERY[Non-road failed at acquisition or Road result failed]
+    end
+    NETWORK_LOOP --> NCACHE
+    NETWORK_LOOP -->|After configured network layers| ROADS_CONFIGURED{roads in networks?}
+    ROADS_CONFIGURED -->|No| ROADS_NOT_REQUESTED[Do not query roads; assign StreetNetworkResult(status=not_requested)]
+    ROADS_NOT_REQUESTED --> BUNDLE_DECISION
+    ROADS_CONFIGURED -->|Yes| BUNDLE_DECISION
+    NREUSE --> BUNDLE_DECISION
+    NEMPTY --> BUNDLE_DECISION
+    NAVAIL --> BUNDLE_DECISION
+    NFAIL_TRANSFORM --> BUNDLE_DECISION
+    REMPTY --> BUNDLE_DECISION
+    RRESULT --> BUNDLE_DECISION
+    RFAIL --> BUNDLE_DECISION
+    NFAIL_QUERY --> BUNDLE_DECISION
+
+    BUNDLE_DECISION{Any requested layer failed?}
+    BUNDLE_DECISION -->|No| WRITE_BUNDLE[Write whole-bundle Pickle cache]
+    BUNDLE_DECISION -->|Yes| SKIP_BUNDLE[Skip bundle cache; retain successful per-layer cache entries]
+    WRITE_BUNDLE -->|Success| RETURN_NEW[Return assembled bundle]
+    WRITE_BUNDLE -->|Exception| BUNDLE_CACHE_ERROR[Exception propagates; normal downloader return is not reached]
+    SKIP_BUNDLE --> RETURN_NEW
+    RETURN_BUNDLE -->|Bounds present| AFTER[dlcity stores session state and attempts elevation preload]
+    RETURN_NEW -->|Bounds present| AFTER
+    RETURN_BUNDLE -->|Bounds missing| CLEAR_SESSION[dlcity clears map/elevation/world-size state and returns]
+    RETURN_NEW -->|Bounds missing| CLEAR_SESSION
+    AFTER --> NEXT[Continue CLI flow; outside this acquisition diagram]

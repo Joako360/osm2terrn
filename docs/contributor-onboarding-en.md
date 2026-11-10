@@ -13,10 +13,9 @@ This document proposes the **minimum learning path** for new contributors to und
    - Contribution conventions, branches, commit style, and code expectations.
    - Quality bar expected for pull requests.
 
-3. **`osm2terrn/main.py` (main flow)**
-   - Application entry point.
-   - Sequence: download -> process -> export.
-   - Session state (`MapData`) and interactive menu behavior.
+3. **Application flow**
+   - Declared package entry: `osm2terrn.app.main:main` (`pyproject.toml`) or `python -m osm2terrn`.
+   - Read the [CLI source map](cli-flow/cli-index.md); its routes and limits are explicitly qualified.
 
 4. **Exporter docs (`exporters-docs.md`)**
    - Explains generated file contracts (`.terrn2`, `.otc`, `.tobj`).
@@ -94,14 +93,14 @@ Implemented: [Contributor testing and validation guide](testing-validation.md).
 ---
 ## Practical way to start contributing
 
-1. Run the full workflow with a small bbox.
-2. Open generated files in `output/` and confirm all expected outputs are created.
-3. Use function-reference.md to identify which module to modify for your issue.
-4. Keep changes small (ideally one module per PR) and attach output evidence.
+1. Read the current [CLI flow](cli-flow/cli-index.md) and its known limits.
+2. Start with focused offline tests. Do not run geographic requests or terrain generation without an explicitly scoped task.
+3. Use the [current function-reference index](function-reference/function-reference-index.md) and architecture guide to locate source.
+4. Keep changes small and attach only evidence from checks actually run.
 
 ---
 
-## Scope of `.docs/function-reference.md`
+## Scope of the function reference
 
 The function reference is designed as a navigation index:
 - It does **not** replace detailed docstrings.

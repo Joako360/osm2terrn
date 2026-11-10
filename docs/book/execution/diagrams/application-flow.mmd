@@ -1,0 +1,90 @@
+%% Static source map checked 2026-11-09; not an execution trace.
+%% Sources: osm2terrn/data/download_menu.py, cli/commands.py,
+%% processing/orchestrator.py, data/street_network.py, data/acquisition.py.
+%% Returned export_outcome values are complete/partial; exceptions are caught
+%% by the CLI and do not produce an export_outcome=failed value.
+flowchart TD
+    ENTRY[Declared console entry or python -m osm2terrn] --> MAIN[app.main.main]
+    MAIN --> CONFIG[Parse arguments and load configuration]
+    CONFIG --> MENU[CLI menu loop]
+    MENU --> DOWNLOAD[dlcity callback]
+    MENU --> LOAD[Load/import placeholder]
+    MENU --> EXPORT[export callback]
+
+    DOWNLOAD --> SELECT[Place search or manual bbox selection]
+    SELECT --> GATE{Place and bbox truthy?}
+    GATE -->|No: cancel or manual bbox has empty label| RETURN["Return before acquisition; prior session state is not cleared"]
+    GATE -->|Yes| ACQUIRE[download_data_from_bbox]
+    ACQUIRE --> BOUNDS{Bounds available?}
+    BOUNDS -->|No| CLEAR[Clear map/elevation/world-size state and return]
+    BOUNDS -->|Yes| CACHE{Bundle/layer cache}
+    CACHE -->|usable hit| BUNDLE[Acquisition bundle and per-layer results]
+    CACHE -->|miss/stale| PROVIDER[OSMnx feature and street-network requests]
+    PROVIDER --> LAYERS{Per-layer acquisition status}
+    LAYERS -->|not_requested| LNR[Record not_requested]
+    LAYERS -->|empty or available| LOK[Record successful layer result]
+    LAYERS -->|failed| LWARN[Record failed layer and diagnostic]
+    LNR --> BUNDLE
+    LOK --> BUNDLE
+    LWARN --> BUNDLE
+    BUNDLE --> STATE[Store bundle, place and origin in current_map]
+    STATE --> PREFETCH[Prefetch elevation in current callback]
+    PRELOAD[preload_elevation is parsed] -. not read by dlcity .-> PREFETCH
+    PREFETCH -->|success| ELEVATION[Store elevation data]
+    PREFETCH -->|exception| NOELEV[Store empty elevation data]
+
+    EXPORT --> STATECHECK{current_map has data?}
+    STATECHECK -->|No| RETURN
+    STATECHECK -->|Yes| ORCH[export_terrain_assets]
+    STATE -->|canonical StreetNetworkResult| ORCH
+    ELEVATION --> ORCH
+    NOELEV --> ORCH
+
+    ROADS_CFG{export.include_roads?} -. independent output gate; does not control prior acquisition .-> ROADGATE
+    ORCH --> ROADGATE{Road export gate}
+    ROADGATE -->|false| DISABLED["roads_outcome=disabled; skip conversion and road output"]
+    ROADGATE -->|true| ACQSTATUS{Street acquisition status}
+    ACQSTATUS -->|not_requested| NOTREQ[roads_outcome=not_requested]
+    ACQSTATUS -->|missing: no result supplied defensively| MISSING[roads_outcome=failed]
+    ACQSTATUS -->|failed| ROADFAIL[roads_outcome=failed]
+    ACQSTATUS -->|empty| EMPTY[Skip road processing; valid empty acquisition]
+    ACQSTATUS -->|available| ADAPT[Convert canonical graph for MapData]
+    ADAPT -->|conversion error| ROADFAIL
+    ADAPT -->|converted| ROADBUILD[Build roads from supplied graph]
+    ROADBUILD -->|writer error| ROADFAIL
+    ROADBUILD -->|path returned| EXPORTED[Road output exported]
+    ROADBUILD -->|no path returned| ROADSKIP[Road processing empty; no road file]
+
+    ORCH --> DEM{Elevation available?}
+    ELEVATION --> DEM
+    NOELEV --> DEM
+    DEM -->|yes| RASTER[Generate heightmap and groundmap]
+    DEM -->|no| ELEVAPI[Elevation service/cache path]
+    ELEVAPI -->|success| RASTER
+    ELEVAPI -->|failure| FLAT["Flat fallback raster; elevation_status=failed"]
+    RASTER --> TERRAIN[Write OTC, manifest TOBJ and TERRN2]
+    FLAT --> TERRAIN
+
+    LWARN -. warning alone does not set global partial .-> GLOBAL
+    DISABLED --> GLOBAL
+    NOTREQ --> GLOBAL
+    MISSING --> GLOBAL
+    ROADFAIL --> GLOBAL
+    EMPTY --> GLOBAL
+    EXPORTED --> GLOBAL
+    ROADSKIP --> GLOBAL
+    ORCH --> BUILDINGS_GATE{export.include_buildings?}
+    BUILDINGS_GATE -->|false| BUILDINGS_OFF[building_export_status=disabled]
+    BUILDINGS_GATE -->|true| BUILDINGS[building_export_status=not_implemented]
+    BUILDINGS_OFF --> GLOBAL
+    BUILDINGS --> GLOBAL
+    GLOBAL{Global export decision}
+    TERRAIN --> GLOBAL
+    GLOBAL -->|complete: no partial reason| COMPLETE[export_outcome=complete]
+    GLOBAL -->|partial: roads not_requested or failed, buildings requested, or elevation failed| PARTIAL[export_outcome=partial]
+    ORCH -. uncaught export exception .-> CLIERROR["CLI catches exception and prints Error during export; no export_outcome is returned"]
+    COMPLETE --> REPORT[CLI prints completion/result details]
+    PARTIAL --> REPORT
+    LOAD --> PLACEHOLDER[Placeholder message]
+    RETURN --> MENU
+    CLEAR --> MENU

@@ -73,10 +73,7 @@ def test_osmnx_adapter_converts_geodataframe_to_domain() -> None:
 
 
 def test_pipeline_adapter_builds_mapdata_from_bounds_and_roads() -> None:
-    bounds = gpd.GeoDataFrame(
-        geometry=[LineString([(0.0, 0.0), (2.0, 2.0)])],
-        crs="EPSG:4326",
-    )
+    bounds = BoundingBox(0.0, 0.0, 2.0, 2.0, crs="EPSG:4326", is_projected=False)
     roads_gdf = gpd.GeoDataFrame(
         {"name": ["Main Street"]},
         geometry=[LineString([(0.0, 0.0), (1.0, 1.0)])],

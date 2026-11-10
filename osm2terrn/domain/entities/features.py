@@ -9,7 +9,7 @@ from osm2terrn.domain.value_objects import Point2D, Polygon, Polyline
 
 @dataclass(slots=True)
 class Road(DomainEntity):
-    """A road feature represented in local projected coordinates."""
+    """A road feature whose coordinates use the enclosing MapData CRS."""
 
     geometry: Polyline
     width: float | None = None

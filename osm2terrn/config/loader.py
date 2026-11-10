@@ -253,6 +253,10 @@ class ProjectLoader:
             },
             "providers": {
                 "opentopo_api_key_env_var": config.providers.opentopo_api_key_env_var,
+                "overpass_url_env_var": config.providers.overpass_url_env_var,
+                "overpass_alternate_urls_env_var": config.providers.overpass_alternate_urls_env_var,
+                "overpass_max_attempts_env_var": config.providers.overpass_max_attempts_env_var,
+                "overpass_max_elapsed_seconds_env_var": config.providers.overpass_max_elapsed_seconds_env_var,
                 "overpass_max_query_area_size_env_var": config.providers.overpass_max_query_area_size_env_var,
                 "overpass_requests_timeout_env_var": config.providers.overpass_requests_timeout_env_var,
                 "overpass_rate_limit_env_var": config.providers.overpass_rate_limit_env_var,
@@ -262,6 +266,9 @@ class ProjectLoader:
                 "custom_tags": list(config.osm.custom_tags),
                 "map_geometries": dict(config.osm.map_geometries),
                 "networks": dict(config.osm.networks),
+                "overpass_endpoints": list(config.osm.overpass_endpoints),
+                "overpass_max_attempts": config.osm.overpass_max_attempts,
+                "overpass_max_elapsed_seconds": config.osm.overpass_max_elapsed_seconds,
                 "max_query_area_size": config.osm.max_query_area_size,
                 "requests_timeout": config.osm.requests_timeout,
                 "overpass_rate_limit": config.osm.overpass_rate_limit,
@@ -396,6 +403,30 @@ class ProjectLoader:
                     defaults.providers.opentopo_api_key_env_var,
                 )
             ),
+            overpass_url_env_var=str(
+                providers_data.get(
+                    "overpass_url_env_var",
+                    defaults.providers.overpass_url_env_var,
+                )
+            ),
+            overpass_alternate_urls_env_var=str(
+                providers_data.get(
+                    "overpass_alternate_urls_env_var",
+                    defaults.providers.overpass_alternate_urls_env_var,
+                )
+            ),
+            overpass_max_attempts_env_var=str(
+                providers_data.get(
+                    "overpass_max_attempts_env_var",
+                    defaults.providers.overpass_max_attempts_env_var,
+                )
+            ),
+            overpass_max_elapsed_seconds_env_var=str(
+                providers_data.get(
+                    "overpass_max_elapsed_seconds_env_var",
+                    defaults.providers.overpass_max_elapsed_seconds_env_var,
+                )
+            ),
             overpass_max_query_area_size_env_var=str(
                 providers_data.get(
                     "overpass_max_query_area_size_env_var",
@@ -419,6 +450,44 @@ class ProjectLoader:
             ),
         )
 
+        configured_overpass_endpoints = tuple(
+            osm_data.get("overpass_endpoints", defaults.osm.overpass_endpoints)
+        )
+        configured_primary_endpoint = (
+            configured_overpass_endpoints[0] if configured_overpass_endpoints else ""
+        )
+        primary_overpass_url = os.getenv(
+            providers.overpass_url_env_var,
+            str(configured_primary_endpoint),
+        ).strip()
+        alternate_urls_env = os.getenv(providers.overpass_alternate_urls_env_var)
+        if alternate_urls_env is None:
+            alternate_overpass_urls = configured_overpass_endpoints[1:]
+        else:
+            alternate_overpass_urls = tuple(
+                endpoint.strip()
+                for endpoint in alternate_urls_env.split(",")
+                if endpoint.strip()
+            )
+        overpass_endpoints = (primary_overpass_url, *alternate_overpass_urls)
+        overpass_max_attempts = int(
+            os.getenv(
+                providers.overpass_max_attempts_env_var,
+                osm_data.get(
+                    "overpass_max_attempts",
+                    defaults.osm.overpass_max_attempts,
+                ),
+            )
+        )
+        overpass_max_elapsed_seconds = int(
+            os.getenv(
+                providers.overpass_max_elapsed_seconds_env_var,
+                osm_data.get(
+                    "overpass_max_elapsed_seconds",
+                    defaults.osm.overpass_max_elapsed_seconds,
+                ),
+            )
+        )
         max_query_area_size = int(
             os.getenv(
                 providers.overpass_max_query_area_size_env_var,
@@ -469,6 +538,9 @@ class ProjectLoader:
                 custom_tags=tuple(osm_data.get("custom_tags", defaults.osm.custom_tags)),
                 map_geometries=dict(osm_data.get("map_geometries", defaults.osm.map_geometries)),
                 networks=dict(osm_data.get("networks", defaults.osm.networks)),
+                overpass_endpoints=overpass_endpoints,
+                overpass_max_attempts=overpass_max_attempts,
+                overpass_max_elapsed_seconds=overpass_max_elapsed_seconds,
                 max_query_area_size=max_query_area_size,
                 requests_timeout=requests_timeout,
                 overpass_rate_limit=overpass_rate_limit,

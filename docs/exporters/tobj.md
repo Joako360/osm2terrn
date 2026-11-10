@@ -1,5 +1,11 @@
 # `.tobj` reference
 
+> **Verification note (2026-11-07):** This page includes historical format
+> notes and examples. The `.examples/` diagram formerly linked below is ignored
+> by Git and unavailable in a clean checkout. Confirm serialized syntax and
+> simulator interpretation against current source/tests before relying on these
+> details. No Rigs of Rods validation is claimed.
+
 ## Purpose
 
 Contains terrain object placement and procedural content:
@@ -103,7 +109,9 @@ This removes the previous UTM/local-space offset pipeline and keeps road coordin
 
 ## Coordinate system (top-down view)
 
-The supplied diagram (`.examples/roadbox-terrn/RoR CRS.drawio.svg`) shows the axis and angle convention used by `.tobj` files and by the exporters.
+The local diagram previously referenced here is not tracked and is not
+available in a clean checkout. Current road geometry and serialization code
+must be treated as the source of truth for coordinate conventions.
 
 - Axes (top-down, Y up):
   - `+X` = East
@@ -118,8 +126,8 @@ The supplied diagram (`.examples/roadbox-terrn/RoR CRS.drawio.svg`) shows the ax
   - `-90°` (or `270°`) points to `+Z` (South)
 
 Notes:
-- The `roadbox.tobj` example and the diagram use `-Z` as North; this convention is implemented in `osm2terrn/processing/road_geometry.py` (yaw computed with `atan2(dz, dx)`) and in the exporters.
-- When generating `rotY` from a compass/geodetic bearing, normalize the source bearing to the RoR convention: compute the geographic bearing and convert it to RoR yaw before exporting.
+- The previous draft attributed this convention to `osm2terrn/processing/road_geometry.py`, which is absent from the current tree. Current road geometry is under `osm2terrn/processing/roads/`; verify its coordinate convention and tests before applying these examples.
+- The angle examples above are retained as historical guidance, not a confirmed current serializer contract.
 
 ## Optional global directives
 

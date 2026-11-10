@@ -1,0 +1,1332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:osm2terrn:technical-book-inventory:v3",
+  "title": "OSM2Terrn technical-book inventory record",
+  "description": "Per-record schemas for file, symbol, relation, control-flow, documentation-reference, claim, and auxiliary JSONL inventories. Cross-record integrity is validated separately.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/fileRecord"
+    },
+    {
+      "$ref": "#/$defs/symbolRecord"
+    },
+    {
+      "$ref": "#/$defs/relationRecord"
+    },
+    {
+      "$ref": "#/$defs/controlFlowRecord"
+    },
+    {
+      "$ref": "#/$defs/documentationReferenceRecord"
+    },
+    {
+      "$ref": "#/$defs/claimRecord"
+    },
+    {
+      "$ref": "#/$defs/unresolvedRecord"
+    },
+    {
+      "$ref": "#/$defs/entryPointRecord"
+    },
+    {
+      "$ref": "#/$defs/externalDependencyRecord"
+    }
+  ],
+  "$defs": {
+    "repositoryPath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.?(?:/|$))[^\\\\]+$",
+      "description": "Repository-relative path using forward slashes; absolute paths, backslashes, and dot segments are forbidden."
+    },
+    "nonBlankString": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "description": "String containing at least one non-whitespace character."
+    },
+    "utcTimestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$",
+      "description": "UTC timestamp in YYYY-MM-DDTHH:MM:SSZ form; calendar validity is checked by the aggregate validator."
+    },
+    "repositoryRevision": {
+      "type": "string",
+      "pattern": "^(?:[0-9a-f]{40}|[0-9a-f]{64})$",
+      "description": "Full lowercase Git commit object ID (SHA-1 or SHA-256). If unavailable, do not mark execution verified."
+    },
+    "reviewId": {
+      "type": "string",
+      "pattern": "^review:[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Stable review ID matching the review template's review:<slug> form."
+    },
+    "analysisStatus": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "static_analyzed",
+        "human_reviewed",
+        "blocked"
+      ]
+    },
+    "evidenceType": {
+      "type": "string",
+      "enum": [
+        "source",
+        "test_source",
+        "configuration",
+        "documentation",
+        "static_analysis",
+        "test_execution",
+        "runtime_observation",
+        "review"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "evidence_id",
+              "path",
+              "type",
+              "description"
+            ],
+            "properties": {
+              "evidence_id": {
+                "type": "string",
+                "pattern": "^ev:.+$"
+              },
+              "path": {
+                "$ref": "#/$defs/repositoryPath"
+              },
+              "symbol_id": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^py:.+::.+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "start_line": {
+                "oneOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]
+              },
+              "end_line": {
+                "oneOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]
+              },
+              "type": {
+                "$ref": "#/$defs/evidenceType"
+              },
+              "description": {
+                "$ref": "#/$defs/nonBlankString"
+              },
+              "command": {
+                "$ref": "#/$defs/nonBlankString"
+              },
+              "test_id": {
+                "$ref": "#/$defs/nonBlankString"
+              },
+              "environment": {
+                "$ref": "#/$defs/nonBlankString"
+              },
+              "result": {
+                "type": "string",
+                "enum": [
+                  "passed",
+                  "failed",
+                  "inconclusive"
+                ]
+              },
+              "repository_revision": {
+                "$ref": "#/$defs/repositoryRevision"
+              },
+              "observed_at": {
+                "$ref": "#/$defs/utcTimestamp"
+              },
+              "review_id": {
+                "$ref": "#/$defs/reviewId"
+              },
+              "reviewer": {
+                "$ref": "#/$defs/nonBlankString"
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "enum": [
+                    "test_execution",
+                    "runtime_observation"
+                  ]
+                }
+              },
+              "required": [
+                "type"
+              ]
+            },
+            "then": {
+              "required": [
+                "command",
+                "environment",
+                "result",
+                "repository_revision",
+                "observed_at"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "test_execution"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            },
+            "then": {
+              "required": [
+                "test_id"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "review"
+                }
+              },
+              "required": ["type"]
+            },
+            "then": {
+              "required": ["review_id", "reviewer", "observed_at", "repository_revision", "result"]
+            }
+          }
+        ]
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nonBlankString"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nonBlankString"
+      }
+    },
+    "commonRecordFields": {
+      "type": "object",
+      "required": [
+        "evidence",
+        "uncertainties",
+        "limitations"
+      ],
+      "properties": {
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "uncertainties": {
+          "$ref": "#/$defs/uncertainties"
+        },
+        "limitations": {
+          "$ref": "#/$defs/limitations"
+        }
+      }
+    },
+    "fileRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "file_id",
+            "path",
+            "kind",
+            "git_state",
+            "analysis_status",
+            "evidence",
+            "uncertainties",
+            "limitations",
+            "inventory_status",
+            "documentation_status",
+            "execution_status"
+          ],
+          "properties": {
+            "file_id": {
+              "type": "string",
+              "pattern": "^file:.+$"
+            },
+            "path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "python_source",
+                "python_test",
+                "documentation",
+                "configuration",
+                "script",
+                "notebook",
+                "data",
+                "build_metadata",
+                "ci_configuration",
+                "other"
+              ]
+            },
+            "git_state": {
+              "type": "string",
+              "enum": [
+                "tracked",
+                "modified",
+                "untracked",
+                "ignored",
+                "unknown"
+              ]
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "inventory_disposition": {
+              "type": "string",
+              "enum": [
+                "included",
+                "excluded"
+              ],
+              "description": "Whether this path is part of the ordinary source inventory."
+            },
+            "exclusion_reason": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Safe category/reason only; never include sensitive file contents."
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "inventory_disposition": {
+                "const": "excluded"
+              }
+            },
+            "required": [
+              "inventory_disposition"
+            ]
+          },
+          "then": {
+            "required": [
+              "exclusion_reason"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "exclusion_reason"
+              ]
+            }
+          },
+          "properties": {
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            }
+          },
+          "required": [
+            "inventory_status",
+            "analysis_status",
+            "documentation_status",
+            "execution_status"
+          ]
+        }
+      ]
+    },
+    "symbolRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "symbol_id",
+            "file_id",
+            "path",
+            "qualified_name",
+            "kind",
+            "owner_symbol_id",
+            "analysis_status",
+            "evidence",
+            "uncertainties",
+            "limitations",
+            "inventory_status",
+            "documentation_status",
+            "execution_status"
+          ],
+          "properties": {
+            "symbol_id": {
+              "type": "string",
+              "pattern": "^py:.+::.+$"
+            },
+            "file_id": {
+              "type": "string",
+              "pattern": "^file:.+$"
+            },
+            "path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "qualified_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "module",
+                "class",
+                "function",
+                "method",
+                "property",
+                "variable",
+                "constant",
+                "enum",
+                "unknown"
+              ]
+            },
+            "owner_symbol_id": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^py:.+::.+$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "start_line": {
+              "oneOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]
+            },
+            "end_line": {
+              "oneOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]
+            },
+            "signature": {
+              "type": "string"
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            }
+          }
+        }
+      ]
+    },
+    "relationRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "relation_id",
+            "source_symbol_id",
+            "target_symbol_id",
+            "kind",
+            "resolution",
+            "analysis_status",
+            "evidence",
+            "uncertainties",
+            "limitations",
+            "inventory_status",
+            "documentation_status",
+            "execution_status"
+          ],
+          "properties": {
+            "relation_id": {
+              "type": "string",
+              "pattern": "^rel:.+$"
+            },
+            "source_symbol_id": {
+              "type": "string",
+              "pattern": "^py:.+::.+$"
+            },
+            "target_symbol_id": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^py:.+::.+$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "calls",
+                "imports",
+                "inherits",
+                "contains",
+                "references_test",
+                "composes",
+                "aggregates",
+                "branches_to",
+                "raises",
+                "handles",
+                "depends_on"
+              ]
+            },
+            "resolution": {
+              "type": "string",
+              "enum": [
+                "static",
+                "inferred",
+                "runtime_observed",
+                "unresolved"
+              ]
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            },
+            "target_dependency_id": {
+              "type": "string",
+              "pattern": "^dep:.+$"
+            },
+            "condition": {
+              "type": "string",
+              "minLength": 1
+            },
+            "exception_type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "handling": {
+              "type": "string",
+              "enum": [
+                "raised",
+                "caught"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "oneOf": [
+                {
+                  "required": [
+                    "target_symbol_id"
+                  ],
+                  "properties": {
+                    "target_symbol_id": {
+                      "type": "string"
+                    }
+                  },
+                  "not": {
+                    "required": [
+                      "target_dependency_id"
+                    ]
+                  }
+                },
+                {
+                  "required": [
+                    "target_dependency_id"
+                  ],
+                  "properties": {
+                    "target_symbol_id": {
+                      "type": "null"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "documentationReferenceRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reference_id",
+            "documentation_path",
+            "status",
+            "analysis_status",
+            "evidence",
+            "uncertainties",
+            "limitations",
+            "inventory_status",
+            "documentation_status",
+            "execution_status",
+            "original_reference"
+          ],
+          "properties": {
+            "reference_id": {
+              "type": "string",
+              "pattern": "^xref:.+$"
+            },
+            "documentation_path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "documentation_symbol": {
+              "$ref": "#/$defs/nonBlankString"
+            },
+            "target_path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "target_symbol_id": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^py:.+::.+$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "resolved",
+                "expected_missing",
+                "unknown",
+                "unverifiable"
+              ]
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            },
+            "original_reference": {
+              "$ref": "#/$defs/nonBlankString"
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "resolved"
+                  }
+                },
+                "required": [
+                  "status"
+                ]
+              },
+              "then": {
+                "required": [
+                  "target_path"
+                ]
+              },
+              "else": {
+                "not": {
+                  "required": [
+                    "target_path"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "unresolvedRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "unresolved_id",
+            "category",
+            "reason_code",
+            "source_symbol_id",
+            "path",
+            "expression",
+            "reason",
+            "resolution",
+            "analysis_status",
+            "evidence",
+            "uncertainties",
+            "limitations",
+            "inventory_status",
+            "documentation_status",
+            "execution_status"
+          ],
+          "properties": {
+            "unresolved_id": {
+              "type": "string",
+              "pattern": "^unres:.+$"
+            },
+            "category": {
+              "type": "string",
+              "enum": [
+                "call",
+                "import",
+                "inheritance",
+                "analysis",
+                "dynamic"
+              ]
+            },
+            "reason_code": {
+              "type": "string",
+              "enum": [
+                "callee_is_variable",
+                "receiver_is_variable",
+                "instance_attribute_receiver",
+                "receiver_is_expression",
+                "callee_is_expression",
+                "name_not_found",
+                "attribute_not_found_on_class",
+                "imported_name_not_found",
+                "module_attribute_not_found",
+                "module_called",
+                "receiver_is_function_object",
+                "super_target_unresolved",
+                "nested_attribute",
+                "own_import_not_found",
+                "relative_import_beyond_top",
+                "namespace_package_import",
+                "external_base_class",
+                "unresolved_base_class",
+                "dynamic_construct",
+                "parse_failure"
+              ]
+            },
+            "source_symbol_id": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^py:.+::.+$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "expression": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "resolution": {
+              "const": "unresolved"
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            }
+          }
+        }
+      ]
+    },
+    "entryPointRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "entry_id",
+            "kind",
+            "path",
+            "start_line",
+            "target_symbol_id",
+            "target_expression",
+            "invocation",
+            "static_call_targets",
+            "support_status",
+            "analysis_status",
+            "evidence",
+            "uncertainties",
+            "limitations",
+            "inventory_status",
+            "documentation_status",
+            "execution_status"
+          ],
+          "properties": {
+            "entry_id": {
+              "type": "string",
+              "pattern": "^entry:.+$"
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "console_script",
+                "module_main",
+                "main_guard",
+                "pytest_module",
+                "pytest_conftest",
+                "batch_launcher",
+                "notebook"
+              ]
+            },
+            "path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "start_line": {
+              "oneOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "target_symbol_id": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^py:.+::.+$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "target_expression": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "invocation": {
+              "type": "string",
+              "minLength": 1
+            },
+            "static_call_targets": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^py:.+::.+$"
+              }
+            },
+            "support_status": {
+              "type": "string",
+              "enum": [
+                "unconfirmed",
+                "supported",
+                "unsupported"
+              ]
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            }
+          }
+        }
+      ]
+    },
+    "externalDependencyRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dep_id",
+            "top_level_module",
+            "classification",
+            "declared_distribution",
+            "declared_in",
+            "importing_paths",
+            "import_site_count",
+            "external_call_site_count",
+            "analysis_status",
+            "evidence",
+            "uncertainties",
+            "limitations",
+            "inventory_status",
+            "documentation_status",
+            "execution_status",
+            "importing_module_ids"
+          ],
+          "properties": {
+            "dep_id": {
+              "type": "string",
+              "pattern": "^dep:.+$"
+            },
+            "top_level_module": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "classification": {
+              "type": "string",
+              "enum": [
+                "stdlib",
+                "third_party_declared",
+                "undeclared_or_unresolved",
+                "declared_not_observed"
+              ]
+            },
+            "declared_distribution": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "declared_in": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "importing_paths": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/repositoryPath"
+              }
+            },
+            "import_site_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "external_call_site_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            },
+            "importing_module_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^py:.+::.+$"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "inventoryStatus": {
+      "type": "string",
+      "enum": [
+        "not_inventoried",
+        "inventoried",
+        "excluded"
+      ]
+    },
+    "documentationStatus": {
+      "type": "string",
+      "enum": [
+        "not_documented",
+        "draft",
+        "reviewed",
+        "approved"
+      ]
+    },
+    "executionStatus": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "passed",
+        "failed",
+        "not_applicable"
+      ]
+    },
+    "claimRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "claim_id",
+            "chapter_path",
+            "statement",
+            "evidence_ids",
+            "inventory_status",
+            "analysis_status",
+            "documentation_status",
+            "execution_status",
+            "evidence",
+            "uncertainties",
+            "limitations"
+          ],
+          "properties": {
+            "claim_id": {
+              "type": "string",
+              "pattern": "^claim:.+$"
+            },
+            "chapter_path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "statement": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence_ids": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "pattern": "^ev:.+$"
+              }
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            }
+          }
+        }
+      ]
+    },
+    "controlFlowRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRecordFields"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "control_id",
+            "source_symbol_id",
+            "path",
+            "start_line",
+            "end_line",
+            "kind",
+            "resolution",
+            "inventory_status",
+            "analysis_status",
+            "documentation_status",
+            "execution_status",
+            "evidence",
+            "uncertainties",
+            "limitations"
+          ],
+          "properties": {
+            "control_id": {
+              "type": "string",
+              "pattern": "^flow:.+$"
+            },
+            "source_symbol_id": {
+              "type": "string",
+              "pattern": "^py:.+::.+$"
+            },
+            "path": {
+              "$ref": "#/$defs/repositoryPath"
+            },
+            "start_line": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "end_line": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "conditional_branch",
+                "match_case",
+                "exception_raised",
+                "exception_handled"
+              ]
+            },
+            "condition": {
+              "type": "string"
+            },
+            "exception_type": {
+              "type": "string"
+            },
+            "handler_symbol_id": {
+              "type": "string",
+              "pattern": "^py:.+::.+$"
+            },
+            "resolution": {
+              "type": "string",
+              "enum": [
+                "static",
+                "inferred"
+              ]
+            },
+            "inventory_status": {
+              "$ref": "#/$defs/inventoryStatus"
+            },
+            "analysis_status": {
+              "$ref": "#/$defs/analysisStatus"
+            },
+            "documentation_status": {
+              "$ref": "#/$defs/documentationStatus"
+            },
+            "execution_status": {
+              "$ref": "#/$defs/executionStatus"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidence"
+            },
+            "uncertainties": {
+              "$ref": "#/$defs/uncertainties"
+            },
+            "limitations": {
+              "$ref": "#/$defs/limitations"
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "enum": [
+                      "conditional_branch",
+                      "match_case"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind"
+                ]
+              },
+              "then": {
+                "required": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "enum": [
+                      "exception_raised",
+                      "exception_handled"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind"
+                ]
+              },
+              "then": {
+                "required": [
+                  "exception_type"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "exception_handled"
+                  }
+                },
+                "required": [
+                  "kind"
+                ]
+              },
+              "then": {
+                "required": [
+                  "handler_symbol_id"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

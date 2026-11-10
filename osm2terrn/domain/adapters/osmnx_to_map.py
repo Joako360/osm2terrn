@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Any
 
 import geopandas as gpd
+from pyproj import CRS
 
 from osm2terrn.cache.metadata import CacheMetadata
 from osm2terrn.cache.serializers import PickleSerializer
@@ -14,7 +15,7 @@ from osm2terrn.domain.value_objects import BoundingBox
 
 
 _MAPDATA_CACHE_NAMESPACE = "domain/adapters/mapdata"
-_MAPDATA_ALGORITHM_VERSION = "1"
+_MAPDATA_ALGORITHM_VERSION = "2"
 
 
 def geodataframe_to_mapdata(gdf: object) -> MapData:
@@ -27,7 +28,7 @@ def geodataframe_to_mapdata(gdf: object) -> MapData:
         },
         provider="domain_adapter",
         algorithm_version=_MAPDATA_ALGORITHM_VERSION,
-        format_version="1",
+        format_version="2",
         artifact_type="mapdata",
     )
     cached = cache_manager.get(namespace=_MAPDATA_CACHE_NAMESPACE, key=cache_key, serializer=serializer)
@@ -44,7 +45,7 @@ def geodataframe_to_mapdata(gdf: object) -> MapData:
             artifact_type="mapdata",
             provider="domain_adapter",
             algorithm_version=_MAPDATA_ALGORITHM_VERSION,
-            format_version="1",
+            format_version="2",
             extra={"road_count": int(len(map_data.roads))},
         ),
     )
@@ -53,7 +54,7 @@ def geodataframe_to_mapdata(gdf: object) -> MapData:
 
 def build_mapdata_from_pipeline_context(
     *,
-    bounds: gpd.GeoDataFrame | None = None,
+    bounds: BoundingBox | None = None,
     place: str | None = None,
     roads_gdf: gpd.GeoDataFrame | None = None,
     metadata: dict[str, Any] | None = None,
@@ -61,7 +62,8 @@ def build_mapdata_from_pipeline_context(
     """Build a domain MapData aggregate from the current pipeline inputs.
 
     This keeps the orchestration layer free from direct GIS dependencies while
-    allowing the rest of the application to work with domain objects.
+    allowing the rest of the application to work with domain objects. When
+    ``roads_gdf`` is supplied, its coordinates must already be EPSG:4326.
     """
 
     cache_manager = get_cache_manager()
@@ -74,27 +76,28 @@ def build_mapdata_from_pipeline_context(
     }
     if bounds is not None:
         cache_inputs["bounds"] = {
-            "bounds": [float(v) for v in bounds.total_bounds],
-            "crs": str(bounds.crs) if bounds.crs is not None else None,
+            "bounds": [float(v) for v in bounds.to_tuple()],
+            "crs": bounds.crs,
+            "is_projected": bool(bounds.is_projected),
         }
 
     cache_key = cache_manager.build_key(
         cache_inputs,
         provider="domain_adapter",
         algorithm_version=_MAPDATA_ALGORITHM_VERSION,
-        format_version="1",
+        format_version="2",
         artifact_type="mapdata",
     )
     cached = cache_manager.get(namespace=_MAPDATA_CACHE_NAMESPACE, key=cache_key, serializer=serializer)
     if cached is not None:
         return cached[0]
 
-    if bounds is not None:
-        min_x, min_y, max_x, max_y = bounds.total_bounds
-        bounding_box = BoundingBox(float(min_x), float(min_y), float(max_x), float(max_y))
-    else:
-        bounding_box = None
+    bounding_box = bounds
 
+    if roads_gdf is not None and (
+        roads_gdf.crs is None or CRS.from_user_input(roads_gdf.crs) != CRS.from_epsg(4326)
+    ):
+        raise ValueError("roads_gdf must be transformed to EPSG:4326 before building MapData")
     roads = geodataframe_to_roads(roads_gdf) if roads_gdf is not None else []
     map_data = MapData(
         roads=roads,
@@ -115,7 +118,7 @@ def build_mapdata_from_pipeline_context(
             artifact_type="mapdata",
             provider="domain_adapter",
             algorithm_version=_MAPDATA_ALGORITHM_VERSION,
-            format_version="1",
+            format_version="2",
             extra={"road_count": int(len(map_data.roads))},
         ),
     )

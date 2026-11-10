@@ -2,6 +2,10 @@
 
 This folder contains shorter, focused documentation pages for contributors.
 
+For the source-based execution map, inventory status and known limitations, see
+[`book/`](book/README.md). Some topical pages retain historical proposals and
+identify them as such; current implementation locations take precedence.
+
 ## Getting started
 
 1. [Onboarding (English)](contributor-onboarding-en.md)

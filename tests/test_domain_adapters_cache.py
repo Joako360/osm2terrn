@@ -9,6 +9,7 @@ from osm2terrn.cache.file_cache import FileCacheBackend
 from osm2terrn.cache.manager import CacheManager
 from osm2terrn.domain.adapters import osmnx_to_map
 from osm2terrn.domain.adapters import osmnx_to_roads
+from osm2terrn.domain.value_objects import BoundingBox
 
 
 def _build_roads_gdf() -> gpd.GeoDataFrame:
@@ -56,11 +57,13 @@ def test_build_mapdata_from_pipeline_context_uses_cache(monkeypatch, tmp_path: P
 
     roads_gdf = _build_roads_gdf()
     first = osmnx_to_map.build_mapdata_from_pipeline_context(
+        bounds=BoundingBox(0.0, 0.0, 1.0, 1.0, crs="EPSG:4326", is_projected=False),
         place="X",
         roads_gdf=roads_gdf,
         metadata={"origin_lon": 1.0},
     )
     second = osmnx_to_map.build_mapdata_from_pipeline_context(
+        bounds=BoundingBox(0.0, 0.0, 1.0, 1.0, crs="EPSG:4326", is_projected=False),
         place="X",
         roads_gdf=roads_gdf,
         metadata={"origin_lon": 1.0},

@@ -2,19 +2,38 @@ import math
 from typing import Dict, List, Optional, Tuple
 
 import geopandas as gpd
+from pyproj import CRS, Transformer
+
+from osm2terrn.domain.value_objects import BoundingBox
 
 
 def _resolve_target_bounds_local(
     merged_dense: list,
     src_crs,
     local_crs,
-    target_bounds: Optional[gpd.GeoDataFrame],
+    target_bounds: Optional[BoundingBox],
 ) -> tuple[float, float, float, float]:
     if target_bounds is not None:
-        target_gdf = target_bounds
-        if str(target_gdf.crs) != str(local_crs):
-            target_gdf = target_gdf.to_crs(local_crs)
-        minx, miny, maxx, maxy = target_gdf.total_bounds
+        source_crs = target_bounds.crs
+        if source_crs is None:
+            raise ValueError("Target bounds CRS is required for road export")
+        source_crs_obj = CRS.from_user_input(source_crs)
+        local_crs_obj = CRS.from_user_input(local_crs)
+        if source_crs_obj == local_crs_obj:
+            minx, miny, maxx, maxy = target_bounds.to_tuple()
+            return float(minx), float(miny), float(maxx), float(maxy)
+
+        transformer = Transformer.from_crs(source_crs_obj, local_crs_obj, always_xy=True)
+        corners = (
+            (target_bounds.min_x, target_bounds.min_y),
+            (target_bounds.min_x, target_bounds.max_y),
+            (target_bounds.max_x, target_bounds.min_y),
+            (target_bounds.max_x, target_bounds.max_y),
+        )
+        transformed = [transformer.transform(x, y) for x, y in corners]
+        xs = [float(point[0]) for point in transformed]
+        ys = [float(point[1]) for point in transformed]
+        minx, miny, maxx, maxy = min(xs), min(ys), max(xs), max(ys)
         return float(minx), float(miny), float(maxx), float(maxy)
 
     geoms_gdf = gpd.GeoDataFrame(

@@ -1,6 +1,6 @@
 # OSM2terrn - Realistic Map Generator for Rigs of Rods
 
-OSM2terrn is an open-source Python project that generates realistic terrains for the driving simulator **Rigs of Rods** (RoR), using real-world data from **OpenStreetMap (OSM)** and **OpenTopoData**.
+OSM2terrn is an open-source Python project for generating terrain assets for the **Rigs of Rods** (RoR) simulator from geospatial data. The current package declares OpenStreetMap/OSMnx, OpenTopography and Overture Maps related integrations; exact active paths and verification status are documented in [the architecture guide](docs/architecture/architecture-index.md) and [the execution map](docs/book/execution/README.md).
 
 The project processes geographic data (roads, elevation, terrain) and outputs Rigs of Rods-compatible files:
 - **heightmaps (.png)** - Terrain elevation data
@@ -48,7 +48,7 @@ osm2terrn/
 ## Installation
 
 ### Prerequisites
-- Python 3.10 or higher
+- Python 3.12 or higher (see `pyproject.toml`)
 - pip package manager
 - GDAL/Rasterio system dependencies (usually installed via pip)
 
@@ -71,8 +71,11 @@ source .venv/bin/activate  # On Windows: .venv\\Scripts\\activate
 3. **Install dependencies:**
 
 ```bash
-pip install -r requirements.txt
+pip install .
 ```
+
+For development dependencies, install the `dev` extra declared in
+`pyproject.toml` with `pip install -e ".[dev]"`.
 
 ---
 
@@ -81,8 +84,11 @@ pip install -r requirements.txt
 ### 1. Run the CLI
 
 ```bash
-python main.py
+python -m osm2terrn
 ```
+
+The package also declares the `osm2terrn` console script. These are declared
+launch routes; installation and execution are not implied.
 
 ### 2. Interactive Menu
 
@@ -102,9 +108,13 @@ The CLI provides an interactive menu:
 ### 3. Workflow
 
 **Step 1: Download**
-- Select a city (search by name) or enter custom bounding box
-- System downloads OSM data (roads, terrain features)
-- Elevation data fetched from OpenTopography API
+- The menu offers place search and manual bounds. In the current source route,
+  the manual-bounds result has an empty place label and is rejected by the
+  download callback; do not assume that route completes.
+- For selections accepted by the callback, OSM acquisition uses configured
+  layers; individual layers may be empty or fail independently.
+- Elevation acquisition through the OpenTopography service path (provider
+  success depends on configuration and network availability)
 
 **Step 2: Process**
 - Roads are merged and optimized
@@ -115,7 +125,7 @@ The CLI provides an interactive menu:
 - `.terrn2` - Terrain entry point
 - `.otc` - Terrain geometry configuration
 - `-page-0-0.otc` - Paging configuration
-- `.tobj` - Procedural roads and objects
+- `.tobj` - Terrain objects and, when enabled and available, procedural roads
 - `*heightmap.png` - Elevation raster
 - `*groundmap.png` - Terrain rendering (Simulated Satellite Image)
 
@@ -314,18 +324,14 @@ If you are new and want to contribute, read in this order:
 
 ## Project Status
 
-### ✅ Completed
+### Implementation areas (not equivalent to end-to-end verification)
 
-- [x] OSM data download and parsing
-- [x] Elevation data fetching (OpenTopography)
-- [x] Heightmap generation (PNG format)
-- [x] Ground texture splatting
-- [x] Procedural road network export (.tobj)
-- [x] Terrain configuration (.terrn2)
-- [x] OTC geometry export (.otc pages)
-- [x] BBox-centric coordinate handling
-- [x] Modular exporter architecture
-- [x] Unit tests for core utilities
+- Source modules for acquisition, terrain processing and export are present.
+  Presence and focused synthetic tests do not establish end-to-end provider or
+  simulator behavior.
+- Dated bounded runs and their limitations are recorded in the [first](docs/book/validation/first_geographic_validation.md)
+  and [second](docs/book/validation/second_geographic_validation.md) geographic
+  validation reports.
 
 ### 🚧 In Progress
 
@@ -342,21 +348,22 @@ If you are new and want to contribute, read in this order:
 - [ ] Visual preview tool
 - [ ] RoR vehicle spawnpoints
 
-See [ROADMAP.md](ROADMAP.md) for detailed timeline.
+See [the documentation index](docs/README.md) for maintained guides and
+current verification status.
 
 ---
 
 ## Architecture & Design
 
-### Core Components
+### Source organization (observed package layout)
 
-**BBox (Bounding Box) ⭐**
-- Centralized bounds handling with automatic CRS detection
-- Supports multiple input formats (dict, tuple, GeoDataFrame, shapely)
-- Ensures coordinate consistency across the project
-- Used in all geometry operations
+The application source is organized under `osm2terrn/` into app, CLI,
+configuration, data, domain, processing, and utility packages. This describes
+current paths, not full realization of the aspirational ADRs. See the
+[source-based execution map](docs/book/execution/README.md) for the route and
+open questions.
 
-**Data Pipeline**
+Current high-level route (static call path; not a runtime guarantee):
 ```
 OSM (via OSMnx) → Geometry Processing → Road Network → Export (TOBJ)
      ↓
@@ -365,12 +372,8 @@ Elevation API → Heightmap Generation → Texture Splatting → Export (PNG)
 Terrain Config (TERRN2/OTC)
 ```
 
-### Exporter Modules
-- `terrn2_exporter.py` - Creates .terrn2 entry point
-- `otc_exporter.py` - Creates .otc geometry configuration
-- `tobj_exporter.py` - Exports objects and procedural roads
-- `heightmap_handler.py` - Manages raster generation
-- `road_network_formatter.py` - Orchestrates road pipeline
+Processor and exporter locations are listed in
+[the architecture module map](docs/architecture/architecture-modules.md).
 
 ### Design Principles
 
@@ -387,12 +390,12 @@ Terrain Config (TERRN2/OTC)
 ### Run Tests
 
 ```bash
-python tests/run_bbox_tests.py
+python -m pytest
 ```
 
 ### Code Standards
 
-- **Python**: 3.10+
+- **Python**: 3.12+
 - **Style**: PEP8
 - **Docstrings**: PEP257
 - **Type Hints**: Recommended
@@ -415,7 +418,7 @@ log_info(logger, "Your message here")
 This is a community-driven project. Contributions are welcome!
 
 1. **Read** [CONTRIBUTING.md](CONTRIBUTING.md)
-2. **Review** [ROADMAP.md](ROADMAP.md) for priorities
+2. **Review** the maintained guides in [docs/](docs/README.md) and confirm priorities with maintainers
 3. **Check** `.github/copilot-instructions.md` for standards
 4. **Create** a fork and submit a pull request
 
@@ -443,7 +446,7 @@ See [LICENCE.txt](LICENCE.txt) for full terms.
 
 ## Support
 
-- 📖 **Documentation**: See [ROADMAP.md](ROADMAP.md) and [.docs/](.docs/)
+- 📖 **Documentation**: See [the documentation index](docs/README.md)
 - 🐛 **Bug Reports**: [Issues](https://github.com/Joako360/osm2terrn/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/Joako360/osm2terrn/discussions)
 - 📧 **Contact**: Via GitHub issues

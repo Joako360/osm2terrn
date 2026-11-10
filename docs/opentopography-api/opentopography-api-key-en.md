@@ -37,34 +37,28 @@ OPENTOPO_ELEVATION_API_KEY=replace_with_your_opentopography_key
 
 ## 4) How the key is loaded inside the project
 
-### Step A: automatic `.env` loading
+### Current source path (static inspection)
 
-At startup, `osm2terrn/main.py` calls `load_dotenv()`, so variables from `.env` are loaded into the process environment.
+`osm2terrn/app/main.py` calls `load_dotenv()`. The key environment-variable
+name is configurable as `providers.opentopo_api_key_env_var` in
+`osm2terrn/config/models.py`; the elevation service reads that configured name
+from `os.environ` in `osm2terrn/processing/terrain/elevation_service.py`.
+The service constructs a request with:
 
-### Step B: key retrieval
-
-`osm2terrn/utils/constants.py` defines:
-- `get_opentopo_elevation_api_key()`
-
-This function reads `OPENTOPO_ELEVATION_API_KEY` from environment variables.
-
-### Step C: API request usage
-
-In `osm2terrn/processing/heightmap_handler.py`:
-1. `get_opentopo_elevation_api_key()` is called.
-2. The `requests.get(...)` parameters include:
+1. The `requests.get(...)` parameters include:
    - `demtype`
    - `west/south/east/north`
    - `outputFormat=GTiff`
    - `API_Key=<your_key>`
-3. The elevation GeoTIFF is downloaded and parsed.
+2. A successful response is read as a GeoTIFF by the elevation service. This
+   describes the source path; no live request is asserted by this document.
 
-## 5) Quick setup test
+## 5) Configuration check
 
 1. Create `.env` with your API key.
-2. Run the project (`python main.py`).
-3. Execute Download → Export.
-4. Check elevation logs (you should see masked key usage and successful download).
+2. Confirm the configured variable name against `osm2terrn/config/models.py`.
+3. Do not use a live download as a configuration check unless the task is
+   explicitly scoped for external requests. This page records no request result.
 
 ## 6) Common errors
 

@@ -1,14 +1,21 @@
 # CLI: download flow (`dlcity`)
 
-`dlcity()` performs the download stage:
+`dlcity()` is the interactive download callback. The following is a static
+source description, not a claim that providers or the complete UI route were
+executed.
 
-1. Runs `download_menu()` to collect place + bbox.
-2. Calls `download_data_from_bbox(bbox)`.
-3. Computes origin (`lon`, `lat`) from bbox center (or centroid fallback).
-4. Stores:
-   - `OSM2TERRN_PLACE_NAME`
-   - `OSM2TERRN_ORIGIN_LON`
-   - `OSM2TERRN_ORIGIN_LAT`
-5. Tries to prefetch elevation and stores it in `current_map.elevation_data`.
+1. Runs the download menu. A manually entered bbox currently returns an empty
+   place label; the callback returns early unless both place and bbox are
+   truthy, so that selection does not reach the downloader (`download_menu.py`,
+   `commands.py`).
+2. For an accepted selection, calls `download_data_from_bbox(bbox)` and stores
+   the returned bundle, place and origin in the application session state.
+3. Calls the elevation prefetch path after acquisition. The
+   `pipeline.preload_elevation` option is parsed, but this callback does not
+   consult it in the inspected source.
+4. Layer results distinguish `not_requested`, `empty`, `available` and
+   `failed`; failure does not mean an empty successful result.
 
-If input is missing or download fails, the function returns early.
+Provider responses and application execution have not been established by
+this source map. The session behavior after cancel/invalid selection and
+subsequent export remains an open question.
