@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import pytest
 
-from osm2terrn.config.validator import ConfigurationError
 from osm2terrn.config.loader import ProjectLoader
 
 
@@ -106,41 +105,3 @@ def test_project_loader_detects_circular_includes(tmp_path):
 
     with pytest.raises(ValueError, match="Circular config include"):
         ProjectLoader().load_project_config(config_file=a_file)
-
-
-def test_program_config_loads_overpass_endpoints_and_limits(monkeypatch) -> None:
-    monkeypatch.setenv("OVERPASS_URL", "https://primary.example/api")
-    monkeypatch.setenv(
-        "OVERPASS_ALTERNATE_URLS",
-        "https://alternate-one.example/api, https://alternate-two.example/api",
-    )
-    monkeypatch.setenv("OVERPASS_MAX_ATTEMPTS", "4")
-    monkeypatch.setenv("OVERPASS_MAX_ELAPSED_SECONDS", "90")
-
-    config = ProjectLoader().load_program_config()
-
-    assert config.osm.overpass_endpoints == (
-        "https://primary.example/api",
-        "https://alternate-one.example/api",
-        "https://alternate-two.example/api",
-    )
-    assert config.osm.overpass_max_attempts == 4
-    assert config.osm.overpass_max_elapsed_seconds == 90
-
-
-@pytest.mark.parametrize(
-    "endpoint",
-    [
-        "https://user:password@overpass.example/api",
-        "https://overpass.example/api?key=value",
-        "file:///tmp/overpass",
-    ],
-)
-def test_program_config_rejects_sensitive_or_invalid_overpass_urls(
-    monkeypatch, endpoint: str
-) -> None:
-    monkeypatch.setenv("OVERPASS_URL", endpoint)
-    monkeypatch.delenv("OVERPASS_ALTERNATE_URLS", raising=False)
-
-    with pytest.raises(ConfigurationError, match="HTTP\\(S\\) URLs"):
-        ProjectLoader().load_program_config()

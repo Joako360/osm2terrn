@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from typing import Any, Dict, Optional
 
 import numpy as np
 import scipy.ndimage
@@ -7,7 +7,6 @@ from PIL import Image
 from osm2terrn.cache.metadata import CacheMetadata
 from osm2terrn.cache.serializers import PickleSerializer
 from osm2terrn.config.cache import get_cache_manager
-from osm2terrn.domain.adapters.bounds import require_domain_bounding_box
 from osm2terrn.config.settings import get_program_config
 from osm2terrn.processing.terrain.elevation_service import fetch_elevation_from_api
 from osm2terrn.processing.terrain.terrain_colormap_ops import render_heightmap_rgb
@@ -42,13 +41,13 @@ def _build_flat_elevation(output_size: tuple[int, int]) -> tuple[np.ndarray, flo
 
 
 def _prepare_elevation_data(
-    bounds: BoundingBox,
+    bounds: Any,
     elevation_data: Optional[dict],
     output_size: tuple[int, int],
-) -> tuple[np.ndarray, float, float, str]:
+) -> tuple[np.ndarray, float, float]:
     """Load or build elevation values, then normalize them for image generation."""
     try:
-        bbox_obj = require_domain_bounding_box(bounds)
+        bbox_obj = BoundingBox(bounds)
     except Exception as exc:
         raise ValueError(f"Invalid bounds: {exc}") from exc
 
@@ -56,14 +55,14 @@ def _prepare_elevation_data(
         elevation = elevation_data["elevation"]
         maxh = elevation_data["maxh"]
         minh = elevation_data["minh"]
-        return _normalize_elevation(elevation, minh, maxh), maxh, minh, "available"
+        return _normalize_elevation(elevation, minh, maxh), maxh, minh
 
     try:
         elevation, maxh, minh = fetch_elevation_from_api(bbox_obj)
-        return _normalize_elevation(elevation, minh, maxh), maxh, minh, "available"
+        return _normalize_elevation(elevation, minh, maxh), maxh, minh
     except Exception as exc:
         log_warning(logger, f"Falling back to flat heightmap due to elevation fetch failure: {exc}")
-        return (*_build_flat_elevation(output_size), "failed")
+        return _build_flat_elevation(output_size)
 
 
 def _save_map_image(
@@ -110,23 +109,22 @@ def plot_elevation_map(
 
 
 def generate_heightmap_n_texture(
-    bounds: BoundingBox,
+    bounds: Any,
     heightmap_path: str = "heightmap.png",
     groundmap_path: str = "groundmap.png",
     cmap_name: str = _PROGRAM_CONFIG.terrain_runtime.default_colormap,
     output_size: tuple[int, int] = _PROGRAM_CONFIG.terrain_runtime.output_size,
     smoothing_sigma: float = _PROGRAM_CONFIG.terrain_runtime.smoothing_sigma,
     elevation_data: Optional[dict] = None,
-) -> Optional[Dict[str, float | str]]:
+) -> Optional[Dict[str, float]]:
     """
     Generate and save both grayscale heightmap and colored ground texture.
 
     Returns elevation statistics, or None if bounds are invalid.
     """
     try:
-        bbox_obj = require_domain_bounding_box(bounds)
-        elevation_normalized, maxh, minh, elevation_status = _prepare_elevation_data(
-            bounds=bbox_obj,
+        elevation_normalized, maxh, minh = _prepare_elevation_data(
+            bounds=bounds,
             elevation_data=elevation_data,
             output_size=output_size,
         )
@@ -138,6 +136,7 @@ def generate_heightmap_n_texture(
     serializer = PickleSerializer[np.ndarray]()
     elevation_smoothed: np.ndarray
     if elevation_data is None:
+        bbox_obj = BoundingBox(bounds)
         cache_key = cache_manager.build_key(
             {
                 "bbox": list(bbox_obj.to_tuple()),
@@ -196,5 +195,4 @@ def generate_heightmap_n_texture(
         "min_elevation": float(minh),
         "max_elevation": float(maxh),
         "elevation_range": float(maxh - minh),
-        "elevation_status": elevation_status,
     }

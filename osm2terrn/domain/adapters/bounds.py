@@ -22,7 +22,7 @@ def to_domain_bounding_box(bounds: Any) -> BoundingBox | None:
                 bbox_obj.crs = crs.strip()
                 bbox_obj.is_projected = determine_is_projected(bbox_obj.crs)
             return bbox_obj
-        except Exception:
+        except (TypeError, ValueError):
             return None
 
     if isinstance(bounds, (tuple, list)) and len(bounds) == 4:
@@ -47,8 +47,8 @@ def to_domain_bounding_box(bounds: Any) -> BoundingBox | None:
             float(getattr(bounds, "max_y")),
         )
         crs = getattr(bounds, "crs", None)
-        if isinstance(crs, str) and crs.strip():
-            bbox_obj.crs = crs.strip()
+        if crs is not None:
+            bbox_obj.crs = str(crs)
             bbox_obj.is_projected = determine_is_projected(bbox_obj.crs)
         return bbox_obj
 
@@ -60,8 +60,8 @@ def to_domain_bounding_box(bounds: Any) -> BoundingBox | None:
             float(getattr(bounds, "north")),
         )
         crs = getattr(bounds, "crs", None)
-        if isinstance(crs, str) and crs.strip():
-            bbox_obj.crs = crs.strip()
+        if crs is not None:
+            bbox_obj.crs = str(crs)
             bbox_obj.is_projected = determine_is_projected(bbox_obj.crs)
         return bbox_obj
 

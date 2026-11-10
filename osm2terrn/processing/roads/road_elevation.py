@@ -1,11 +1,8 @@
 from typing import List, Optional, Tuple
 
 import geopandas as gpd
-import networkx as nx
 import numpy as np
-from pyproj import CRS, Transformer
 
-from osm2terrn.domain.value_objects import BoundingBox
 from osm2terrn.processing.terrain.elevation_service import load_elevation_raster, sample_elevation_at_coords
 from osm2terrn.utils.logger import get_logger, log_info, log_warning
 
@@ -23,9 +20,13 @@ def build_dem_sampler(merged_dense: list, src_crs) -> Optional[tuple]:
             raise ValueError("Cannot determine CRS for road geometries")
         geoms_geo = geoms_gdf.to_crs("EPSG:4326") if str(src_crs) != "EPSG:4326" else geoms_gdf
         west, south, east, north = map(float, geoms_geo.total_bounds)
-        dem_bbox = BoundingBox(west, south, east, north, crs="EPSG:4326", is_projected=False)
         dem_elevation, dem_transform, dem_max, dem_min = load_elevation_raster(
-            dem_bbox
+            {
+                "west": west,
+                "south": south,
+                "east": east,
+                "north": north,
+            }
         )
         log_info(logger, f"Loaded DEM for road heights: min={dem_min:.2f}m, max={dem_max:.2f}m")
         return dem_elevation, dem_transform
@@ -35,32 +36,20 @@ def build_dem_sampler(merged_dense: list, src_crs) -> Optional[tuple]:
 
 
 def build_node_elevation_sampler(
-    place: str | None,
+    place: str,
     network_type: str,
     simplify: bool,
-    graph: nx.MultiDiGraph | nx.MultiGraph | None = None,
 ) -> Optional[tuple]:
-    """Build a WGS84 nearest-node elevation sampler without reloading a supplied graph."""
+    """Build fallback nearest-node elevation sampler tuple `(tree, elev_vals)`."""
     try:
-        if graph is None:
-            if not place:
-                return None
-            from osm2terrn.data.osm_loader import load_graph
+        from data.osm_loader import load_graph
 
-            graph = load_graph(place=place, network_type=network_type, simplify=simplify)
-        graph_crs_value = graph.graph.get("crs")
-        if graph_crs_value is None:
-            raise ValueError("Street graph CRS is required for node elevation sampling")
-        graph_crs = CRS.from_user_input(graph_crs_value)
-        transformer = Transformer.from_crs(graph_crs, "EPSG:4326", always_xy=True)
+        graph = load_graph(place=place, network_type=network_type, simplify=simplify)
         node_coords = []
         node_elev = []
         for _, node_data in graph.nodes(data=True):
             if "x" in node_data and "y" in node_data and ("elevation" in node_data or "elev" in node_data):
-                lon, lat = transformer.transform(
-                    float(node_data["x"]), float(node_data["y"]), errcheck=True
-                )
-                node_coords.append([float(lon), float(lat)])
+                node_coords.append([float(node_data["x"]), float(node_data["y"])])
                 node_elev.append(float(node_data.get("elevation", node_data.get("elev", 0.0))))
         if not node_coords:
             return None
@@ -78,8 +67,7 @@ def build_node_elevation_sampler(
         tree = ckd_tree(np.array(node_coords, dtype=float))
         elev_vals = np.array(node_elev, dtype=float)
         return tree, elev_vals
-    except Exception as exc:
-        log_warning(logger, f"Node elevation fallback unavailable ({type(exc).__name__}).")
+    except Exception:
         return None
 
 

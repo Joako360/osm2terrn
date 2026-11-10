@@ -47,10 +47,6 @@ class ProviderConfig:
     overpass_requests_timeout_env_var: str = "OVERPASS_REQUESTS_TIMEOUT"
     overpass_rate_limit_env_var: str = "OVERPASS_RATE_LIMIT"
     elevation_url_template: str = "https://api.opentopodata.org/v1/test-dataset?locations={locations}"
-    overpass_url_env_var: str = "OVERPASS_URL"
-    overpass_alternate_urls_env_var: str = "OVERPASS_ALTERNATE_URLS"
-    overpass_max_attempts_env_var: str = "OVERPASS_MAX_ATTEMPTS"
-    overpass_max_elapsed_seconds_env_var: str = "OVERPASS_MAX_ELAPSED_SECONDS"
 
 
 @dataclass(slots=True)
@@ -66,9 +62,6 @@ class OsmConfig:
     osmnx_log_console: bool = True
     osmnx_log_file: bool = True
     osmnx_log_level: int = 40
-    overpass_endpoints: tuple[str, ...] = ("https://overpass-api.de/api",)
-    overpass_max_attempts: int = 3
-    overpass_max_elapsed_seconds: int = 120
 
 
 @dataclass(slots=True)

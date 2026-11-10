@@ -13,9 +13,10 @@ Este documento propone el **camino mí­nimo** que deberá seguir una persona nu
    - Convenciones de contribución, ramas, commits y estilo.
    - Criterios de calidad esperados para PRs.
 
-3. **Flujo de la aplicación**
-   - Punto de entrada declarado: `osm2terrn.app.main:main` (`pyproject.toml`) o `python -m osm2terrn`.
-   - Lee el [mapa fuente del CLI](cli-flow/cli-index.md), que separa rutas y límites de verificación.
+3. **`osm2terrn/main.py` (flujo principal)**
+   - Punto de entrada de la aplicación.
+   - Secuencia: descargar -> procesar -> exportar.
+   - Estado de sesión (`MapData`) y menú interactivo.
 
 4. **Documentación de exportadores (`exporters-docs.md`)**
    - Explica el formato de salida de archivos (`.terrn2`, `.otc`, `.tobj`).

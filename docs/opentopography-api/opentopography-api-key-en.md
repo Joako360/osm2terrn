@@ -39,13 +39,20 @@ OPENTOPO_ELEVATION_API_KEY=replace_with_your_opentopography_key
 
 ### Current source path (static inspection)
 
-`osm2terrn/app/main.py` calls `load_dotenv()`. The key environment-variable
-name is configurable as `providers.opentopo_api_key_env_var` in
-`osm2terrn/config/models.py`; the elevation service reads that configured name
-from `os.environ` in `osm2terrn/processing/terrain/elevation_service.py`.
-The service constructs a request with:
+At startup, `osm2terrn/main.py` calls `load_dotenv()`, so variables from `.env` are loaded into the process environment.
 
-1. The `requests.get(...)` parameters include:
+### Step B: key retrieval
+
+`osm2terrn/utils/constants.py` defines:
+- `get_opentopo_elevation_api_key()`
+
+This function reads `OPENTOPO_ELEVATION_API_KEY` from environment variables.
+
+### Step C: API request usage
+
+In `osm2terrn/processing/heightmap_handler.py`:
+1. `get_opentopo_elevation_api_key()` is called.
+2. The `requests.get(...)` parameters include:
    - `demtype`
    - `west/south/east/north`
    - `outputFormat=GTiff`

@@ -4,17 +4,17 @@
 
 OSM2Terrn generates Rigs of Rods terrains from geographic datasets.
 
-Inputs and integrations observed in source include OpenStreetMap through
-OSMnx/Overpass, elevation through the OpenTopography service, and a separate
-Fused/Overture buildings callable. Do not assume each integration is part of
-the default interactive route or that a provider call succeeds.
+Inputs:
+
+* OpenStreetMap
+* OpenTopoData
 
 Outputs:
 
 * terrn2
-* otc
 * tobj
-* PNG terrain rasters
+* odef
+* heightmaps
 
 Language:
 
@@ -28,9 +28,12 @@ Python:
 
 ## Architecture
 
-Current package areas are `osm2terrn/app/`, `cli/`, `config/`, `data/`,
-`domain/`, `processing/`, `output/` and `utils/`. Inspect the current tree
-before adding modules; the architecture guide is a source-linked summary.
+Structure:
+
+* data/ → acquisition and parsing
+* processing/ → transformation and generation
+* utils/ → shared utilities
+* scripts/ → automation and examples
 
 Rules:
 
@@ -60,7 +63,7 @@ Rules:
 ## Dependencies
 
 * Prefer existing project dependencies.
-* Use `pyproject.toml` as the declared dependency source of truth.
+* Use requirements.txt as the dependency source of truth.
 * Suggest new libraries only when clearly justified.
 
 ---

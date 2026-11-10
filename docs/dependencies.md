@@ -1,15 +1,5 @@
 # Dependency Guidelines
 
-## Current declaration source (checked 2026-11-07)
-
-`pyproject.toml` is authoritative for the current package: `[project].dependencies`
-declares runtime dependencies and `[project.optional-dependencies].dev`
-declares development tools. This page's category examples and future-looking
-policy below are guidance, not proof that a package is declared or used.
-`pyogrio` is not in the current runtime dependency list; do not treat it as a
-required dependency without changing and reviewing package metadata. Python
-requires `>=3.12` per `pyproject.toml`.
-
 This document defines the dependency policy for **osm2terrn**.
 
 The goal is to keep the project maintainable, reproducible, and easy to contribute to while providing all capabilities required for high-quality terrain generation.
@@ -320,16 +310,11 @@ Business logic should never depend directly on presentation-specific APIs.
 
 Online services should remain isolated behind dedicated interfaces.
 
-Source-declared integrations include:
+Current supported providers include:
 
-- OpenStreetMap through OSMnx/Overpass acquisition code;
-- OpenTopography through the current elevation service;
-- a separate Fused/Overture callable.
-
-These source integrations are not equivalent to confirmed default workflow,
-provider availability, or successful requests. The configured OpenTopoData URL
-template has no confirmed consumer in the inspected active elevation path; see
-`docs/book/questions/open_questions.md`.
+- OpenStreetMap
+- OpenTopoData
+- Overture Maps
 
 Network implementations should:
 

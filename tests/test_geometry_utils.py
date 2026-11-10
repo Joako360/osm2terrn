@@ -2,18 +2,21 @@ import math
 
 import geopandas as gpd
 import pytest
+from pyproj import Transformer
 from shapely.geometry import box
 
 from osm2terrn.utils.geometry.bounds import (
     _next_power_of_two,
     bbox_size_meters,
     compute_world_params,
-    make_square_bounds_centered,
 )
+from osm2terrn.utils.geometry import bounds as geometry_bounds
 from osm2terrn.utils.geometry.crs import (
     utm_crs_from_lonlat,
 )
 from osm2terrn.domain.value_objects import BoundingBox
+
+make_square_bounds_centered = getattr(geometry_bounds, "make_square_bounds_centered")
 
 
 def test_utm_crs_from_lonlat_returns_expected_epsg():
@@ -32,7 +35,7 @@ def test_next_power_of_two_clamps_and_rounds_up():
 def test_compute_world_params_with_projected_bbox():
     # Projected bbox in meters (EPSG:3857): 1500m x 1000m
     gdf = gpd.GeoDataFrame(geometry=[box(0, 0, 1500, 1000)], crs="EPSG:3857")
-    world_size, mpp = compute_world_params(gdf, page_size=1025, snap_to_pow2=True)
+    world_size, mpp = compute_world_params(gdf, 1025, True)
     assert world_size == 2048
     assert mpp == 2.0
 
@@ -40,10 +43,46 @@ def test_compute_world_params_with_projected_bbox():
 def test_compute_world_params_without_pow2_snap():
     gdf = gpd.GeoDataFrame(geometry=[box(0, 0, 1500, 1000)], crs="EPSG:3857")
     w_m, h_m = bbox_size_meters(gdf)
-    world_size, mpp = compute_world_params(gdf, page_size=1025, snap_to_pow2=False)
+    world_size, mpp = compute_world_params(gdf, 1025, False)
     expected = math.ceil(max(w_m, h_m))
     assert world_size == expected
     assert mpp == expected / 1024
+
+
+def test_compute_world_params_uses_extent_of_all_geometries():
+    gdf = gpd.GeoDataFrame(
+        geometry=[box(0, 0, 100, 100), box(1200, 0, 1400, 100)],
+        crs="EPSG:3857",
+    )
+
+    world_size, meters_per_pixel = compute_world_params(gdf, 1025, False)
+
+    assert world_size == 1400
+    assert meters_per_pixel == 1400 / 1024
+
+
+def test_compute_world_params_rejects_unsupported_bounds():
+    with pytest.raises(ValueError, match="Bounds are required"):
+        compute_world_params(None)
+
+
+def test_compute_world_params_reprojects_non_wgs84_geographic_bounds():
+    bounds = BoundingBox(2.2, 48.8, 2.4, 49.0, crs="EPSG:4807", is_projected=False)
+    to_wgs84 = Transformer.from_crs("EPSG:4807", "EPSG:4326", always_xy=True)
+    corners = [
+        to_wgs84.transform(x, y)
+        for x, y in ((2.2, 48.8), (2.2, 49.0), (2.4, 48.8), (2.4, 49.0))
+    ]
+    expected_bounds = BoundingBox(
+        min(point[0] for point in corners),
+        min(point[1] for point in corners),
+        max(point[0] for point in corners),
+        max(point[1] for point in corners),
+        crs="EPSG:4326",
+        is_projected=False,
+    )
+
+    assert compute_world_params(bounds) == compute_world_params(expected_bounds)
 
 
 def test_compute_world_params_rejects_empty_bounds():

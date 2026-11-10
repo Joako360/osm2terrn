@@ -1,10 +1,14 @@
 # Function reference: utilities and shared types
 
-Bounds/CRS helpers currently live in `osm2terrn/utils/geometry/` and
-`osm2terrn/domain/adapters/bounds.py`; configuration types and defaults are in
-`osm2terrn/config/`. Earlier references to flat `bbox.py`, `constants.py` and
-`utm_utils.py` modules are not current paths.
-
-Use the [module map](../architecture/architecture-modules.md) and generated
-[symbol inventory](../book/inventory/symbols.jsonl) for current file/symbol
-records. Dynamic uses require semantic review beyond AST extraction.
+- `bbox.py`
+  - `BBox`: shared bounds abstraction and conversion helpers.
+- `coordinate_transform.py`
+  - `data_from_gdf(...)`, `translate_gdf(...)`, `transform_gdf(...)`
+- `utm_utils.py`
+  - `utm_crs_from_lonlat(...)`, world-params helpers
+- `constants.py`
+  - shared constants and `get_opentopo_elevation_api_key()`
+- `logger.py`
+  - `get_logger(...)` and level wrappers
+- `visualization.py`
+  - plotting helpers for debug workflows

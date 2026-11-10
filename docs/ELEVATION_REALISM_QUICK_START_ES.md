@@ -46,7 +46,7 @@ WaterBottomLine = -195.50
 
 ## ⚙️ Configuración (Opcional)
 
-El siguiente ejemplo de configuración es histórico y no representa la lista actual de opciones. Verifica `pyproject.toml`, `osm2terrn/config/` y el código vigente antes de usar esos nombres.
+Si quieres ajustar el comportamiento, edita osm2terrn/utils/constants.py:
 
 ```python
 # Deshabilitar escalado realista (vuelve a valores por defecto)

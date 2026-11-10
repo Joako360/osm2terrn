@@ -2,12 +2,11 @@
 
 from __future__ import annotations
 
-import math
 from typing import Any
 
 from geopandas import GeoDataFrame
 from networkx import MultiDiGraph
-from pyproj import CRS, Transformer
+from pyproj import Transformer
 from shapely import affinity
 from shapely.ops import transform as shapely_transform
 
@@ -77,50 +76,33 @@ def translate_graph(graph: MultiDiGraph, x_0: float, y_0: float) -> MultiDiGraph
 def transform_graph(graph: MultiDiGraph, target_crs: Any) -> MultiDiGraph:
     """Project graph node coordinates and edge geometries to target_crs."""
     if graph is None or len(graph.nodes) == 0:
-        raise ValueError("Graph must be non-empty to transform")
+        log_error(logger, "Graph must be non-empty to transform.")
+        return graph
 
-    src_crs = graph.graph.get("crs")
-    if src_crs is None:
-        raise ValueError("Graph CRS is required before coordinate transformation")
-    source = CRS.from_user_input(src_crs)
-    target = CRS.from_user_input(target_crs)
-    transformer = Transformer.from_crs(source, target, always_xy=True)
+    src_crs = graph.graph.get("crs", "EPSG:4326")
+    transformer = Transformer.from_crs(src_crs, target_crs, always_xy=True)
     transformed = graph.copy()
     if not isinstance(transformed, MultiDiGraph):
         transformed = MultiDiGraph(transformed)
 
     for _, node_data in transformed.nodes(data=True):
-        if "x" not in node_data or "y" not in node_data:
-            raise ValueError("Every graph node must have x and y coordinates")
-        x_new, y_new = transformer.transform(node_data["x"], node_data["y"], errcheck=True)
-        if not math.isfinite(float(x_new)) or not math.isfinite(float(y_new)):
-            raise ValueError("Coordinate transformation produced non-finite node coordinates")
-        node_data["x"] = float(x_new)
-        node_data["y"] = float(y_new)
-
-    def transform_coordinate(x, y, z=None):
-        x_new, y_new = transformer.transform(x, y, errcheck=True)
-
-        def values_are_finite(values) -> bool:
+        if "x" in node_data and "y" in node_data:
             try:
-                iterator = iter(values)
-            except TypeError:
-                return math.isfinite(float(values))
-            return all(math.isfinite(float(value)) for value in iterator)
-
-        if not values_are_finite(x_new) or not values_are_finite(y_new):
-            raise ValueError("Coordinate transformation produced non-finite edge coordinates")
-        return (x_new, y_new) if z is None else (x_new, y_new, z)
+                x_new, y_new = transformer.transform(node_data["x"], node_data["y"])
+                node_data["x"] = x_new
+                node_data["y"] = y_new
+            except Exception:
+                continue
 
     for _, _, _, edge_data in transformed.edges(keys=True, data=True):
         geometry = edge_data.get("geometry")
         if geometry is not None:
-            edge_data["geometry"] = shapely_transform(
-                transform_coordinate,
-                geometry,
-            )
+            try:
+                edge_data["geometry"] = shapely_transform(transformer.transform, geometry)
+            except Exception:
+                continue
 
-    transformed.graph["crs"] = target
+    transformed.graph["crs"] = target_crs
     return transformed
 
 

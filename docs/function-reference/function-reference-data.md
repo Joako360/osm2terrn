@@ -1,11 +1,10 @@
 # Function reference: data acquisition
 
-Current acquisition code is under `osm2terrn/data/`, including
-`osm_data_handler.py`, `osm_loader.py`, `overpass.py`, `acquisition.py` and
-`street_network.py`. The Overture buildings callable is a separate route; do
-not infer it is used by the default bbox download path.
+## `osm2terrn/data/osm_data_handler.py`
+- `download_data_from_bbox(bbox)`: main OSM acquisition pipeline.
+- `download_menu()`: CLI helper for place/bbox selection.
+- `download_builings_from_overture(bbox)`: optional Overture building fetch.
 
-See the [module map](../architecture/architecture-modules.md),
-[CLI download flow](../cli-flow/cli-download.md), and
-[execution evidence](../book/execution/evidence_register.md). For exact
-current symbols use the generated [symbol inventory](../book/inventory/symbols.jsonl).
+## `osm2terrn/data/osm_loader.py`
+- `load_graph(place=None, bbox=None, network_type='drive')`: load OSM graph.
+- `edges_to_lines(G)`: extract graph edges as line geometries + attrs.

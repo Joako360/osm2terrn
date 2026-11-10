@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Tuple
+from typing import Any, Tuple
 
 import numpy as np
 from pyproj import Transformer
@@ -16,11 +16,28 @@ def _as_wgs84_bbox(bounds: BoundingBox) -> BoundingBox:
     """Return bounds expressed in EPSG:4326 for geodesic-safe projections."""
     if bounds.crs is None or bounds.crs == "EPSG:4326":
         return BoundingBox(bounds, crs="EPSG:4326", is_projected=False)
-    return bounds.reproject("EPSG:4326")
+    to_wgs84 = Transformer.from_crs(bounds.crs, "EPSG:4326", always_xy=True)
+    corners = (
+        (bounds.min_x, bounds.min_y),
+        (bounds.min_x, bounds.max_y),
+        (bounds.max_x, bounds.min_y),
+        (bounds.max_x, bounds.max_y),
+    )
+    transformed = [to_wgs84.transform(x, y) for x, y in corners]
+    xs = [float(point[0]) for point in transformed]
+    ys = [float(point[1]) for point in transformed]
+    return BoundingBox(
+        min(xs),
+        min(ys),
+        max(xs),
+        max(ys),
+        crs="EPSG:4326",
+        is_projected=False,
+    )
 
 
-def bbox_size_meters(bounds: BoundingBox) -> Tuple[float, float]:
-    """Compute width and height in meters for a domain bounding box."""
+def bbox_size_meters(bounds: Any) -> Tuple[float, float]:
+    """Compute width and height in meters for supported bounds-like inputs."""
     if hasattr(bounds, "empty") and bool(getattr(bounds, "empty")):
         raise ValueError("Bounds GeoDataFrame is empty")
 
@@ -58,7 +75,7 @@ def _next_power_of_two(x: float, minimum: int = 1024, maximum: int = 1 << 15) ->
 
 
 def compute_world_params(
-    bounds: BoundingBox,
+    bounds: Any,
     page_size: int = 1025,
     snap_to_pow2: bool = True,
 ) -> Tuple[int, float]:
@@ -70,7 +87,7 @@ def compute_world_params(
     return int(world_size), meters_per_pixel
 
 
-def make_square_bounds_centered(bounds: BoundingBox, side_meters: float) -> BoundingBox:
+def make_square_bounds_centered(bounds: Any, side_meters: float) -> BoundingBox:
     """Build a square BoundingBox centered on the input bounds centroid."""
     bbox = require_domain_bounding_box(bounds)
 

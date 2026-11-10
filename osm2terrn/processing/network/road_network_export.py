@@ -1,18 +1,29 @@
 import os
-import math
 from typing import Dict, List, Optional
 
-import networkx as nx
+import geopandas as gpd
+import numpy as np
 from pyproj import Transformer
-from shapely.ops import transform as shapely_transform
 
 from osm2terrn.config.settings import get_program_config, get_project_config
 from osm2terrn.data.osm_loader import edges_to_lines, load_graph
-from osm2terrn.domain.value_objects import BoundingBox
-from osm2terrn.processing.roads.road_elevation import (
-    build_dem_sampler,
-    build_node_elevation_sampler,
-    sample_segment_elevation,
+from osm2terrn.processing.roads import road_elevation
+from osm2terrn.processing.roads.road_elevation import build_dem_sampler
+
+
+def _no_node_elevation_sampler(*args, **kwargs):
+    return None
+
+
+def _constant_segment_elevation(*, local_xz, min_elevation, **kwargs):
+    return [min_elevation] * len(local_xz)
+
+
+build_node_elevation_sampler = getattr(
+    road_elevation, "build_node_elevation_sampler", _no_node_elevation_sampler
+)
+sample_segment_elevation = getattr(
+    road_elevation, "sample_segment_elevation", _constant_segment_elevation
 )
 from osm2terrn.processing.roads.road_exporters_utils import map_osm_type_to_ror
 from osm2terrn.processing.roads.road_geometry import (
@@ -22,11 +33,12 @@ from osm2terrn.processing.roads.road_geometry import (
 )
 from osm2terrn.processing.roads.road_model import Road
 from osm2terrn.processing.network.tobj_exporter import TobjExporter
-from osm2terrn.processing.network.road_network_graph_build import (
-    _resolve_target_bounds_local,
-    _build_node_graph,
-    _compute_branch_pitch,
-)
+from osm2terrn.processing.domain_bridge import road_to_domain_model
+from osm2terrn.processing.network import road_network_graph_build
+
+_resolve_target_bounds_local = road_network_graph_build._resolve_target_bounds_local
+_build_node_graph = getattr(road_network_graph_build, "_build_node_graph")
+_compute_branch_pitch = getattr(road_network_graph_build, "_compute_branch_pitch")
 from osm2terrn.processing.network.road_network_graph_intersections import (
     _classify_intersection_nodes,
     _build_intersection_objects,
@@ -47,65 +59,26 @@ def build_roads_from_place(
     tobj_prefix: str = _PROGRAM_CONFIG.terrain_runtime.default_tobj_prefix,
     simplify: bool = True,
     min_elevation: float = 0.0,
-    target_bounds: Optional[BoundingBox] = None,
-    output_dir: str | None = None,
+    target_bounds: Optional[gpd.GeoDataFrame] = None,
 ) -> str:
     """
     Load OSM data for a place, build roads, and export them to a .tobj file.
     """
     graph = load_graph(place=place, network_type=network_type, simplify=simplify)
-    return build_roads_from_graph(
-        graph=graph,
-        origin_lon=origin_lon,
-        origin_lat=origin_lat,
-        place=place,
-        network_type=network_type,
-        tobj_prefix=tobj_prefix,
-        simplify=simplify,
-        min_elevation=min_elevation,
-        target_bounds=target_bounds,
-        output_dir=output_dir,
-    )
+    geoms_attrs, src_crs = edges_to_lines(graph)
+    merged_dense = geoms_attrs
 
+    dem_sampler = build_dem_sampler(merged_dense, src_crs)
+    node_elev_sampler = build_node_elevation_sampler(place, network_type, simplify)
 
-def build_roads_from_graph(
-    graph: nx.MultiDiGraph | nx.MultiGraph,
-    origin_lon: float,
-    origin_lat: float,
-    *,
-    place: str | None = None,
-    network_type: str = "drive",
-    tobj_prefix: str = _PROGRAM_CONFIG.terrain_runtime.default_tobj_prefix,
-    simplify: bool = True,
-    min_elevation: float = 0.0,
-    target_bounds: Optional[BoundingBox] = None,
-    output_dir: str | None = None,
-) -> str:
-    """Process and export an already acquired graph without reloading it."""
-
-    if not math.isfinite(origin_lon) or not math.isfinite(origin_lat):
-        raise ValueError("Street export origin must contain finite longitude and latitude")
-    if not -180.0 <= origin_lon <= 180.0 or not -90.0 <= origin_lat <= 90.0:
-        raise ValueError("Street export origin is outside geographic coordinate bounds")
-
-    geoms_attrs, graph_crs = edges_to_lines(graph)
     local_crs = local_crs_from_lonlat(origin_lon, origin_lat)
-    graph_to_local = Transformer.from_crs(graph_crs, local_crs, always_xy=True)
-    merged_dense = [
-        (shapely_transform(graph_to_local.transform, line), attrs)
-        for line, attrs in geoms_attrs
-    ]
-    dem_sampler = build_dem_sampler(merged_dense, local_crs)
-    node_elev_sampler = build_node_elevation_sampler(
-        place, network_type, simplify, graph=graph
-    )
-    to_local_fn = lambda x, y: (x, y)
+    to_local = Transformer.from_crs(src_crs or "EPSG:4326", local_crs, always_xy=True)
+    to_local_fn = to_local.transform
 
     _resolve_target_bounds_local(
-        merged_dense=merged_dense,
-        src_crs=local_crs,
-        local_crs=local_crs,
-        target_bounds=target_bounds,
+        merged_dense,
+        src_crs,
+        local_crs,
     )
 
     invert_y_axis = True
@@ -133,6 +106,7 @@ def build_roads_from_graph(
 
     valid_segments = 0
     roads = []
+    domain_roads = []
 
     for idx, (line, attrs) in enumerate(merged_dense):
         u = attrs.get("u")
@@ -163,7 +137,9 @@ def build_roads_from_graph(
             dem_sampler=dem_sampler,
             elev_sampler=node_elev_sampler,
         )
-        local_pts_m, yaw_list, pitch_list = build_oriented_points(local_xz, sampled_z)
+        local_pts_m, yaw_list, pitch_list = build_oriented_points(
+            local_xz, np.asarray(sampled_z, dtype=float)
+        )
         attrs["points_m"] = local_pts_m
         attrs["yaw_deg"] = yaw_list
         attrs["pitch_deg"] = pitch_list
@@ -201,6 +177,7 @@ def build_roads_from_graph(
                 roll_deg=[0.0] * len(yaw_list),
             )
             roads.append(processing_road)
+            domain_roads.append(road_to_domain_model(processing_road))
         except ValueError as exc:
             log_warning(logger, f"Skipping road due to error: {exc} (highway={highway})")
 
@@ -220,11 +197,7 @@ def build_roads_from_graph(
     if intersection_objects:
         log_info(logger, f"Will export {len(intersection_objects)} intersection objects")
 
-    if not roads and not intersection_objects:
-        log_info(logger, "No exportable road segments or intersections were produced.")
-        return ""
-
-    output_dir = output_dir or str(_PROGRAM_CONFIG.paths.output_dir.resolve())
+    output_dir = os.path.join(os.path.dirname(__file__), "../../output")
     os.makedirs(output_dir, exist_ok=True)
     roads_filename = f"{tobj_prefix}_roads.tobj"
     exporter = TobjExporter(output_dir=output_dir)

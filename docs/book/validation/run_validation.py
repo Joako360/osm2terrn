@@ -288,7 +288,7 @@ def main() -> int:
         socket.getaddrinfo = _blocked  # type: ignore[assignment]
         socket.create_connection = _blocked  # type: ignore[assignment]
 
-    original_roads_outcome = orchestrator._roads_outcome
+    original_roads_outcome = getattr(orchestrator, "_roads_outcome")
     original_cli_export = commands.export_terrain_assets
     captured: dict[str, Any] = {}
 
@@ -311,7 +311,7 @@ def main() -> int:
         }
         return result
 
-    orchestrator._roads_outcome = _spy_roads_outcome
+    setattr(orchestrator, "_roads_outcome", _spy_roads_outcome)
     commands.export_terrain_assets = _capture_export
     commands.download_menu = lambda: (PLACE, BBOX)
     commands.clear = lambda: None
@@ -376,7 +376,9 @@ def main() -> int:
                     ),
                 },
                 "bounds": str(data.get("bounds")),
-                "terrain_world_size_m": commands.current_map.terrain_world_size,
+                "terrain_world_size_m": getattr(
+                    commands.current_map, "terrain_world_size", None
+                ),
                 "elevation_preload_loaded": bool(
                     commands.current_map.elevation_data
                 ),

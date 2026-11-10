@@ -13,9 +13,10 @@ This document proposes the **minimum learning path** for new contributors to und
    - Contribution conventions, branches, commit style, and code expectations.
    - Quality bar expected for pull requests.
 
-3. **Application flow**
-   - Declared package entry: `osm2terrn.app.main:main` (`pyproject.toml`) or `python -m osm2terrn`.
-   - Read the [CLI source map](cli-flow/cli-index.md); its routes and limits are explicitly qualified.
+3. **`osm2terrn/main.py` (main flow)**
+   - Application entry point.
+   - Sequence: download -> process -> export.
+   - Session state (`MapData`) and interactive menu behavior.
 
 4. **Exporter docs (`exporters-docs.md`)**
    - Explains generated file contracts (`.terrn2`, `.otc`, `.tobj`).
